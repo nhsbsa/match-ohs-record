@@ -87,7 +87,6 @@ Overseas Healthcare Service RINA
 					<h1 class="nhsuk-heading-xl">SBUC 1</h1>
 
 					<div class="nhsuk-grid-row">
-
 						<div class="nhsuk-grid-column-full">
 							<details class="nhsuk-details nhsuk-expander clearfix">
 								<summary class="nhsuk-details__summary">
@@ -100,7 +99,7 @@ Overseas Healthcare Service RINA
 									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
 										<div class="nhsuk-form-group">
 											<label class="nhsuk-label" for="first-name">
-												First name
+												First name (optional)
 											</label>
 											<input class="nhsuk-input " id="first-name" name="first-name" type="text" value="">
 										</div>
@@ -151,51 +150,17 @@ Overseas Healthcare Service RINA
 									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
 
 										<div class="nhsuk-form-group">
-											<label class="nhsuk-label" for="last-name">
-												Last name
+											<label class="nhsuk-label" for="Last-name">
+												Last name (optional)
 											</label>
-											<input class="nhsuk-input " id="last-name" name="last-name" type="text" value="">
+											<input class="nhsuk-input " id="Last-name" name="Last-name" type="text" value="">
 										</div>
 
 										<div class="nhsuk-form-group">
-											<label class="nhsuk-label" for="example">
-												Country
+											<label class="nhsuk-label" for="PIN">
+												PIN (optional)
 											</label>
-											<select class="nhsuk-select" style="width: 637px;" id="select-1" name="select-1">
-												<option value="0"></option>
-												<option value="1">[AT] Austria</option>
-												<option value="2">[BE] Belgium</option>
-												<option value="3">[BG] Bulgaria</option>
-												<option value="4">[HR] Croatia</option>
-												<option value="5">[CY] Cyprus</option>
-												<option value="6">[CZ] Czechia</option>
-												<option value="7">[DK] Denmark</option>
-												<option value="8">[EE] Estonia</option>
-												<option value="9">[FI] Finland</option>
-												<option value="10">[FR] France</option>
-												<option value="11">[DE] Germany</option>
-												<option value="12">[EL] Greece</option>
-												<option value="13">[HU] Hungary</option>
-												<option value="14">[IS] Iceland</option>
-												<option value="15">[IE]Ireland</option>
-												<option value="16">[IT] Italy</option>
-												<option value="17">[LV] Latvia</option>
-												<option value="18">[LI] Liechtenstein</option>
-												<option value="19">[LU] Lithuania</option>
-												<option value="20">[LU] Luxembourg</option>
-												<option value="21">[MT] Malta</option>
-												<option value="22">[NL] Netherlands</option>
-												<option value="23">[NO] Norway</option>
-												<option value="24">[PL] Poland</option>
-												<option value="25">[PT] Portugal</option>
-												<option value="26">[RO] Romania</option>
-												<option value="27">[SK] Slovakia</option>
-												<option value="28">[SI] Slovenia</option>
-												<option value="29">[ES] Spain</option>
-												<option value="30">[SE] Sweden</option>
-												<option value="31">[CH] Switzerland</option>
-												<option value="32">[UK] United Kingdom</option>
-											</select>
+											<input class="nhsuk-input" id="PIN" name="PIN" type="text" value="">
 										</div>
 									</div>
 
@@ -210,77 +175,51 @@ Overseas Healthcare Service RINA
 										</div>
 									</div>
 
-									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
-										<div class="nhsuk-form-group">
-											<label class="nhsuk-label" for="example">
-												Local PIN
-											</label>
-											<input class="nhsuk-input" id="example" name="example" type="text">
-										</div>
-									</div>
+									<div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-4" style="padding-left: 0;">
+										<hr style="margin:0px 0px 24px 0px;">
 
-									<!--<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
-										<form>
+										<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
 											<div class="nhsuk-form-group">
-												<fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-													<label class="nhsuk-label">
-														Case status
+												<fieldset class="nhsuk-fieldset">
+													<label class="nhsuk-label nhsuk-u-padding-bottom-2">
+														Case status (optional)
 													</label>
-													<div class="nhsuk-checkboxes">
-
-														<div class="nhsuk-checkboxes__item">
-															<input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
-																value="email">
-															<label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-																New
+													<div class="nhsuk-radios" data-module="nhsuk-radios">
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-1" name="case-status" type="radio" value="yes">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-1">
+															New
 															</label>
 														</div>
-
-														<div class="nhsuk-checkboxes__item">
-															<input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox"
-																value="text message">
-															<label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-																Closed
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-2" name="case-status" type="radio" value="yes">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-2">
+															Open
 															</label>
 														</div>
-
-														<div class="nhsuk-checkboxes__item">
-															<input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox"
-																value="text message">
-															<label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
-																Pending UK Action
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-3" name="case-status" type="radio" value="no">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-3">
+															Closed
 															</label>
 														</div>
-
-														<div class="nhsuk-checkboxes__item">
-															<input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox"
-																value="text message">
-															<label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
-																Pending MS Action
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-4" name="case-status" type="radio" value="no">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-4">
+															Archived
 															</label>
 														</div>
-
-														<div class="nhsuk-checkboxes__item">
-															<input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox"
-																value="text message">
-															<label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-																Archived
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-5" name="case-status" type="radio" value="no">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-5">
+															Removed
 															</label>
 														</div>
-
-														<div class="nhsuk-checkboxes__item">
-															<input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox"
-																value="text message">
-															<label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
-																Removed
-															</label>
-														</div>
-
 													</div>
 												</fieldset>
 											</div>
-										</form>
-									</div>-->
+										</div>
+									</div>
 
 									<div class="nhsuk-grid-column-full nhsuk-u-margin-top-4" style="padding-left:0px;">
 										<button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
@@ -333,7 +272,7 @@ Overseas Healthcare Service RINA
 														Filter and sort options
 													</span>
 												</summary>
-												<div class="nhsuk-details__text" style="background-color: red;">
+												<div class="nhsuk-details__text">
 													<div class="nhsuk-grid-row">
 														<!-- Start filter by recent cases-->
 														<div class="nhsuk-grid-column-one-third">
@@ -344,53 +283,35 @@ Overseas Healthcare Service RINA
 																			Filter by status
 																		</h1>
 																	</legend>
-																	<div class="nhsuk-checkboxes">
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-new" name="status-filter"
-																				type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-new">
-																				New
+																	<div class="nhsuk-radios" data-module="nhsuk-radios">
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-6" name="case-status" type="radio" value="yes">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-6">
+																			New
 																			</label>
 																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-pending-uk"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-uk">
-																				Pending UK Action
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-7" name="case-status" type="radio" value="yes">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-7">
+																			Open
 																			</label>
 																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-pending-ms"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-ms">
-																				Pending MS Action
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-8" name="case-status" type="radio" value="no">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-8">
+																			Closed
 																			</label>
 																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-closed"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-closed">
-																				Closed
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-9" name="case-status" type="radio" value="no">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-9">
+																			Archived
 																			</label>
 																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-archived"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-archived">
-																				Archived
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-removed"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-removed">
-																				Removed
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-10" name="case-status" type="radio" value="no">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-10">
+																			Removed
 																			</label>
 																		</div>
 																	</div>
@@ -414,22 +335,6 @@ Overseas Healthcare Service RINA
 																				name="status-filter" type="checkbox" value="">
 																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-assign">
 																				Assigned to me
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-main"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-main">
-																				Main
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-dependant"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-dependant">
-																				Dependant
 																			</label>
 																		</div>
 
@@ -489,23 +394,18 @@ Overseas Healthcare Service RINA
 
 									<div class="nhsuk-grid-row">
 										<div class="nhsuk-grid-column-full">
-											<table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
+											<table role="table" class="nhsuk-table-responsive">
+												<!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
 												<thead role="rowgroup" class="nhsuk-table__head">
 													<tr role="row">
 														<th role="columnheader" class="" scope="col">
 															Case ID
 														</th>
 														<th role="columnheader" class="" scope="col">
-															First name
+															Person details
 														</th>
 														<th role="columnheader" class="" scope="col">
-															Last name
-														</th>
-														<th role="columnheader" class="" scope="col">
-															Country
-														</th>
-														<th role="columnheader" class="" scope="col">
-															Applicant
+															PIN
 														</th>
 														<th role="columnheader" class="" scope="col">
 															Status
@@ -513,367 +413,396 @@ Overseas Healthcare Service RINA
 														<th role="columnheader" class="" scope="col">
 															Assigned
 														</th>
-														<th role="columnheader" class="" scope="col" style="text-align: right;">
+														<th role="columnheader" class="" style="text-align: right;" scope="col">
 															Actions
 														</th>
 													</tr>
 												</thead>
-
-												<!-- first row -->
-
 												<tbody class="nhsuk-table__body">
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>9054
+															<span class="nhsuk-table-responsive__heading">Case ID </span>01234
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Ciri
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Rivia</span> 
+																<span class="person-date-of-birth">3 December 1950</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Rivia
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>JG 08 23 89 A
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>France
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 02/04/2025
-																at 12:34</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span> <strong
-																class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-															<span class="nhsuk-table-responsive__heading">Action </span><a
-																href="mvp2-dep-s071-received">Manage case</a>
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- second row -->
+													<!-- Row 2 start -->
 
-												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10219
+															<span class="nhsuk-table-responsive__heading">Case ID </span>02341
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Elin
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Smith</span> 
+																<span class="person-date-of-birth">12 July 2001</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Beddoe
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>DF 45 23 23 N
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>France
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--green">
+																Open
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025
-																at 16:42</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><span class="nhsuk-table-cell__email">luke.b@nhsbsa.nhs.uk</span>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<span class="nhsuk-table-cell__email">luke.b@nhsbsa.nhs.uk</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<!--<a href="#">View case</a>-->
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- third row -->
+													<!-- Row 2 end -->
 
-												<tbody class="nhsuk-table__body">
+													<!-- Row 3 start -->
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10207
+															<span class="nhsuk-table-responsive__heading">Case ID </span>20134
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Emma
+															<span class="nhsuk-table-responsive__heading">Person details
+															name </span>
+															<span>Geralt Brown</span> 
+															<span class="person-date-of-birth">21 August 1987</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Larsen
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>SD 33 45 32 K
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Belgium
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--green">
+																Open
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025
-																at 19:23</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><span class="nhsuk-table-cell__email">mari.b@nhsbsa.nhs.uk</span>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<span class="nhsuk-table-cell__email">luke.b@nhsbsa.nhs.uk</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<!--<a href="#">View case</a>-->
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- fourth row -->
+													<!-- Row 3 end -->
 
-												<tbody class="nhsuk-table__body">
+													<!-- Row 4 start -->
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>9054
+															<span class="nhsuk-table-responsive__heading">Case ID </span>01234
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Graeme
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Rivers</span> 
+																<span class="person-date-of-birth">26 January 1978</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Rutherford
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>FG 23 45 25 A
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Greece
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025
-																at 21:11</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><span class="nhsuk-table-cell__email">caitlin.b@nhsbsa.nhs.uk</span>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- fifth row -->
+													<!-- Row 4 end -->
 
-												<tbody class="nhsuk-table__body">
+													<!-- Row 5 start -->
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10202
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21348
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Kenneth
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Silver</span> 
+																<span class="person-date-of-birth">23 April 1972</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Branagh
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>GH 23 45 25 L
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Lithuania
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Pending UK
-																Action</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 06/04/2025
-																at 11:21</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><strong
-																class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-															<span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- sixth row -->
+													<!-- Row 5 end -->
 
-												<tbody class="nhsuk-table__body">
+													<!-- Row 6 start -->
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10213
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Kasi
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Crimbo</span> 
+																<span class="person-date-of-birth">11 May 1982</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Abara
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>JK 23 45 25 L
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Latvia
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--purple nhsuk-u-margin-bottom-2">Pending MS Action
-															</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action</span>
-															<span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Sent H001 at
-																16:45, 07/04/2025</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">PIN </span><strong
-																class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-															<span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- seventh row -->
+													<!-- Row 6 end -->
 
-												<tbody class="nhsuk-table__body">
+													<!-- Row 7 start -->
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10210
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Krishna
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Patel</span> 
+																<span class="person-date-of-birth">6 June 1981</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Patel
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>KL 23 45 25 L
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Austria
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 08/04/2025
-																at 22:19</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><strong
-																class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-															<span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- eighth row -->
+													<!-- Row 7 end -->
 
-												<tbody class="nhsuk-table__body">
+													<!-- Row 8 start -->
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>00000
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>First name
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Eight</span> 
+																<span class="person-date-of-birth">21 September 1981</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Last name
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>FG 23 45 25 L
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Netherlands
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 09/04/2025
-																at 08:19</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><strong
-																class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-															<span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- ninth row -->
+													<!-- Row 8 end -->
 
-												<tbody class="nhsuk-table__body">
+													<!-- Row 9 start -->
+
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>00000
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>First name
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Green</span> 
+																<span class="person-date-of-birth">6 June 1967</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Last name
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>JH 23 45 25 L
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Poland
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 10/04/2025
-																at 05:21</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><span class="nhsuk-table-cell__email">mari.b@nhsbsa.nhs.uk</span>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
-												<!-- tenth row -->
+													<!-- Row 9 end -->
 
-												<tbody class="nhsuk-table__body">
-													<tr role="row" class="nhsuk-table__row">
+													<!-- Row 10 start -->
+
+													<tr role="row" class="nhsuk-table__row  ohs-table-no-last-row-border">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>00000
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>First name
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Patel</span> 
+																<span class="person-date-of-birth">6 June 1981</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Last name
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>SD 23 45 25 L
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Portugal
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
-															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 12/04/2025
-																at 06:12</span>
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Assigned </span><strong
-																class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
 														</td>
 														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-															<span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
 														</td>
 													</tr>
-												</tbody>
 
+													<!-- Row 10 end -->
+
+												</tbody>
 											</table>
 
 											<!-- pagination start -->
@@ -884,15 +813,14 @@ Overseas Healthcare Service RINA
 
 														<div class="nhsuk-pagination__prev">
 															<!-- <a class="nhsuk-link nhsuk-pagination__link" href="#" rel="prev">
-																		<svg class="nhsuk-pagination__icon nhsuk-pagination__icon--prev"
-																			xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false"
-																			viewBox="0 0 15 13">
-																			<path
-																				d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
-																			</path>
-																		</svg>
-																		<span class="nhsuk-pagination__link-title">Previous<span class="nhsuk-visually-hidden">
-																				page</span></span></a> -->
+																<svg class="nhsuk-pagination__icon nhsuk-pagination__icon--prev"
+																	xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false"
+																	viewBox="0 0 15 13">
+																	<path
+																		d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
+																	</path>
+																</svg>
+																<span class="nhsuk-pagination__link-title">Previous<span class="nhsuk-visually-hidden">page</span></span></a> -->
 														</div>
 
 														<ul class="nhsuk-pagination__list">
