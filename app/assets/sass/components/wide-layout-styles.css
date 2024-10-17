@@ -4,6 +4,11 @@
   clear: both;
 }
 
+.nhsuk-index-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 .margin-left-right-lrg {
   margin: 0 32px;
 }
