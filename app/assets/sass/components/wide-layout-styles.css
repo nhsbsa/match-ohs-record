@@ -4,6 +4,10 @@
   clear: both;
 }
 
+.no-padding .nhsuk-grid-column-three-quarters, .no-padding .nhsuk-grid-column-one-half {
+  padding: 0;
+}
+
 .nhsuk-index-container {
   margin: 0 auto;
   max-width: 960px;
@@ -335,4 +339,8 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 
 .moj-button-menu [aria-expanded=false] + [role=menu] {
   display: none;
+}
+
+.no-border-left {
+  border-left: none;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
