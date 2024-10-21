@@ -11,8 +11,26 @@
     max-width: 960px;
 }
 
+//   Header   //
+.nhsuk-header__container {
+    padding: 20px 0;
+}
+.nhsuk-header__content {
+    float: right;
+}
+.nhsuk-header__logo--only .nhsuk-header__link--service {
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+    width: auto;
+}
 .margin-left-right-lrg {
     margin: 0 32px;
+}
+.nhsuk-header__transactional .nhsuk-logo {
+    height: 40px;
+    width: 100px;
 }
 .nhsuk-header__logo a {
     display: block;
