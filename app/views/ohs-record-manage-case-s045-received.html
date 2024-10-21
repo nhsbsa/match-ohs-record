@@ -27,8 +27,37 @@
       </ol>
     </div>
     <div class="nhsuk-grid-column-one-half" style="text-align: right;">
-      <a href="#"><button class="moj-button-menu__toggle-button" type="button" aria-haspopup="true" aria-expanded="false">Create document</button></a>
-      <a href="ohs-record-manage-case-closed"><button class="moj-button-menu__toggle-button" type="button" aria-haspopup="true" aria-expanded="false">Case actions</button></a>
+      
+      <div><a href="#"><button class="moj-button-menu__toggle-button" type="button" aria-haspopup="true" aria-expanded="false">Create document</button></a></div>
+
+      <!-- MoJ Design System Component - Start-->
+
+      <div class="moj-button-menu">
+        <button class="govuk-button moj-button-menu__toggle-button govuk-button--secondary moj-button-menu__toggle-button--secondary" type="button" aria-haspopup="true" aria-expanded="false">Case actions</button>
+        
+        <div class="moj-button-menu__wrapper" role="menu">
+            <a href="#" role="menuitem" draggable="false" class="moj-button-menu__item" data-module="govuk-button" data-secondary="true">
+            First action
+            </a>
+            <a href="#" role="menuitem" draggable="false" class="moj-button-menu__item" data-module="govuk-button" data-secondary="true">
+            Second action
+            </a>
+            <a href="#" role="menuitem" draggable="false" class="moj-button-menu__item" data-module="govuk-button" data-secondary="true">
+            Third action
+            </a>
+        </div>
+      </div>
+      <script type="module">
+          new MOJFrontend.ButtonMenu({
+        container: document.querySelector(".moj-button-menu"),
+        mq: "(min-width: 200em)",
+        buttonText: "Menu",
+        buttonClasses:
+          "govuk-button--secondary moj-button-menu__toggle-button--secondary",
+      });
+      
+      </script>
+        <!-- MoJ Design System Component - End-->
     </div>
       
 
