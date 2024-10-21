@@ -191,6 +191,39 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   outline: 4px solid #005eb8;
 }
 
+.flag-uk {
+  background-image: url("/images/flag-uk.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.icon-ogl {
+  background-image: url("/images/icon-ogl.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 17px;
+  width: 41px;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.flag-no {
+  background-image: url("/images/flag-no.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
 .nhsuk-timeline__byline {
   display: inline;
   color: #4c6272;
@@ -301,9 +334,13 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 .nhsuk-footer {
   padding-bottom: 24px;
   padding-top: 24px;
+  display: block;
   background-color: #d8dde0;
   border-top: 4px solid #005eb8;
-  justify-content: space-between;
+}
+
+.nhsuk-footer p {
+  font-size: 1rem;
 }
 
 .nhsuk-footer .nhsuk-width-container {
