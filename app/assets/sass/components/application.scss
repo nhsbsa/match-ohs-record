@@ -1,0 +1,23 @@
+$moj-page-width: 1220px !default;
+$govuk-page-width: 1220px !default;
+$moj-assets-path: "../" !default;
+$govuk-assets-path: "../" !default;
+
+
+
+// MOJ Frontend
+@import "src/moj/all";
+
+// highlight.js
+@import "node_modules/highlight.js/scss/github.scss";
+
+// Custom documentation components
+@import "./components/back-to-top";
+@import "./components/copy-button";
+@import "./components/example";
+@import "./components/flex-container";
+@import "./components/markdown";
+@import "./components/masthead";
+@import "./components/panel";
+@import "./components/tabs";
+@import "./components/header";
