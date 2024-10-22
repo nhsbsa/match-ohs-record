@@ -4,7 +4,7 @@
   clear: both;
 }
 
-.no-padding .nhsuk-grid-column-three-quarters, .no-padding .nhsuk-grid-column-one-half {
+.no-padding .nhsuk-grid-column-three-quarters, .no-padding .nhsuk-grid-column-one-half, .no-padding {
   padding: 0;
 }
 
@@ -15,6 +15,10 @@
 
 .nhsuk-header__container {
   padding: 20px 0;
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 .nhsuk-header__content {
@@ -213,6 +217,17 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   margin-right: 14px;
 }
 
+.icon-copy {
+  background-image: url("/images/icon-copy.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 24px;
+  width: 25%;
+  vertical-align: middle;
+  padding-right: 26px;
+}
+
 .flag-no {
   background-image: url("/images/flag-no.svg");
   background-size: contain;
@@ -222,6 +237,19 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   width: 20px;
   vertical-align: middle;
   margin-right: 6px;
+}
+
+.icon-copy span {
+  padding-left: 26px;
+}
+
+.institute-name {
+  display: inline-block;
+  width: 75%;
+}
+
+.nhs-button--copy-clipboard {
+  margin-top: 26px;
 }
 
 .nhsuk-timeline__byline {

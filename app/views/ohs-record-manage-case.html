@@ -199,7 +199,7 @@
 
           <!-- Case details left summary list-->
 
-          <div class="nhsuk-grid-column-one-half">
+          <div class="nhsuk-grid-column-one-half no-padding">
             <dl class="nhsuk-summary-list">
               <div class="nhsuk-summary-list__row">
                 <dt class="nhsuk-summary-list__key">
@@ -231,14 +231,14 @@
 
           <!-- Case details right summary list-->
 
-          <div class="nhsuk-grid-column-one-half">
+          <div class="nhsuk-grid-column-one-half no-padding">
             <dl class="nhsuk-summary-list">
               <div class="nhsuk-summary-list__row">
                 <dt class="nhsuk-summary-list__key">
                   Since 
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  13 December 2019
+                  13 September 2024
                 </dd>
               </div>
               
@@ -247,18 +247,53 @@
                   Update
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  19 June 2024
+                  13 September 2024
                 </dd>
               </div>
               <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
                 <dt class="nhsuk-summary-list__key">
-                  Member state institution 
+                  Institution 
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  UK:UK033, DHSC, ACC_Department of Health and Social Care, UK
+                  NO:HELFOA003, ACC Helfo Test 3, ACC Health Economics Administration, NO
                 </dd>
+                
               </div>
             </dl>
+          </div>
+
+          <!-- Case details sensitive question -->
+
+          <div class="">
+            <div class="nhsuk-form-group">
+
+              <fieldset class="nhsuk-fieldset">
+                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                  <p>
+                    Is this case sensitive?
+                  </p>
+                </legend>
+            
+                <div class="nhsuk-radios nhsuk-radios--inline">
+            
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio" value="yes">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
+                      Yes
+                    </label>
+                  </div>
+            
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-inline-2" name="example-inline" type="radio" value="no">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-inline-2">
+                      No
+                    </label>
+                  </div>
+            
+                </div>
+              </fieldset>
+            
+            </div>
           </div>
  
         </div>
@@ -266,7 +301,7 @@
         <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="participants">
       
           <table class="nhsuk-table">
-            <caption class="nhsuk-table__caption nhsuk-u-margin-bottom-3">Participants</caption>
+            <caption class="nhsuk-table__caption visually-hidden">Participants</caption>
             <thead role="rowgroup" class="nhsuk-table__head">
               <tr role="row">
                 <th role="columnheader" class="" scope="col">
@@ -288,19 +323,19 @@
             </thead>
             <tbody class="nhsuk-table__body">
               <tr role="row" class="nhsuk-table__row">
-                <td class="nhsuk-table__cell">Case owner
+                <td class="nhsuk-table__cell">Case owner</td>
+                <td class="nhsuk-table__cell ">NO:HELFOA003</td>
+                <td class="nhsuk-table__cell ">ACC Helfo Test 3</td>
+                <td class="nhsuk-table__cell ">ACC Health Economics Administration</td>
+                <td class="nhsuk-table__cell ">NO</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
+                <td class="nhsuk-table__cell">Counter Party
                 </td>
                 <td class="nhsuk-table__cell ">UK:UK033</td>
                 <td class="nhsuk-table__cell ">DHSC</td>
                 <td class="nhsuk-table__cell ">ACC_Department of Health and Social Care</td>
                 <td class="nhsuk-table__cell ">UK</td>
-              </tr>
-              <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
-                <td class="nhsuk-table__cell">Counter Party</td>
-                <td class="nhsuk-table__cell ">NO:HELFOA003</td>
-                <td class="nhsuk-table__cell ">ACC Helfo Test 3</td>
-                <td class="nhsuk-table__cell ">ACC Health Economics Administration</td>
-                <td class="nhsuk-table__cell ">NO</td>
               </tr>
             </tbody>
           </table>
@@ -308,41 +343,7 @@
         </div>
       
         <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="attachments">
-      
-          <table class="nhsuk-table">
-            <caption class="nhsuk-table__caption nhsuk-u-margin-bottom-3">Attachments</caption>
-            <thead role="rowgroup" class="nhsuk-table__head">
-              <tr role="row">
-                <th role="columnheader" class="" scope="col">
-                  Case manager
-                </th>
-                <th role="columnheader" class="" scope="col">
-                  Cases opened
-                </th>
-                <th role="columnheader" class="" scope="col">
-                  Cases closed
-                </th>
-              </tr>
-            </thead>
-            <tbody class="nhsuk-table__body">
-              <tr role="row" class="nhsuk-table__row">
-                <td class="nhsuk-table__cell">David Francis</td>
-                <td class="nhsuk-table__cell ">1380</td>
-                <td class="nhsuk-table__cell ">1472</td>
-              </tr>
-              <tr role="row" class="nhsuk-table__row">
-                <td class="nhsuk-table__cell">Paul Farmer</td>
-                <td class="nhsuk-table__cell ">1129</td>
-                <td class="nhsuk-table__cell ">1083</td>
-              </tr>
-              <tr role="row" class="nhsuk-table__row">
-                <td class="nhsuk-table__cell">Rita Patel</td>
-                <td class="nhsuk-table__cell ">1539</td>
-                <td class="nhsuk-table__cell ">1265</td>
-              </tr>
-            </tbody>
-          </table>
-      
+          <p>No attachments.</p>
         </div>
       
       </div>
