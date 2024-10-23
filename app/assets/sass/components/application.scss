@@ -5,19 +5,19 @@ $govuk-assets-path: "../" !default;
 
 
 
-// MOJ Frontend
-@import "src/moj/all";
+// MOJ Frontend //
+@import "../../../../node_modules/@ministryofjustice/frontend/moj/all";
 
-// highlight.js
-@import "node_modules/highlight.js/scss/github.scss";
+// highlight.js //
+//@import "node_modules/highlight.js/scss/github.scss";
 
-// Custom documentation components
-@import "./components/back-to-top";
-@import "./components/copy-button";
-@import "./components/example";
-@import "./components/flex-container";
-@import "./components/markdown";
-@import "./components/masthead";
-@import "./components/panel";
-@import "./components/tabs";
-@import "./components/header";
+// Custom documentation components //
+//@import "./components/back-to-top";
+//@import "./components/copy-button";
+//@import "./components/example";
+//@import "./components/flex-container";
+//@import "./components/markdown";
+//@import "./components/masthead";
+//@import "./components/panel";
+//@import "./components/tabs";
+//@import "./components/header";

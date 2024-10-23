@@ -239,6 +239,10 @@ app.use((err, req, res) => {
 });
 
 // Run the application
-app.listen(port);
 
+app.use('/assets', express.static(path.join(__dirname, '/node_modules/@ministryofjustice/frontend/moj/assets')));
+app.use('/assets', express.static(path.resolve('node_modules/@ministryofjustice/frontend/moj/assets')));
+app.listen(port);
 module.exports = app;
+
+

@@ -10,7 +10,6 @@
 <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 {% block headCSS %}
   <link href="/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/sass/compontents/application.css">
 {% endblock %}
 
 <!-- Set the page title -->
@@ -110,8 +109,7 @@
 {% block bodyEnd %}
   {% block scripts %}
     <!-- Custom JavaScript files can be added to this file -->
-    <script src="node_modules/@ministryofjustice/frontend/moj/jquery.js"></script>
-    <script src="node_modules/@ministryofjustice/frontend/moj/application.js"></script>
+    
     {% include "includes/scripts.html" %}
     <!-- For adding page specific JavsScript -->
     {% block pageScripts %}{% endblock %}

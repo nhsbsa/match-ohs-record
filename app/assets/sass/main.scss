@@ -1,12 +1,10 @@
 // Import NHS.UK frontend library
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
-@import "node_modules/@ministryofjustice/frontend/moj/all";
 
 // Components that are not in the NHS.UK frontend library
 @import 'components/list-border';
 @import 'components/related-nav';
 @import 'components/wide-layout-styles';
-@import "node_modules/@ministryofjustice/frontend/moj/components/button-menu/_button-menu.scss";
 
 
 ///////////////////////////////////////////
