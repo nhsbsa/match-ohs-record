@@ -412,20 +412,6 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   vertical-align: middle;
 }
 
-.moj-button-menu__toggle-button svg {
-  fill: #005eb8;
-}
-
-.moj-button-menu [role=menu] {
-  position: absolute;
-  width: 200px;
-  z-index: 10;
-}
-
-.moj-button-menu [aria-expanded=false] + [role=menu] {
-  display: none;
-}
-
 .no-border-left {
   border-left: none;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
