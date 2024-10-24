@@ -26,43 +26,27 @@
         <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
       </ol>
     </div>
-    <div class="nhsuk-grid-column-one-half" style="text-align: right;">
-      
-      <div style="display: inline-block;margin-right: 16px;"><a href="#"><button class="moj-button-menu__toggle-button" type="button" aria-haspopup="true" aria-expanded="false">Create document</button></a></div>
 
-    <!-- MoJ Design System Component - Start-->
+    <!-- Manage case actions menus -->
 
-    <div style="float: right;">
-
-        <div class="moj-button-menu">
-            <button class="govuk-button moj-button-menu__toggle-button " type="button" aria-haspopup="true" aria-expanded="false">Case actions</button>
-            <div class="moj-button-menu__wrapper">
-      
-                <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item  " data-module="govuk-button">
-              First action
-            </a>
-      
-                <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-              Second action
-            </a>
-      
-                <a href="#" role="button" draggable="false" class="govuk-button moj-button-menu__item govuk-button--secondary " data-module="govuk-button">
-              Third action
-            </a>
+    <div class="nhsuk-grid-column-one-half" style="text-align: right; padding-top: 3px;">
+      <ol class="nhsuk-breadcrumb__list manage-case-list">
+        <li class="nhsuk-breadcrumb__item dropdown">
+          <a href="#" class="dropdown__toggle-button">Create documents</a>
+          <div class="dropdown-content">
+            <a href="#" role="menuitem">Create H001</a>
           </div>
-        </div>
-      </div>      
+        </li>
+        <li class="nhsuk-breadcrumb__item dropdown">
+          <a href="#" class="dropdown__toggle-button">Case actions</a>
+          <div class="dropdown-content reposition-right-menu">
+            <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
+            <a href="#" role="menuitem">Create reminder</a>
+          </div>
+        </li>
+      </ol>
     </div>
-    <script type="module">
-        new MOJFrontend.ButtonMenu({
-      container: document.querySelector(".moj-button-menu"),
-      mq: "(min-width: 200em)",
-      buttonText: "Actions",
-      menuClasses: "moj-button-menu__wrapper--right",
-    });
-    
-    </script>
-
+ 
   </nav>
 {% endblock %}
 
@@ -133,21 +117,8 @@
 
       <div class="nhsuk-width-container-full">
 
-        <!-- Notification -->
-
-        <div class="nhsuk-grid-row">
-            <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-                <div class="govuk-notification-banner__header">
-                  <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                    Success
-                  </h2>
-                </div>
-                <div class="govuk-notification-banner__content">
-                  <p class="govuk-body">S045 received by member state. You can now add a note and close the case.</p>
-                </div>
-              </div>
-        </div>
         <!-- Content -->
+
         <div class="nhsuk-grid-row">
         
           <div class="nhsuk-grid-column-two-thirds">
@@ -157,7 +128,7 @@
           <div class="nhsuk-grid-column-one-third" style="text-align:right;">
             
           </div>
-        </div>
+      </div>
 
       <!-- in-page manage case personal details tabs - Start -->
 
@@ -421,7 +392,15 @@
       <div class="nhsuk-card">
         <div class="nhsuk-card__content">
           <div>
-            <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
+            <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-three-quarters">
+                <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
+              </div>
+              <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
+                <!--<a href="#" style="font-size: 19px; margin-right: 32px;">View OHS record</a>-->
+                <a href="#" style="font-size: 19px;">Add note in OHS</a>
+              </div>
+            </div>
 
             <!-- Personal details -->
             <div class="nhsuk-card">
@@ -430,8 +409,8 @@
                         <div class="nhsuk-grid-column-three-quarters">
                             <h3 class="nhsuk-heading-m">Personal details</h3>
                         </div>
-                        <div class="nhsuk-grid-column-one-quarters" style="text-align: right; padding-right: 16px;">
-                            <a href="#" style="font-size: 19px;">Add note in OHS</a>
+                        <div class="nhsuk-grid-column-one-quarter" style="text-align: right; padding-right: 16px;">
+                            
                         </div>
                     </div>
                     <div class="nhsuk-grid-row">   

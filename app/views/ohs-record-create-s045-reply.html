@@ -26,14 +26,25 @@
         <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
       </ol>
     </div>
-    <div class="nhsuk-grid-column-one-half" style="text-align: right;">
-     
-      <div class="moj-button-menu">
+    
+    <!-- Manage case actions menus -->
 
-        <button class="moj-button-menu__toggle-button" type="button" aria-haspopup="true" aria-expanded="false">Case actions</button>
-
-      </div>
-
+    <div class="nhsuk-grid-column-one-half" style="text-align: right; padding-top: 3px;">
+      <ol class="nhsuk-breadcrumb__list manage-case-list">
+        <li class="nhsuk-breadcrumb__item dropdown">
+          <a href="#" class="dropdown__toggle-button">Create documents</a>
+          <div class="dropdown-content">
+            <a href="#" role="menuitem">Create H001</a>
+          </div>
+        </li>
+        <li class="nhsuk-breadcrumb__item dropdown">
+          <a href="#" class="dropdown__toggle-button">Case actions</a>
+          <div class="dropdown-content reposition-right-menu">
+            <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
+            <a href="#" role="menuitem">Create reminder</a>
+          </div>
+        </li>
+      </ol>
     </div>
 
   </nav>
@@ -81,7 +92,7 @@
                   </summary>
                   <div class="nhsuk-details__text">
                     <ul class="nhsuk-list">
-                      <li><a href="ohs-record-s045-reply-form">Creatre S045 reply</a></li>
+                      <li><a href="ohs-record-s045-reply-form">Create S045 reply</a></li>
                     </ul>
                   </div>
                 </details>
@@ -396,17 +407,25 @@
       <div class="nhsuk-card">
         <div class="nhsuk-card__content">
           <div>
-            <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
-
+            <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-three-quarters">
+                <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
+              </div>
+              <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
+                <a href="#" style="font-size: 19px;">View OHS record</a>
+              </div>
+            </div>
+            
             <!-- Personal details -->
+
             <div class="nhsuk-card">
                 <div class="nhsuk-card__content">
                     <div class="nhsuk-grid-row">
                         <div class="nhsuk-grid-column-three-quarters">
                             <h3 class="nhsuk-heading-m">Personal details</h3>
                         </div>
-                        <div class="nhsuk-grid-column-one-quarters" style="text-align: right; padding-right: 16px;">
-                            <a href="#" style="font-size: 19px;">View OHS record</a>
+                        <div class="nhsuk-grid-column-one-quarter" style="text-align: right; padding-right: 16px;">
+                            
                         </div>
                     </div>
                     <div class="nhsuk-grid-row"> 
