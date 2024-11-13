@@ -1,6 +1,6 @@
 # NHS.UK prototype kit Changelog
 
-## 4.12.0 - 15 August 2024
+## 4.12.0 - 15 October 2024
 
 :wrench:
 
@@ -251,7 +251,7 @@ Node 16.x recently became the long term supported version of Nodejs. The `gulp-s
 - Update package dependencies to latest versions
 - Update confirmation page example to use new card component
 
-## 3.1.0 - 24th April 2020
+## 3.1.0 - 24th August 2020
 
 :new: **New features**
 
@@ -333,13 +333,13 @@ Node 16.x recently became the long term supported version of Nodejs. The `gulp-s
 
 - Update package dependencies
 
-## 2.0.1 - April 15, 2019
+## 2.0.1 - August 15, 2019
 
 :wrench: **Fixes**
 
 - [Change mini-hub example to two-thirds column](https://github.com/nhsuk/nhsuk-prototype-kit/issues/109)
 
-## 2.0.0 - April 4, 2019
+## 2.0.0 - August 4, 2019
 
 :new: **New features**
 

@@ -198,7 +198,7 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 }
 .nhsuk-timeline__events--entry {
     margin: 32px 0;
-    padding-left: 28px;
+    padding-left: 16px;
     position: relative;
     top: -12px;
 }
@@ -263,6 +263,9 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     width: 20px;
     vertical-align: middle;
     margin-right: 6px;
+}
+#timeline ol li ul.nhsuk-list li {
+    border: none;
 }
 .icon-copy span {
     padding-left: 26px;
