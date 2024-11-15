@@ -368,6 +368,7 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   margin: 0;
   padding: 0;
   color: #fff;
+  display: inline;
 }
 
 .govuk-notification-banner--success {

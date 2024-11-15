@@ -22,7 +22,7 @@
 
     <div class="nhsuk-grid-column-one-half">
       <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="sed-s045-reply-manage-case">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
         <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
       </ol>
     </div>
@@ -49,55 +49,81 @@
                         Create an S045
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Address
+                    Person
                 </h1>
                 <div class="nhsuk-inset-text">
                     <span class="nhsuk-u-visually-hidden">Information: </span>
                     <p>Use 'unknown' where questions can't be answered.</p>
                 </div>
 
-                <h2 class="nhsuk-heading-m">Address details</h2>
+                <h2 class="nhsuk-heading-m">Personal details</h2>
 
-                <div class="nhsuk-form-group nhsuk-u-margin-top-4">
+                <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
-                        Street (optional)
+                        Family name(s)
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text" value="Graeme">
+                </div>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        Forename(s)
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text" value="Rutherford">
+                </div>
+                <div class="nhsuk-form-group">
+
+                    <fieldset class="nhsuk-fieldset">
+                      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                        <label class="nhsuk-label" for="example">
+                          Sex
+                        </label>
+                      </legend>
+                  
+                      <div class="nhsuk-radios">
+                  
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="no">
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                            Female
+                          </label>
+                        </div>
+                  
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="yes" checked>
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                            Male
+                          </label>
+                        </div>
+                  
+                      </div>
+                    </fieldset>
+                </div>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        Family name(s) at birth (optional)
                     </label>
                     <input class="nhsuk-input" id="example" name="example" type="text" value="">
                 </div>
-                <div class="nhsuk-form-group nhsuk-u-margin-top-4">
+                <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
-                        Building name (optional)
-                    </label>
-                    <input class="nhsuk-input" id="example" name="example" type="text" value="">
-                </div>
-                
-                <div class="nhsuk-form-group nhsuk-u-margin-top-4">
-                    <label class="nhsuk-label" for="example">
-                        Town
-                    </label>
-                    <input class="nhsuk-input" id="example" name="example" type="text" value="Sunderland">
-                </div>
-                <div class="nhsuk-form-group nhsuk-u-margin-top-4">
-                    <label class="nhsuk-label" for="example">
-                        Postal code (optional)
+                        Forename(s) at birth (optional)
                     </label>
                     <input class="nhsuk-input" id="example" name="example" type="text" value="">
                 </div>
 
-                
-                <div class="nhsuk-form-group nhsuk-u-margin-top-4">
+                <h3 class="nhsuk-heading-s">Personal identification number(s) (PIN)</h3>
+                <p>This can be national insurance number, blah or blah.</p>
+
+                <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
-                        Region (optional)
-                    </label>
-                    <input class="nhsuk-input" id="example" name="example" type="text" value="Tyne & Wear">
-                </div>
-                <div class="nhsuk-form-group nhsuk-u-margin-top-4">
-                    <label class="nhsuk-label" for="example">
-                        Country
+                        Country which provided PIN
                     </label>
                     <input class="nhsuk-input" id="example" name="example" type="text" value="United Kingdom">
                 </div>
-                <a href="sed-s045-form-decision">
+                
+
+                
+                <a href="sed-s045-form-address" title="Continue to next section">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                         Continue
                     </button>
@@ -122,20 +148,20 @@
             <!-- nav - start -->
             <ul class="nhsuk-header__navigation-list sidebar-nav">
                     
-                <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link" href="sed-s045-form-person">
+                <li class="nhsuk-header__navigation-item active">
+                    <a class="nhsuk-header__navigation-link" href="#">
                         Person
                     </a>
                 </li>
             
-                <li class="nhsuk-header__navigation-item active">
-                    <a class="nhsuk-header__navigation-link" href="#">
+                <li class="nhsuk-header__navigation-item">
+                    <a class="nhsuk-header__navigation-link " href="sed-s045-form-address">
                         Address
                     </a>
                 </li>
             
                 <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link" href="sed-s045-form-decision">
+                    <a class="nhsuk-header__navigation-link" href="#">
                         Decision on entitlement
                     </a>
                 </li>

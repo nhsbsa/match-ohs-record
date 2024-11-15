@@ -22,7 +22,7 @@
 
     <div class="nhsuk-grid-column-one-half">
       <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="sed-s045-reply-manage-case">Home</a></li>
         <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
       </ol>
     </div>
@@ -37,9 +37,10 @@
         </li>
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Case actions</a>
-          <div class="dropdown-content reposition-right-menu">Û
+          <div class="dropdown-content reposition-right-menu">
             <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
+            <a href="sed-s045-sent" role="menuitem">Refresh screen</a>
           </div>
         </li>
       </ol>
@@ -72,12 +73,12 @@
 
         <ol class="nhsuk-timeline__events">
 
-            <!-- SO45 - Start -->
+        <!-- SO45 - Start -->
 
         <li class="nhsuk-timeline__events--entry">
             <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
               <div class="flag flag-uk" role="presentation"></div>
-              <h3 class="nhsuk-timeline__title"><a href="#">S045 v.1</a></h3>
+              <h3 class="nhsuk-timeline__title"><a href="sed-s045-form-person">S045 v.1</a></h3>
             </div>
             <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
               <time><strong>Draft</strong>, 15 October 2024 at 12:07pm by UserName</time>
@@ -86,14 +87,33 @@
             <ul class="nhsuk-list nhsuk-body-s">
               <li>
                 <p style="font-size:16px;"><span class="icon-svg-envelope"></span><strong>Draft</strong></p>
+
+                <ul class="nhsuk-list nhsuk-body-s">
+                  <li>
+                    <details class="nhsuk-details">
+                      <summary class="nhsuk-details__summary">
+                        <span class="nhsuk-details__summary-text">
+                          Actions
+                        </span>
+                      </summary>
+                      <div class="nhsuk-details__text">
+                        <ul class="nhsuk-list">
+                          <li><a href="sed-s045-sent">Send S045 reply</a></li>
+                          <li><a href="sed-s045-form-person">Edit draft</a></li>
+                          <li><a href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
               </li>
             </ul>
         </li>
-        <li class="nhsuk-timeline__events--entry"><a href="ohs-record-manage-case-s045-received">
+        <!--<li class="nhsuk-timeline__events--entry"><a href="ohs-record-manage-case-s045-received">
             <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
               Refresh SED status
             </button></a>
-        </li>
+        </li>-->
           
 
         <!-- SO45 - End -->
@@ -107,7 +127,7 @@
                 <time><strong>Received</strong> 30 October 2024 at 11.48am from Norway</time>
               </p>
     
-            <ul class="nhsuk-list nhsuk-body-s">
+            <!-- <ul class="nhsuk-list nhsuk-body-s">
                 <li>
                   <details class="nhsuk-details">
                     <summary class="nhsuk-details__summary">
@@ -122,11 +142,10 @@
                     </div>
                   </details>
                 </li>
-              </ul>
+              </ul>-->
             </li>
           </ol>
 
-        <!-- Create S045 reply end -->
       </div>
 
       <!-- Timeline - End -->
@@ -141,19 +160,19 @@
         <div class="nhsuk-grid-row">
         
           <div class="nhsuk-grid-column-two-thirds">
-            <h2 class="nhsuk-heading-xl">Manage case</h2>
+            <h2 class="nhsuk-heading-xl">Case management</h2>
           </div>
   
-          <div class="nhsuk-grid-column-one-third" style="text-align:right;">
+          <!--<div class="nhsuk-grid-column-one-third" style="text-align:right;">
             <a href="sed-s045-form-person" title="Create S045 reply">
                 <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit">
                   Create a S045 reply
                 </button>
               </a>
-          </div>
+          </div>-->
         </div>
 
-      <!-- in-page manage case personal details tabs - Start -->
+      <!-- in-page Case management personal details tabs - Start -->
 
       <div class="nhsuk-tabs" data-module="nhsuk-tabs">
         <h2 class="nhsuk-tabs__title">
@@ -408,7 +427,7 @@
       
       </div>
 
-      <!-- in-page manage case personal details tabs - End -->
+      <!-- in-page Case management personal details tabs - End -->
 
       <!-- in-page OHS Matched record - No S045 found - Start
 

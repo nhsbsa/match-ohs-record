@@ -154,7 +154,7 @@ header {
     }
 }
 
-// styles for manage case //
+// styles for Case management //
 
 .nhsuk-table .nhsuk-grid-column-one-third {
     padding: 0 0;
@@ -343,6 +343,7 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     margin: 0;
     padding: 0;
     color: #fff;
+    display: inline;
 }
 .govuk-notification-banner--success {
     border-color: #00703c;

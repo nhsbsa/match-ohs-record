@@ -43,25 +43,7 @@
         <!-- content - start -->
 
         <div class="nhsBSA-sidebar-content">
-
-            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
-                <!-- error message start -->
-
-                <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
-                    <h2 class="nhsuk-error-summary__title" id="error-summary-title">
-                    There is a problem
-                    </h2>
-                    <div class="nhsuk-error-summary__body">
-                    <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
-                        <li>
-                        <a href="#dob-errors-year">Enter a end date year</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-
-                <!-- error message end -->
-
+            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg ul-padding-top-lrg">
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
                         Create an S045
@@ -70,7 +52,7 @@
                     Decision on entitlement
                 </h1>
 
-                <h2 class="nhsuk-heading-m">Period of entitlement</h2>
+                <h2 class="nhsuk-heading-m">Entitlement decision</h2>
 
                 <div class="nhsuk-form-group nhsuk-u-margin-top-4">
                     <fieldset class="nhsuk-fieldset">
@@ -90,7 +72,7 @@
                         </div>
                   
                         <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="yes">
+                          <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="yes" onclick="window.location.href = 'sed-s045-form-decision-no';">
                           <label class="nhsuk-label nhsuk-radios__label" for="example-2">
                             Information on non-entitlement
                           </label>
@@ -99,6 +81,8 @@
                       </div>
                     </fieldset>
                 </div>
+
+                <h3 class="nhsuk-u-margin-top-7">Period of entitlement</h3>
 
                 <div class="nhsuk-form-group">
 
@@ -134,49 +118,47 @@
                             </div>
                         </div>
                     </fieldset>
-                <div class="nhsuk-form-group--error">
-                    <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-6" aria-describedby="example-hint" role="group">
+
+                    <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-7" aria-describedby="example-hint" role="group">
                         <label class="nhsuk-label" for="example">
                             End date
                         </label>
-                        <span class="nhsuk-error-message" id="name-error">
-                            <span class="nhsuk-u-visually-hidden">Error:</span> End date must include a year
-                        </span>
                   
                         <div class="nhsuk-date-input" id="example">
                             <div class="nhsuk-date-input__item">
-                                <div class="nhsuk-form-group nhsuk-form-group--error">
-                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                    Day
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="11">
-                                </div>
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                Day
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="11">
+                            </div>
                             </div>
                             <div class="nhsuk-date-input__item">
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                    Month
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="04">
-                                </div>
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                Month
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric"  value="04">
+                            </div>
                             </div>
                             <div class="nhsuk-date-input__item">
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                    Year
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4 nhsuk-input--error" id="dob-errors-year" name="example[year]" type="text" inputmode="numeric">
-                                </div>
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                Year
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric">
+                            </div>
                             </div>
                         </div>
                     </fieldset>
+                  
                 </div>
-                </div>
-                <a href="sed-s045-draft-manage-case">
+                <a href="sed-s045-form-error">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                         Save draft
                     </button>
                 </a>
+
                 <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.1.0</p>
 
             </div>

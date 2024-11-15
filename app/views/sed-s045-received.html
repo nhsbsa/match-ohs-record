@@ -72,16 +72,42 @@
 
         <ol class="nhsuk-timeline__events">
 
-            <li class="nhsuk-timeline__events--entry">
+            <!-- SO45 - Start -->
+
+        <li class="nhsuk-timeline__events--entry">
+            <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+              <div class="flag flag-uk" role="presentation"></div>
+              <h3 class="nhsuk-timeline__title"><a href="#">S045 v.1</a></h3>
+            </div>
+            <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+              <time><strong>Received</strong>, 5 Nov 2024 at 11.48am from Norway</time>
+            </p>
+  
+            <ul class="nhsuk-list nhsuk-body-s">
+              <li>
+                <p style="font-size:16px;"><span class="ms-received"></span><strong>Received</strong> by member state</p>
+              </li>
+            </ul>
+        </li>
+        <!--<li class="nhsuk-timeline__events--entry"><a href="ohs-record-manage-case-s045-received">
+            <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+              Refresh SED status
+            </button></a>
+        </li>-->
+          
+
+        <!-- SO45 - End -->
+
+        <li class="nhsuk-timeline__events--entry">
               <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
                 <div class="flag flag-no" role="presentation"></div>
                 <h3 class="nhsuk-timeline__title"><a href="#">S044 v.1</a></h3>
               </div>
               <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                <time>Received 13 October 2024 at 11.48am from Norway</time>
+                <time><strong>Received</strong> 30 October 2024 at 11.48am from Norway</time>
               </p>
     
-              <ul class="nhsuk-list nhsuk-body-s">
+            <ul class="nhsuk-list nhsuk-body-s">
                 <li>
                   <details class="nhsuk-details">
                     <summary class="nhsuk-details__summary">
@@ -91,7 +117,7 @@
                     </summary>
                     <div class="nhsuk-details__text">
                       <ul class="nhsuk-list">
-                        <li><a href="sed-s045-form-person">Create S045 reply</a></li>
+                        <li><a href="#">View participants</a></li>
                       </ul>
                     </div>
                   </details>
@@ -112,18 +138,25 @@
 
       <div class="nhsuk-width-container-full ul-padding-top-lrg">
 
+        <!-- Notification -->
+
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Success
+              </h2>
+              <a href="#" style="float: right;color:#fff;">Close</a>
+            </div>
+            <div class="govuk-notification-banner__content">
+              <p class="govuk-body">S045 received by member state. You can now add a note and close the case.</p>
+            </div>
+            
+        </div>
+
         <div class="nhsuk-grid-row">
         
           <div class="nhsuk-grid-column-two-thirds">
             <h2 class="nhsuk-heading-xl">Case management</h2>
-          </div>
-  
-          <div class="nhsuk-grid-column-one-third" style="text-align:right;">
-            <a href="sed-s045-form-person" title="Create S045 reply">
-                <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit">
-                  Create a S045 reply
-                </button>
-              </a>
           </div>
         </div>
 

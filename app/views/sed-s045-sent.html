@@ -37,9 +37,10 @@
         </li>
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Case actions</a>
-          <div class="dropdown-content reposition-right-menu">Û
+          <div class="dropdown-content reposition-right-menu">
             <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
+            <a href="#" role="menuitem">Refresh screen</a>
           </div>
         </li>
       </ol>
@@ -72,16 +73,36 @@
 
         <ol class="nhsuk-timeline__events">
 
-            <li class="nhsuk-timeline__events--entry">
+            <!-- SO45 - Start -->
+
+        <li class="nhsuk-timeline__events--entry">
+            <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+              <div class="flag flag-uk" role="presentation"></div>
+              <h3 class="nhsuk-timeline__title"><a href="#">S045 v.1</a></h3>
+            </div>
+            <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+              <time><strong>Sent</strong>, Oct 2024 at 12:07PM by UserName</time>
+            </p>
+  
+            <ul class="nhsuk-list nhsuk-body-s">
+              <li>
+                <p style="font-size:16px;"><span class="icon-svg-envelope"></span>Sent</p>
+              </li>
+            </ul>
+        </li>
+
+        <!-- SO45 - End -->
+
+        <li class="nhsuk-timeline__events--entry">
               <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
                 <div class="flag flag-no" role="presentation"></div>
                 <h3 class="nhsuk-timeline__title"><a href="#">S044 v.1</a></h3>
               </div>
               <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                <time>Received 13 October 2024 at 11.48am from Norway</time>
+                <time><strong>Received</strong> 30 October 2024 at 11.48am from Norway</time>
               </p>
     
-              <ul class="nhsuk-list nhsuk-body-s">
+            <ul class="nhsuk-list nhsuk-body-s">
                 <li>
                   <details class="nhsuk-details">
                     <summary class="nhsuk-details__summary">
@@ -91,7 +112,7 @@
                     </summary>
                     <div class="nhsuk-details__text">
                       <ul class="nhsuk-list">
-                        <li><a href="sed-s045-form-person">Create S045 reply</a></li>
+                        <li><a href="#">Read participants</a></li>
                       </ul>
                     </div>
                   </details>
@@ -117,14 +138,7 @@
           <div class="nhsuk-grid-column-two-thirds">
             <h2 class="nhsuk-heading-xl">Case management</h2>
           </div>
-  
-          <div class="nhsuk-grid-column-one-third" style="text-align:right;">
-            <a href="sed-s045-form-person" title="Create S045 reply">
-                <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit">
-                  Create a S045 reply
-                </button>
-              </a>
-          </div>
+
         </div>
 
       <!-- in-page Case management personal details tabs - Start -->

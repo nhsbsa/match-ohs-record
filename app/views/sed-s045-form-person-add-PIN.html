@@ -22,7 +22,7 @@
 
     <div class="nhsuk-grid-column-one-half">
       <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="sed-s045-reply-manage-case">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
         <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
       </ol>
     </div>
@@ -187,7 +187,56 @@
                     <input class="nhsuk-input" id="example" name="example" type="text" value="Helgeland Hospital Trust">
                 </div>
 
-                <a href="sed-s045-form-person-add-PIN" style="font-size: 19px;display: block;">Add another PIN</a>
+                <!-- Additional PIN form starts -->
+
+                <h3 class="nhsuk-heading-s">Personal identification number(s) (PIN)</h3>
+
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="select-1">
+                      Country which provided PIN
+                    </label>
+                    <select class="nhsuk-select nhsuk-u-width-one-half" id="select-1" name="select-1">
+                      <option value="1" selected></option>
+                      <option value="2" disabled>Option 2</option>
+                      <option value="3" disabled>Option 3</option>
+                    </select>
+                </div>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        PIN
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                </div>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="select-1">
+                        Sector (optional)
+                    </label>
+                    <select class="nhsuk-select nhsuk-u-width-one-half" id="select-1" name="select-1">
+                      <option value="1" selected></option>
+                      <option value="2" disabled>Option 2</option>
+                      <option value="3" disabled>Option 3</option>
+                    </select>
+                </div>
+
+                <h3 class="nhsuk-heading-s">Institution</h3>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        Institution identification number
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                </div>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        Name of institution
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                </div>
+
+                <!-- Additional PIN form ends -->
+
+                <a href="sed-s045-form-person" style="font-size: 19px;display: block;">Remove additional PIN</a>
+
+                <a href="#" class="nhsuk-u-margin-top-4" style="font-size: 19px;display: block;">Add another PIN</a>
 
                 <div class="nhsuk-inset-text">
                     <span class="nhsuk-u-visually-hidden">Information: </span>
