@@ -371,6 +371,10 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   display: inline;
 }
 
+.govuk-notification-banner--important .govuk-notification-banner__header {
+  background-color: #1d70b8;
+}
+
 .govuk-notification-banner--success {
   border-color: #00703c;
   background-color: #00703c;

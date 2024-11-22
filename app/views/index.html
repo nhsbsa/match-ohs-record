@@ -28,7 +28,7 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
-<div class="nhsuk-index-container" style="margin: 0 auto; text-align: center;">
+<div class="nhsuk-index-container nhsuk-u-margin-bottom-9" style="margin: 0 auto; text-align: center;">
   <div class="nhsuk-grid-row" style="text-align: left;">
     <div class="nhsuk-grid-column-full">
       <div class="nhsuk-grid-row">
@@ -38,7 +38,23 @@
         <p>OHS RINA goal is to explore a new system which closely integrates with present EESSI RINA and OHS, MS Claims, and Cost Recovery Systems.</p>
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
         <h2 class="nhsuk-heading-m">Prototypes</h2>
-        <p>November 2023</p>
+
+        <p class="nhsuk-u-margin-top-4">November 2023 - Unhappy Path User Flows</p>
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              MVP 1 - SBUC 5 - Unhappy Path 'No Address' 'No OHS record found' user flow
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <h4>Prototypes:</h4>
+              <p><a href="unhappy-path-step1-case-management">View the prototype "SBUC 5 No address, no OHS record found"</a></p>
+              <p>This user flow describes the interaction experience of a user managing a case which has no address. The user goes to find a matched OHS record to find that there are none.</p>
+            </ul>
+          </div>
+        </details>
+
+        <p class="nhsuk-u-margin-top-9">November 2023 - Happy Path User Flows</p>
         <details class="nhsuk-details nhsuk-expander">
           <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
@@ -47,13 +63,11 @@
           </summary>
           <div class="nhsuk-details__text">
             <h4>Prototypes:</h4>
-            <ul>
-              <li><a href="sed-s045-reply-manage-case">View the prototype "SBUC 5 SED S045 Reply"</a></li>
-              <li>This user flow describes the interaction experience of a user creating an S045 reply. <a href="https://miro.com/app/board/uXjVK23uemY=/?moveToWidget=3458764606200621268&cot=14" title="SBUC 5 'Create S045 Reply' wire frames - 'E' latest version">See wire frame reference</a></li>
-            </ul>
+            <p><a href="sed-s045-reply-manage-case">View the prototype "SBUC 5 SED S045 Reply"</a></p>
+            <p>This user flow describes the interaction experience of a user creating an S045 reply. <a href="https://miro.com/app/board/uXjVK23uemY=/?moveToWidget=3458764606200621268&cot=14" title="SBUC 5 'Create S045 Reply' wire frames - 'E' latest version">See wire frame reference</a></p>
           </div>
         </details>
-        <p>October 2023</p>
+        <p class="nhsuk-u-margin-top-9">October 2023 - Happy Path User Flows</p>
         <details class="nhsuk-details nhsuk-expander">
           <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
@@ -62,9 +76,8 @@
           </summary>
           <div class="nhsuk-details__text">
             <h4>Prototypes:</h4>
-            <ul>
-              <li><a href="ohs-record-manage-case">View the prototype "Matched OHS record"</a></li>
-              <li>This user flow describes the interaction experience of a user landing on an 'open' managed case and finding they need to first match an OHS record to the case before they issue an S045 entitlement. This user flow ends at the point where the member state has received our issued S045 reply. <a href="https://miro.com/app/board/uXjVK23uemY=/?moveToWidget=3458764602926522115&cot=14" title="SBUC 5 wire frames - latest version">See wire frame reference</a></li>
+            <p><a href="ohs-record-manage-case">View the prototype "Matched OHS record"</a></p>
+            <p>This user flow describes the interaction experience of a user landing on an 'open' managed case and finding they need to first match an OHS record to the case before they issue an S045 entitlement. This user flow ends at the point where the member state has received our issued S045 reply. <a href="https://miro.com/app/board/uXjVK23uemY=/?moveToWidget=3458764602926522115&cot=14" title="SBUC 5 wire frames - latest version">See wire frame reference</a></p>
             </ul>
           </div>
         </details>
