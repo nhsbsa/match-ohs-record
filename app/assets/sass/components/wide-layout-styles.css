@@ -315,6 +315,11 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   line-height: 1.5rem;
 }
 
+@media (min-width: 40.0625em) {
+  .nhsuk-summary-list__key {
+    width: 40%;
+  }
+}
 /****************  MVP-2 user flow screens ***************/
 .nhsBSA-sidebar-container {
   display: flex;
@@ -360,6 +365,10 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 .govuk-notification-banner__header {
   padding: 2px 15px 5px;
   border-bottom: 1px solid transparent;
+}
+
+.govuk-notification-banner__header a {
+  color: #fff;
 }
 
 .govuk-notification-banner__title {
