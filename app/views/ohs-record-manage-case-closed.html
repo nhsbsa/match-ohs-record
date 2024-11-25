@@ -29,6 +29,20 @@
     <div class="nhsuk-grid-column-one-half" style="text-align: right;">
     </div>
 
+    <!-- Case management actions menus -->
+
+    <div class="nhsuk-grid-column-one-half" style="text-align: right; padding-top: 3px;">
+      <ol class="nhsuk-breadcrumb__list manage-case-list">
+        <li class="nhsuk-breadcrumb__item dropdown"></li>
+        <li class="nhsuk-breadcrumb__item dropdown">
+          <a href="#" class="dropdown__toggle-button">Case actions</a>
+          <div class="dropdown-content reposition-right-menu">
+            <a href="ohs-record-manage-case-reopened" role="menuitem">Reopen case</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+
   </nav>
 {% endblock %}
 
@@ -49,10 +63,6 @@
       <p>SBUC5 • CP <strong class="nhsuk-tag nhsuk-tag--grey">
         Closed
       </strong></p>
-
-      <a href="ohs-record-manage-case-reopened"><button class="nhsuk-button nhsuk-button--secondary" title="Click to reopen this case" data-module="nhsuk-button" type="submit">
-        Reopen this case
-      </button></a>
 
       <div class="nhsuk-timeline" id="timeline">
         <ol class="nhsuk-timeline__events">
