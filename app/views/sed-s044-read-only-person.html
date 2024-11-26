@@ -18,15 +18,7 @@
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
-  <nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
-
-    <div class="nhsuk-grid-column-one-half">
-      <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
-        <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
-      </ol>
-    </div>
-  </nav>
+  
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -37,7 +29,7 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
-<div class="nhsBSA-sidebar-container">
+<div class="nhsBSA-sidebar-container ul-no-breadcrumbs">
     <div class="nhsBSA-sidebar-wrapper">
 
         <!-- content - start -->
@@ -108,8 +100,14 @@
                   </div>
 
                 </dl>
-                <h2>Country which provided PIN</h2>
                 <dl class="nhsuk-summary-list">
+                  <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">
+                      Country which provided PIN
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                    </dd>
+                  </div>
                   <div class="nhsuk-summary-list__row">
                     <dt class="nhsuk-summary-list__key">
                       PIN
