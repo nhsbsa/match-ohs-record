@@ -7,7 +7,9 @@
 /// 
 /// 
 /// 
-/// 
+html, body {
+    height:100%;
+}
 .clearfix:after {
     content:"";
     display:block;
@@ -21,6 +23,12 @@
 }
 .ul-padding-left-lrg {
     padding-left: 32px;
+}
+.ul-padding-left-md {
+    padding-left: 16px;
+}
+.ul-padding-right-md {
+    padding-right: 16px;
 }
 .nhsuk-main-wrapper {
     padding-top: 0;
@@ -523,4 +531,7 @@ ul.sidebar-nav .nhsuk-header__navigation-item {
 }
 ul.sidebar-nav .active {
     border-left: 8px solid #005eb8; 
+}
+.api-ver {
+
 }
