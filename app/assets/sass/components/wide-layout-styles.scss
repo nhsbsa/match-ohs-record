@@ -7,9 +7,6 @@
 /// 
 /// 
 /// 
-html, body {
-    height:100%;
-}
 .clearfix:after {
     content:"";
     display:block;
@@ -531,7 +528,4 @@ ul.sidebar-nav .nhsuk-header__navigation-item {
 }
 ul.sidebar-nav .active {
     border-left: 8px solid #005eb8; 
-}
-.api-ver {
-
 }
