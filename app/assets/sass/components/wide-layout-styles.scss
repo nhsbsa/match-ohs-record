@@ -549,12 +549,10 @@ ul.sidebar-nav .active {
     border-left: 8px solid #005eb8; 
 }
 .ohs-step-1 {
-    background-image: url('/images/ohs-personal-details-tab.png');
-    //background-size: contain;
+    background-image: url('/app/assets/images/ohs-personal-details-tab.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    display: inline-block;
+    display: block;
     width:687px; 
     height:636px;
-    vertical-align: middle;
-    margin-right: 6px;
 }
