@@ -1,0 +1,63 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-two-thirds ul-padding-left-lrg">
+                
+                
+
+            <div class="done-panel">
+                <h1 class="app-page-heading">Are you sure?</h1>
+                <p><strong>H001 draft created today at 11:34am</strong></p>
+                <p>Deleting this H001 draft will not be able to be undone.</p>
+            </div>
+
+            <a href="missing-address-step-5-case-management" title="Delete draft H001" style="text-decoration: none;">
+                <button class="nhsuk-button nhsuk-u-margin-top-6"  style="display: block;" data-module="nhsuk-button" type="submit">
+                  Delete draft H001
+                </button>
+            </a>
+
+            <a href="missing-address-step-3-case-management" style="display: block;">Cancel</a>
+
+
+            </div>
+        </div>
+
+        <!-- content - end -->
+    </div>
+</div>
+{% endblock %}
