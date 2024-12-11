@@ -590,7 +590,7 @@ ul.sidebar-nav .active {
 }
 
 .ohs-step-1 {
-  background-image: url("/images/ohs-personal-details-tab.png");
+  background-image: url("../images/ohs-personal-details-tab.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
