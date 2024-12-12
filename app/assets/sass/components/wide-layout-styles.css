@@ -573,6 +573,11 @@ ul.sidebar-nav .nhsuk-header__navigation-link {
   display: inline-block;
 }
 
+.nhsuk-header__navigation-list li a {
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
 ul.sidebar-nav li.nhsuk-header__navigation-link:hover, ul.sidebar-nav li.nhsuk-header__navigation-link:visited {
   color: #005eb8 !important;
 }
