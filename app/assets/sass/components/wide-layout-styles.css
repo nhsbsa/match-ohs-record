@@ -567,6 +567,7 @@ ul.sidebar-nav .nhsuk-header__navigation-link {
   font-size: 1.1875rem;
   line-height: 1.47368;
   padding-left: 32px;
+  white-space: normal;
 }
 
 .js-enabled li.nhsuk-header__navigation-list {
@@ -575,7 +576,6 @@ ul.sidebar-nav .nhsuk-header__navigation-link {
 
 .nhsuk-header__navigation-list li a {
   text-decoration: none;
-  overflow-wrap: break-word;
 }
 
 ul.sidebar-nav li.nhsuk-header__navigation-link:hover, ul.sidebar-nav li.nhsuk-header__navigation-link:visited {
