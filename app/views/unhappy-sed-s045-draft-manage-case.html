@@ -22,7 +22,7 @@
 
     <div class="nhsuk-grid-column-one-half">
       <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="sed-s045-reply-manage-case">Home</a></li>
         <!--<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#"></a></li>-->
       </ol>
     </div>
@@ -38,7 +38,7 @@
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Case actions</a>
           <div class="dropdown-content reposition-right-menu">
-            <a href="#" role="menuitem">Close case</a>
+            <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
             <a href="#" role="menuitem">Refresh case</a>
           </div>
@@ -59,43 +59,93 @@
 {% block content %}
 <div class="nhsBSA-sidebar-container">
   <div class="nhsBSA-sidebar-wrapper">
-    <div class="nhsuk-header__navigation" style="padding-top: 62px;">
+    <div class="nhsuk-header__navigation" style="padding-top: 13px;">
 
-      <h1 class="nhsuk-heading-l">78793</h1>
+      <h1 class="nhsuk-heading-l ul-padding-top-lrg">68782</h1>
       
-      <p>SBUC5 • CP <strong class="nhsuk-tag nhsuk-tag--yellow">Open</strong></p>
+      <p>SBUC5 • CP <strong class="nhsuk-tag nhsuk-tag--yellow">
+        Open
+      </strong></p>
 
       <div class="nhsuk-timeline" id="timeline">
+        
+        <!-- Create S045 reply -->
+
         <ol class="nhsuk-timeline__events">
 
-          <!-- SO72 -->
+        <!-- SO45 - Start -->
 
-          <li class="nhsuk-timeline__events--entry">
+        <li class="nhsuk-timeline__events--entry">
             <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
-              <div class="flag flag-no" role="presentation"></div>
-              <h3 class="nhsuk-timeline__title"><a href="sed-s044-read-only-person">S044 v.1</a></h3>
+              <div class="flag flag-uk" role="presentation"></div>
+              <h3 class="nhsuk-timeline__title"><a href="sed-view-only-s045-form-person">S045 v.1</a></h3>
             </div>
             <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-              <time><strong>Received</strong> 5 Nov 2024 at 11.48am from Norway</time>
+              <time><strong>Draft</strong>, 15 October 2024 at 12:07pm by UserName</time>
             </p>
+  
             <ul class="nhsuk-list nhsuk-body-s">
               <li>
-                <!--<details class="nhsuk-details">
-                  <summary class="nhsuk-details__summary">
-                    <span class="nhsuk-details__summary-text">
-                      Actions
-                    </span>
-                  </summary>
-                  <div class="nhsuk-details__text">
-                    <ul class="nhsuk-list">
-                      <li><a href="#">Read Participants</a></li>
-                    </ul>
-                  </div>
-                </details>-->
+                <p style="font-size:16px;"><span class="icon-svg-envelope"></span><strong>Draft</strong></p>
+
+                <ul class="nhsuk-list nhsuk-body-s">
+                  <li>
+                    <details class="nhsuk-details">
+                      <summary class="nhsuk-details__summary">
+                        <span class="nhsuk-details__summary-text">
+                          Actions
+                        </span>
+                      </summary>
+                      <div class="nhsuk-details__text">
+                        <ul class="nhsuk-list">
+                          <li><a href="sed-s045-sent">Send S045 reply</a></li>
+                          <li><a href="sed-s045-form-person">Edit draft</a></li>
+                          <li><a href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-        </ol>
+        </li>
+        <!--<li class="nhsuk-timeline__events--entry"><a href="ohs-record-manage-case-s045-received">
+            <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+              Refresh SED status
+            </button></a>
+        </li>-->
+          
+
+        <!-- SO45 - End -->
+
+        <li class="nhsuk-timeline__events--entry">
+              <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+                <div class="flag flag-no" role="presentation"></div>
+                <h3 class="nhsuk-timeline__title"><a href="#">S044 v.1</a></h3>
+              </div>
+              <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+                <time><strong>Received</strong> 30 October 2024 at 11.48am from Norway</time>
+              </p>
+    
+            <!-- <ul class="nhsuk-list nhsuk-body-s">
+                <li>
+                  <details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                      <span class="nhsuk-details__summary-text">
+                        Actions
+                      </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+                      <ul class="nhsuk-list">
+                        <li><a href="#">Create S045 reply</a></li>
+                      </ul>
+                    </div>
+                  </details>
+                </li>
+              </ul>-->
+            </li>
+          </ol>
+
       </div>
 
       <!-- Timeline - End -->
@@ -103,22 +153,9 @@
     </div>
     
     <div class="nhsBSA-sidebar-content" style="padding: 0 32px;">
+      
 
       <div class="nhsuk-width-container-full ul-padding-top-lrg">
-
-         <!-- Notification -->
-
-         <div class="govuk-notification-banner govuk-notification-banner--important" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-            <div class="govuk-notification-banner__header">
-              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                  Important
-              </h2>
-              <a href="#" style="float: right;">Close</a>
-            </div>
-            <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Entitlement rejected in OHS.</p>
-            </div>
-        </div>
 
         <div class="nhsuk-grid-row">
         
@@ -126,13 +163,13 @@
             <h2 class="nhsuk-heading-xl">Case management</h2>
           </div>
   
-          <div class="nhsuk-grid-column-one-third" style="text-align:right;">
-            <a href="unhappy-sed-s045-form-person">
-              <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit" title="Create S045 reply">
-                Create S045 reply
-              </button>
-            </a>
-          </div>
+          <!--<div class="nhsuk-grid-column-one-third" style="text-align:right;">
+            <a href="sed-s045-form-person" title="Create S045 reply">
+                <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit">
+                  Create a S045 reply
+                </button>
+              </a>
+          </div>-->
         </div>
 
       <!-- in-page Case management personal details tabs - Start -->
@@ -257,7 +294,7 @@
                   Local ID
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  78793
+                  68782
                 </dd>
               </div>
               
@@ -266,7 +303,7 @@
                   Business ID
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  78793
+                  68782
                 </dd>
               </div>
               <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
@@ -399,11 +436,23 @@
       
       </div>
 
-    <!-- in-page Case management personal details tabs - End -->
+      <!-- in-page Case management personal details tabs - End -->
 
-    <!-- in-page OHS Matched record - No S045 found - Start -->
+      <!-- in-page OHS Matched record - No S045 found - Start
 
-    <div class="nhsuk-card">
+      <div class="nhsuk-card">
+        <div class="nhsuk-card__content">
+          <div>
+            <h2 class="nhsuk-heading-m">Entitlements</h2>
+            <p>No entitlements found this case.</p>
+          </div>
+        </div>
+      </div>
+
+       in-page OHS Matched record - No S045 found - End -->
+      </div>
+
+      <div class="nhsuk-card">
         <div class="nhsuk-card__content">
           <div>
             <div class="nhsuk-grid-row">
@@ -411,7 +460,7 @@
                 <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
               </div>
               <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
-                <a href="#" style="font-size: 19px;">Add note in OHS</a>
+                <a href="ohs-step-1-person" target="_blank" style="font-size: 19px;">Add note in OHS</a>
               </div>
             </div>
             
@@ -441,7 +490,7 @@
                                       </th>
                                       <th role="columnheader" class="" scope="col">
                                         Last name
-                                    </th>
+                                      </th>
                                       <th role="columnheader" class="" scope="col">
                                           Date of birth
                                       </th>
@@ -457,14 +506,14 @@
 
                                   <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
                                       <td role="cell" class="nhsuk-table__cell">
-                                          <a href=""><span class="nhsuk-table-responsive__heading">OHS reference </span>1234567</a>
+                                          <a href="ohs-step-1-person" target="_blank"><span class="nhsuk-table-responsive__heading">OHS reference </span>1234567</a>
                                       </td>
                                       <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">Full name </span>Graeme
+                                          <span class="nhsuk-table-responsive__heading">First name </span>Graeme
                                       </td>
                                       <td role="cell" class="nhsuk-table__cell">
                                         <span class="nhsuk-table-responsive__heading">Last name </span>Rutherford
-                                    </td>
+                                      </td>
                                       <td role="cell" class="nhsuk-table__cell">
                                           <span class="nhsuk-table-responsive__heading">Date of birth 
                                           </span>16 May 1980
@@ -520,10 +569,10 @@
                                 <tbody class="nhsuk-table__body">
     
                                     <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
-                                        <td role="cell" class="nhsuk-table__cell">
+                                        <td role="cell" class="nhsuk-table__cell" >
                                             <span class="nhsuk-table-responsive__heading">Type </span>S045
                                         </td>
-                                        <td role="cell" class="nhsuk-table__cell" >
+                                        <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Start date </span>30 October 2024
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
@@ -539,7 +588,7 @@
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
                                             <span class="nhsuk-table-responsive__heading">Status  
-                                            </span><strong class="nhsuk-tag nhsuk-tag--red">Rejected</strong>
+                                            </span><strong class="nhsuk-tag nhsuk-tag--green">Issued</strong>
                                             
                                         </td>
                                     </tr>
@@ -551,10 +600,6 @@
             </div>
           </div>
         </div>
-    </div>
-      
-
-       <!--in-page OHS Matched record - No S045 found - End -->
       </div>
     </div>
   </div>
