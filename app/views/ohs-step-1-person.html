@@ -1,0 +1,30 @@
+<style>
+  header, footer, .nhsuk-footer {
+    visibility: hidden;
+    display: none;
+  }
+  .nhsuk-footer {
+    visibility: hidden;
+    display: none;
+  }
+  .nhsuk-main-wrapper {
+    background-color: #ffffff !important;
+  }
+  .ohs-step-1-person {
+    background-image: url("/images/ohs-person-1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 1316px;
+    height: 1800px;
+  }
+</style>
+
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<a href="ohs-step-2-case-note"><div class="ohs-step-1-person" style="text-align:center; margin: 0 auto;"></div></a>
+
+{% endblock %}
+

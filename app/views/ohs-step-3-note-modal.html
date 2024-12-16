@@ -1,0 +1,30 @@
+<style>
+  header, footer, .nhsuk-footer {
+    visibility: hidden;
+    display: none;
+  }
+  .nhsuk-footer {
+    visibility: hidden;
+    display: none;
+  }
+  .nhsuk-main-wrapper {
+    background-color: #ffffff !important;
+  }
+  .ohs-step-3-note-modal {
+    background-image: url("/images/ohs-step-3-note-modal.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 1316px;
+    height: 967px;
+  }
+</style>
+
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<a href="#"><div class="ohs-step-3-note-modal" style="text-align:center; margin: 0 auto;"></div></a>
+
+{% endblock %}
+
