@@ -42,12 +42,12 @@
                       Create H001 - Notification/request for information
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Request for personal information
+                    Request for information on the person
                 </h1>
 
-                <h2 class="nhsuk-u-margin-top-9">Request for information on the person</h2>
+                <h2 class="nhsuk-u-margin-top-9">Request for information about the person</h2>
 
-                <h3 class="nhsuk-u-margin-top-4">Person details</h3>
+                <h3 class="nhsuk-u-margin-top-4">Personal details required</h3>
   
                 <div class="nhsuk-form-groupnhsuk-u-margin-top-4">
                   <label class="nhsuk-label" for="select-1">
@@ -67,100 +67,8 @@
   
                   </select>
                 </div>
-  
-                <h3 class="nhsuk-u-margin-top-9">Request for sector pin of the person in the receiving institution</h3>
-  
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="select-1">
-                    Sector PIN (optional)
-                  </label>
-                  <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                    <option value="1" selected>Choose a sector PIN</option>
-                    <option value="2">[01] All</option>
-                    <option value="3">[02] Sickness in cash</option> 
-                    <option value="3">[03] Sickness in kind</option> 
-                    <option value="3">[04] Pension</option> 
-                    <option value="3">[05] Unemployment</option> 
-                    <option value="3">[06] Occupational disease and accident at work, benefits in cash</option> 
-                    <option value="3">[07] Occupational disease and accident at work, benefits in kind</option> 
-                    <option value="3">[08] Family benefits</option> 
-                    <option value="3">[09] Recovery</option>
-                    <option value="3">[99] Other</option>   
-                  </select>
-                </div>
-  
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="example">
-                    Other Sector PIN (optional)
-                  </label>
-                  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="example" name="example" type="text" value="">
-                </div>
-  
-                <h3 class="nhsuk-u-margin-top-9">Request for Information (optional)</h3>
-  
-                <div class="nhsuk-form-group">
-  
-                  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                    <label class="nhsuk-label" for="example">
-                      Date of request (optional)
-                    </label>
-                    <div class="nhsuk-hint" id="example-hint">
-                      For example, 15 3 1984
-                    </div>
-                
-                    <div class="nhsuk-date-input" id="example">
-                      <div class="nhsuk-date-input__item">
-                        <div class="nhsuk-form-group">
-                          <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                            Day
-                          </label>
-                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric">
-                        </div>
-                      </div>
-                      <div class="nhsuk-date-input__item">
-                        <div class="nhsuk-form-group">
-                          <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                            Month
-                          </label>
-                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric">
-                        </div>
-                      </div>
-                      <div class="nhsuk-date-input__item">
-                        <div class="nhsuk-form-group">
-                          <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                            Year
-                          </label>
-                          <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric">
-                        </div>
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
-  
-                <h3 class="nhsuk-u-margin-top-9">Request details (optional)</h3>
-  
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="example">
-                    The following document(s) (optional)
-                  </label>
-                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
-  
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="example">
-                    The following information (optional)
-                  </label>
-                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
-  
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="example">
-                    The following SED(s) (optional)
-                  </label>
-                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
 
-                <a href="sed-create-h001-notification" title="Continue to next section">
+                <a href="sed-create-h001-pin" title="Continue to next section">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                         Continue
                     </button>
@@ -190,35 +98,53 @@
             <!-- nav - start -->
             <ul class="nhsuk-header__navigation-list sidebar-nav">
                     
-                <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link" href="sed-create-h001-person">
-                        Person details
-                    </a>
-                </li>
-            
-                <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link " href="sed-create-h001-address">
-                        Address
-                    </a>
-                </li>
-
-                <li class="nhsuk-header__navigation-item active">
-                  <a class="nhsuk-header__navigation-link" href="sed-create-h001-request">
-                      Request for personal information
+              <li class="nhsuk-header__navigation-item">
+                  <a class="nhsuk-header__navigation-link" href="sed-create-h001-person">
+                    Person information
                   </a>
-                </li>
-
-                <li class="nhsuk-header__navigation-item">
-                  <a class="nhsuk-header__navigation-link" href="sed-create-h001-notification">
-                      Notify a change of information
+              </li>
+          
+              <li class="nhsuk-header__navigation-item">
+                  <a class="nhsuk-header__navigation-link " href="sed-create-h001-address">
+                      Address
                   </a>
-                </li>
+              </li>
 
-                <li class="nhsuk-header__navigation-item">
-                  <a class="nhsuk-header__navigation-link" href="sed-create-h001-additional">
-                      Additional information
-                  </a>
-                </li>
+              <li class="nhsuk-header__navigation-item active">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-request">
+                    Request for information on the person
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-pin">
+                    Request for sector PIN
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-details">
+                    Request details
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-notification">
+                    Notify a change of information
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-additional">
+                  Additional information/Change in circumstances
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-documents">
+                    Documents
+                </a>
+              </li>
             
             </ul>
 
