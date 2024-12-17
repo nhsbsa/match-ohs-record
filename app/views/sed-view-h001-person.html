@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA
+  Overseas Healthcare Service RINA - View H001 - Notification/request for information - Person information
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -40,22 +40,12 @@
                       View H001 - Notification/request for information
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Person details
+                    Person information
                 </h1>
 
                 <h2 class="nhsuk-u-margin-top-9">Person</h2>
 
-                <h3 class="nhsuk-u-margin-top-6">Personal details</h3>
-
                 <dl class="nhsuk-summary-list">
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                        Person identification
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                        
-                    </dd>
-                  </div>
 
                   <div class="nhsuk-summary-list__row">
                     <dt class="nhsuk-summary-list__key">
@@ -109,6 +99,8 @@
 
                 <h3 class="nhsuk-u-margin-top-6">Personal identification number(s)</h3>
 
+                <h4 class="nhsuk-u-margin-top-4">PIN</h4>
+
                 <dl class="nhsuk-summary-list">
                   <div class="nhsuk-summary-list__row">
                     <dt class="nhsuk-summary-list__key">
@@ -124,7 +116,6 @@
                       PIN
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                      JG 08 23 89 A
                     </dd>
                   </div>
 
@@ -155,7 +146,7 @@
                       Name of institution
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                      Health Care Centre
+                      ACC Health Economics Administration
                     </dd>
                   </div>
 
@@ -178,7 +169,6 @@
                       Region (optional)
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                      Tyne & Wear
                     </dd>
                   </div>
 
@@ -245,13 +235,12 @@
                       Status of the person (optional) 
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                      Employed person
                     </dd>
                   </div>
                 </dl>
 
 
-                <a href="sed-h001-view-only-address" title="Continue">
+                <a href="sed-view-h001-address" title="Continue">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                     Continue
                     </button>
@@ -279,23 +268,53 @@
             <!-- nav - start -->
             <ul class="nhsuk-header__navigation-list sidebar-nav">
                     
-                <li class="nhsuk-header__navigation-item active">
-                    <a class="nhsuk-header__navigation-link" href="#">
-                        Person
-                    </a>
-                </li>
-            
-                <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link " href="sed-h001-view-only-address">
-                        Address
-                    </a>
-                </li>
-            
-                <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link" href="sed-h001-view-only-identification">
-                      Personal identification
-                    </a>
-                </li>
+              <li class="nhsuk-header__navigation-item active">
+                  <a class="nhsuk-header__navigation-link" href="sed-view-h001-person">
+                    Person information
+                  </a>
+              </li>
+          
+              <li class="nhsuk-header__navigation-item">
+                  <a class="nhsuk-header__navigation-link " href="sed-view-h001-address">
+                      Address
+                  </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-view-h001-request">
+                    Request for information on the person
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-view-h001-pin">
+                    Request for sector PIN
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-view-h001-details">
+                    Request details
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-view-h001-notification">
+                    Notify a change of information
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-view-h001-additional">
+                  Additional information/Change in circumstances
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-view-h001-documents">
+                    Documents
+                </a>
+              </li>
             
             </ul>
 
