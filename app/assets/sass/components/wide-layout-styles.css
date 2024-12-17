@@ -341,6 +341,10 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   line-height: 1.5rem;
 }
 
+.nhsuk-list li a {
+  font-size: 1rem;
+}
+
 @media (min-width: 40.0625em) {
   .nhsuk-summary-list__key {
     width: 40%;
@@ -592,15 +596,6 @@ ul.sidebar-nav .nhsuk-header__navigation-item {
 
 ul.sidebar-nav .active {
   border-left: 8px solid #005eb8;
-}
-
-.ohs-step-1 {
-  background-image: url("../images/ohs-person.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-  width: 687px;
-  height: 636px;
 }
 
 .done-panel {
