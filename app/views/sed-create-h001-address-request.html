@@ -42,52 +42,84 @@
                       Create H001 - Notification/request for information
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Additional information/Change in circumstances
+                    Address
                 </h1>
 
-                <fieldset class="nhsuk-fieldset">
-                  <div class="nhsuk-form-group nhsuk-u-margin-top-4">
-  
-                    <fieldset class="nhsuk-fieldset">
-                      <label class="nhsuk-label" for="example">
-                        Notification/Request for additional information (optional)
-                      </label>
-                  
-                      <div class="nhsuk-radios">
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                            Notification of additional information
-                          </label>
-                        </div>
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                            Request for additional information
-                          </label>
-                        </div>
-  
-                        <div class="nhsuk-form-group nhsuk-u-margin-top-4">
-                          <label class="nhsuk-label" for="example">
-                            Further detail(s) (optional)
-                          </label>
-                          <textarea class="nhsuk-textarea nhsuk-u-width-full" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </div>
+                <h2 class="nhsuk-u-margin-top-9">Change to Address</h2>
 
+              <div class="nhsuk-form-group nhsuk-u-margin-top-6">
+
+                <fieldset class="nhsuk-fieldset">
+                  <label class="nhsuk-label" for="example">
+                    Address of the person (optional)
+                  </label>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" onclick="window.location='sed-create-h001-address';" id="example-1" name="example" type="radio" value="yes">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        Notification of address 
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no" checked>
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Request of address
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+              </div>
+
+              <h4 class="nhsuk-u-margin-top-4">Notification of address</h4>
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                  <label class="nhsuk-label" for="example">
+                      Type of address
+                  </label>
+            
+                  <div class="nhsuk-checkboxes">
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                        Country of residence
+                      </label>
+                    </div>
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                        Country of stay
+                      </label>
+                    </div>
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                        Contact address of the person
+                      </label>
+                    </div>
+            
+                  </div>
                 </fieldset>
 
-                <a href="sed-create-h001-documents" title="Continue to next section">
-                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Continue
-                    </button>
-                </a>
+              </div>
 
-                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.1.0</p>
+              <a href="#" class="nhsuk-u-margin-top-4" style="font-size: 19px;display: block;">Add another address of the person</a>
+
+              <a href="sed-create-h001-request" title="Continue to next section">
+                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                  </button>
+              </a>
+
+              <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.1.0</p>
 
             </div>
         </div>
@@ -117,7 +149,7 @@
                   </a>
               </li>
           
-              <li class="nhsuk-header__navigation-item">
+              <li class="nhsuk-header__navigation-item active">
                   <a class="nhsuk-header__navigation-link " href="sed-create-h001-address">
                       Address
                   </a>
@@ -147,7 +179,7 @@
                 </a>
               </li>
 
-              <li class="nhsuk-header__navigation-item active">
+              <li class="nhsuk-header__navigation-item">
                 <a class="nhsuk-header__navigation-link" href="sed-create-h001-additional">
                   Additional information/Change in circumstances
                 </a>
