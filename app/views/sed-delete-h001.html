@@ -40,15 +40,34 @@
             <h1 class="app-page-heading">You're about to leave this form</h1>
             <p>All your data will be lost if you leave without completing this form.</p>
 
-            <a href="#" title="Delete draft H001" style="text-decoration: none;">
-                <button class="nhsuk-button nhsuk-u-margin-top-6"  style="display: block;" data-module="nhsuk-button" type="submit">
-                  Leave without completing
-                </button>
-            </a>
+            <div class="nhsuk-form-group">
 
-            <a href="sed-create-h001-are-you-sure" style="display: block;">Go back to editing H001</a>
+              <fieldset class="nhsuk-fieldset">
+            
+                <div class="nhsuk-radios">
+            
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-1" name="example-1" type="radio" value="yes">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                      Yes, leave without completing
+                    </label>
+                  </div>
+            
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-2" name="example-1" type="radio" value="no">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-2" >
+                      No, go back to editing
+                    </label>
+                  </div>
 
-
+                  <a href="sed-create-h001-are-you-sure">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                      Submit
+                    </button>
+                  </a>
+                </div>
+              </fieldset>
+            </div>
             </div>
         </div>
 
