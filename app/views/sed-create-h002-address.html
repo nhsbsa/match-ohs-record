@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - View H002 Reply - Response to request for information - Address
+  Overseas Healthcare Service RINA - H002 Reply - H002 Response to request for information - Person information
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -37,96 +37,39 @@
             <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg ul-padding-top-lrg">
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                      View H002 Reply - Response to request for information
+                        H002 Reply - Response to notification/request for information
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Address (optional) 
+                    Person information
                 </h1>
 
-                <dl class="nhsuk-summary-list">
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Address of the person (optional) 
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      Request of address
-                    </dd>
-                  </div>
-                </dl>
+                <h2 class="nhsuk-u-margin-top-9">Person</h2>
 
-                <dl class="nhsuk-summary-list">
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Type of address
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                        Contact address
-                    </dd>
-                  </div>
+                
+    
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="select-1">
+                      Status of the person (optional)
+                    </label>
+                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
+                      <option value="1" selected>Choose a status</option>
+                      <option value="2">[01] Employed person</option>
+                      <option value="3">[02] Self-employed person</option> 
+                      <option value="3">[03] Frontier worker</option> 
+                      <option value="3">[04] Former frontier worker</option> 
+                      <option value="3">[05] Pensioner</option> 
+                      <option value="3">[06] Pension claimant</option> 
+                      <option value="3">[07] Unemployed person</option> 
+                      <option value="3">[08] Family member/dependent</option> 
+                      <option value="3">[09] Family member of employed person</option> 
+                      <option value="3">[10] Family member of pensioner</option> 
+                      <option value="3">[11] Student</option> 
+                      <option value="3">[12] Non-active person</option> 
+                      <option value="3">[99] Other</option> 
+                    </select>
+                </div>
 
-                </dl>
-
-                <h3 class="nhsuk-u-margin-top-6">Address</h3>
-
-                <dl class="nhsuk-summary-list">
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Street (optional) 
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      12 Willow Road
-                    </dd>
-                  </div>
-
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Building name (optional) 
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      
-                    </dd>
-                  </div>
-
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Town
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      Sunderland
-                    </dd>
-                  </div>
-
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Postal code (optional)
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      SR5 6UT
-                    </dd>
-                  </div>
-
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Region (optional)
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      
-                    </dd>
-                  </div>
-
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">
-                      Country
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      United Kingdom
-                    </dd>
-                  </div>
-
-                </dl>
-
-
-                <a href="sed-view-h002-request" title="Continue">
+                <a href="sed-create-h002-address" title="Continue">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                     Continue
                     </button>
@@ -155,49 +98,49 @@
             <ul class="nhsuk-header__navigation-list sidebar-nav">
                     
               <li class="nhsuk-header__navigation-item">
-                  <a class="nhsuk-header__navigation-link" href="sed-view-h002-person">
+                  <a class="nhsuk-header__navigation-link" href="sed-create-h002-person">
                     Person information
                   </a>
               </li>
           
               <li class="nhsuk-header__navigation-item active">
-                  <a class="nhsuk-header__navigation-link " href="sed-view-h002-address">
+                  <a class="nhsuk-header__navigation-link " href="sed-create-h002-address">
                       Address
                   </a>
               </li>
 
               <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="sed-view-h002-request">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h002-request">
                     Response to personal information request
                 </a>
               </li>
 
               <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="sed-view-h002-pin">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h002-pin">
                     Response to sector PIN request
                 </a>
               </li>
 
               <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="sed-view-h002-positive">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h002-positive">
                     Positive response to request
                 </a>
               </li>
 
               <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="sed-view-h002-negative">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h002-negative">
                     Negative response to request
                 </a>
               </li>
 
               <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="sed-view-h002-additional">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h002-additional">
                   Additional information
                 </a>
               </li>
 
               <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="sed-view-h002-documents">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h002-documents">
                     Documents
                 </a>
               </li>
