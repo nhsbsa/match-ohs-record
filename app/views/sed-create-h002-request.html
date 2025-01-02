@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create H002 reply - Response to notification/request for information - Person information
+  Overseas Healthcare Service RINA - Create H002 reply - Response to notification/request for information - Response to personal information request
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -40,26 +40,28 @@
                       Create H002 reply - Response to notification/request for information
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Person information
+                    Response to personal information request
                 </h1>
 
-                <h2 class="nhsuk-u-margin-top-9">Person details</h2>
+                <h2 class="nhsuk-u-margin-top-9">Details of the person</h2>
+
+                <h3 class="nhsuk-u-margin-top-4">Personal details</h3>
 
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Last name(s)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       First name(s)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
     
                     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                       <label class="nhsuk-label" for="example">
@@ -95,10 +97,11 @@
                         </div>
                       </div>
                     </fieldset>
-                </div>
+                  
+                  </div>
     
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
     
                     <fieldset class="nhsuk-fieldset">
                       <label class="nhsuk-label" for="example">
@@ -130,132 +133,41 @@
                   
                       </div>
                     </fieldset>
-                </div>
-    
-                <div class="nhsuk-form-group">
+                  </div>
+
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                             Last name(s) at birth (optional)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                             First name(s) at birth (optional)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
-    
-                <h3 class="nhsuk-u-margin-top-9">Personal identification number(s) (PIN) (optional)</h3>
-    
-                <h4 class="nhsuk-u-margin-top-4">PIN details</h4>
-    
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="select-1">
-                      Country of PIN
-                    </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                      <option value="0" selected>Choose a country</option>
-                      <option value="1">[AT] Austria</option>
-                      <option value="2" >[BE] Belgium</option>
-                      <option value="3" >[BG] Bulgaria</option>
-                      <option value="4" >[HR] Croatia</option>
-                      <option value="5" >[CY] Cyprus</option>
-                      <option value="6" >[CZ] Czechia</option>
-                      <option value="7" >[DK] Denmark</option>
-                      <option value="8" >[EE] Estonia</option>
-                      <option value="9" >[FI] Finland</option>
-                      <option value="10" >[FR] France</option>
-                      <option value="11" >[DE] Germany</option>
-                      <option value="12" >[EL] Greece</option>
-                      <option value="13" >[HU] Hungary</option>
-                      <option value="14" >[IS] Iceland</option>
-                      <option value="15" >[IE]Ireland</option>
-                      <option value="16" >[IT] Italy</option>
-                      <option value="17" >[LV] Latvia</option>
-                      <option value="18" >[LI] Liechtenstein</option>
-                      <option value="19" >[LU] Lithuania</option>
-                      <option value="20" >[LU] Luxembourg</option>
-                      <option value="21" >[MT] Malta</option>
-                      <option value="22" >[NL] Netherlands</option>
-                      <option value="23" >[NO] Norway</option>
-                      <option value="24" >[PL] Poland</option>
-                      <option value="25" >[PT] Portugal</option>
-                      <option value="26" >[RO] Romania</option>
-                      <option value="27" >[SK] Slovakia</option>
-                      <option value="28" >[SI] Slovenia</option>
-                      <option value="29" >[ES] Spain</option>
-                      <option value="30" >[SE] Sweden</option>
-                      <option value="31" >[CH] Switzerland</option>
-                      <option value="32">[UK] United Kingdom</option>
-                    </select>
-                </div>
-    
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                            PIN
-                    </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
-    
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="select-1">
-                      Sector (optional)
-                    </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                      <option value="0" selected >Choose a sector</option>
-                      <option value="1" >[01] AWOD</option>
-                      <option value="2" >[02] Family benefits</option>
-                      <option value="3" >[03] All</option>
-                      <option value="4" >[04] Pensions</option>
-                      <option value="5" >[05] Recovery</option>
-                      <option value="6" >[06] Sickness</option>
-                      <option value="7" >[07] Unemployment benefits</option>
-                    </select>
-                </div>
-    
-                <h4 class="nhsuk-u-margin-top-9">Institution</h4>
-    
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                      Institution identification number
-                    </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
-    
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                      Name of institution
-                    </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
-    
-                <a href="#" style="font-size: 19px;display: block;">Add another PIN</a>
-    
-                <div class="nhsuk-inset-text">
-                    <span class="nhsuk-u-visually-hidden">Information: </span>
-                    <p>If PIN not provided, complete place of birth details.</p>
-                </div>
+                  </div>
     
                 <h3 class="nhsuk-u-margin-top-9">Place of birth (optional)</h3>
-    
+
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Town
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Region (optional)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="select-1">
-                      Country of birth
+                      Country
                     </label>
                     <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
                       <option value="0" selected>Choose a country</option>
@@ -292,123 +204,51 @@
                       <option value="31" >[CH] Switzerland</option>
                       <option value="32" >[UK] United Kingdom</option>
                     </select>
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Father’s last name(s) at birth (optional)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       First name(s) of father (optional)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Mother’s last name(s) at birth (optional)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
+                  </div>
     
-                <div class="nhsuk-form-group">
+                  <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       First name(s) of mother (optional)
                     </label>
                     <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
-                </div>
-    
-                <h3 class="nhsuk-u-margin-top-9">Additional information</h3>
-    
-                <!--Note to devs: this is a multi-select component. This is its interacted state where the user has chosen multiple countries-->
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="select-1">
-                      Nationality (optional)
-                    </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                      <option value="0" selected>Choose a country</option>
-                      <option value="1">[AT] Austria</option>
-                      <option value="2">[BE] Belgium</option>
-                      <option value="3" >[BG] Bulgaria</option>
-                      <option value="4" >[HR] Croatia</option>
-                      <option value="5" >[CY] Cyprus</option>
-                      <option value="6" >[CZ] Czechia</option>
-                      <option value="7" >[DK] Denmark</option>
-                      <option value="8" >[EE] Estonia</option>
-                      <option value="9" >[FI] Finland</option>
-                      <option value="10" >[FR] France</option>
-                      <option value="11" >[DE] Germany</option>
-                      <option value="12" >[EL] Greece</option>
-                      <option value="13" >[HU] Hungary</option>
-                      <option value="14" >[IS] Iceland</option>
-                      <option value="15" >[IE]Ireland</option>
-                      <option value="16" >[IT] Italy</option>
-                      <option value="17" >[LV] Latvia</option>
-                      <option value="18" >[LI] Liechtenstein</option>
-                      <option value="19" >[LU] Lithuania</option>
-                      <option value="20" >[LU] Luxembourg</option>
-                      <option value="21" >[MT] Malta</option>
-                      <option value="22" >[NL] Netherlands</option>
-                      <option value="23" >[NO] Norway</option>
-                      <option value="24" >[PL] Poland</option>
-                      <option value="25" >[PT] Portugal</option>
-                      <option value="26" >[RO] Romania</option>
-                      <option value="27" >[SK] Slovakia</option>
-                      <option value="28" >[SI] Slovenia</option>
-                      <option value="29" >[ES] Spain</option>
-                      <option value="30" >[SE] Sweden</option>
-                      <option value="31" >[CH] Switzerland</option>
-                      <option value="32" >[UK] United Kingdom</option>
-                    </select>
-                </div>
+                  </div>
 
-                <ul class="autocomplete__list" id="course__list" aria-live="polite">
-                  <li id="course__selected-option--0" class="autocomplete__selected-option">
-                    <span>Austria</span>
-                    <button type="button" class="autocomplete__remove-option" aria-label="Child nursing, selected. Press Enter or Space to remove selection">Remove</button></li>
-                  <li id="course__selected-option--1" class="autocomplete__selected-option">
-                    <span>France</span>
-                    <button type="button" class="autocomplete__remove-option" aria-label="Dental therapy, selected. Press Enter or Space to remove selection">Remove</button></li>
-                  <li id="course__selected-option--2" class="autocomplete__selected-option">
-                    <span>Norway</span>
-                    <button type="button" class="autocomplete__remove-option" aria-label="Diagnostic radiography, selected. Press Enter or Space to remove selection">Remove</button></li>
-                </ul>
-    
-                <div class="nhsuk-form-group nhsuk-u-margin-top-9">
-                    <label class="nhsuk-label" for="select-1">
-                      Status of the person (optional)
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                    Previous last name(s) (optional)
                     </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                      <option value="1" selected>Choose a status</option>
-                      <option value="2">[01] Employed person</option>
-                      <option value="3">[02] Self-employed person</option> 
-                      <option value="3">[03] Frontier worker</option> 
-                      <option value="3">[04] Former frontier worker</option> 
-                      <option value="3">[05] Pensioner</option> 
-                      <option value="3">[06] Pension claimant</option> 
-                      <option value="3">[07] Unemployed person</option> 
-                      <option value="3">[08] Family member/dependent</option> 
-                      <option value="3">[09] Family member of employed person</option> 
-                      <option value="3">[10] Family member of pensioner</option> 
-                      <option value="3">[11] Student</option> 
-                      <option value="3">[12] Non-active person</option> 
-                      <option value="3">[99] Other</option> 
-                    </select>
-                </div>
-                <ul class="autocomplete__list" id="course__list" aria-live="polite">
-                  <li id="course__selected-option--0" class="autocomplete__selected-option">
-                    <span>Self-Employed person</span>
-                    <button type="button" class="autocomplete__remove-option" aria-label="Child nursing, selected. Press Enter or Space to remove selection">Remove</button></li>
-                  <li id="course__selected-option--2" class="autocomplete__selected-option">
-                    <span>Family member of employed person</span>
-                    <button type="button" class="autocomplete__remove-option" aria-label="Diagnostic radiography, selected. Press Enter or Space to remove selection">Remove</button></li>
-                </ul>
+                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                  </div>
 
-                <a href="sed-create-h002-address" title="Continue">
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        Previous first name(s) (optional)
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                  </div>
+
+                <a href="sed-create-h002-request" title="Continue">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                     Continue
                     </button>
@@ -436,7 +276,7 @@
             <!-- nav - start -->
             <ul class="nhsuk-header__navigation-list sidebar-nav">
                     
-              <li class="nhsuk-header__navigation-item active">
+              <li class="nhsuk-header__navigation-item">
                   <a class="nhsuk-header__navigation-link" href="sed-create-h002-person">
                     Person information
                   </a>
@@ -448,7 +288,7 @@
                   </a>
               </li>
 
-              <li class="nhsuk-header__navigation-item">
+              <li class="nhsuk-header__navigation-item active">
                 <a class="nhsuk-header__navigation-link" href="sed-create-h002-request">
                     Response to personal information request
                 </a>
