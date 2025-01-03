@@ -49,14 +49,14 @@
                     <label class="nhsuk-label" for="example">
                       Last name(s)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       First name(s)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
@@ -136,14 +136,14 @@
                     <label class="nhsuk-label" for="example">
                             Last name(s) at birth (optional)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                             First name(s) at birth (optional)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <h3 class="nhsuk-u-margin-top-9">Personal identification number(s) (PIN) (optional)</h3>
@@ -151,11 +151,12 @@
                 <h4 class="nhsuk-u-margin-top-4">PIN details</h4>
     
                 <div class="nhsuk-form-group">
+                  <!--Note to devs: this is a single-select auto-complete component.-->
                     <label class="nhsuk-label" for="select-1">
                       Country of PIN
                     </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                      <option value="0" selected>Choose a country</option>
+                    <select class="nhsuk-select nhsuk-u-width-one-third" id="select-1" name="select-1">
+                      <option value="0" selected></option>
                       <option value="1">[AT] Austria</option>
                       <option value="2" >[BE] Belgium</option>
                       <option value="3" >[BG] Bulgaria</option>
@@ -195,15 +196,16 @@
                     <label class="nhsuk-label" for="example">
                             PIN
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
+                  <!--Note to devs: this is a multi-select auto-complete component.-->
                     <label class="nhsuk-label" for="select-1">
                       Sector (optional)
                     </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                      <option value="0" selected >Choose a sector</option>
+                    <select class="nhsuk-select nhsuk-u-width-one-third" id="select-1" name="select-1">
+                      <option value="0" selected></option>
                       <option value="1" >[01] AWOD</option>
                       <option value="2" >[02] Family benefits</option>
                       <option value="3" >[03] All</option>
@@ -220,14 +222,14 @@
                     <label class="nhsuk-label" for="example">
                       Institution identification number
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Name of institution
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <a href="#" style="font-size: 19px;display: block;">Add another PIN</a>
@@ -243,14 +245,14 @@
                     <label class="nhsuk-label" for="example">
                       Town
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Region (optional)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
@@ -258,8 +260,8 @@
                     <label class="nhsuk-label" for="select-1">
                       Country of birth
                     </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
-                      <option value="0" selected>Choose a country</option>
+                    <select class="nhsuk-select nhsuk-u-width-one-third" id="select-1" name="select-1">
+                      <option value="0" selected></option>
                       <option value="1">[AT] Austria</option>
                       <option value="2">[BE] Belgium</option>
                       <option value="3" >[BG] Bulgaria</option>
@@ -299,38 +301,38 @@
                     <label class="nhsuk-label" for="example">
                       Father’s last name(s) at birth (optional)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       First name(s) of father (optional)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       Mother’s last name(s) at birth (optional)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                       First name(s) of mother (optional)
                     </label>
-                    <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="">
+                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
                 </div>
     
                 <h3 class="nhsuk-u-margin-top-9">Additional information</h3>
     
                 <!--Note to devs: this is a multi-select auto-complete component. This is its interacted state where the user has chosen multiple countries-->
                 <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="select-1">
+                    <label class="nhsuk-label" for="select-1"  for="two-thirds">
                       Nationality (optional)
                     </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
+                    <select class="nhsuk-select nhsuk-u-width-one-third" id="two-thirds" name="select-1">
                       <option value="0" selected></option>
                       <option value="1">[AT] Austria</option>
                       <option value="2">[BE] Belgium</option>
@@ -384,7 +386,7 @@
                     <label class="nhsuk-label" for="select-1">
                       Status of the person (optional)
                     </label>
-                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="select-1" name="select-1">
+                    <select class="nhsuk-select nhsuk-u-width-one-third" id="select-1" name="select-1">
                       <option value="1" selected></option>
                       <option value="2">Employed person</option>
                       <option value="3">Self-employed person</option> 
@@ -403,7 +405,7 @@
                 </div>
                 <ul class="autocomplete__list" id="course__list" aria-live="polite">
                   <li id="course__selected-option--0" class="autocomplete__selected-option">
-                    <span>Self-Employed person</span>
+                    <span>Self-employed person</span>
                     <button type="button" class="autocomplete__remove-option" aria-label="Child nursing, selected. Press Enter or Space to remove selection">Remove</button></li>
                   <li id="course__selected-option--2" class="autocomplete__selected-option">
                     <span>Family member of employed person</span>
