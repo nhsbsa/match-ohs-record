@@ -39,61 +39,56 @@
             <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg ul-padding-top-lrg">
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                        X009 Reminder
+                        X009 reminder
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Reminder request
+                    Person details
                 </h1>
 
-              <div class="nhsuk-form-group">
-
-                <fieldset class="nhsuk-fieldset">
-                  <label class="nhsuk-label" for="example">
-                    Type of request
-                  </label>
-              
-                  <div class="nhsuk-radios">
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                        Document
-                      </label>
-                    </div>
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        Information
-                      </label>
+                <dl class="nhsuk-summary-list">
+                    <div class="nhsuk-summary-list__row">
+                      <dt class="nhsuk-summary-list__key">
+                          Last name
+                      </dt>
+                      <dd class="nhsuk-summary-list__value">
+                          Rutherford
+                      </dd>
                     </div>
 
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        SED
-                      </label>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            First name
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Graeme
+                        </dd>
                     </div>
-              
-                  </div>
-                </fieldset>
 
-              </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Date of birth
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            16 May 1980
+                        </dd>
+                    </div>
 
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                        Request details (optional)
-                </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-              </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Sex
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Male
+                        </dd>
+                    </div>
 
-              <a href="sed-create-x009-reminder-repeat" style="font-size: 19px;display: block;">Add another reminder type and details</a>
- 
-              <a href="#" title="Continue to next section">
-                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                      Save draft
-                  </button>
-              </a>
+                </dl>
+
+                <a href="sed-read-x009-reminder" title="Continue to next section">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                    </button>
+                </a>
 
                 <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.1.0</p>
 
@@ -119,14 +114,14 @@
             <!-- nav - start -->
             <ul class="nhsuk-header__navigation-list sidebar-nav">
                     
-                <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link" href="sed-create-x009-person">
+                <li class="nhsuk-header__navigation-item active">
+                    <a class="nhsuk-header__navigation-link" href="sed-view-x009-person">
                         Person details
                     </a>
                 </li>
             
-                <li class="nhsuk-header__navigation-item active">
-                    <a class="nhsuk-header__navigation-link " href="#">
+                <li class="nhsuk-header__navigation-item">
+                    <a class="nhsuk-header__navigation-link " href="sed-view-x009-reminder">
                         Reminder request
                     </a>
                 </li>
