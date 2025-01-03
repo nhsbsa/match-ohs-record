@@ -310,8 +310,16 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   margin-right: 6px;
 }
 
-#timeline ol li ul.nhsuk-list li {
+#timeline ol li ul.nhsuk-list li, #timeline ol li ul.nhsuk-list {
   border: none;
+}
+
+#timeline ol li ul li ul {
+  border-left: 3px solid white;
+}
+
+#timeline ol li ul li ul li {
+  list-style: none;
 }
 
 .icon-copy span {
@@ -341,8 +349,16 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   line-height: 1.5rem;
 }
 
-.nhsuk-list li a {
+.nhsuk-details__text-attach {
+  padding-left: 0;
+}
+
+.nhsuk-list li a, .nhsuk-list li p {
   font-size: 1rem;
+}
+
+.nhsuk-list li p {
+  margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
