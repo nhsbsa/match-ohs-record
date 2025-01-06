@@ -1,0 +1,95 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-two-thirds ul-padding-left-lrg">
+
+                <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+                    <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+                      There is a problem
+                    </h2>
+                    <div class="nhsuk-error-summary__body">
+                      <p>
+                        Select to delete or keep this draft.
+                      </p>
+                      <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
+                        <li>
+                          <a href="#dob-day-error">Yes or no must be selected</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+            <h1 class="app-page-heading">Are you sure you want to delete this draft?</h1>
+            
+                <div class="nhsuk-form-group nhsuk-form-group--error">
+                    <span class="nhsuk-error-message" id="dob-day-error-error"><p>All your data will be lost if you delete this form.</p></span>
+
+
+                    <fieldset class="nhsuk-fieldset" aria-describedby="dob-day-error-hint dob-day-error-error">
+                
+                        <div class="nhsuk-radios">
+                    
+                            <div class="nhsuk-radios__item" id="dob-day-error">
+                                <input class="nhsuk-radios__input" id="example-error-1" name="example-1" type="radio" value="yes">
+                                <label class="nhsuk-label nhsuk-radios__label" for="dob-day-error-day">
+                                Yes, delete this draft
+                                </label>
+                            </div>
+                    
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-2" name="example-1" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-2" >
+                                No, keep this draft
+                                </label>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                </div>
+                <a href="unhappy-path-sed-deleted">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                    Submit
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- content - end -->
+    </div>
+</div>
+{% endblock %}
