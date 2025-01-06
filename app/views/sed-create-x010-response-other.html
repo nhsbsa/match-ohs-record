@@ -39,24 +39,52 @@
             <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg ul-padding-top-lrg">
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                      Create X010 Reply to reminder
+                        Create X010 Reply to reminder
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Person 
+                    Response to reminder
                 </h1>
 
-              <h2 class="nhsuk-u-margin-top-9">Person details</h2>
-
+                <h2 class="nhsuk-u-margin-top-9">We will provide the following information (optional)</h2>
+                
               <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                  Last name(s)
-                </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text">
+
+                <fieldset class="nhsuk-fieldset">
+                  <label class="nhsuk-label" for="example">
+                    Type
+                  </label>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        Document
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Information
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        SED
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+
               </div>
 
               <div class="nhsuk-form-group">
                 <label class="nhsuk-label" for="example">
-                        First name(s)
+                        Details
                 </label>
                 <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
               </div>
@@ -64,12 +92,13 @@
               <div class="nhsuk-form-group">
 
                 <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                  <label class="nhsuk-label" for="example">
-                    Date of birth
-                  </label>
+                  <legend class="nhsuk-fieldset__legend">
+                    Date we expect to fulfil the request (optional)
+                  </legend>
                   <div class="nhsuk-hint" id="example-hint">
-                    For example, 15 3 1984
+                    For example, 15 3 2028
                   </div>
+              
                   <div class="nhsuk-date-input" id="example">
                     <div class="nhsuk-date-input__item">
                       <div class="nhsuk-form-group">
@@ -100,12 +129,16 @@
               
               </div>
 
+              <a href="#" style="font-size: 19px;display: block;">Add another available information</a>
+
+
+              <h2 class="nhsuk-u-margin-top-9">The following information is not available (optional)</h2>
 
               <div class="nhsuk-form-group">
 
                 <fieldset class="nhsuk-fieldset">
                   <label class="nhsuk-label" for="example">
-                    Sex
+                    Type
                   </label>
               
                   <div class="nhsuk-radios">
@@ -113,35 +146,95 @@
                     <div class="nhsuk-radios__item">
                       <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
                       <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                        Male
+                        Document
                       </label>
                     </div>
               
                     <div class="nhsuk-radios__item">
                       <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
                       <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        Female
+                        Information
                       </label>
                     </div>
 
                     <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                        Unknown
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        SED
                       </label>
                     </div>
               
                   </div>
                 </fieldset>
+
               </div>
 
-              <a href="sed-create-x010-response" title="Continue to next section">
-                <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Continue
-                </button>
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                        Details
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset">
+                  <label class="nhsuk-label" for="example">
+                    Reason (optional)
+                  </label>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes" onclick="window.location.href = 'sed-create-x010-response';">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        Unable to provide the information
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no" onclick="window.location.href = 'sed-create-x010-response';">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Unable to provide the document(s) requested 
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="no" onclick="window.location.href = 'sed-create-x010-response';">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        The person did not cooperate
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                        <input class="nhsuk-radios__input" id="example-4" name="example" type="radio" value="no" onclick="window.location.href = '#';" checked>
+                        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                          Other
+                        </label>
+                    </div>
+
+                    <div class="nhsuk-form-group nhsuk-u-margin-top-4">
+                        <label class="nhsuk-label" for="example">
+                            Provide a reason
+                        </label>
+                        <textarea class="nhsuk-textarea nhsuk-u-width-one-half" id="example" name="example" rows="3" aria-describedby="example-hint"></textarea>
+                    </div>
+              
+                  </div>
+                </fieldset>
+
+              </div>
+
+              <a href="#" style="font-size: 19px;display: block;">Add another unavailable information</a>
+
+ 
+              <a href="#" title="Continue to next section">
+                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                      Save draft
+                  </button>
               </a>
 
-              <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 
             </div>
         </div>
@@ -165,13 +258,13 @@
             <!-- nav - start -->
             <ul class="nhsuk-header__navigation-list sidebar-nav">
                     
-                <li class="nhsuk-header__navigation-item active">
+                <li class="nhsuk-header__navigation-item">
                     <a class="nhsuk-header__navigation-link" href="sed-create-x010-person">
                         Person
                     </a>
                 </li>
             
-                <li class="nhsuk-header__navigation-item">
+                <li class="nhsuk-header__navigation-item active">
                     <a class="nhsuk-header__navigation-link " href="sed-create-x010-response">
                         Response to reminder
                     </a>
