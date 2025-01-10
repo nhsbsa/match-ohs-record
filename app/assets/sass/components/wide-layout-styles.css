@@ -650,4 +650,27 @@ ul.sidebar-nav .active {
   font-size: inherit;
   /* margin-left: 5px; */
   padding: 0px;
+}
+
+.nhsuk-fieldset__legend--s {
+  font-weight: 400;
+}
+
+.nhsuk-checkboxes__conditional {
+  margin-bottom: 24px;
+}
+
+.nhsuk-checkboxes__conditional {
+  margin-bottom: 16px;
+  border-left: 4px solid #4c6272;
+  margin-left: 18px;
+  padding-left: 30px;
+}
+
+.nhsuk-checkboxes__conditional--hidden {
+  display: none;
+}
+
+.nhsuk-input--width-20 {
+  width: 398px !important;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
