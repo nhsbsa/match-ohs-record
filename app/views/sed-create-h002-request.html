@@ -166,44 +166,46 @@
                   </div>
     
                   <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="select-1">
-                      Country
+                    <!-- Single select, auto complete -->
+                    <label class="nhsuk-label" id="address-country-label" for="address-country">
+                        Country
                     </label>
-                    <select class="nhsuk-select nhsuk-u-width-one-third" id="select-1" name="select-1">
-                      <option value="0" ></option>
-                      <option value="1">Austria</option>
-                      <option value="2">Belgium</option>
-                      <option value="3" >Bulgaria</option>
-                      <option value="4" >Croatia</option>
-                      <option value="5" >Cyprus</option>
-                      <option value="6" >Czechia</option>
-                      <option value="7" >Denmark</option>
-                      <option value="8" >Estonia</option>
-                      <option value="9" >Finland</option>
-                      <option value="10" >France</option>
-                      <option value="11" >Germany</option>
-                      <option value="12" >Greece</option>
-                      <option value="13" >Hungary</option>
-                      <option value="14" >Iceland</option>
-                      <option value="15" >Ireland</option>
-                      <option value="16" >Italy</option>
-                      <option value="17" >Latvia</option>
-                      <option value="18" >Liechtenstein</option>
-                      <option value="19" >Lithuania</option>
-                      <option value="20" >Luxembourg</option>
-                      <option value="21" >Malta</option>
-                      <option value="22" >Netherlands</option>
-                      <option value="23" >Norway</option>
-                      <option value="24" >Poland</option>
-                      <option value="25" >Portugal</option>
-                      <option value="26" >Romania</option>
-                      <option value="27" >Slovakia</option>
-                      <option value="28" >Slovenia</option>
-                      <option value="29" >Spain</option>
-                      <option value="30" >Sweden</option>
-                      <option value="31" >Switzerland</option>
-                      <option value="32" >United Kingdom</option>
-                    </select>
+                    <input class="nhsuk-input nhsuk-input--width-20" list="countries" id="address-country-drop" name="address-country">
+                    <datalist id="countries">
+                      <option value="" selected="selected"></option>
+                      <option value="Austria">Austria</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Bulgaria">Bulgaria</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Finland">Finland</option>
+                      <option value="France">France</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Gibraltar">Gibraltar</option>
+                      <option value="Greece">Greece</option>
+                      <option value="Hungary">Hungary</option>
+                      <option value="Iceland">Iceland</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Latvia">Latvia</option>
+                      <option value="Liechtenstein">Liechtenstein</option>
+                      <option value="Lithuania">Lithuania</option>
+                      <option value="Luxembourg">Luxembourg</option>
+                      <option value="Malta">Malta</option>
+                      <option value="Netherlands">Netherlands</option>
+                      <option value="Norway">Norway</option>
+                      <option value="Poland">Poland</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Romania">Romania</option>
+                      <option value="Slovakia">Slovakia</option>
+                      <option value="Slovenia">Slovenia</option>
+                      <option value="Spain">Spain</option>
+                      <option value="Sweden">Sweden</option>
+                      <option value="Switzerland">Switzerland</option>
+                    </datalist>                                                  
                   </div>
     
                   <div class="nhsuk-form-group">
