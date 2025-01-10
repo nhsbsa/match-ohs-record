@@ -430,7 +430,7 @@
                   </datalist>                                                  
                 </div>
 
-                <ul class="autocomplete__list" id="course__list" aria-live="polite">
+                <ul class="autocomplete__list nhsuk-u-margin-bottom-4" id="course__list" aria-live="polite">
                   <li id="course__selected-option--0" class="autocomplete__selected-option">
                     <span>Austria</span>
                     <button type="button" class="autocomplete__remove-option" aria-label="Child nursing, selected. Press Enter or Space to remove selection">Remove</button></li>
@@ -472,6 +472,132 @@
                     <span>Family member of employed person</span>
                     <button type="button" class="autocomplete__remove-option" aria-label="Diagnostic radiography, selected. Press Enter or Space to remove selection">Remove</button></li>
                 </ul>-->
+
+                <div class="nhsuk-form-group">
+              
+                  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                      Status of the person (optional)
+                    </legend>
+              
+                    <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+              
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-1" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                          [01] Employed person
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-2" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                          [02] Self-employed person
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-3" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+                          [03] Frontier worker
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-4" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-4" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-4">
+                          [04] Former frontier worker
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-5" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-5" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-5">
+                          [05] Pensioner
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-6" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-6" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-6">
+                          [06] Pension claimant
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-7" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-7" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-7">
+                          [07] Unemployed person
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-8" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-8" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-8">
+                          [08] Family member/dependent
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-9" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-9" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-9">
+                          [09] Family member of employed person
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-10" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-10" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-10">
+                          [10] Family member of pensioner
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-11" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-11" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-11">
+                          [11] Student
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-12" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-12" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-12">
+                          [12] Non-active person
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-13" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-13" aria-expanded="false" onclick="myFunction()">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-13">
+                          [99] Other
+                        </label>
+                      </div>
+                      
+                      <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-13">
+
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label" for="email">
+                            Description of other
+                          </label>
+                          <textarea class="nhsuk-textarea nhsuk-u-width-one-half" id="example" name="example" rows="3" aria-describedby="example-hint"></textarea>
+                        </div>
+              
+                      </div>
+                     
+                    </div>
+                  </fieldset>
+              </div>
+
+                <script>
+                  function myFunction() {
+                    var x = document.getElementById("conditional-contact-13");
+                    if (x.style.display === "block") {
+                      x.style.display = "none";
+                    } else {
+                      x.style.display = "block";
+                    }
+                  }
+                </script>
 
                 <a href="sed-create-h002-address" title="Continue">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
