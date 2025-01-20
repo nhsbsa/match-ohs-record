@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA
+  Overseas Healthcare Service RINA - Case management ID 34567
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -32,13 +32,13 @@
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Create documents</a>
           <div class="dropdown-content">
-            <a href="#" role="menuitem">Create H001</a>
+            <a href="sed-create-h001" role="menuitem">Create H001</a>
           </div>
         </li>
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Case actions</a>
           <div class="dropdown-content reposition-right-menu">
-            <a href="#" role="menuitem">Close case</a>
+            <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
             <a href="#" role="menuitem">Refresh case</a>
           </div>
@@ -61,7 +61,7 @@
   <div class="nhsBSA-sidebar-wrapper">
     <div class="nhsuk-header__navigation" style="padding-top: 62px;">
 
-      <h1 class="nhsuk-heading-l">78793</h1>
+      <h1 class="nhsuk-heading-l">34567</h1>
       
       <p>S_BUC_05 • CP <strong class="nhsuk-tag nhsuk-tag--yellow">Open</strong></p>
 
@@ -76,24 +76,8 @@
               <h3 class="nhsuk-timeline__title"><a href="sed-s044-read-only-person">S044 v.1</a></h3>
             </div>
             <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-              <time><strong>Received</strong> 5 Nov 2024 at 11.48am from Norway</time>
+              <time><strong>Received</strong> 5 Jan 2024 at 10:15am from Norway</time>
             </p>
-            <ul class="nhsuk-list nhsuk-body-s">
-              <li>
-                <!--<details class="nhsuk-details">
-                  <summary class="nhsuk-details__summary">
-                    <span class="nhsuk-details__summary-text">
-                      Actions
-                    </span>
-                  </summary>
-                  <div class="nhsuk-details__text">
-                    <ul class="nhsuk-list">
-                      <li><a href="#">Read Participants</a></li>
-                    </ul>
-                  </div>
-                </details>-->
-              </li>
-            </ul>
           </li>
         </ol>
       </div>
@@ -106,20 +90,6 @@
 
       <div class="nhsuk-width-container-full ul-padding-top-lrg">
 
-        <!-- Notification -->
-
-        <div class="govuk-notification-banner govuk-notification-banner--important" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-            <div class="govuk-notification-banner__header">
-            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                Important
-            </h2>
-            <a href="#" style="float: right;">Close</a>
-            </div>
-            <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Entitlement pending in OHS. Application status is pending check, <a href="unhappy-path-step5-manage">manage the entitlement</a>.</p>
-            </div>
-        </div>
-
         <div class="nhsuk-grid-row">
         
           <div class="nhsuk-grid-column-two-thirds">
@@ -127,9 +97,9 @@
           </div>
   
           <div class="nhsuk-grid-column-one-third" style="text-align:right;">
-            <a href="unhappy-sed-s045-form-person">
-              <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit" title="Create S045 reply">
-                Create S045 reply
+            <a href="unhappy-path-2-s2-search-no-records">
+              <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit" title="Search OHS records">
+                Search OHS records
               </button>
             </a>
           </div>
@@ -206,7 +176,7 @@
                   Address
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  Kirsten Flagstads Plass 1<br>0150 Oslo<br>Norway
+                    Sunderland, United Kingdom
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -257,7 +227,7 @@
                   Local ID
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  78793
+                  34567
                 </dd>
               </div>
               
@@ -266,7 +236,7 @@
                   Business ID
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  78793
+                    34567
                 </dd>
               </div>
               <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
@@ -399,168 +369,20 @@
       
       </div>
 
-    <!-- in-page Case management personal details tabs - End -->
+      <!-- in-page Case management personal details tabs - End -->
 
-    <!-- in-page OHS Matched record - No S045 found - Start -->
+      <!-- in-page OHS Matched record - No S045 found - Start
 
-    <div class="nhsuk-card">
+      <div class="nhsuk-card">
         <div class="nhsuk-card__content">
           <div>
-            <div class="nhsuk-grid-row">
-              <div class="nhsuk-grid-column-three-quarters">
-                <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
-              </div>
-              <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
-                <a href="ohs-step-2-case-note" target="_blank" style="font-size: 19px;">Add note in OHS</a>
-              </div>
-            </div>
-            
-            <!-- Personal details -->
-
-            <div class="nhsuk-card">
-                <div class="nhsuk-card__content">
-                    <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-three-quarters">
-                            <h3 class="nhsuk-heading-m">Personal details</h3>
-                        </div>
-                        <div class="nhsuk-grid-column-one-quarter" style="text-align: right; padding-right: 16px;">
-                            
-                        </div>
-                    </div>
-                    <div class="nhsuk-grid-row"> 
-                        <div class="nhsuk-grid-column-full"> 
-                          <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
-                              <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
-                              <thead role="rowgroup" class="nhsuk-table__head">
-                                  <tr role="row">
-                                      <th role="columnheader" class="" scope="col">
-                                          OHS reference
-                                      </th>
-                                      <th role="columnheader" class="" scope="col">
-                                          First name
-                                      </th>
-                                      <th role="columnheader" class="" scope="col">
-                                        Last name
-                                    </th>
-                                      <th role="columnheader" class="" scope="col">
-                                          Date of birth
-                                      </th>
-                                      <th role="columnheader" scope="col">
-                                          PIN
-                                      </th>
-                                      <th role="columnheader" scope="col">
-                                          Address
-                                      </th>
-                                  </tr>
-                              </thead>
-                              <tbody class="nhsuk-table__body">
-
-                                  <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <a href="ohs-step-1-person" target="_blank"><span class="nhsuk-table-responsive__heading">OHS reference </span>1234567</a>
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">Full name </span>Graeme
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                        <span class="nhsuk-table-responsive__heading">Last name </span>Rutherford
-                                    </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">Date of birth 
-                                          </span>16 May 1980
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">PIN </span>
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">Address </span>Kirsten Flagstads Plass 1<br>0150 Oslo<br>Norway
-                                          
-                                      </td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>   
-                        
-                    </div>
-
-                </div>
-
-                <!-- Entitlement table -->
-
-            </div>
-            <div class="nhsuk-card">
-                <div class="nhsuk-card__content">
-                    <h3 class="nhsuk-heading-m">Entitlements</h3>
-                    <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-full">
-                            <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
-                                <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
-                                <thead role="rowgroup" class="nhsuk-table__head">
-                                    <tr role="row">
-                                        <th role="columnheader" class="" scope="col">
-                                            Type
-                                        </th>
-                                        <th role="columnheader" class="" scope="col">
-                                            Start date
-                                        </th>
-                                        <th role="columnheader" class="" scope="col">
-                                            End date
-                                        </th>
-                                        <th role="columnheader" scope="col">
-                                            Main or dependant
-                                        </th>
-                                        <th role="columnheader" scope="col">
-                                            Country
-                                        </th>
-                                        <th role="columnheader" scope="col">
-                                            Status
-                                        </th>
-                                        <th role="columnheader" style="text-align: right;" scope="col">
-                                            Actions
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody class="nhsuk-table__body">
-
-                                    <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Type </span>S045
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Start date </span>30 Oct 2024
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">End date 
-                                            </span>31 Oct 2024
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Main or dependant </span>Main
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Country</span>Norway
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Status  
-                                            </span><strong class="nhsuk-tag nhsuk-tag--yellow">Pending check</strong>
-                                            
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                                            <span class="nhsuk-table-responsive__heading">Action  
-                                            </span><a href="unhappy-path-step5-manage">Manage the entitlement</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="nhsuk-heading-m">Entitlements</h2>
+            <p>No entitlements found this case.</p>
           </div>
         </div>
-    </div>
-      
+      </div>
 
-       <!--in-page OHS Matched record - No S045 found - End -->
+       in-page OHS Matched record - No S045 found - End -->
       </div>
     </div>
   </div>
