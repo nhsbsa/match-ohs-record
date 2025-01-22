@@ -1,0 +1,263 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+  <link href="css/main.css" rel="stylesheet">
+
+
+<!-- Edit the header -->
+<!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
+
+<header class="nhsuk-header" role="banner">
+
+  <div class="nhsuk-width-container-fluid nhsuk-header__container">
+    <div class="nhsuk-header__logo nhsuk-header__logo--only" style="padding-top:6px;">
+      <a class="nhsuk-header__link nhsuk-header__link--service " href="sed-are-you-sure" aria-label="NHS digital service manual homepage">
+      <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
+        <path class="nhsuk-logo__background" d="M0 0h40v16H0z"></path>
+        <path class="nhsuk-logo__text" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+        <image src="https://assets.nhs.uk/images/nhs-logo.png" xlink:href=""></image>
+      </svg>
+        <span class="nhsuk-header__service-name">
+          Overseas Healthcare Service RINA
+        </span>
+      </a>
+    </div>
+
+    <div class="nhsuk-header__content" id="content-header">
+      <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="primary navigation">
+        <ul class="nhsuk-header__navigation-list" style="border:0">
+
+          <li class="nhsuk-header__navigation-item">
+            <p class="nhsuk-header__navigation-link" style="margin-bottom: 0;text-decoration: none;">
+              Signed in as Joe Bloggs
+            </p>
+          </li>
+          <li class="nhsuk-header__navigation-item">
+            <a class="nhsuk-header__navigation-link" href="sed-are-you-sure">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+</header>
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+      
+
+      <!-- content - start -->
+
+      <div class="nhsBSA-sidebar-content">
+          <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg ul-padding-top-lrg">
+              <h1 class="app-page-heading">
+                  <span class="nhsuk-caption-l">
+                    Create H001 - Notification/request for information
+                      <span class="nhsuk-u-visually-hidden"> - </span>
+                  </span>
+                  Request for sector PIN
+              </h1>
+
+              <h2 class="nhsuk-u-margin-top-9">Request for sector pin of the person in the receiving institution (optional)</h2>
+
+                <div class="nhsuk-form-group">
+              
+                  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s" style="font-weight: 300;">
+                      <p class="nhsuk-fieldset__heading">
+                        Sector PIN (optional)</p>
+                    </legend>
+              
+                    <div class="nhsuk-checkboxes nhsuk-checkboxes--small">
+              
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                          All
+                        </label>
+                      </div>
+              
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Sickness in cash
+                        </label>
+                      </div>
+              
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Sickness in kind
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Pension
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Unemployment
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Occupational disease and accident at work, benefits in cash
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Occupational disease and accident at work, benefits in kind
+                        </label>
+                      </div>
+                      
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Family benefits
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Recovery
+                        </label>
+                      </div>
+
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                          Other
+                        </label>
+                      </div>
+              
+                    </div>
+                  </fieldset>
+              
+                </div>
+              
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Other Sector PIN (optional)
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <a href="sed-create-h001-details" title="Continue to next section">
+                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                      Continue
+                  </button>
+              </a>
+
+              <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.1.0</p>
+
+          </div>
+      </div>
+
+      <!-- content - end -->
+
+      <div class="nhsBSA-sidebar-nav">
+
+          <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-full">
+                  <div class="nhsuk-back-link">
+                      <a class="nhsuk-back-link__link" href="sed-are-you-sure">
+                      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                      </svg>
+                      Go back</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- nav - start -->
+          <ul class="nhsuk-header__navigation-list sidebar-nav">
+                  
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="#">
+                  Person information
+                </a>
+            </li>
+        
+            <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link " href="#">
+                    Address
+                </a>
+            </li>
+
+            <li class="nhsuk-header__navigation-item">
+              <a class="nhsuk-header__navigation-link" href="#">
+                  Request for information on the person
+              </a>
+            </li>
+
+            <li class="nhsuk-header__navigation-item active">
+              <a class="nhsuk-header__navigation-link" href="#">
+                  Request for sector PIN
+              </a>
+            </li>
+
+            <li class="nhsuk-header__navigation-item">
+              <a class="nhsuk-header__navigation-link" href="#">
+                  Request details
+              </a>
+            </li>
+
+            <li class="nhsuk-header__navigation-item">
+              <a class="nhsuk-header__navigation-link" href="#">
+                  Notify a change of information
+              </a>
+            </li>
+
+            <li class="nhsuk-header__navigation-item">
+              <a class="nhsuk-header__navigation-link" href="#">
+                Additional information/Change in circumstances
+              </a>
+            </li>
+
+            <li class="nhsuk-header__navigation-item">
+              <a class="nhsuk-header__navigation-link" href="#">
+                  Documents
+              </a>
+            </li>
+          
+          </ul>
+
+          <!-- nav - end -->
+
+      </div>
+  </div>
+</div>
+{% endblock %}

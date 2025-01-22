@@ -1,0 +1,199 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create H001 - Notification/request for information - Address
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg ul-padding-top-lrg">
+                <h1 class="app-page-heading">
+                    <span class="nhsuk-caption-l">
+                      Create H001 - Notification/request for information
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                    </span>
+                    Address
+                </h1>
+
+                <h2 class="nhsuk-u-margin-top-9">Change to Address (optional)</h2>
+
+              <div class="nhsuk-form-group nhsuk-u-margin-top-6">
+
+                <fieldset class="nhsuk-fieldset">
+                  <label class="nhsuk-label" for="example">
+                    Address of the person (optional)
+                  </label>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" onclick="window.location='sed-create-h001-address';" id="example-1" name="example" type="radio" value="yes">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        Notification of address 
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no" checked>
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Request of address
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                  <label class="nhsuk-label" for="example">
+                      Type of address
+                  </label>
+            
+                  <div class="nhsuk-checkboxes">
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                        Country of residence
+                      </label>
+                    </div>
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                        Country of stay
+                      </label>
+                    </div>
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                        Contact address of the person
+                      </label>
+                    </div>
+            
+                  </div>
+                </fieldset>
+
+              </div>
+
+              <a href="#" class="nhsuk-u-margin-top-4" style="font-size: 19px;display: block;">Add another address of the person</a>
+
+              <a href="sed-create-h001-request" title="Continue to next section">
+                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                  </button>
+              </a>
+
+              <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.1.0</p>
+
+            </div>
+        </div>
+
+        <!-- content - end -->
+
+        <div class="nhsBSA-sidebar-nav">
+
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-full">
+                    <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                        </svg>
+                        Go back</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- nav - start -->
+            <ul class="nhsuk-header__navigation-list sidebar-nav">
+                    
+              <li class="nhsuk-header__navigation-item">
+                  <a class="nhsuk-header__navigation-link" href="sed-create-h001-person">
+                    Person information
+                  </a>
+              </li>
+          
+              <li class="nhsuk-header__navigation-item active">
+                  <a class="nhsuk-header__navigation-link " href="sed-create-h001-address">
+                      Address
+                  </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-request">
+                    Request for information on the person
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-pin">
+                    Request for sector PIN
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-details">
+                    Request details
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-notification">
+                    Notify a change of information
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-additional">
+                  Additional information/Change in circumstances
+                </a>
+              </li>
+
+              <li class="nhsuk-header__navigation-item">
+                <a class="nhsuk-header__navigation-link" href="sed-create-h001-documents">
+                    Documents
+                </a>
+              </li>
+            
+            </ul>
+
+            <!-- nav - end -->
+
+        </div>
+    </div>
+</div>
+{% endblock %}
