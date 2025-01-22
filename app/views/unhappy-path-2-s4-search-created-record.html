@@ -12,22 +12,13 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA
+  Overseas Healthcare Service RINA - Search for an OHS record
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
-  <!--<nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
 
-    <div class="nhsuk-grid-column-one-half">
-      <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Home</a></li>
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="unhappy-path-step1-case-management">Case management ID 78793</a></li>
-      </ol>
-    </div>
-
-  </nav>-->
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -157,12 +148,12 @@
                                     <input class="nhsuk-input nhsuk-u-width-two-thirds" id="contested" name="contested" type="text" value="">
                                 </div>
                                 
-                                <div class="nhsuk-form-group">
+                                <!--<div class="nhsuk-form-group">
                                     <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
                                         Postal code (optional)
                                     </label>
                                     <input class="nhsuk-input nhsuk-u-width-two-thirds" id="contested" name="contested" type="text" value="">
-                                </div>
+                                </div>-->
 
                                 <div class="nhsuk-form-group">
                                     <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
@@ -188,14 +179,72 @@
             <div class="nhsuk-card">
                 <div class="nhsuk-card__content">
     
-                    <!-- Start of header block -->
-                    <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
-                        <div class="nhsuk-grid-column-two-thirds">
-                          <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 0 results of 0</h3>
+                     <!-- Start of table data -->
+                     <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-full">
+                            <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
+                                <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
+                                <thead role="rowgroup" class="nhsuk-table__head">
+                                    <tr role="row">
+                                        <th role="columnheader" class="" scope="col">
+                                            OHS reference
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            First name
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Last name
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Date of birth
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            PIN
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Address
+                                        </th>
+                                        <th role="columnheader" class="" style="text-align: right;" scope="col">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nhsuk-table__body">
+    
+                                    <tr role="row" class="nhsuk-table__row">
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">OHS reference </span><a href="#">01234567</a>
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">First
+                                                name </span>Graeme
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Last
+                                                name </span>Rutherford
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Date of birth</span>16 May 1980
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">PIN</span>
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading"></span>
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                                            <span class="nhsuk-table-responsive__heading">View
+                                            </span>
+                                            <a href="ohs-record-create-s045-entitlement">Select</a>
+                                        </td>
+                                    </tr>
 
-                          <p class="nhsuk-u-margin-top-4">No OHS records found.</p>
+                                </tbody>
+                            </table>
+
                         </div>
                     </div>
+                    <!-- End of table data -->
     
                     <!-- End person search results -->
     
@@ -248,6 +297,7 @@
                             Address
                         </dt>
                         <dd class="nhsuk-summary-list__value">
+                            Sunderland, United Kingdom
                         </dd>
                     </div>
                     <div class="nhsuk-summary-list__row">
@@ -258,6 +308,8 @@
                             
                         </dd>
                     </div>
+
+                    
                     <div class="nhsuk-summary-list__row">
                         <dt class="nhsuk-summary-list__key">
                             Treatment start date</dt>
