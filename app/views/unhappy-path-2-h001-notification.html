@@ -36,7 +36,20 @@
         <!-- content - start -->
 
         <div class="nhsBSA-sidebar-content">
-            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg ul-padding-top-lrg">
+            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
+
+              <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                <div class="nhsuk-grid-column-full">
+                  <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="unhappy-path-2-s1-case-management">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                        </svg>
+                        Go back</a>
+                    </div>
+                  </div>
+                </div>
+
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
                       Create H001 - Notification/request for information
@@ -250,46 +263,53 @@
                     </div>
     
                     <div class="nhsuk-form-group">
-                      <!-- multi-select, auto complete -->
-                      <label class="nhsuk-label" id="address-country-label" for="address-country">
-                          Nationality (optional)
-                      </label>
-                      <input class="nhsuk-input nhsuk-input--width-20" list="countries" id="address-country-drop" name="address-country">
-                      <datalist id="countries">
-                        <option value="" selected="selected"></option>
-                        <option value="Austria">Austria</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Bulgaria">Bulgaria</option>
-                        <option value="Croatia">Croatia</option>
-                        <option value="Cyprus">Cyprus</option>
-                        <option value="Czech Republic">Czech Republic</option>
-                        <option value="Denmark">Denmark</option>
-                        <option value="Estonia">Estonia</option>
-                        <option value="Finland">Finland</option>
-                        <option value="France">France</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Gibraltar">Gibraltar</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Hungary">Hungary</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Latvia">Latvia</option>
-                        <option value="Liechtenstein">Liechtenstein</option>
-                        <option value="Lithuania">Lithuania</option>
-                        <option value="Luxembourg">Luxembourg</option>
-                        <option value="Malta">Malta</option>
-                        <option value="Netherlands">Netherlands</option>
-                        <option value="Norway">Norway</option>
-                        <option value="Poland">Poland</option>
-                        <option value="Portugal">Portugal</option>
-                        <option value="Romania">Romania</option>
-                        <option value="Slovakia">Slovakia</option>
-                        <option value="Slovenia">Slovenia</option>
-                        <option value="Spain">Spain</option>
-                        <option value="Sweden">Sweden</option>
-                        <option value="Switzerland">Switzerland</option>
-                      </datalist>                                                  
+                      <div class="nhsuk-grid-row nhsuk-u-margin-bottom-6">
+                          <div class="nhsuk-grid-column-one-half" style="padding-right: 0;">
+                              <label class="nhsuk-label" for="example">
+                                  Nationality (optional)
+                              </label>
+                              <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
+                                  <option value="0"></option>
+                                  <option value="1">[AT] Austria</option>
+                                  <option value="2">[BE] Belgium</option>
+                                  <option value="3" >[BG] Bulgaria</option>
+                                  <option value="4" >[HR] Croatia</option>
+                                  <option value="5" >[CY] Cyprus</option>
+                                  <option value="6" >[CZ] Czechia</option>
+                                  <option value="7" >[DK] Denmark</option>
+                                  <option value="8" >[EE] Estonia</option>
+                                  <option value="9" >[FI] Finland</option>
+                                  <option value="10" >[FR] France</option>
+                                  <option value="11" >[DE] Germany</option>
+                                  <option value="12" >[EL] Greece</option>
+                                  <option value="13" >[HU] Hungary</option>
+                                  <option value="14" >[IS] Iceland</option>
+                                  <option value="15" >[IE]Ireland</option>
+                                  <option value="16" >[IT] Italy</option>
+                                  <option value="17" >[LV] Latvia</option>
+                                  <option value="18" >[LI] Liechtenstein</option>
+                                  <option value="19" >[LU] Lithuania</option>
+                                  <option value="20" >[LU] Luxembourg</option>
+                                  <option value="21" >[MT] Malta</option>
+                                  <option value="22" >[NL] Netherlands</option>
+                                  <option value="23" >[NO] Norway</option>
+                                  <option value="24" >[PL] Poland</option>
+                                  <option value="25" >[PT] Portugal</option>
+                                  <option value="26" >[RO] Romania</option>
+                                  <option value="27" >[SK] Slovakia</option>
+                                  <option value="28" >[SI] Slovenia</option>
+                                  <option value="29" >[ES] Spain</option>
+                                  <option value="30" >[SE] Sweden</option>
+                                  <option value="31" >[CH] Switzerland</option>
+                                  <option value="32" >[UK] United Kingdom</option>
+                                </select> 
+                          </div>
+                          <div class="nhsuk-grid-column-one-half" style="float: left;">
+                              <button class="nhsuk-button nhsuk-button--secondary" style="margin-bottom: 0;margin-top: 22px;" data-module="nhsuk-button" type="submit">
+                                  Add nationality
+                              </button>
+                          </div>
+                      </div>        
                     </div>
     
                     <div class="nhsuk-form-group">
@@ -307,84 +327,16 @@
                         Continue
                     </button>
                 </a>
+                <p><a href="unhappy-path-2-h001-details">Back</a></p>
 
-                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.1.0</p>
+                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 
             </div>
         </div>
 
         <!-- content - end -->
 
-        <div class="nhsBSA-sidebar-nav">
-
-            <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid-column-full">
-                    <div class="nhsuk-back-link">
-                        <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
-                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
-                          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-                        </svg>
-                        Go back</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- nav - start -->
-            <ul class="nhsuk-header__navigation-list sidebar-nav">
-                    
-              <li class="nhsuk-header__navigation-item">
-                  <a class="nhsuk-header__navigation-link" href="unhappy-path-2-h001-person">
-                    Person information
-                  </a>
-              </li>
-          
-              <li class="nhsuk-header__navigation-item">
-                  <a class="nhsuk-header__navigation-link " href="unhappy-path-2-h001-address">
-                      Address
-                  </a>
-              </li>
-
-              <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="unhappy-path-2-h001-request">
-                    Request for information on the person
-                </a>
-              </li>
-
-              <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="unhappy-path-2-h001-pin">
-                    Request for sector PIN
-                </a>
-              </li>
-
-              <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="unhappy-path-2-h001-details">
-                    Request details
-                </a>
-              </li>
-
-              <li class="nhsuk-header__navigation-item active">
-                <a class="nhsuk-header__navigation-link" href="unhappy-path-2-h001-notification">
-                    Notify a change of information
-                </a>
-              </li>
-
-              <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="unhappy-path-2-h001-additional">
-                  Additional information/Change in circumstances
-                </a>
-              </li>
-
-              <li class="nhsuk-header__navigation-item">
-                <a class="nhsuk-header__navigation-link" href="unhappy-path-2-h001-documents">
-                    Documents
-                </a>
-              </li>
-            
-            </ul>
-
-            <!-- nav - end -->
-
-        </div>
+        
     </div>
 </div>
 {% endblock %}
