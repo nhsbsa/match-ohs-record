@@ -1,0 +1,198 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create H001 - Notification/request for information - Documents
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
+              <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                <div class="nhsuk-grid-column-full">
+                    <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                        </svg>
+                        Go back</a>
+                    </div>
+                </div>
+            </div>
+                <h1 class="app-page-heading">
+                    <span class="nhsuk-caption-l">
+                      Create H001 - Notification/request for information
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                    </span>
+                    Documents
+                </h1>
+
+                <h2 class="nhsuk-heading-m">Attached documents (optional)</h2>
+
+                  <div class="nhsuk-form-group">
+                
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s" style="font-weight: 300;">
+                        <p class="nhsuk-fieldset__heading">
+                          Predefined Documents (optional)</p>
+                      </legend>
+                
+                      <div class="nhsuk-checkboxes">
+                
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="Application">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                            Application
+                          </label>
+                        </div>
+                
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="Certificate of death">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                            Certificate of death
+                          </label>
+                        </div>
+                
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="Invoices">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                            Invoices
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="Statement of income">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
+                            Statement of income
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="Claim">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
+                            Claim
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="Medical evidence">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
+                            Medical evidence
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-7" name="example" type="checkbox" value="Work certificate">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-7">
+                            Work certificate
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-8" name="example" type="checkbox" value="Birth certificate">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-8">
+                            Birth certificate
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-9" name="example" type="checkbox" value="Marriage certificate">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-9">
+                            Marriage certificate
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-10" name="example" type="checkbox" value="Diploma(s)">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-10">
+                            Diploma(s)
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-11" name="example" type="checkbox" value="Medical report">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-11">
+                            Medical report
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-12" name="example" type="checkbox" value="Medical certificate">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-12">
+                            Medical certificate
+                          </label>
+                        </div>
+
+                        <div class="nhsuk-checkboxes__item">
+                          <input class="nhsuk-checkboxes__input" id="example-13" name="example" type="checkbox" value="Other">
+                          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-13">
+                            Other
+                          </label>
+                        </div>
+                
+                      </div>
+                    </fieldset>
+                
+                  </div>
+                  
+                  <h3 class="nhsuk-u-margin-top-9">Other documents attached (optional)</h3>
+
+                  <h4 class="nhsuk-u-margin-top-4">Additional documents</h4>
+  
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                      Document (optional)
+                    </label>
+                    <textarea class="nhsuk-textarea nhsuk-u-width-one-half" id="example" name="example" rows="3" aria-describedby="example-hint"></textarea>
+                  </div>
+
+                  <a href="#" style="font-size: 19px;display: block;">Add another document</a>
+
+                </fieldset>
+
+                <a href="#" title="Save draft of this form">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Save draft
+                    </button>
+                </a>
+                <p><a href="unhappy-path-2-v2-h001-additional">Back</a></p>
+
+                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+
+            </div>
+        </div>
+
+        <!-- content - end -->
+
+    </div>
+</div>
+{% endblock %}
