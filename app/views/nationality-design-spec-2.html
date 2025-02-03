@@ -1,0 +1,272 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
+                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                    <div class="nhsuk-grid-column-full">
+                        <div class="nhsuk-back-link">
+                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                            </svg>
+                            Go back</a>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="app-page-heading">
+                    <span class="nhsuk-caption-l">
+                        Create S045
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                    </span>
+                    Person
+                </h1>
+                
+
+                <h2 class="nhsuk-heading-l">Nationality question design specification</h2>
+                <h3 class="nhsuk-heading-s nhsuk-u-margin-top-9">Default state</h3>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        Nationality (optional)
+                    </label>
+                    <select class="nhsuk-select" id="select-1" name="select-1" style="width:440px;>
+                        <option value="0"></option>
+                        <option value="1">[AT] Austria</option>
+                        <option value="2">[BE] Belgium</option>
+                        <option value="3" >[BG] Bulgaria</option>
+                        <option value="4" >[HR] Croatia</option>
+                        <option value="5" >[CY] Cyprus</option>
+                        <option value="6" >[CZ] Czechia</option>
+                        <option value="7" >[DK] Denmark</option>
+                        <option value="8" >[EE] Estonia</option>
+                        <option value="9" >[FI] Finland</option>
+                        <option value="10" >[FR] France</option>
+                        <option value="11" >[DE] Germany</option>
+                        <option value="12" >[EL] Greece</option>
+                        <option value="13" >[HU] Hungary</option>
+                        <option value="14" >[IS] Iceland</option>
+                        <option value="15" >[IE]Ireland</option>
+                        <option value="16" >[IT] Italy</option>
+                        <option value="17" >[LV] Latvia</option>
+                        <option value="18" >[LI] Liechtenstein</option>
+                        <option value="19" >[LU] Lithuania</option>
+                        <option value="20" >[LU] Luxembourg</option>
+                        <option value="21" >[MT] Malta</option>
+                        <option value="22" >[NL] Netherlands</option>
+                        <option value="23" >[NO] Norway</option>
+                        <option value="24" >[PL] Poland</option>
+                        <option value="25" >[PT] Portugal</option>
+                        <option value="26" >[RO] Romania</option>
+                        <option value="27" >[SK] Slovakia</option>
+                        <option value="28" >[SI] Slovenia</option>
+                        <option value="29" >[ES] Spain</option>
+                        <option value="30" >[SE] Sweden</option>
+                        <option value="31" >[CH] Switzerland</option>
+                        <option value="32" >[UK] United Kingdom</option>
+                    </select> 
+                    <button class="nhsuk-button nhsuk-button--secondary" style="display:block;margin-top: 22px;" data-module="nhsuk-button" type="submit">
+                      Add nationality
+                    </button> 
+                  </div> 
+
+                <h3 class="nhsuk-heading-s nhsuk-u-margin-top-9">Interacted state - Selected nationalities are selected and added to the form</h3>
+                <div class="nhsuk-form-group">
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="example">
+                            Nationality (optional)
+                        </label>
+                        <select class="nhsuk-select" id="select-1" name="select-1" style="width:440px;">
+                            <option value="0"></option>
+                            <option value="1">[AT] Austria</option>
+                            <option value="2">[BE] Belgium</option>
+                            <option value="3" >[BG] Bulgaria</option>
+                            <option value="4" >[HR] Croatia</option>
+                            <option value="5" >[CY] Cyprus</option>
+                            <option value="6" >[CZ] Czechia</option>
+                            <option value="7" >[DK] Denmark</option>
+                            <option value="8" >[EE] Estonia</option>
+                            <option value="9" >[FI] Finland</option>
+                            <option value="10" >[FR] France</option>
+                            <option value="11" >[DE] Germany</option>
+                            <option value="12" >[EL] Greece</option>
+                            <option value="13" >[HU] Hungary</option>
+                            <option value="14" >[IS] Iceland</option>
+                            <option value="15" >[IE]Ireland</option>
+                            <option value="16" >[IT] Italy</option>
+                            <option value="17" >[LV] Latvia</option>
+                            <option value="18" >[LI] Liechtenstein</option>
+                            <option value="19" >[LU] Lithuania</option>
+                            <option value="20" >[LU] Luxembourg</option>
+                            <option value="21" >[MT] Malta</option>
+                            <option value="22" >[NL] Netherlands</option>
+                            <option value="23" >[NO] Norway</option>
+                            <option value="24" >[PL] Poland</option>
+                            <option value="25" >[PT] Portugal</option>
+                            <option value="26" >[RO] Romania</option>
+                            <option value="27" >[SK] Slovakia</option>
+                            <option value="28" >[SI] Slovenia</option>
+                            <option value="29" >[ES] Spain</option>
+                            <option value="30" >[SE] Sweden</option>
+                            <option value="31" >[CH] Switzerland</option>
+                            <option value="32" >[UK] United Kingdom</option>
+                        </select> 
+                        
+                      </div> 
+                    
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-half">
+                            <dl class="nhsuk-summary-list" style="margin-bottom:24px;">
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">
+                                        Nationality
+                                    </dt>
+                                    <dd class="nhsuk-summary-list__actions">
+                                        <a href="#">
+                                        Remove<span class="nhsuk-u-visually-hidden"> Nationality</span></a>
+                                    </dd>
+                                </div>              
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-half">
+                            <button class="nhsuk-button nhsuk-button--secondary" style="display:block;" data-module="nhsuk-button" type="submit">
+                                Add nationality
+                            </button> 
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <h3 class="nhsuk-heading-s nhsuk-u-margin-top-9">Interacted state - Multiple selected nationalities are selected and added to the form</h3>
+                
+                <div class="nhsuk-form-group">
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="example">
+                            Nationality (optional)
+                        </label>
+                        <select class="nhsuk-select" id="select-1" name="select-1" style="width:440px;">
+                            <option value="0"></option>
+                            <option value="1">[AT] Austria</option>
+                            <option value="2">[BE] Belgium</option>
+                            <option value="3" >[BG] Bulgaria</option>
+                            <option value="4" >[HR] Croatia</option>
+                            <option value="5" >[CY] Cyprus</option>
+                            <option value="6" >[CZ] Czechia</option>
+                            <option value="7" >[DK] Denmark</option>
+                            <option value="8" >[EE] Estonia</option>
+                            <option value="9" >[FI] Finland</option>
+                            <option value="10" >[FR] France</option>
+                            <option value="11" >[DE] Germany</option>
+                            <option value="12" >[EL] Greece</option>
+                            <option value="13" >[HU] Hungary</option>
+                            <option value="14" >[IS] Iceland</option>
+                            <option value="15" >[IE]Ireland</option>
+                            <option value="16" >[IT] Italy</option>
+                            <option value="17" >[LV] Latvia</option>
+                            <option value="18" >[LI] Liechtenstein</option>
+                            <option value="19" >[LU] Lithuania</option>
+                            <option value="20" >[LU] Luxembourg</option>
+                            <option value="21" >[MT] Malta</option>
+                            <option value="22" >[NL] Netherlands</option>
+                            <option value="23" >[NO] Norway</option>
+                            <option value="24" >[PL] Poland</option>
+                            <option value="25" >[PT] Portugal</option>
+                            <option value="26" >[RO] Romania</option>
+                            <option value="27" >[SK] Slovakia</option>
+                            <option value="28" >[SI] Slovenia</option>
+                            <option value="29" >[ES] Spain</option>
+                            <option value="30" >[SE] Sweden</option>
+                            <option value="31" >[CH] Switzerland</option>
+                            <option value="32" >[UK] United Kingdom</option>
+                        </select> 
+                        
+                      </div> 
+                    
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-half">
+                            <dl class="nhsuk-summary-list" style="margin-bottom:24px;">
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">
+                                        Nationality #1
+                                    </dt>
+                                    <dd class="nhsuk-summary-list__actions">
+                                        <a href="#">
+                                        Remove<span class="nhsuk-u-visually-hidden"> Nationality</span></a>
+                                    </dd>
+                                </div>              
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-half">
+                            <dl class="nhsuk-summary-list" style="margin-bottom:24px;">
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">
+                                        Nationality #2
+                                    </dt>
+                                    <dd class="nhsuk-summary-list__actions">
+                                        <a href="#">
+                                        Remove<span class="nhsuk-u-visually-hidden"> Nationality</span></a>
+                                    </dd>
+                                </div>              
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-half">
+                            <button class="nhsuk-button nhsuk-button--secondary" style="display:block;" data-module="nhsuk-button" type="submit">
+                                Add nationality
+                            </button> 
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- content - end -->
+
+        
+    </div>
+</div>
+{% endblock %}
