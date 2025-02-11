@@ -349,9 +349,12 @@
 <!-- Multi select scripts -->
 <script src="/js/autocomplete2.min.js"></script>
 <script type="text/javascript">
-    function changeLocation (){ 
-    window.location = "unhappy-path-2-s9-search-record-updated";
-    window.open('unhappy-path-ohs-record-no-address', '_blank').focus(); // new tab
+    function changeLocation() {
+    const newTab = window.open('unhappy-path-ohs-record-no-address', '_blank');
+    if (newTab) {
+        newTab.focus();
     }
+    window.location.href = "unhappy-path-2-s9-search-record-updated";
+}
 </script>
 {% endblock %}
