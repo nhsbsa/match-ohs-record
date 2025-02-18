@@ -216,10 +216,13 @@
                                     <tr role="row" class="nhsuk-table__row">
                                         <td role="cell" class="nhsuk-table__cell">
                                             
-                                            <form action="unhappy-path-2-s9-search-record-updated" target="_blank">
+                                            <!--<form action="unhappy-path-2-s9-search-record-updated" target="_blank">
                                                 <span class="nhsuk-table-responsive__heading">OHS reference </span>
                                                 <a href="" target="_blank" onclick="changeLocation()">01234567</a>
-                                            </form>
+                                            </form>-->
+                                            <span class="nhsuk-table-responsive__heading">OHS reference </span>
+                                            <a href="unhappy-path-ohs-record-no-address" target="_blank">01234567</a>
+
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">First
@@ -345,8 +348,8 @@
 </div>
 {% endblock %}
 
-{% block pageScripts %}
-<!-- Multi select scripts -->
+<!--{% block pageScripts %}
+ Multi select scripts
 <script src="/js/autocomplete2.min.js"></script>
 <script type="text/javascript">
     function changeLocation() {
@@ -357,4 +360,4 @@
     window.location.href = "unhappy-path-2-s9-search-record-updated";
 }
 </script>
-{% endblock %}
+{% endblock %}-->
