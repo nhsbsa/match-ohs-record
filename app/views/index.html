@@ -31,169 +31,45 @@
 <div class="nhsuk-index-container nhsuk-u-margin-bottom-9 ul-padding-top-lrg" style="margin: 0 auto; text-align: center;">
   <div class="nhsuk-grid-row" style="text-align: left;">
     <div class="nhsuk-grid-column-full">
-      <div class="nhsuk-grid-row">
-        <h1 class="nhsuk-heading-l">Overseas Healthcare Services<span class="nhsuk-caption-xl nhsuk-caption--bottom">OHS RINA Prototypes</span>
-        </h1>
-        <h2>Project goals</h2>
 
-        <p>OHS RINA goal is to explore a new system which closely integrates with present EESSI RINA and OHS, MS Claims, and Cost Recovery Systems.</p>
-        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
-        <h2 class="nhsuk-heading-l">Prototypes</h2>
+      <h1>
+        Overseas Healthcare Services
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Manage healthcare entitlements</span>
+      </h1>
 
-        <h3 class="nhsuk-u-margin-top-6">Unhappy Path User Flows</h3>
+      <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              MVP 1 - SBUC 5 - Unhappy Path #2 'S044 partial address, no OHS record, create OHS record without address' user flow
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p><a href="unhappy-path-2-s1-case-management">View the prototype "Unhappy Path #2"</a></p>
-            <h4>How to use prototype</h4>
-            <ol>
-              <li>Click to search OHS records</li>
-              <li>Click to 'Create new OHS record'</li>
-              <li>Click 'OHS reference' of record to go to OHS and make a note (not included) - End of task 1</li>
-              <li>Click View H002 and copy address to notepad</li>
-              <li>Click to 'Seach OHS records'</li>
-              <li>Click '01234567' OHS reference to open OHS to update the record and add address</li>
-              <li>Close OHS browser tab and return to case management tab</li>
-              <li>...</li>
-            </ol>
+      <h2 class="nhsuk-heading-m">Project aim</h2>
 
-            <h4>Design summary</h4>
-            <ol>
-              <li>The SED S044 comes in with an incomplete address i.e. only with Town and Country data items available in the address section as these are the only ones mandatory.</li>
-              <li>SED S044 also has a SED S041 as an attachment</li>
-              <li>User determines the S041 is evidence enough and issues an S045 entitlement</li>
-            </ol>
-          </div>
-        </details>
-
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              "Are you sure you want to leave this form?"
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p><a href="sed-create-h001-are-you-sure">View the prototype "You're about to leave this form"</a></p>
-            <h4>How to use prototype</h4>
-            <ol>
-              <li>Click on the 'Go back' breadcrumb to view the 'Are you sure' screen.</li>
-            </ol>
-
-            <h4>Design summary</h4>
-            <ol>
-              <li>Making sure users know they will lose their progress if they leave mid-task.</li>
-              <li>Users have a chance to 'undo' their leaving mid-task and can get back to their task.</li>
-            </ol>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              MVP 1 - SBUC 5 - Unhappy Path 'Managing Pending Check on entitlement' user flow
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-              <p><a href="unhappy-path-step1-case-management">View the prototype "SBUC 5 managing pending check on entitlement"</a></p>
-              <h4>User journey key points</h4>
-              <ul>
-                <li>User is managing a new case where its S044 have an overseas address</li>
-                <li>User goes to find a matched OHS record which has the same overseas address</li>
-                <li>User issues entitlement but ends up with a 'Pending check' due to indesser checks</li>
-                <li>User manages the entitlement by rejecting the entitlement</li>
-              </ul>
-            </ul>
-          </div>
-        </details>
+      <p class="nhsuk-body-l">To design a new OHS RINA experience, based on OHS and ESSI Rina, that enable's BSA staff to process healthcare entitlements in a reliable and efficient way.</p>
       
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              MVP 1 - SBUC 5 - All SED forms
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <h4>H001 SED</h4>
-            <p><a href="sed-view-h001-person">View H001 SED user flow</a><br>This prototype flow takes you through the SED sections only.</p>
-            <p><a href="unhappy-path-2-v2-h001-person">Create H001 SED user flow</a><br>This prototype flow takes you through the SED sections only.</p>
-            
-            <h4>H002 SED</h4>
-            <p><a href="sed-v3-view-h002-person">View H002 reply SED user flow</a><br>This prototype flow takes you through the SED sections only.</p>
-            <p><a href="v2-sed-create-h002-person">Create H002 reply SED user flow</a><br>This prototype flow takes you through the SED sections only.</p>
-            
-            <h4>X009 Reminder SED</h4>
-            <p><a href="sed-only-view-x009-person">View X009 SED user flow</a><br>This prototype flow takes you through two sections only.</p>
-            <p><a href="sed-only-create-x009-person">Create X009 SED user flow</a><br>This prototype flow takes you through two sections only.</p>
+      <ul class="nhsuk-grid-row nhsuk-card-group">
 
-            <h4>X010 Response SED</h4>
-            <p><a href="sed-only-view-x010-person">View X010 SED user flow</a><br>This prototype flow takes you through the SED sections only.</p>
-            <p><a href="sed-only-create-x010-person">Create X010 SED user flow</a><br>This prototype flow takes you through the SED sections only.</p>
-
-            <h4>S045 Reply SED</h4>
-            <p><a href="sed-view-s045-form-person">View S045 Reply SED user flow</a></p>
-            <p><a href="sed-v3-s045-form-person">Create S045 Reply SED user flow</a></p>
+        <!-- alpha -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="prototype-sbuc-5">SBUC 1 (MVP 2) prototypes</a>
+              </h2>
+              <p class="nhsuk-card__description">February 2025 - Current</p>
+            </div>
           </div>
-        </details>
+        </li>
 
-        <h3 class="nhsuk-u-margin-top-9">Happy Path User Flows</h3>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              MVP 1 - Nationality SED question design specification
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p><a href="nationality-design-spec">This design specification displays the interactive states of the Nationality question.</a></p>
+        <!-- discovery -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="prototype-sbuc-5">SBUC 5 (MVP 1) Prototypes</a>
+              </h2>
+              <p class="nhsuk-card__description">October 2024 - February 2025</p>
+            </div>
           </div>
-        </details>
+        </li>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              MVP 1 - SBUC 5 Timeline displaying attachments
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p><a href="attachments-case-management-2">Attachments displayed in an S044 in the timeline</a></p>
-            <p>This single screen describes how attachments will display in the timeline. </p>
-          </div>
-        </details>
-
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              MVP 1 - SBUC 5 SED S045 Reply form user flow
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p><a href="sed-s045-reply-manage-case">SBUC 5 SED S045 Reply</a></p>
-            <p>This user flow describes the interaction experience of a user creating an S045 reply. <a href="https://miro.com/app/board/uXjVK23uemY=/?moveToWidget=3458764606200621268&cot=14" title="SBUC 5 'Create S045 Reply' wire frames - 'E' latest version">See wire frame reference</a></p>
-          </div>
-        </details>
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              MVP 1 - SBUC 5 - Happy Path "Find a matched OHS Record"
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p><a href="ohs-record-manage-case">Matched OHS record</a></p>
-            <p>This user flow describes the interaction experience of a user landing on an 'open' managed case and finding they need to first match an OHS record to the case before they issue an S045 entitlement. This user flow ends at the point where the member state has received our issued S045 reply. <a href="https://miro.com/app/board/uXjVK23uemY=/?moveToWidget=3458764602926522115&cot=14" title="SBUC 5 wire frames - latest version">See wire frame reference</a></p>
-            </ul>
-          </div>
-        </details>
-
-      </div>
-
-
+      </ul>
 
 
       <!-- End of content -->
