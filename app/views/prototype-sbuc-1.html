@@ -1,0 +1,67 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-index-container nhsuk-u-margin-bottom-9 ul-padding-top-lrg" style="margin: 0 auto; text-align: center;">
+  <div class="nhsuk-grid-row" style="text-align: left;">
+    <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-grid-row">
+        <h1 class="nhsuk-heading-l">Overseas Healthcare Services<span class="nhsuk-caption-xl nhsuk-caption--bottom">OHS RINA Prototypes</span>
+        </h1>
+        <h2>Project goals</h2>
+
+        <p>OHS RINA goal is to explore a new system which closely integrates with present EESSI RINA and OHS, MS Claims, and Cost Recovery Systems.</p>
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+        <h2 class="nhsuk-heading-l">Prototypes</h2>
+
+        <h3 class="nhsuk-u-margin-top-6">H3 Heading</h3>
+
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Detail summary
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p><a href="unhappy-path-2-s1-case-management">Heading link</a></p>
+            <h4>H4 heading</h4>
+            <ol>
+              <li>Ordered list</li>
+              <li>Ordered list</li>
+            </ol>
+          </div>
+        </details>
+      </div>
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+</div>
+{% endblock %}
