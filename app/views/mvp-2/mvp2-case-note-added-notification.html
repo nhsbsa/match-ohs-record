@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-mvp2.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -81,7 +81,7 @@
                     <h3 class="nhsuk-timeline__title"><a href="#">S072 v.1</a></h3>
                 </div>
                 <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                    <time><strong>Sent</strong>, 24 Jan 2023 at 14:32am from UK</time>
+                    <time><strong>Sent</strong>, 24 Jan 2023 at 09:23 from UK</time>
                 </p>
                 <ul class="nhsuk-list nhsuk-body-s">
                   <li>
@@ -99,7 +99,7 @@
                     <h3 class="nhsuk-timeline__title"><a href="#">S071 v.1</a></h3>
                 </div>
                 <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                    <time>Received 23 Jan 2023 at 14:32am from France</time>
+                    <time>Received 23 Jan 2023 at 14:32 from France</time>
                 </p>
             
             </li>
@@ -129,7 +129,7 @@
                       <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
                     </div>
                     <div class="govuk-notification-banner__content">
-                      <p class="govuk-body">Your note has been recorded. <a href="#">View your note</a></p>
+                      <p class="govuk-body">Your note has been added. <a href="mvp2-dashboard">View your note (Continue with prototype user flow)</a></p>
                     </div>
                   </div>
             </div>
@@ -470,6 +470,7 @@
                                       <th role="columnheader" scope="col">
                                           Address
                                       </th>
+                                     
                                   </tr>
                               </thead>
                               <tbody class="nhsuk-table__body">
@@ -495,6 +496,7 @@
                                           <span class="nhsuk-table-responsive__heading">Address </span>17 place du Trocadéro<br> 75016<br> Paris<br> France
                                           
                                       </td>
+                                      
                                   </tr>
                               </tbody>
                           </table>

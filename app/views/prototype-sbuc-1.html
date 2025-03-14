@@ -40,54 +40,37 @@
         <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
         <h2 class="nhsuk-heading-l">Prototypes</h2>
 
-        <h3 class="nhsuk-u-margin-top-6">H3 Heading</h3>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              Detail summary
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p><a href="mvp-2/mvp-2-test">Happy Path User Flow</a></p>
-            <h4>H4 heading</h4>
-            <ol>
-              <li>Ordered list</li>
-              <li>Ordered list</li>
-            </ol>
-          </div>
-        </details>
+        <h3 class="nhsuk-u-margin-top-6"> </h3>
 
         <details class="nhsuk-details nhsuk-expander">
             <summary class="nhsuk-details__summary">
               <span class="nhsuk-details__summary-text" style="width: 95%;">
-                Version 12 - Create a new submission - Current
+                Version 1 - Issuing entitlement for a overseas pensioner
                 <strong class="nhsuk-tag nhsuk-tag--yellow" style="float:right;">
-                  In progress - with UI
+                  Prototype in progress
                 </strong>
               </span>
             </summary>
             <div class="nhsuk-details__text">
                 <h3 class="nhsuk-heading-s">Aims:</h3>
                 <ul>
-                    <li>To enable a user to add a reply to contestation to an individual claim</li>
-                    <li>To enable a user to upload invoices to a reply to contestation - RINA</li>
-                    <li>To enable a user to add a credit note to an individual claim</li>
-                    <li>To enable a user to upload individual credit notes to a credit note - RINA</li>
-                    <li>To iterate based on the recommendations from round 11 of UR</li>
+                    <li>To enable a user to view a received S071</li>
+                    <li>To enable a user to search for a existing OHS record</li>
+                    <li>To enable a user to create S072 entitlement by sending an S072 Reply</li>
+                    <li>To enable a user to register the S072 in response to S073</li>
                 </ul>
         
                 <hr>
     
                 <h3 class="nhsuk-heading-s">Prototype for UR</h3>
                     <div class="nhsuk-action-link">
-                      <a class="nhsuk-action-link__link" href="version-12/claims/rina/actual-cost/6784-france/summary/reply-sent">
+                      <a class="nhsuk-action-link__link" href="mvp-2/mvp2-case-s071-received">
                         <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
                           <path d="M0 0h24v24H0z" fill="none"></path>
                           <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z">
                           </path>
                         </svg>
-                        <span class="nhsuk-action-link__text">Scenario # - title</span>
+                        <span class="nhsuk-action-link__text">Issuing an entitlement to a pensioner</span>
                       </a>
                     </div>
 
@@ -96,39 +79,21 @@
               <h4 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Quick links</h4>
               <ul>
                 <!-- <li><a href="version-11/sign-in">Full journey - RINA actual cost</a></li> -->
-                <li><a href="version-12/claims/create/index">Create a claim</a></li>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/invoices/upload/xml/index">Add invoices</a></li>
-                <li><a href="version-12/claims/index">Claim search</a></li>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/invoices/full-invoice-list">Invoice search</a>
-                </li>
+                <li><a href="mvp-2/mvp2-case-s071-received">Receiving a S071 from a MS</a></li>
+                <li><a href="mvp-2/mvp-2/mvp2-search-ohs-records">Search for an OHS record</a></li>
+                <li><a href="mvp-2/mvp2-matched-record">Matching OHS record</a></li>
+                <li><a href="mvp-2/mvp2-create-s072-entitlement">S072 entitltment succesfully created</a></li>
+                <li><a href="mvp-2/mvp2-create-s072-reply">Create S072 Reply SED</a></li>
+                <li><a href="mvp-2/mvp2-s072-sent">S072 sent to MS</a></li>
+                <li><a href="mvp-2/mvp2-s072-received">S072 received by MS</a></li>
+                <li><a href="mvp-2/mvp2-s072-reason-4-note">What is the reason for note</a></li>
+                <li><a href="mvp-2/mvp2-s072-add-note">What is your note?</a></li>
+                <li><a href="mvp-2/mvp2-case-note-added-notification">Success - note added</a></li>
+                <li><a href="mvp-2/mvp2-dashboard">Work queue dashboard (time lapse)</a></li>
+                <li><a href="mvp-2/mvp2-case-s073-received">S073 received from MS - Register S072</a></li>
+                <li><a href="mvp-2/mvp2-case-s073-registered">S072 registered</a></li>
               </ul>
-    
-              <hr>
-    
-              <h4 class="nhsuk-heading-xs nhsuk-u-margin-bottom-3">Create a contestation/credit note - Proof of concept screens</h4>
-    
-              <h5 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Submissions landing screen</h5>
-              <ul>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/submissions/01-not-started">Claim status: Not
-                    started</a></li>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/submissions/02-active">Claim status: Active</a>
-                </li>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/submissions/03-letters-sent">Claim status:
-                    Reply sent</a></li>
-              </ul>
-    
-              <h5 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Submission details screen</h5>
-              <ul>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/submissions/create/02a-contestation-actual">Reply to contestation details - Actual cost</a></li>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/submissions/create/02a-contestation-average">Reply to contestation details - Average cost</a></li>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/submissions/create/02b-credit-note-actual">Credit
-                    note details - Actual cost</a></li>
-                <li><a href="version-12/claims/rina/actual-cost/6784-france/submissions/create/02b-credit-note-average">Credit
-                    note details - Average cost</a></li>
-              </ul>
-    
-              
-    
+
             </div>
           </details>
 
