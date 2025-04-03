@@ -43,6 +43,8 @@
             <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
             <a href="#" role="menuitem">Refresh case</a>
+            <a href="#" role="menuitem">Add note</a>
+            <a href="mvp2-notes" role="menuitem">View notes</a>
           </div>
         </li>
       </ol>
@@ -138,10 +140,10 @@
                       <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
                         S073 registered
                       </h2>
-                      <a href="#" style="float: right;">Close</a>
+                      <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
                     </div>
                     <div class="govuk-notification-banner__content">
-                      <p class="govuk-body">You can now <a href="#">add a note</a> and close the case.</p>
+                      <p class="govuk-body">S073 successfully registered.</p>
                     </div>
                   </div>
             </div>
@@ -269,10 +271,10 @@
                 <dt class="nhsuk-summary-list__key">
                   Status
                 </dt>
-                <dd class="nhsuk-summary-list__value">
-                  <strong class="nhsuk-tag nhsuk-tag--green">
+                <dd class="nhsuk-summary-list__value">Pensioner
+                  <!--<strong class="nhsuk-tag nhsuk-tag--green">
                     Pensioner
-                  </strong>
+                  </strong>-->
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -445,7 +447,8 @@
                 <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
               </div>
               <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
-                <a href="mvp2-s072-reason-4-note" target="_blank" style="font-size: 19px;">Add note</a>
+               <!--<a href="mvp2-s072-reason-4-2nd-note" class="nhsuk-u-padding-right-4" style="font-size: 19px;">Add note</a>
+                <a href="mvp2-notes" style="font-size: 19px;">View notes</a>-->
               </div>
             </div>
             
