@@ -40,9 +40,9 @@
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Case actions</a>
           <div class="dropdown-content reposition-right-menu">
-            <a href="mvp2-case-closed-case" role="menuitem">Close case</a>
+            <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
-            <a href="#" role="menuitem">Refresh case</a>
+            <a href="mvp2-s072-received" role="menuitem">Refresh case</a>
           </div>
         </li>
       </ol>
@@ -71,20 +71,6 @@
       <div class="nhsuk-timeline" id="timeline">
         <ol class="nhsuk-timeline__events">
 
-            <!-- SO73 -->
-
-            <li class="nhsuk-timeline__events--entry">
-
-                <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
-                    <div class="flag flag-fr" role="presentation"></div>
-                    <h3 class="nhsuk-timeline__title"><a href="#">S073 v.1</a></h3>
-                </div>
-                <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                    <time><strong>Received</strong>, 7 Nov 2024 at 18:12 from France</time>
-                </p>
-            
-            </li>
-
             <!-- SO72 -->
 
             <li class="nhsuk-timeline__events--entry">
@@ -94,12 +80,25 @@
                     <h3 class="nhsuk-timeline__title"><a href="#">S072 v.1</a></h3>
                 </div>
                 <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                    <time><strong>Sent</strong>, 6 Nov 2024 at 09:23 from UK</time>
+                  <time><strong>Draft saved</strong>, 6 Nov 2024 at 14:32 from UK</time>
                 </p>
                 <ul class="nhsuk-list nhsuk-body-s">
                   <li>
-                    <p style="font-size:16px;"><span class="ms-received"></span><strong>Received</strong> by member state</p>
+                    <p style="font-size:16px;"><span class="icon-svg-envelope"></span>Draft</p>
                   </li>
+                  <li class="nhsuk-u-margin-top-4"><details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                      <span class="nhsuk-details__summary-text">
+                        Actions
+                      </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+                      <ul class="nhsuk-list">
+                        <li><a href="mvp2-s072-sent">Send S072 reply</a></li>
+                        <li><a href="mvp2-create-s072-reply">Edit draft</a></li>
+                      </ul>
+                    </div>
+                  </details></li>
                 </ul>
             </li>
 
@@ -112,7 +111,7 @@
                     <h3 class="nhsuk-timeline__title"><a href="#">S071 v.1</a></h3>
                 </div>
                 <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                    <time><strong>Received</strong>, 5 Nov 2024 at 14:32 from France</time>
+                    <time><strong>Received</strong>, 5 Nov 2024 at 14:32am from France</time>
                 </p>
             
             </li>
@@ -127,70 +126,52 @@
     </div>
     
     <div class="nhsBSA-sidebar-content" style="padding: 0 32px;">
-        <div class="nhsuk-width-container-full ul-padding-top-lrg">
 
-        <!-- notification -->
+      <div class="nhsuk-width-container-full ul-padding-top-lrg">
 
-        <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-                <div class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-                    <div class="govuk-notification-banner__header">
-                      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                        S073 registered
-                      </h2>
-                      <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
-                    </div>
-                    <div class="govuk-notification-banner__content">
-                      <p class="govuk-body">S073 successfully registered.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="nhsuk-grid-column-one-quarters"></div>
-        </div>
 
         <!-- Content -->
 
-            <div class="nhsuk-grid-row">
-            
-                <div class="nhsuk-grid-column-two-thirds">
-                    <h1 class="nhsuk-heading-xl">Case management</h1>
-                </div>
+        <div class="nhsuk-grid-row">
+        
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1 class="nhsuk-heading-xl">Case management</h1>
+          </div>
+        </div>
 
-            </div>
+      <!-- in-page Case management personal details tabs - Start -->
 
-        <!-- in-page Case management personal details tabs - Start -->
-
-        <div class="nhsuk-tabs" data-module="nhsuk-tabs">
-            <h2 class="nhsuk-tabs__title">
-            Contents
-            </h2>
-        
-            <ul class="nhsuk-tabs__list">
-        
-            <li class="nhsuk-tabs__list-item nhsuk-tabs__list-item--selected">
-                <a class="nhsuk-tabs__tab" href="#applicant-details">
-                Applicant details
-                </a>
-            </li>
-        
-            <li class="nhsuk-tabs__list-item">
-                <a class="nhsuk-tabs__tab" href="#case-details">
-                Case details
-                </a>
-            </li>
-        
-            <li class="nhsuk-tabs__list-item">
-                <a class="nhsuk-tabs__tab" href="#participants">
-                Participants <span>(2)</span>
-                </a>
-            </li>
-        
-            <li class="nhsuk-tabs__list-item">
-                <a class="nhsuk-tabs__tab" href="#attachments">
-                Attachments
-                </a>
-            </li>
-            </ul>
+      <div class="nhsuk-tabs" data-module="nhsuk-tabs">
+        <h2 class="nhsuk-tabs__title">
+          Contents
+        </h2>
+      
+        <ul class="nhsuk-tabs__list">
+      
+          <li class="nhsuk-tabs__list-item nhsuk-tabs__list-item--selected">
+            <a class="nhsuk-tabs__tab" href="#applicant-details">
+              Applicant details
+            </a>
+          </li>
+      
+          <li class="nhsuk-tabs__list-item">
+            <a class="nhsuk-tabs__tab" href="#case-details">
+              Case details
+            </a>
+          </li>
+      
+          <li class="nhsuk-tabs__list-item">
+            <a class="nhsuk-tabs__tab" href="#participants">
+              Participants <span>(2)</span>
+            </a>
+          </li>
+      
+          <li class="nhsuk-tabs__list-item">
+            <a class="nhsuk-tabs__tab" href="#attachments">
+              Attachments
+            </a>
+          </li>
+        </ul>
 
         <div class="nhsuk-tabs__panel clearfix" id="applicant-details">
 
@@ -262,6 +243,7 @@
                   Entitlement end date
                 </dt>
                 <dd class="nhsuk-summary-list__value">
+
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -445,7 +427,7 @@
                 <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
               </div>
               <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
-                <a href="mvp2-s072-reason-4-2nd-note" style="font-size: 19px;" class="nhsuk-u-margin-right-4">Add note</a>
+                <a href="#" style="font-size: 19px;" class="nhsuk-u-margin-right-4">Add note</a>
                 <a href="#" style="font-size: 19px;">View notes</a>
               </div>
             </div>
@@ -547,7 +529,7 @@
                                         <th role="columnheader" scope="col">
                                             Country
                                         </th>
-                                        <th role="columnheader" scope="col">
+                                        <th role="columnheader" style="text-align: right;" scope="col">
                                             Status
                                         </th>
                                     </tr>
@@ -563,7 +545,7 @@
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
                                             <span class="nhsuk-table-responsive__heading">End date 
-                                            </span>31 Oct 2024
+                                            </span>
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
                                             <span class="nhsuk-table-responsive__heading">Main or dependant </span>Main
@@ -572,9 +554,10 @@
                                             <span class="nhsuk-table-responsive__heading">Country</span>France
                                             
                                         </td>
-                                        <td role="cell" class="nhsuk-table__cell">
+                                        <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle; text-align: right;">
                                             <span class="nhsuk-table-responsive__heading">Status  
-                                            </span><strong class="nhsuk-tag nhsuk-tag--green">Registered</strong>
+                                            </span><strong class="nhsuk-tag nhsuk-tag--green">Issued</strong>
+                                            
                                         </td>
                                     </tr>
                                 </tbody>
@@ -593,14 +576,4 @@
   </div>
 
 </div>
-{% endblock %}
-
-{% block pageScripts %}
-<!-- Close button scripts -->
-<script src="/js/autocomplete2.min.js"></script>
-<script type="text/javascript">
-  function closeBanner() { 
-    document.getElementById("govuk-notification-banner").style.display="none"; 
-  }
-</script>
 {% endblock %}
