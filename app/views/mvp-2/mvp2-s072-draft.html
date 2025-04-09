@@ -129,6 +129,25 @@
 
       <div class="nhsuk-width-container-full ul-padding-top-lrg">
 
+        <!-- notification -->
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+              <div class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                  <div class="govuk-notification-banner__header">
+                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                      Success
+                    </h2>
+                    <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
+                  </div>
+                  <div class="govuk-notification-banner__content">
+                    <p class="govuk-body">S072 draft has been created.</p>
+                  </div>
+                </div>
+          </div>
+          <div class="nhsuk-grid-column-one-quarters"></div>
+        </div>
+
 
         <!-- Content -->
 
@@ -577,4 +596,14 @@
   </div>
 
 </div>
+{% endblock %}
+
+{% block pageScripts %}
+<!-- Close button scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+  function closeBanner() { 
+    document.getElementById("govuk-notification-banner").style.display="none"; 
+  }
+</script>
 {% endblock %}

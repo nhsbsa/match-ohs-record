@@ -97,3 +97,24 @@
 </div>
 
 {% endblock %}
+
+{% block pageScripts %}
+<!-- Close button scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+  const form = document.getElementById('entitlementForm');
+  const errorMsg = document.getElementById('radio-error');
+ 
+  form.addEventListener('submit', function (e) {
+    const radios = document.querySelectorAll('input[name="example-1"]');
+    const isChecked = Array.from(radios).some(radio => radio.checked);
+ 
+    if (!isChecked) {
+      e.preventDefault(); // stop form submission
+      errorMsg.style.display = 'block'; // show error
+    } else {
+      errorMsg.style.display = 'none'; // hide error
+    }
+  });
+</script>
+{% endblock %}
