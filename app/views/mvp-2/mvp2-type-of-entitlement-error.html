@@ -41,15 +41,7 @@
 {% block content %}
           
 <!-- Content - Start -->
-<div class="nhsuk-grid-column-two-thirds">
-    <div class="nhsuk-back-link">
-      <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
-      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
-        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-      </svg>
-      Go back</a>
-  </div>
-<form action="mvp2-create-s072-entitlement" method="POST">
+<!--<form action="mvp2-create-s072-entitlement" method="POST">
     <div class="nhsuk-form-group">
     <fieldset class="nhsuk-fieldset" aria-describedby="entitlement-error">
     <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
@@ -58,9 +50,23 @@
     </h1>
     </legend>
      
-          <!-- Error message placeholder (displays automatically when required fails in some browsers) -->
+          Error message placeholder (displays automatically when required fails in some browsers) 
     <span class="nhsuk-error-message" id="entitlement-error">
-    <span class="nhsuk-u-visually-hidden">Error:</span> Please select an option
+      <div class="nhsuk-error-summary nhsuk-u-visually-hidden" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+        <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+          There is a problem
+        </h2>
+        <div class="nhsuk-error-summary__body">
+          <p>
+            Describe the errors and how to correct them
+          </p>
+          <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
+            <li>
+              <a href="#example-error-1">Date of birth must be in the past</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </span>
      
           <div class="nhsuk-radios">
@@ -91,9 +97,9 @@
     </button>
     </fieldset>
     </div>
-    </form>
+    </form>-->
 
-<!--<div class="nhsuk-width-container-fluid clearfix ul-padding-top-lrg">
+<div class="nhsuk-width-container-fluid clearfix ul-padding-top-lrg">
     
     <div class="nhsuk-grid-column-two-thirds">
       <div class="nhsuk-back-link">
@@ -111,7 +117,7 @@
         <div class="nhsuk-error-summary__body">
             <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
             <li>
-                <a href="#example-error-1">Select a citizen status</a>
+                <a href="#example-error-error">Select a citizen status</a>
             </li>
             </ul>
         </div>
@@ -119,11 +125,11 @@
     <div class="nhsuk-form-group nhsuk-form-group--error">
         <fieldset class="nhsuk-fieldset" aria-describedby="example-error-hint example-error-error">
     
-            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl">
-                <h1 class="nhsuk-fieldset__heading">
-                    What is the status of the citizen?
-                </h1>
-                </legend>
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+          <h1 class="nhsuk-fieldset__heading">
+            What is the status of the citizen?
+          </h1>
+        </legend>
         <div class="nhsuk-radios">
             <span class="nhsuk-error-message" id="example-error-error">
                 <span class="nhsuk-u-visually-hidden">Error:</span> Select a citizen status
@@ -158,6 +164,26 @@
         </button>
     </a>
     </div>
-</div>-->
+</div>
 
+{% endblock %}
+
+{% block pageScripts %}
+<!-- Close button scripts -->
+<script type="text/javascript">
+  const form = document.getElementById('entitlementForm');
+  const errorMsg = document.getElementById('radio-error');
+ 
+  form.addEventListener('submit', function (e) {
+    const radios = document.querySelectorAll('input[name="example-1"]');
+    const isChecked = Array.from(radios).some(radio => radio.checked);
+ 
+    if (!isChecked) {
+      e.preventDefault(); // stop form submission
+      errorMsg.style.display = 'block'; // show error
+    } else {
+      errorMsg.style.display = 'none'; // hide error
+    }
+  });
+</script>
 {% endblock %}
