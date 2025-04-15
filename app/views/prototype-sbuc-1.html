@@ -43,9 +43,40 @@
         <h3 class="nhsuk-u-margin-top-6"> </h3>
 
         <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text" style="width: 95%;">
+              SBUC 1 DEP Happy Path Family member of a pensioner
+              <strong class="nhsuk-tag nhsuk-tag--yellow" style="float:right;">
+                Prototype in progress
+              </strong>
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <h3 class="nhsuk-heading-s">Aims:</h3>
+            <ul>
+                <li>To enable a user to view a received S071 for a dependant</li>
+                <li>To enable a user to search for a existing OHS record</li>
+                <li>To enable a user to create S072 entitlement by sending an S072 Reply</li>
+                <li>To enable a user to register the S072 in response to S073</li>
+            </ul>
+            <h3 class="nhsuk-heading-s">Prototype for UR</h3>
+            <div class="nhsuk-action-link">
+              <a class="nhsuk-action-link__link" href="mvp-2-dep-happy-path/mvp2-dep-s071-received">
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z">
+                  </path>
+                </svg>
+                <span class="nhsuk-action-link__text">SBUC 1 DEP Happy Path Family member of pensioner</span>
+              </a>
+            </div>
+          </div>
+        </details>
+
+        <details class="nhsuk-details nhsuk-expander">
             <summary class="nhsuk-details__summary">
               <span class="nhsuk-details__summary-text" style="width: 95%;">
-                Version 1 - SBUC 1 MAIN Happy Path Pensioner/Exportable benefit
+                SBUC 1 MAIN Happy Path Pensioner/Exportable benefit
                 <strong class="nhsuk-tag nhsuk-tag--blue" style="float:right;">
                   Prototype ready for testing
                 </strong>
@@ -61,19 +92,18 @@
               </ul>
       
               <hr>
-  
-              <h3 class="nhsuk-heading-s">Prototype for UR</h3>
-                  <div class="nhsuk-action-link">
-                    <a class="nhsuk-action-link__link" href="mvp-2/mvp2-case-s071-received">
-                      <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z">
-                        </path>
-                      </svg>
-                      <span class="nhsuk-action-link__text">SBUC 1 MAIN Happy Path Pensioner/Exportable benefit</span>
-                    </a>
-                  </div>
 
+              <h3 class="nhsuk-heading-s">Prototype for UR</h3>
+              <div class="nhsuk-action-link">
+                <a class="nhsuk-action-link__link" href="mvp-2/mvp2-case-s071-received">
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z">
+                    </path>
+                  </svg>
+                  <span class="nhsuk-action-link__text">SBUC 1 MAIN Happy Path Pensioner/Exportable benefit</span>
+                </a>
+              </div>
               <hr>
               <h4 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">UCD Updates 10/4</h4>
               <ul>
@@ -117,11 +147,11 @@
           </details>
 
 
+        </div>
+
+        <!-- End of content -->
+
       </div>
-
-      <!-- End of content -->
-
-    </div>
   </div>
 </div>
 {% endblock %}
