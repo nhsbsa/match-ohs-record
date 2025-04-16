@@ -41,14 +41,25 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
+<div class="nhsuk-width-container-fluid" style="padding:32px 16px 0 16px; margin: 0 32px;">
+  <main class="nhsuk-main-wrapper" id="maincontent" role="main">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full" style="padding-left: 0;">
+        <span class="nhsuk-caption-xl">Registrations</span>
+        <h1 class="nhsuk-heading-xl" style="margin-bottom: 32px;">Work queue</h1>
+      </div>
+    </div>
+  </main>
+</div>
+
 <div class="nhsBSA-sidebar-container">
   <div class="nhsBSA-sidebar-wrapper">
-    <div class="work-queue-nav nhsuk-header__navigation" style="padding-right:0; padding-top: 62px; border-top: 18px solid #f0f4f5;border-left: 18px solid #f0f4f5;background-color: white;padding-left:0;">
-      <nav class="" style="padding-left:0; padding-top:0;" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+    <div id="work-queue-nav" class="work-queue-nav nhsuk-header__navigation" style="padding-right:0; border-top: 18px solid #f0f4f5;border-left: 18px solid #f0f4f5;background-color: rgba(255, 255, 255, 0);padding-left:0;">
+      <nav style="background-color: white; padding-left:0; padding-top:0;" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
         <ul class="nhsuk-header__navigation-list">
             
           <li class="nhsuk-header__navigation-item" style="border-bottom: 4px solid #f0f4f5;">
-              <a class="nhsuk-header__navigation-link " href="/alpha/version-10/home">
+              <a class="nhsuk-header__navigation-link" href="/alpha/version-10/home" style="color: #005eb8">
                 SBUC 1
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -57,7 +68,7 @@
           </li>
       
           <li class="nhsuk-header__navigation-item" style="border-bottom: 4px solid #f0f4f5;">
-              <a class="nhsuk-header__navigation-link active" href="/alpha/version-10/claims/index">
+              <a class="nhsuk-header__navigation-link active" href="/alpha/version-10/claims/index" style="color: #005eb8">
                 SBUC 1a
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -66,7 +77,7 @@
           </li>
       
           <li class="nhsuk-header__navigation-item" style="border-bottom: 4px solid #f0f4f5;">
-              <a class="nhsuk-header__navigation-link " href="/alpha/version-10/contestations/index">
+              <a class="nhsuk-header__navigation-link " href="/alpha/version-10/contestations/index" style="color: #005eb8">
                 SBUC 2
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -75,7 +86,7 @@
           </li>
 
           <li class="nhsuk-header__navigation-item" style="border-bottom: 4px solid #f0f4f5;">
-            <a class="nhsuk-header__navigation-link " href="/alpha/version-10/contestations/index">
+            <a class="nhsuk-header__navigation-link " href="/alpha/version-10/contestations/index" style="color: #005eb8">
               SBUC 3
               <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                   <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -84,7 +95,7 @@
           </li>
 
           <li class="nhsuk-header__navigation-item" style="border-bottom: 4px solid #f0f4f5;">
-            <a class="nhsuk-header__navigation-link " href="/alpha/version-10/contestations/index">
+            <a class="nhsuk-header__navigation-link " href="/alpha/version-10/contestations/index" style="color: #005eb8">
               SBUC 4
               <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                   <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -93,7 +104,7 @@
           </li>
       
           <li class="nhsuk-header__navigation-item" style="border-bottom: none;">
-              <a class="nhsuk-header__navigation-link " href="/alpha/version-10/reports/index">
+              <a class="nhsuk-header__navigation-link " href="/alpha/version-10/reports/index" style="color: #005eb8">
                 SBUC 5
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
                     <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -104,27 +115,61 @@
     </nav>
 
     </div>
+
+    
+    
     <!-- Start of central content -->
-    <div class="nhsBSA-sidebar-content">
+    <div class="nhsBSA-sidebar-content" style="padding-top: 17px;">
       <div class="nhsuk-width-container-fluid" style="padding: 0 16px; margin: 0 32px;">
         <main class="nhsuk-main-wrapper" id="maincontent" role="main">
           <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
+            <div class="nhsuk-grid-column-full" style="padding:0;">
               <div class="nhsuk-grid-row">
 
-                <h1 class="nhsuk-heading-xl">Work queue</h1>
-
-                <details class="nhsuk-details nhsuk-expander">
-                  <summary class="nhsuk-details__summary">
-                    <span class="nhsuk-details__summary-text">
-                      Search for a case
-                    </span>
-                  </summary>
-                  <div class="nhsuk-details__text">
-                
-                    <p>Search UI goes here</p>
+                <div class="nhsuk-grid-column-two-thirds">
+                  <div class="nhsuk-card">
+                    <div class="nhsuk-card__content">
+                      <h2 class="nhsuk-heading-m">Search for a case</h2>
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="claim-id">
+                          
+                        </label>
+                        <div class="nhsuk-hint" id="example-hints-hint">
+                          <p>Search for first name and last name, date of birth, local or international case ID, local PIN, case type, or case status.</p>
+                        </div>
+                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="claim-id" name="claim-id" type="text">
+                      </div>
+                      <button class="nhsuk-button nhsuk-u-margin-bottom-1" data-module="nhsuk-button" type="submit">
+                        Search
+                      </button>
+                    </div>
                   </div>
-                </details>
+                </div>
+
+                <div class="nhsuk-grid-column-one-third">
+                  <div class="nhsuk-card" style="height: 326px;">
+                    <div class="nhsuk-card__content">
+                      <h3 class="nhsuk-card__heading nhsuk-heading-m">
+                        Quick actions
+                      </h3>
+                      <hr style="margin:0px 0px 24px 0px;">
+          
+                      <div class="nhsuk-action-link nhsuk-u-margin-bottom-3">
+                        <a class="nhsuk-action-link__link" href="#">
+                          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="36" height="36">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z">
+                            </path>
+                          </svg>
+                          <span class="nhsuk-action-link__text">Create a new case</span>
+                        </a>
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+
+                
 
               </div>
             </div>
@@ -195,7 +240,7 @@
                           <th role="columnheader" class="" scope="col">
                             Last action
                           </th>
-                          <th role="columnheader" class="" scope="col">
+                          <th role="columnheader" class="" scope="col" style="text-align: right;">
                             Actions
                           </th>
                         </tr>
@@ -223,7 +268,7 @@
                           <td role="cell" class="nhsuk-table__cell">
                             <span class="nhsuk-table-responsive__heading">Last action </span>Actions to go here
                           </td>
-                          <td role="cell" class="nhsuk-table__cell">
+                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
                             <span class="nhsuk-table-responsive__heading">Action </span><a href="mvp2-dep-s071-received">View case</a>
                           </td>
                         </tr>
