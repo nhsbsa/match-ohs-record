@@ -691,10 +691,14 @@ ul.sidebar-nav .active {
   width: 398px !important;
 }
 
-.work-queue-nav .nhsuk-header__navigation li.nhsuk-header__navigation-item a.nhsuk-header__navigation-link, .work-queue-nav .nhsuk-header__navigation li a.nhsuk-header__navigation-link :hover {
-  color: red !important;
+#work-queue-nav .nhsuk-header__navigation li.nhsuk-header__navigation-item a.nhsuk-header__navigation-link, .work-queue-nav .nhsuk-header__navigation li a.nhsuk-header__navigation-link :hover {
+  color: #005eb8;
 }
 
-.work-queue-nav .nhsuk-header__navigation-item {
+#work-queue-nav .nhsuk-header__navigation-item {
   border-bottom: 4px solid #f0f4f5 !important;
+}
+
+.nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link {
+  color: #005eb8 !important;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
