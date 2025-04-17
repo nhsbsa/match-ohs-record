@@ -154,7 +154,7 @@
     
         </ul>
 
-        <div class="nhsuk-tabs__panel clearfix" id="applicant-details">
+        <div class="nhsuk-tabs__panel clearfix" id="applicant-details" style="padding-bottom: 0;">
 
           <div class="nhsuk-grid-column-one-half">
             <dl class="nhsuk-summary-list">
@@ -191,7 +191,7 @@
                   Address
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  17 place du Trocadéro</br>75016</br>Paris</br>France
+                  Place Georges-Pompidou</br>75004 Paris</br>France
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -211,7 +211,7 @@
               
               <div class="nhsuk-summary-list__row">
                 <dt class="nhsuk-summary-list__key">
-                  Entitlement start date
+                  Start date
                 </dt>
                 <dd class="nhsuk-summary-list__value">
                   30 Oct 2024
@@ -221,7 +221,7 @@
               
               <div class="nhsuk-summary-list__row">
                 <dt class="nhsuk-summary-list__key">
-                  Entitlement end date
+                  End date
                 </dt>
                 <dd class="nhsuk-summary-list__value">
                 </dd>
@@ -430,14 +430,7 @@
                     3 Dec 1950
                 </dd>
                 </div>
-                <div class="nhsuk-summary-list__row">
-                  <dt class="nhsuk-summary-list__key">
-                      Address
-                  </dt>
-                  <dd class="nhsuk-summary-list__value">
-                      17 place du Trocadéro</br>75016</br>Paris</br>France
-                  </dd>
-              </div>
+              
             </dl>
             </div>
 
@@ -445,14 +438,23 @@
 
                 <div class="nhsuk-grid-column-one-half" style="padding-left:0;">
                     <dl class="nhsuk-summary-list">
-                        <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
-                            <dt class="nhsuk-summary-list__key">
-                                PIN
-                            </dt>
-                            <dd class="nhsuk-summary-list__value">
-                                JG 08 23 89 A
-                            </dd>
-                        </div>
+                      <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                          Address
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                          17 place du Trocadéro</br>75016</br>Paris</br>France
+                        </dd>
+                      </div>
+
+                      <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
+                          <dt class="nhsuk-summary-list__key">
+                              PIN
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                              JG 08 23 89 A
+                          </dd>
+                      </div>
                         
                     </dl>
                 </div>
@@ -467,14 +469,14 @@
           <div>
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-three-quarters">
-                <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
+                <h2 class="nhsuk-heading-l">Matched main OHS Record</h2>
               </div>
               <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
                 <a href="ohs-step-2-case-note" target="_blank" style="font-size: 19px;">Add note</a>
               </div>
             </div>
             
-            <!-- Match record tabs start -->
+            <!-- Match record tabs start
 
             <div class="nhsuk-tabs" data-module="nhsuk-tabs">
               <h2 class="nhsuk-tabs__title">
@@ -588,88 +590,87 @@
             
               <div class="nhsuk-tabs__panel nhsuk-tabs__panel--hidden" id="past-month">
                 <h3>Dependants</h3>
-                <p>There are no dependants linked to this record.</p>
                 <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
                   Add a dependant
                 </button>
               </div>
             </div>
 
-            <!-- Match record tabs end -->
+            Match record tabs end -->
 
             <!-- Personal details -->
 
             <div class="nhsuk-card">
-                <div class="nhsuk-card__content">
-                    <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-three-quarters">
-                            <h3 class="nhsuk-heading-m">Personal details</h3>
-                        </div>
-                        <div class="nhsuk-grid-column-one-quarter" style="text-align: right; padding-right: 16px;">
-                            
-                        </div>
-                    </div>
-                    <div class="nhsuk-grid-row"> 
-                        <div class="nhsuk-grid-column-full"> 
-                          <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
-                              <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
-                              <thead role="rowgroup" class="nhsuk-table__head">
-                                  <tr role="row">
-                                      <th role="columnheader" class="" scope="col">
-                                        OHS reference
-                                      </th>
-                                      <th role="columnheader" class="" scope="col">
-                                        First name
-                                      </th>
-                                      <th role="columnheader" class="" scope="col">
-                                        Last name
-                                      </th>
-                                      <th role="columnheader" class="" scope="col">
-                                          Date of birth
-                                      </th>
-                                      <th role="columnheader" scope="col">
-                                          PIN
-                                      </th>
-                                      <th role="columnheader" scope="col">
-                                          Address
-                                      </th>
-                                  </tr>
-                              </thead>
-                              <tbody class="nhsuk-table__body">
+              <div class="nhsuk-card__content" style="padding-bottom: 0;">
+                  <div class="nhsuk-grid-row">
+                      <div class="nhsuk-grid-column-three-quarters">
+                          <h3 class="nhsuk-heading-m">Personal details</h3>
+                      </div>
+                      <div class="nhsuk-grid-column-one-quarter" style="text-align: right; padding-right: 16px;">
+                          
+                      </div>
+                  </div>
+                  <div class="nhsuk-grid-row"> 
+                      <div class="nhsuk-grid-column-full"> 
+                        <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
+                            <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
+                            <thead role="rowgroup" class="nhsuk-table__head">
+                                <tr role="row">
+                                    <th role="columnheader" class="" scope="col">
+                                      OHS reference
+                                    </th>
+                                    <th role="columnheader" class="" scope="col">
+                                      First name
+                                    </th>
+                                    <th role="columnheader" class="" scope="col">
+                                      Last name
+                                    </th>
+                                    <th role="columnheader" class="" scope="col">
+                                        Date of birth
+                                    </th>
+                                    <th role="columnheader" scope="col">
+                                        PIN
+                                    </th>
+                                    <th role="columnheader" scope="col">
+                                        Address
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="nhsuk-table__body">
 
-                                  <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <a href="#"><span class="nhsuk-table-responsive__heading">OHS reference </span>1234567</a>
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">First name </span>Geralt
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                        <span class="nhsuk-table-responsive__heading">Last name </span>Rivia
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">Date of birth 
-                                          </span>3 Dec 1950
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">PIN </span>JG 08 23 89 A
-                                      </td>
-                                      <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">Address </span>17 place du Trocadéro<br> 75016<br> Paris<br> France
-                                          
-                                      </td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>     
-                    </div>
-                </div>
+                                <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <a href="#"><span class="nhsuk-table-responsive__heading">OHS reference </span>1234567</a>
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">First name </span>Geralt
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                      <span class="nhsuk-table-responsive__heading">Last name </span>Rivia
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">Date of birth 
+                                        </span>3 Dec 1950
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">PIN </span>JG 08 23 89 A
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">Address </span>17 place du Trocadéro<br> 75016<br> Paris<br> France
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>     
+                  </div>
+              </div>
             </div>
 
             <!-- Entitlement table start -->
 
             <div class="nhsuk-card">
-                <div class="nhsuk-card__content">
+                <div class="nhsuk-card__content" style="padding-bottom: 0;">
                     <h3 class="nhsuk-heading-m">Entitlements</h3>
                     <div class="nhsuk-grid-row">
                         <div class="nhsuk-grid-column-full">
@@ -687,9 +688,6 @@
                                             End date
                                         </th>
                                         <th role="columnheader" scope="col">
-                                            Main or dependant
-                                        </th>
-                                        <th role="columnheader" scope="col">
                                             Country
                                         </th>
                                         <th role="columnheader" scope="col" style="text-align: right;">
@@ -704,14 +702,11 @@
                                             <span class="nhsuk-table-responsive__heading">Type </span>S072
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
-                                            <span class="nhsuk-table-responsive__heading">Start date </span>4 Dec 2023
+                                            <span class="nhsuk-table-responsive__heading">Start date </span>30 Oct 2024
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
                                             <span class="nhsuk-table-responsive__heading">End date 
                                             </span>
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
-                                            <span class="nhsuk-table-responsive__heading">Main or dependant </span>Main
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
                                             <span class="nhsuk-table-responsive__heading">Country</span>France
@@ -733,7 +728,7 @@
             <!-- Dependants table start -->
 
             <div class="nhsuk-card">
-                <div class="nhsuk-card__content">
+                <div class="nhsuk-card__content" style="padding-bottom: 0;">
                     <div class="nhsuk-grid-row">
                         <div class="nhsuk-grid-column-three-quarters">
                             <h3 class="nhsuk-heading-m">Dependants</h3>
@@ -743,72 +738,96 @@
                         </div>
                     </div>
                     <div class="nhsuk-grid-row">  
-                        <div class="nhsuk-grid-column-full"> 
-                            <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
-                                <thead role="rowgroup" class="nhsuk-table__head">
-                                        <tr role="row">
-                                            <th role="columnheader" class="" scope="col">
-                                                First name
-                                            </th>
-                                            <th role="columnheader" class="" scope="col">
-                                                Last name
-                                            </th>
-                                            <th role="columnheader" class="" scope="col">
-                                                Issue date
-                                            </th>
-                                            <th role="columnheader" class="" scope="col">
-                                                Start date
-                                            </th>
-                                            <th role="columnheader" scope="col">
-                                                End date
-                                            </th>
-                                            <th role="columnheader" scope="col">
-                                                Country
-                                            </th>
-                                            <th role="columnheader" scope="col" style="text-align: right;">
-                                                Status
-                                            </th>
-                                        </tr>
-                                </thead>
-                                <tbody class="nhsuk-table__body">
-                                    <tr role="row" class="nhsuk-table__row">
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">First name </span> Sam
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Last name </span>Rivia
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Issue date </span> 12 Mar 2023
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Start date 
-                                            </span> 1 Jan 2023
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">End date </span>
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell">
-                                            <span class="nhsuk-table-responsive__heading">Country </span> France
-                                        </td>
-                                        <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                                            <span class="nhsuk-table-responsive__heading">Status </span> 
-                                            <strong class="nhsuk-tag nhsuk-tag--grey">
-                                                Cancelled
-                                            </strong>
-                                        </td>
+                      <div class="nhsuk-grid-column-full"> 
+                        <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
+                            <thead role="rowgroup" class="nhsuk-table__head">
+                                    <tr role="row">
+                                        <th role="columnheader" class="" scope="col">
+                                            First name
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Last name
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
+                                            Start date
+                                        </th>
+                                        <th role="columnheader" scope="col">
+                                            End date
+                                        </th>
+                                        <th role="columnheader" scope="col">
+                                          Country
+                                        </th>
+                                        <th role="columnheader" scope="col" style="text-align: right;">
+                                          Status
+                                        </th>
                                     </tr>
-                                </tbody>
-                            </table>
-                            <a href="#">
-                                <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
-                                    Add a dependant
-                                </button>
-                            </a>
+                            </thead>
+                            <tbody class="nhsuk-table__body">
 
-                      </div>     
-                    </div>
+                              <!-- 1st dependant -->
+
+                                <tr role="row" class="nhsuk-table__row">
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">First name </span> Sam
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">Last name </span>Rivia
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">Start date 
+                                        </span> 1 Jan 2023
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">End date </span>
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell">
+                                        <span class="nhsuk-table-responsive__heading">Country </span> France
+                                    </td>
+                                    <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                                        <span class="nhsuk-table-responsive__heading">Status </span> 
+                                        <strong class="nhsuk-tag nhsuk-tag--grey">
+                                            Cancelled
+                                        </strong>
+                                    </td>
+                                </tr>
+
+                                <!-- 2nd dependant -->
+
+                                <tr role="row" class="nhsuk-table__row">
+                                  <td role="cell" class="nhsuk-table__cell">
+                                      <span class="nhsuk-table-responsive__heading">First name </span> Ciri
+                                  </td>
+                                  <td role="cell" class="nhsuk-table__cell">
+                                      <span class="nhsuk-table-responsive__heading">Last name </span>Rivia
+                                  </td>
+                                  <td role="cell" class="nhsuk-table__cell">
+                                      <span class="nhsuk-table-responsive__heading">Start date 
+                                      </span> 30 Oct 2024
+                                  </td>
+                                  <td role="cell" class="nhsuk-table__cell">
+                                      <span class="nhsuk-table-responsive__heading">End date </span>
+                                  </td>
+                                  <td role="cell" class="nhsuk-table__cell">
+                                      <span class="nhsuk-table-responsive__heading">Country </span> France
+                                  </td>
+                                  <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                                    <span class="nhsuk-table-responsive__heading">Status </span> 
+                                    <strong class="nhsuk-tag nhsuk-tag--green">
+                                        Issued
+                                    </strong>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    <a href="#">
+                        <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                            Add a dependant
+                        </button>
+                    </a>
+
+                  </div>     
                 </div>
+              </div>
             </div>
             <!-- Dependant table end -->
 

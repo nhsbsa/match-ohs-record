@@ -1,0 +1,126 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create an X009 Reminder
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
+
+                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                    <div class="nhsuk-grid-column-full">
+                        <div class="nhsuk-back-link">
+                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                            </svg>
+                            Go back</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- notification
+
+                <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-full">
+                        <div class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                            <div class="govuk-notification-banner__header">
+                            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                Success
+                            </h2>
+                            <a href="#" style="float: right;">Close</a>
+                            </div>
+                            <div class="govuk-notification-banner__content">
+                            <p class="govuk-body">Dependant has been added to OHS record.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-quarters"></div>
+                </div>-->
+
+
+                <h1 class="app-page-heading">
+                    <span class="nhsuk-caption-l">
+                        Add dependant and issue entitlement
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                    </span>
+                    Issue entitlement for dependant
+                </h1>
+
+                <div class="nhsuk-form-group">
+
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hints-hint">
+                      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+                        <h1 class="nhsuk-fieldset__heading">
+                            Select which dependant to issue an entitlement for
+                        </h1>
+                      </legend>
+                  
+                      <div class="nhsuk-radios">
+                  
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+                            Sam Rivia
+                          </label>
+                        </div>
+                  
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+                            Ciri Rivia
+                          </label>
+                        </div>
+                  
+                      </div>
+                    </fieldset>
+                  
+                </div>
+
+                
+
+                <a href="mvp2-dep-case-create-s072-reply" title="Continue to next section">
+                    <button class="nhsuk-button nhsuk-u-margin-top-4" data-module="nhsuk-button" type="submit">
+                        Create S072 entitlement
+                    </button>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- content - end -->
+
+    </div>
+</div>
+{% endblock %}
