@@ -36,98 +36,153 @@
         <!-- content - start -->
 
         <div class="nhsBSA-sidebar-content">
-            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
+            <div class="nhsuk-grid-column-full">
 
-                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
-                    <div class="nhsuk-grid-column-full">
-                        <div class="nhsuk-back-link">
-                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                <div class="nhsuk-grid-row">
+                    <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
                             <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
-                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                                <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                                </path>
                             </svg>
-                            Go back</a>
-                        </div>
+                        Go back</a>
                     </div>
                 </div>
-            <div class="nhsuk-form-group">
-                <span class="nhsuk-caption-l">Add a dependant</span>
-                <h1 class="app-page-heading" style="margin-bottom: 24px;">Manage the period of entitlement</h1>
-
-                <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-4">
-                    
-                    <label class="nhsuk-label" for="example">
-                        Entitlement start date
-                    </label>
-
-                    <div class="nhsuk-date-input" id="example">
-                        <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                Day
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="30">
-                            </div>
-                        </div>
-                        <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                Month
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="10">
-                            </div>
-                        </div>
-                        <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                Year
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric" value="2024">
-                            </div>
-                        </div>
-                    </div>    
-                </fieldset>
-
-                <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-4">
-                    
-                    <label class="nhsuk-label" for="example">
-                        Entitlement end date (optional)
-                    </label>
-
-                    <div class="nhsuk-date-input" id="example">
-                        <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                Day
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="15">
-                            </div>
-                        </div>
-                        <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                Month
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="11">
-                            </div>
-                        </div>
-                        <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                Year
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric" value="2024">
-                            </div>
-                        </div>
-                    </div>    
-                </fieldset>
-
             </div>
+            
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
 
-                <a href="mvp2-dep-case-create-s072-reply" title="Continue to next section">
+                <div class="nhsuk-form-group">
+                    <span class="nhsuk-caption-l">Add a dependant</span>
+                    <h1 class="app-page-heading" style="margin-bottom: 24px;">Manage the period of entitlement</h1>
+
+                    <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-4">
+                        
+                        <label class="nhsuk-label" for="example">
+                            Entitlement start date
+                        </label>
+
+                        <div class="nhsuk-date-input" id="example">
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                    Day
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="30">
+                                </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                    Month
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="10">
+                                </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                    Year
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric" value="2024">
+                                </div>
+                            </div>
+                        </div>    
+                    </fieldset>
+
+                    <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-4">
+                        
+                        <label class="nhsuk-label" for="example">
+                            Entitlement end date (optional)
+                        </label>
+
+                        <div class="nhsuk-date-input" id="example">
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                    Day
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="15">
+                                </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                    Month
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="11">
+                                </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                    Year
+                                    </label>
+                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric" value="2024">
+                                </div>
+                            </div>
+                        </div>    
+                    </fieldset>
+                </div>
+
+                <a href="mvp2-dep-case-create-s072-reply-3" title="Continue to next section">
                     <button class="nhsuk-button nhsuk-u-margin-top-4" data-module="nhsuk-button" type="submit">
                         Submit
                     </button>
                 </a>
+
+            </div>
+
+            <div class="nhsuk-grid-column-one-quarter">
+
+                <h3>Main details</h3>
+
+                <!-- Main details -->
+
+                <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                    <dl class="nhsuk-summary-list nhsuk-u-margin-bottom-2">
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                First name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Geralt
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Last name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Rivia
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Date of birth
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                3 Dec 1950
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Address
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                17 place du Trocadéro</br>75016</br>Paris</br>France
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
+                            <dt class="nhsuk-summary-list__key">
+                                PIN
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                JG 08 23 89 A
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
 
             </div>
         </div>
