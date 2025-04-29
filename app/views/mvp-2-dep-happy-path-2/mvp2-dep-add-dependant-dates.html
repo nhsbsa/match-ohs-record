@@ -49,14 +49,17 @@
                 </div>
 
                 <div class="nhsuk-form-group">
-                    <span class="nhsuk-caption-l nhsuk-u-margin-top-9">Add a dependant</span>
-                    <h1 class="app-page-heading" style="margin-bottom: 24px;">Manage the period of entitlement</h1>
+                    <span class="nhsuk-caption-l nhsuk-u-margin-top-9">Add a dependant and create entitlement</span>
+                    <h1 class="app-page-heading">Manage the period of entitlement</h1>
 
                     <fieldset class="nhsuk-fieldset">
                         
                         <label class="nhsuk-label" for="example">
                             Entitlement start date
                         </label>
+                        <div class="nhsuk-hint" id="dob-errors-hint">
+                            The dependant entitlement start date can not be before the main entitlement start date. 
+                        </div>
 
                         <div class="nhsuk-date-input" id="example">
                             <div class="nhsuk-date-input__item">
@@ -86,7 +89,7 @@
                         </div>    
                     </fieldset>
 
-                    <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-4">
+                    <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-6">
                         
                         <label class="nhsuk-label" for="example">
                             Entitlement end date (optional)
@@ -135,7 +138,7 @@
 
                 <div class="nhsuk-card__content nhsuk-card__content--secondary nhsuk-u-padding-left-5" style="border-left: 1px solid #d8dde0;">
 
-                    <h3 class="nhsuk-u-margin-top-9" style="margin-top:138px !important;">Main details</h3>
+                    <h3 class="nhsuk-u-margin-top-9" style="margin-top:82px !important;">Main details</h3>
 
                     <dl class="nhsuk-summary-list nhsuk-u-margin-bottom-2">
                         <div class="nhsuk-summary-list__row">
@@ -143,7 +146,7 @@
                                 First name
                             </dt>
                             <dd class="nhsuk-summary-list__value">
-                                Ciri
+                                Geralt
                             </dd>
                         </div>
 
@@ -163,7 +166,6 @@
                             <dd class="nhsuk-summary-list__value">
                               30 Oct 2024
                             </dd>
-                            <dd class="nhsuk-summary-list__actions"></dd>
                         </div>
 
                         <div class="nhsuk-summary-list__row">
@@ -171,9 +173,47 @@
                               Entitlement end date
                             </dt>
                             <dd class="nhsuk-summary-list__value">
-                              15 Nov 2024
                             </dd>
-                            <dd class="nhsuk-summary-list__actions"></dd>
+                        </div>
+                    </dl>
+
+                    <!-- Dependant details -->
+
+                    <h3 class="nhsuk-u-margin-top-9">Dependant details</h3>
+                
+                    <dl class="nhsuk-summary-list nhsuk-u-margin-bottom-2">
+    
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                First name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Ciri
+                            </dd>
+                        </div>
+    
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Last name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Rivia
+                            </dd>
+                        </div>
+
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Entitlement start date</dt>
+                            <dd class="nhsuk-summary-list__value">
+                                30 Oct 2024</dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
+                            <dt class="nhsuk-summary-list__key">
+                                Entitlement end date
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                15 Nov 2024
+                            </dd>
                         </div>
                     </dl>
                 </div>
