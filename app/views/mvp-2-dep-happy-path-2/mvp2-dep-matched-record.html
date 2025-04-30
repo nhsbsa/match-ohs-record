@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-mvp2.html' %}
+{% extends '../layout-mvp2-dep-happy.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -62,7 +62,7 @@
                 <a href="#" style="float: right;">Close</a>
             </div>
             <div class="govuk-notification-banner__content">
-            <p class="govuk-body">Case was matched to the selected main OHS record.</p>
+            <p class="govuk-body">Dependant record was matched to the main OHS record.</p>
             </div>
         </div>
     </div>
@@ -211,9 +211,9 @@
                 </table>
 
                 <div class="nhsuk-u-margin-top-6">
-                    <a href="mvp2-dep-add-dependant-search">
+                    <a href="mvp2-dep-add-dependant-search" title="Click to add dependant">
                         <button class="nhsuk-button nhsuk-button--secondary" style="margin-bottom: 0;" data-module="nhsuk-button" type="submit">
-                        Add dependant and create entitlement</button>
+                        Add dependant</button>
                     </a>
                 </div>
             </div>
