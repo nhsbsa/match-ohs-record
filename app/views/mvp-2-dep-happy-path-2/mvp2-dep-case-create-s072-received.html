@@ -38,7 +38,7 @@
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Case actions</a>
           <div class="dropdown-content reposition-right-menu">
-            <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
+            <a href="" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
             <a href="#" role="menuitem">Refresh case</a>
           </div>
@@ -111,12 +111,12 @@
 
         <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-full">
-                <div class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+              <div id="govuk-notification-banner" class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
                     <div class="govuk-notification-banner__header">
                       <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
                         Success
                       </h2>
-                      <a href="#" style="float: right;">Close</a>
+                      <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
                     </div>
                     <div class="govuk-notification-banner__content">
                       <p class="govuk-body">S072 has been sent to member state.</p>
@@ -137,6 +137,9 @@
         </div>
 
       <!-- in-page Case management personal details tabs - Start -->
+
+      <hr style="margin:0px 0px 24px 0px;">
+      <h2>S071 details</h2>
 
       <div class="nhsuk-tabs" data-module="nhsuk-tabs">
         <h2 class="nhsuk-tabs__title">
@@ -752,3 +755,14 @@
   
 </div>
 {% endblock %}
+
+{% block pageScripts %}
+<!-- Close button scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+  function closeBanner() { 
+    document.getElementById("govuk-notification-banner").style.display="none"; 
+  }
+</script>
+{% endblock %}
+
