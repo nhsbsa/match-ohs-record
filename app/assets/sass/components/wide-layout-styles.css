@@ -708,4 +708,84 @@ ul.sidebar-nav .active {
 
 .nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link {
   color: #005eb8 !important;
+}
+
+.nhsuk-pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nhsuk-pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nhsuk-pagination__link:focus {
+  background-color: #ffeb3b;
+  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  color: #212b32;
+  outline: 4px solid transparent;
+  text-decoration: none;
+}
+
+.nhsuk-pagination__item:hover, .nhsuk-pagination__next:hover, .nhsuk-pagination__prev:hover {
+  background-color: #f3f2f1;
+}
+
+.nhsuk-pagination__item--current:hover {
+  background-color: #1d70b8;
+}
+
+.nhsuk-pagination__item, .nhsuk-pagination__next, .nhsuk-pagination__prev {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 45px;
+  min-height: 45px;
+  padding: 10px 15px;
+  float: left;
+}
+
+.nhsuk-pagination__next, .nhsuk-pagination__prev {
+  font-weight: 700;
+}
+
+.nhsuk-pagination__item--current, .nhsuk-pagination__item--ellipses, .nhsuk-pagination__item:first-child, .nhsuk-pagination__item:last-child {
+  display: block;
+}
+
+.nhsuk-pagination__item--current {
+  font-weight: 700;
+  outline: 1px solid rgba(0, 0, 0, 0);
+  background-color: #1d70b8;
+}
+
+.nhsuk-pagination__item--current .nhsuk-pagination__link:link, .nhsuk-pagination__item--current .nhsuk-pagination__link:visited {
+  color: #fff;
+}
+
+.nhsuk-pagination__item--ellipses {
+  font-weight: 700;
+  color: #505a5f;
+}
+
+.nhsuk-pagination__item--ellipses:hover {
+  background-color: initial;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-pagination__item, .nhsuk-pagination__next, .nhsuk-pagination__prev {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-pagination {
+    margin-bottom: 30px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=wide-layout-styles.css.map */
