@@ -788,4 +788,7 @@ ul.sidebar-nav .active {
     flex-direction: row;
     align-items: flex-start;
   }
+}
+.nhsuk-fieldset__heading {
+  font-size: 3rem !important;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
