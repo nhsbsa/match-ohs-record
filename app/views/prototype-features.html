@@ -1,0 +1,56 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-index-container nhsuk-u-margin-bottom-9 ul-padding-top-lrg" style="margin: 0 auto; text-align: center;">
+  <div class="nhsuk-grid-row" style="text-align: left;">
+    <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-grid-row">
+        <h1 class="nhsuk-heading-l">Overseas Healthcare Services<span class="nhsuk-caption-xl nhsuk-caption--bottom">OHS RINA Prototypes</span>
+        </h1>
+        <p>The following prototypes demonstrate the design specification for features appearing in OHS RINA and its user interface. Each prototype details the behaviours and visual presentation of those features. This prototype demonstrates the feature alone, please disregard all other content and features appearing in this prototype.</p>
+        <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+
+        <h2 class="nhsuk-heading-l">User interface features</h2>
+
+        <div class="nhsuk-card">
+            <div class="nhsuk-card__content">
+                <h3>Pagination</h3>
+                <p>Help users navigate forwards and backwards through a series of pages. </p>
+                <p><a href="pagination-v1">View the pagination design specification</a></p>
+
+            </div>
+        </div>
+
+        <!-- End of content -->
+
+      </div>
+  </div>
+</div>
+{% endblock %}
