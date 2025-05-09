@@ -45,16 +45,16 @@
     <div class="nhsuk-grid-column-three-quarters">
         <div class="nhsuk-back-link">
             <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
-                <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
-                    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
-                    </path>
-                </svg>
-                Go back</a>
+            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                </path>
+            </svg>
+            Go back</a>
         </div>
 
         <!-- Notification -->
 
-        <div id="govuk-notification-banner" class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div id="govuk-notification-banner" class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
             <div class="govuk-notification-banner__header">
                 <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
                     Success
@@ -73,9 +73,9 @@
 
 <div class="nhsuk-width-container-fluid clearfix">
     <div class="nhsuk-grid-column-three-quarters">
-        <div class="nhsuk-grid-row nhsuk-u-margin-top-9">
+        <div class="nhsuk-grid-row nhsuk-u-margin-top-4">
             <div class="nhsuk-grid-column-full">
-                <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+                <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-4">
                     Matched main OHS record
                 </h1>
             </div>
@@ -142,10 +142,10 @@
                                         </span>3 Dec 1950
                                     </td>
                                     <td role="cell" class="nhsuk-table__cell">
-                                        <span class="nhsuk-table-responsive__heading">PIN </span>JG 08 23 89 A
+                                        <span class="nhsuk-table-responsive__heading">PIN </span>DC 76 78 98 D
                                     </td>
                                     <td role="cell" class="nhsuk-table__cell">
-                                        <span class="nhsuk-table-responsive__heading">Address </span>17 place du Trocadéro<br> 75016<br> Paris<br> France
+                                        <span class="nhsuk-table-responsive__heading">Address </span>Mariahilfer Strasse 15<br>Vienna 1220<br>Austria
                                         
                                     </td>
                                 </tr>
@@ -157,7 +157,6 @@
         </div>
 
         <!-- Personal details end -->
-
 
         <!-- Entitlements start -->
 
@@ -194,28 +193,32 @@
                                 <span class="nhsuk-table-responsive__heading">Type </span>S072
                             </td>
                             <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Start date </span>30 October 2024
+                                <span class="nhsuk-table-responsive__heading">Start date </span>15 Jul 2019
                             </td>
                             <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">End date </span>
                             </td>
                             <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Country </span> France
+                                <span class="nhsuk-table-responsive__heading">Country </span> Austria
                             </td>
                             <td role="cell" class="nhsuk-table__cell nhsuk-table__header--numeric">
                                 <span class="nhsuk-table-responsive__heading">Status </span>
-                                <strong class="nhsuk-tag nhsuk-tag--green">Registered</strong>
+                                <strong class="nhsuk-tag nhsuk-tag--grey">Expired</strong>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-
-                <div class="nhsuk-u-margin-top-6">
-                    <a href="mvp2-dep-add-dependant-search" title="Click to add dependant">
-                        <button class="nhsuk-button nhsuk-button--secondary" style="margin-bottom: 0;" data-module="nhsuk-button" type="submit">
-                        Add dependant</button>
-                    </a>
+                <div class="govuk-warning-text nhsuk-u-margin-top-4">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                      <span class="nhsuk-table-responsive__heading">Warning</span>
+                        A issued or registered entitlement is required to add a dependant.
+                    </strong>
                 </div>
+                <!-- <div class="nhsuk-inset-text">
+                    <span class="nhsuk-u-visually-hidden">Information: </span>
+                    <p>Entitlement required to add a dependant.</p>
+                </div> -->
             </div>
         </div>
 
@@ -236,7 +239,7 @@
                         First name
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                        Geralt
+                        Krishna
                     </dd>
                 </div>
                 <div class="nhsuk-summary-list__row">
@@ -244,7 +247,7 @@
                         Last name
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                        Rivia
+                        Patel
                     </dd>
                 </div>
                 <div class="nhsuk-summary-list__row">
@@ -252,25 +255,26 @@
                         Date of birth
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                        3 Dec 1950
+                        23 Aug 1952
                     </dd>
                 </div>
                 <div class="nhsuk-summary-list__row">
                     <dt class="nhsuk-summary-list__key">
-                        Address
+                        PIN
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                        17 place du Trocadéro</br>75016</br>Paris</br>France
+                        DC 76 78 98 D
                     </dd>
                 </div>
                 <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
                     <dt class="nhsuk-summary-list__key">
-                        PIN
+                        Address
                     </dt>
                     <dd class="nhsuk-summary-list__value">
-                        JG 08 23 89 A
+                        Mariahilfer Strasse 15<br>Vienna 1220<br>Austria
                     </dd>
                 </div>
+                
             </dl>
         </div>
 

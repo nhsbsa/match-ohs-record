@@ -304,6 +304,16 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     vertical-align: middle;
     margin-right: 6px;
 }
+.flag-au {
+    background-image: url('/images/flag-au.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
 .icon-file {
     background-image: url('/images/icon-file.svg');
     background-size: contain;
@@ -730,4 +740,44 @@ ul.sidebar-nav .active {
 }
 .nhsuk-fieldset__heading {
     font-size: 3rem !important;
+}
+
+// Warning text Gov UK compoinent //
+
+.govuk-warning-text__icon {
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    min-width: 35px;
+    min-height: 35px;
+    margin-top: -7px;
+    border: 3px solid #005eb8;
+    border-radius: 50%;
+    color: #fff;
+    background: #005eb8;
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    forced-color-adjust: none;
+}
+.govuk-warning-text__text {
+    font-size: 1.1875rem;
+    display: block;
+    padding-left: 54px;
+    font-weight: inherit;
+}
+@media (min-width: 40.0625em) {
+    .govuk-warning-text {
+        margin-bottom: 30px;
+    }
+}
+.govuk-warning-text {
+    line-height: 1;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 0;
 }
