@@ -1,3 +1,8 @@
+.postit-note {
+  background-color: #ffdd00;
+  padding: 24px;
+}
+
 .dont-break-out {
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
@@ -800,10 +805,6 @@ ul.sidebar-nav .active {
     align-items: flex-start;
   }
 }
-.nhsuk-fieldset__heading {
-  font-size: 3rem !important;
-}
-
 .govuk-warning-text__icon {
   box-sizing: border-box;
   display: inline-block;
@@ -842,4 +843,25 @@ ul.sidebar-nav .active {
   margin-bottom: 20px;
   position: relative;
   padding: 10px 0;
+}
+
+.nhsuk-table-responsive .nhsuk-table__body .nhsuk-table-responsive__heading {
+  display: none;
+}
+
+.govuk-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
