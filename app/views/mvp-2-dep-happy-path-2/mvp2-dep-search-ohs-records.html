@@ -62,6 +62,9 @@
                     <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
                         Search for main OHS record
                     </h1>
+                    <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
+                        Search for a matching OHS record. If no record is found, create a new record.
+                    </div>
                 </div>
                 <div class="nhsuk-grid-column-one-third" style="text-align: right;">
                     <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
@@ -92,10 +95,6 @@
                         <div class=" nhsuk-grid-column-full">
     
                             <form action="03-person-search-results#search-heading" method="post">
-                                <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
-                                    Search for a matching OHS record. If no record is found, create a new record.
-                                </div>
-
                                 <div class="nhsuk-form-group">
                                     <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">
                                         First name
@@ -161,7 +160,7 @@
                                         Country of residence (optional)
                                     </label>
                                     <div class="nhsuk-hint">
-                                        For example, 'France'
+                                        For example, France
                                     </div>
                                     <select class="nhsuk-select nhsuk-input--width-20" id="sort" name="sort">
                                         <option value=""></option>
