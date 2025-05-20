@@ -80,149 +80,152 @@
 
         <!-- Search for a record expander - Start -->
 
+        
         <div class="nhsuk-grid-column-three-quarters">
-            <details class="nhsuk-details nhsuk-expander">
-                <summary class="nhsuk-details__summary">
-                    <span class="nhsuk-details__summary-text" style="font-size: 1.1875rem;">
-                        Edit search
-                    </span>
-                </summary>
-                <div class="nhsuk-details__text">
-                    <div class="nhsuk-grid-row">
-                        <div class=" nhsuk-grid-column-full">
-    
-                            <form action="03-person-search-results#search-heading" method="post">
-                                <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
-                                    Search for a matching OHS record. If no record is found, create a new record.
-                                </div>
+            <div class="nhsuk-card__content">
+                <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
+                    <p>Search for a matching OHS record. If no record is found, create a new record.</p>
+                </div>
+                <details class="nhsuk-details nhsuk-expander">
+                    <summary class="nhsuk-details__summary">
+                        <span class="nhsuk-details__summary-text" style="font-size: 1.1875rem;">
+                            Edit search
+                        </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+                        <div class="nhsuk-grid-row">
+                            <div class=" nhsuk-grid-column-full">
 
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">
-                                        First name
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Geralt">
-                                </div>
-    
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">Last name</label>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Rivia">
-                                </div>
-    
-                                
-    
-                                <div class="nhsuk-form-group">
-                                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                                        <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="dob">
-                                            Date of birth
+                                <form action="03-person-search-results#search-heading" method="post">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">
+                                            First name
                                         </label>
-                                        <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
-                                            For example, 28 9 2024
-                                        </div>
-                                        <div class="nhsuk-date-input" id="example">
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                                        Day
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric" value="03">
-                                                </div>
-                                            </div>
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                                        Month
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric" value="12">
-                                                </div>
-                                            </div>
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                                        Year
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric" value="1950">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
-                                        PIN (OHS reference or National Insurance number) (optional)
-                                    </label>
-                                    <div class="nhsuk-hint">
-                                        For example, QQ 12 34 56 C
+                                        <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Geralt">
                                     </div>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="contested" name="contested" type="text" value="JG 08 23 89 A">
-                                </div>
 
-                                <div class="govuk-form-group">
-                                    <label class="nhsuk-label--s" for="sort">
-                                        Country of residence (optional)
-                                    </label>
-                                    <div class="nhsuk-hint">
-                                        For example, 'France'
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">Last name</label>
+                                        <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Rivia">
                                     </div>
-                                    <select class="nhsuk-select nhsuk-input--width-20" id="sort" name="sort">
-                                        <option value=""></option>
-                                        <option value="Austria">Austria</option>
-                                        <option value="Belgium">Belgium</option>
-                                        <option value="Bulgaria">Bulgaria</option>
-                                        <option value="Croatia">Croatia</option>
-                                        <option value="Cyprus">Cyprus</option>
-                                        <option value="Czech Republic">Czech Republic</option>
-                                        <option value="Denmark">Denmark</option>
-                                        <option value="Estonia">Estonia</option>
-                                        <option value="Finland">Finland</option>
-                                        <option value="France">France</option>
-                                        <option value="Germany">Germany</option>
-                                        <option value="Gibraltar">Gibraltar</option>
-                                        <option value="Greece">Greece</option>
-                                        <option value="Hungary">Hungary</option>
-                                        <option value="Iceland">Iceland</option>
-                                        <option value="Ireland">Ireland</option>
-                                        <option value="Italy">Italy</option>
-                                        <option value="Latvia">Latvia</option>
-                                        <option value="Liechtenstein">Liechtenstein</option>
-                                        <option value="Lithuania">Lithuania</option>
-                                        <option value="Luxembourg">Luxembourg</option>
-                                        <option value="Malta">Malta</option>
-                                        <option value="Netherlands">Netherlands</option>
-                                        <option value="Norway">Norway</option>
-                                        <option value="Poland">Poland</option>
-                                        <option value="Portugal">Portugal</option>
-                                        <option value="Romania">Romania</option>
-                                        <option value="Slovakia">Slovakia</option>
-                                        <option value="Slovenia">Slovenia</option>
-                                        <option value="Spain">Spain</option>
-                                        <option value="Sweden">Sweden</option>
-                                        <option value="Switzerland">Switzerland</option>
-                                    </select>
-                                </div>
 
-    
-                                <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3" data-module="nhsuk-button" type="submit" style="margin-top:20px;">
-                                    Search
-                                </button>
-    
-                            </form>
+                                    
+
+                                    <div class="nhsuk-form-group">
+                                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                                            <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="dob">
+                                                Date of birth
+                                            </label>
+                                            <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
+                                                For example, 28 9 2024
+                                            </div>
+                                            <div class="nhsuk-date-input" id="example">
+                                                <div class="nhsuk-date-input__item">
+                                                    <div class="nhsuk-form-group">
+                                                        <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                                            Day
+                                                        </label>
+                                                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric" value="03">
+                                                    </div>
+                                                </div>
+                                                <div class="nhsuk-date-input__item">
+                                                    <div class="nhsuk-form-group">
+                                                        <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                                            Month
+                                                        </label>
+                                                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric" value="12">
+                                                    </div>
+                                                </div>
+                                                <div class="nhsuk-date-input__item">
+                                                    <div class="nhsuk-form-group">
+                                                        <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                                            Year
+                                                        </label>
+                                                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric" value="1950">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
+                                            PIN (OHS reference or National Insurance number) (optional)
+                                        </label>
+                                        <div class="nhsuk-hint">
+                                            For example, QQ 12 34 56 C
+                                        </div>
+                                        <input class="nhsuk-input nhsuk-input--width-20" id="contested" name="contested" type="text" value="JG 08 23 89 A">
+                                    </div>
+
+                                    <div class="govuk-form-group">
+                                        <label class="nhsuk-label--s" for="sort">
+                                            Country of residence (optional)
+                                        </label>
+                                        <div class="nhsuk-hint">
+                                            For example, 'France'
+                                        </div>
+                                        <select class="nhsuk-select nhsuk-input--width-20" id="sort" name="sort">
+                                            <option value=""></option>
+                                            <option value="Austria">Austria</option>
+                                            <option value="Belgium">Belgium</option>
+                                            <option value="Bulgaria">Bulgaria</option>
+                                            <option value="Croatia">Croatia</option>
+                                            <option value="Cyprus">Cyprus</option>
+                                            <option value="Czech Republic">Czech Republic</option>
+                                            <option value="Denmark">Denmark</option>
+                                            <option value="Estonia">Estonia</option>
+                                            <option value="Finland">Finland</option>
+                                            <option value="France">France</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="Gibraltar">Gibraltar</option>
+                                            <option value="Greece">Greece</option>
+                                            <option value="Hungary">Hungary</option>
+                                            <option value="Iceland">Iceland</option>
+                                            <option value="Ireland">Ireland</option>
+                                            <option value="Italy">Italy</option>
+                                            <option value="Latvia">Latvia</option>
+                                            <option value="Liechtenstein">Liechtenstein</option>
+                                            <option value="Lithuania">Lithuania</option>
+                                            <option value="Luxembourg">Luxembourg</option>
+                                            <option value="Malta">Malta</option>
+                                            <option value="Netherlands">Netherlands</option>
+                                            <option value="Norway">Norway</option>
+                                            <option value="Poland">Poland</option>
+                                            <option value="Portugal">Portugal</option>
+                                            <option value="Romania">Romania</option>
+                                            <option value="Slovakia">Slovakia</option>
+                                            <option value="Slovenia">Slovenia</option>
+                                            <option value="Spain">Spain</option>
+                                            <option value="Sweden">Sweden</option>
+                                            <option value="Switzerland">Switzerland</option>
+                                        </select>
+                                    </div>
+
+
+                                    <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3" data-module="nhsuk-button" type="submit" style="margin-top:20px;">
+                                        Search
+                                    </button>
+
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </details>
+                </details>
+            </div>
 
             <!-- Search results - Start -->
             <div class="nhsuk-card">
                 <div class="nhsuk-card__content">
-    
+
                     <!-- Start of header block -->
                     <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
                         <div class="nhsuk-grid-column-two-thirds">
-                          <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 1 results of 1</h2>
+                            <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 1 results of 1</h2>
                         </div>
                     </div>
 
-    
+
                     <!-- Start of table data -->
                     <div class="nhsuk-grid-row">
                         <div class="nhsuk-grid-column-full">
@@ -254,7 +257,7 @@
                                     </tr>
                                 </thead>
                                 <tbody class="nhsuk-table__body">
-    
+
                                     <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">OHS reference </span><a href="#">01234567</a>
@@ -290,13 +293,12 @@
                         </div>
                     </div>
                     <!-- End of table data -->
-    
+
                     <!-- End person search results -->
-    
+
                 </div>
             </div>
             <!-- Search results - End -->
-
         </div>
 
         <!-- Search for a record expander - End -->
