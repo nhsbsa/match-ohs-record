@@ -27,6 +27,35 @@
   padding: 0;
 }
 
+@media (min-width: 48.0625em) {
+  .nhsuk-grid-column-one-third {
+    float: left;
+    width: 33.3333%;
+  }
+}
+.nhsuk-grid-column-one-third {
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+@media (min-width: 48.0625em) {
+  .nhsuk-grid-column-one-third {
+    float: left;
+    width: 33.3333%;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-form-group {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-label {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
 .ul-padding-top-lrg {
   padding-top: 48px;
 }
