@@ -638,6 +638,14 @@ ul.sidebar-nav li.nhsuk-header__navigation-list {
   padding-right: 16px;
 }
 
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list {
+  background-color: #fff !important;
+}
+
+.nhsuk-header__navigation-title {
+  display: none;
+}
+
 .nhsuk-header__navigation-list {
   list-style: none;
   margin: 0;
@@ -893,4 +901,40 @@ ul.sidebar-nav .active {
   -webkit-user-select: none;
   -moz-user-select: none;
        user-select: none;
+}
+
+.nhsuk-header__navigation-link {
+  position: relative;
+}
+
+.nhsuk__nav-list-counter {
+  background-color: #005EB8;
+  color: #fff;
+  border-radius: 120px;
+  padding: 5px 8px;
+  position: absolute;
+  right: 20px;
+  top: 7px;
+  display: block;
+}
+
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list {
+  padding: 0;
+}
+
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list .nhsuk-header__navigation-item {
+  border-bottom: 1px solid #f0f4f5;
+  margin: 4px;
+}
+
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list ul li:last-of-type {
+  border: none;
+}
+
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list ul li a.active, .nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list ul li a.active .nhsuk__nav-list-name {
+  background-color: #005EB8;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 4px;
 }/*# sourceMappingURL=wide-layout-styles.css.map */

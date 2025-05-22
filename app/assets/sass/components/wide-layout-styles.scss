@@ -510,6 +510,9 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 .nhsuk-footer p {
     font-size: 1rem;
 }
+.nhsuk-width-container {
+    margin: 0 16px;
+}
 .nhsuk-footer .nhsuk-width-container {
     width: 100%;
     margin: 0 32px;
@@ -597,6 +600,13 @@ ul.sidebar-nav li.nhsuk-header__navigation-list {
     margin: 0;
     padding-right: 16px;
 }
+// Work queue nav styles //
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list {
+    background-color: #fff !important;
+}
+.nhsuk-header__navigation-title {
+    display: none;
+}
 .nhsuk-header__navigation-list {
     list-style: none;
     margin: 0;  
@@ -632,6 +642,7 @@ ul.sidebar-nav .nhsuk-header__navigation-item {
 ul.sidebar-nav .active {
     border-left: 8px solid #005eb8; 
 }
+
 .done-panel {
     background-color: #005EB8;
     text-align: center;
@@ -833,3 +844,49 @@ ul.sidebar-nav .active {
     -ms-user-select: none;
     user-select: none;
 }
+
+//   Work queue left hand navigation //
+.nhsuk-header__navigation-link {
+    position: relative;
+}
+.nhsuk__nav-list-counter {
+    background-color: #005EB8;
+    color: #fff;
+    border-radius: 120px;
+    padding: 5px 8px;
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    display: block;
+}
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list {
+    padding: 0;
+}
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list .nhsuk-header__navigation-item {
+    border-bottom: 1px solid #f0f4f5;
+    margin: 4px;
+}
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list ul li:last-of-type {
+    border: none;
+}
+.nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list ul li a.active, .nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list ul li a.active .nhsuk__nav-list-name {
+    background-color: #005EB8;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: 4px;
+}
+//.nhsuk-header__navigation-link:hover {
+    box-shadow: none;
+    color: #005eb8;
+    text-decoration: none;
+    background-color: #005EB8;
+    color: white;
+    border-radius: 8px;
+    margin: 4px;
+}//
+.nhsuk-header__navigation-link:active:visited, .nhsuk-header__navigation-link:focus:visited {
+    background-color: #ffeb3b;
+    color: #212b32;
+}
+

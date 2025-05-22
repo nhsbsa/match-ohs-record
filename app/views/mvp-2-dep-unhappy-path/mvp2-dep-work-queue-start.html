@@ -28,433 +28,490 @@
     <!-- Start of central content -->
 
     <div class="nhsBSA-sidebar-content" style="padding-top: 17px;">
-      <div class="nhsuk-width-container-fluid" style="padding: 0 16px; margin: 0 32px;">
+      <div class="nhsuk-width-container-fluid">
         <main class="nhsuk-main-wrapper" id="maincontent" role="main">
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full nhsuk-u-margin-top-4">
+              <span class="nhsuk-caption-l">UK Entitlements</span>
+              <h1 class="nhsuk-heading-xl">Work queue</h1>
+            </div>
+          </div>
+          
+          <div class="nhsuk-grid-row">
 
-          <h1>Heading h1</h1>
+            <!-- Left hand menu -->
 
-          <div class="nhsuk-grid-row" id="results">
-            <div class="nhsuk-card">
-              <div class="nhsuk-card__content nhsuk-u-padding-bottom-1">
-                <!-- Start header block-->
-                <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
-                  <div class="nhsuk-grid-column-two-thirds">
-                    <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing results for SBUC 1</h3>
-                  </div>
-                  <div class="nhsuk-grid-column-one-third">
-                    <div class="nhsuk-form-group" style="float:right;">
-                      <label class="nhsuk-label" for="results">
-                        Results per page
-                      </label>
-                      <select class="nhsuk-select" id="results" name="results" style="float:right;">
-                        <option value="10" selected="">10</option>
-                        <option value="100">100</option>
-                        <option value="200">200</option>
-                      </select>
+            <div class="nhsuk-grid-column-one-quarter">
+              <div class="nhsBSA-sidebar-wrapper">
+                <nav class="nhsuk-header__navigation nhsuk__nav-list" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+                  <p class="nhsuk-header__navigation-title">
+                    <span id="label-navigation">Menu</span>
+                  </p>
+                  <ul class="nhsuk-header__navigation-list">
+                    <li class="nhsuk-header__navigation-item">
+                        <a class="nhsuk-header__navigation-link " href="#">
+                            <span class="nhsuk__nav-list-name">SBUC 00</span><span class="nhsuk__nav-list-counter">23</span>
+                        </a>
+                    </li>
+                    <li class="nhsuk-header__navigation-item">
+                        <a class="nhsuk-header__navigation-link " href="#">
+                            <span class="nhsuk__nav-list-name">SBUC 00</span><span class="nhsuk__nav-list-counter">53</span>
+                        </a>
+                    </li>
+                    <li class="nhsuk-header__navigation-item">
+                        <a class="nhsuk-header__navigation-link " href="#">
+                            <span class="nhsuk__nav-list-name">SBUC 00</span><span class="nhsuk__nav-list-counter">123</span>
+                        </a>
+                    </li>
+                    <li class="nhsuk-header__navigation-item">
+                        <a class="nhsuk-header__navigation-link active" href="#">
+                            <span class="nhsuk__nav-list-name">SBUC 00</span><span class="nhsuk__nav-list-counter">234</span>
+                        </a>
+                    </li>
+                    <li class="nhsuk-header__navigation-item">
+                        <a class="nhsuk-header__navigation-link " href="#">
+                            <span class="nhsuk__nav-list-name">SBUC 00</span><span class="nhsuk__nav-list-counter">23</span>
+                        </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <!-- Right hand content -->
+
+            <div class="nhsuk-grid-column-three-quarters" id="results">
+              <div class="nhsuk-grid-column-full">
+                <div class="nhsuk-card">
+
+                </div>
+              </div>
+              <div class="nhsuk-card">
+                <div class="nhsuk-card__content nhsuk-u-padding-bottom-1">
+                  <!-- Start header block-->
+                  <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
+                    <div class="nhsuk-grid-column-full">
+                      <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing results for SBUC 1</h3>
+                      <hr style="margin:24px 0px;">
                     </div>
+
+                    <!-- Start of filter and sort options -->
+
+                    <div class="nhsuk-grid-column-two-thirds">
+                      <details class="nhsuk-details nhsuk-u-margin-bottom-4">
+                        <summary class="nhsuk-details__summary">
+                          <span class="nhsuk-details__summary-text">
+                            Filter and sort options
+                          </span>
+                        </summary>
+                      </details>
+                    </div>
+
+                    <!-- Start of results viewing options -->
+
+                    <div class="nhsuk-grid-column-one-third">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="results" style="float:left;">
+                          Results per page
+                        </label>
+                        <select class="nhsuk-select" id="results" name="results" style="float:right;">
+                          <option value="10" selected="">10</option>
+                          <option value="100">100</option>
+                          <option value="200">200</option>
+                        </select>
+                      </div>
+                    </div>
+
                   </div>
-                </div>
-                <!-- End of header block -->
-    
-                <!-- Start of filter and sort options -->
-                <div class="nhsuk-grid-row">
-                  <div class="nhsuk-grid-column-full">
-                    <details class="nhsuk-details nhsuk-u-margin-bottom-4">
-                      <summary class="nhsuk-details__summary">
-                        <span class="nhsuk-details__summary-text">
-                          Filter and sort options
-                        </span>
-                      </summary>
-                    </details>
-                  </div>
-                </div>
-                <!-- End of filter and sort options -->
-    
-    
-                <!-- Start of table data -->
-                <div class="nhsuk-grid-row">
-                  <div class="nhsuk-grid-column-full">
-                    <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
-                      <thead role="rowgroup" class="nhsuk-table__head">
-                        <tr role="row">
-                          <th role="columnheader" class="" scope="col">
-                            First name
-                          </th>
-                          <th role="columnheader" class="" scope="col">
-                            Last name
-                          </th>
-                          <th role="columnheader" class="" scope="col">
-                            ID
-                          </th>
-                          <th role="columnheader" class="" scope="col">
-                            Date of birth
-                          </th>
-                          <th role="columnheader" class="" scope="col">
-                            PIN
-                          </th>
-                          <th role="columnheader" class="" scope="col">
-                            Status
-                          </th>
-                          <th role="columnheader" class="" scope="col" style="text-align: right;">
-                            Actions
-                          </th>
-                        </tr>
-                      </thead>
 
-                      <!-- first row -->
+                  <!-- End of header block -->
 
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>Nevetha
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Patel
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>10229
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	15 Jan 1956
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>GH 82 82 83 D
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="mvp2-dep-s071-received">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                  <!-- Start of table data -->
 
-                      <!-- second row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>Elin
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Beddoe
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>10219
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	8 Jun 1987
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                  <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-full">
+                      <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
+                        <thead role="rowgroup" class="nhsuk-table__head">
+                          <tr role="row">
+                            <th role="columnheader" class="" scope="col">
+                              Case ID
+                            </th>
+                            <th role="columnheader" class="" scope="col">
+                              First name
+                            </th>
+                            <th role="columnheader" class="" scope="col">
+                              Last name
+                            </th>
+                            <th role="columnheader" class="" scope="col">
+                              Applicant
+                            </th>
+                            <th role="columnheader" class="" scope="col">
+                              Status
+                            </th>
+                            <th role="columnheader" class="" scope="col">
+                              Assigned
+                            </th>
+                            <th role="columnheader" class="" scope="col" style="text-align: right;">
+                              Actions
+                            </th>
+                          </tr>
+                        </thead>
 
-                      <!-- third row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>Emma
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Larsen
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>10207
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	23 Aug 1998
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <!-- first row -->
 
-                      <!-- fourth row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>Graeme
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Rutherford
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>9054
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	16 May 1980
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>10229
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>Nevetha
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Patel
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Applicant </span>Main
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Assigned </span> natalie@nhsbsa.nhs.uk
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="mvp2-dep-s071-received">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                      <!-- fifth row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>Kenneth
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Branagh
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>10202
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	15 Feb 1965
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <!-- second row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>10219
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>Elin
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Beddoe
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Applicant </span>	Main
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Assigned </span> natalie@nhsbsa.nhs.uk
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                      <!-- sixth row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>Kasi
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Abara
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>10213
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	12 Apr 1972
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <!-- third row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>10207
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>Emma
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Larsen
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Applicant </span>	Main
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Assigned </span> natalie@nhsbsa.nhs.uk
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                      <!-- seventh row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>First name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Last name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>00000
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <!-- fourth row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>9054
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>Graeme
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Rutherford
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Applicant </span>	Main
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>No actions
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Assigned </span><strong class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                      <!-- eighth row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>First name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Last name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>00000
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <!-- fifth row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>Kenneth
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Branagh
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>10202
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Date of birth </span>	15 Feb 1965
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">PIN </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>No actions
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                      <!-- ninth row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>First name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Last name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>00000
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <!-- sixth row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>Kasi
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Abara
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>10213
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Date of birth </span>	12 Apr 1972
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">PIN </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>No actions
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                      <!-- tenth row -->
-                       
-                      <tbody class="nhsuk-table__body">
-                        <tr role="row" class="nhsuk-table__row">
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">First name </span>First name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Last name </span>Last name
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">ID </span>00000
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">PIN </span>
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell">
-                            <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
-                            <span class="nhsuk-table-responsive__heading">Last action </span>No actions
-                          </td>
-                          <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                            <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <!-- seventh row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>First name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Last name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>00000
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">PIN </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>No actions
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                    </table>
+                        <!-- eighth row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>First name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Last name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>00000
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">PIN </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>No actions
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                    <!-- pagination start -->
+                        <!-- ninth row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>First name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Last name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>00000
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">PIN </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>No actions
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
 
-                    <div class="nhsuk-grid-row">
-                      <div class="nhsuk-grid-column-full">
-                        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
-    
-                          <div class="nhsuk-pagination__prev">
-                            <!-- <a class="nhsuk-link nhsuk-pagination__link" href="#" rel="prev">
-                                <svg class="nhsuk-pagination__icon nhsuk-pagination__icon--prev"
-                                  xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false"
-                                  viewBox="0 0 15 13">
-                                  <path
-                                    d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
+                        <!-- tenth row -->
+                        
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">First name </span>First name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Last name </span>Last name
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">ID </span>00000
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Date of birth </span>	DD MM YYYY
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">PIN </span>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Evidence requested</strong><br/>
+                              <span class="nhsuk-table-responsive__heading">Last action </span>No actions
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+                              <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
+                            </td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+
+                      <!-- pagination start -->
+
+                      <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-full">
+                          <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+      
+                            <div class="nhsuk-pagination__prev">
+                              <!-- <a class="nhsuk-link nhsuk-pagination__link" href="#" rel="prev">
+                                  <svg class="nhsuk-pagination__icon nhsuk-pagination__icon--prev"
+                                    xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false"
+                                    viewBox="0 0 15 13">
+                                    <path
+                                      d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
+                                    </path>
+                                  </svg>
+                                  <span class="nhsuk-pagination__link-title">Previous<span class="nhsuk-visually-hidden">
+                                      page</span></span></a> -->
+                            </div>
+      
+                            <ul class="nhsuk-pagination__list">
+                              <li class="nhsuk-pagination__item nhsuk-pagination__item--current">
+                                <a class="nhsuk-link nhsuk-pagination__link" href="#" aria-label="Page 1">
+                                  1
+                                </a>
+                              </li>
+                              <li class="nhsuk-pagination__item">
+                                <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-2" aria-label="Page 2">
+                                  2
+                                </a>
+                              </li>
+                              <li class="nhsuk-pagination__item ">
+                                <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-3" aria-label="Page 3" aria-current="page">
+                                  3
+                                </a>
+                              </li>
+                              <li class="nhsuk-pagination__item nhsuk-pagination__item--ellipses">⋯</li>
+                              <li class="nhsuk-pagination__item">
+                                <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-7" aria-label="Page 7">
+                                  7
+                                </a>
+                              </li>
+                            </ul>
+      
+                            <div class="nhsuk-pagination__next">
+                              <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-2" rel="next"> <span class="nhsuk-pagination__link-title">Next<span class="nhsuk-visually-hidden">
+                                    page</span></span>
+                                <svg class="nhsuk-pagination__icon nhsuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                                  <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z">
                                   </path>
-                                </svg>
-                                <span class="nhsuk-pagination__link-title">Previous<span class="nhsuk-visually-hidden">
-                                    page</span></span></a> -->
-                          </div>
-    
-                          <ul class="nhsuk-pagination__list">
-                            <li class="nhsuk-pagination__item nhsuk-pagination__item--current">
-                              <a class="nhsuk-link nhsuk-pagination__link" href="#" aria-label="Page 1">
-                                1
-                              </a>
-                            </li>
-                            <li class="nhsuk-pagination__item">
-                              <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-2" aria-label="Page 2">
-                                2
-                              </a>
-                            </li>
-                            <li class="nhsuk-pagination__item ">
-                              <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-3" aria-label="Page 3" aria-current="page">
-                                3
-                              </a>
-                            </li>
-                            <li class="nhsuk-pagination__item nhsuk-pagination__item--ellipses">⋯</li>
-                            <li class="nhsuk-pagination__item">
-                              <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-7" aria-label="Page 7">
-                                7
-                              </a>
-                            </li>
-                          </ul>
-    
-                          <div class="nhsuk-pagination__next">
-                            <a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-2" rel="next"> <span class="nhsuk-pagination__link-title">Next<span class="nhsuk-visually-hidden">
-                                  page</span></span>
-                              <svg class="nhsuk-pagination__icon nhsuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
-                                <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z">
-                                </path>
-                              </svg></a>
-                          </div>
-    
-                        </nav>
+                                </svg></a>
+                            </div>
+      
+                          </nav>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!-- End of table data -->
+      
                 </div>
-                <!-- End of table data -->
-    
               </div>
             </div>
           </div>
+
         </main>
       </div>
     </div>
