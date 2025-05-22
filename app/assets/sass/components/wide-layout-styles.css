@@ -3,6 +3,12 @@
   padding: 24px;
 }
 
+.nhsuk-grid-row:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 .dont-break-out {
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
