@@ -11,6 +11,11 @@
     background-color: #ffdd00;
     padding: 24px;
 }
+.nhsuk-grid-row:after {
+    clear: both;
+    content: "";
+    display: block;
+}
 .dont-break-out {
 
     /* These are technically the same, but use both */
@@ -358,9 +363,6 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 }
 #timeline ol li ul.nhsuk-list li, #timeline ol li ul.nhsuk-list {
     border: none;
-}
-#timeline ol li ul li ul {
-    //border-left: 3px solid white;
 }
 #timeline ol li ul li ul li {
     list-style:none;
@@ -876,15 +878,6 @@ ul.sidebar-nav .active {
     border-radius: 8px;
     margin: 4px;
 }
-//.nhsuk-header__navigation-link:hover {
-    box-shadow: none;
-    color: #005eb8;
-    text-decoration: none;
-    background-color: #005EB8;
-    color: white;
-    border-radius: 8px;
-    margin: 4px;
-}//
 .nhsuk-header__navigation-link:active:visited, .nhsuk-header__navigation-link:focus:visited {
     background-color: #ffeb3b;
     color: #212b32;
