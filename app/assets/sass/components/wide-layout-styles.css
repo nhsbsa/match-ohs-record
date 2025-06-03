@@ -12,6 +12,12 @@
   color: #005eb8 !important;
 }
 
+.nhsuk-button:focus:not(:active), .nhsuk-button:focus:not(:active):hover {
+  background-color: #ffeb3b;
+  color: #212b32;
+  outline: 4px solid rgba(0, 0, 0, 0);
+}
+
 .nhsuk-button--secondary:not(:focus):not(:active)::before, .nhsuk-button--secondary-solid:not(:focus):not(:active)::before {
   border-color: #005eb8 !important;
 }
@@ -21,10 +27,29 @@
   border-radius: 4px !important;
 }
 
-.nhsuk-button--secondary:not(:focus):not(:active)::after, .nhsuk-button--secondary-solid:not(:focus):not(:active)::after {
-  left: 0 !important;
-  right: 0 !important;
-  box-shadow: 0 4px 0 #005eb8 !important;
+.nhsuk-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nhsuk-button--secondary:active, .nhsuk-button--secondary-solid:active {
+  background-color: rgb(199, 220, 239);
+  border-color: #005eb8;
+}
+
+.nhsuk-button--secondary:hover, .nhsuk-button--secondary-solid:hover {
+  background-color: rgb(217, 231, 244);
+}
+
+.nhsuk-button:active {
+  background-color: rgb(0, 64, 30);
+  border-radius: 4px;
+  top: 4px;
+}
+
+.nhsuk-button--secondary:active, .nhsuk-button--secondary-:active {
+  background-color: rgb(199, 220, 239);
+  border-color: #005eb8;
 }
 
 .nhsuk-grid-row:after {
@@ -464,6 +489,14 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 
 .nhsuk-list li p {
   margin-bottom: 0;
+}
+
+.work-queue-home_sbucs .nhsuk-summary-list__key {
+  color: #005EB8;
+}
+
+.work-queue-home_sbucs .nhsuk-summary-list__actions a {
+  text-decoration: none !important;
 }
 
 @media (min-width: 40.0625em) {
@@ -955,9 +988,17 @@ ul.sidebar-nav .active {
   display: block;
 }
 
+.nhsuk__nav-list-counter-home {
+  background-color: #005EB8;
+  color: #fff;
+  border-radius: 120px;
+  padding: 5px 8px;
+}
+
 .nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list {
   padding: 0;
   width: 300px;
+  border-top: 1px solid #f0f4f5;
 }
 
 .nhsBSA-sidebar-container .nhsBSA-sidebar-wrapper .nhsuk__nav-list .nhsuk-header__navigation-item {
@@ -973,10 +1014,15 @@ ul.sidebar-nav .active {
   color: white;
   font-weight: 600;
   border-radius: 8px;
-  margin: 4px;
+  margin: 6px;
 }
 
 .nhsuk-header__navigation-link:active:visited, .nhsuk-header__navigation-link:focus:visited {
   background-color: #ffeb3b;
   color: #212b32;
+}
+
+.nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link:hover {
+  background-color: #f0f4f5;
+  color: white;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
