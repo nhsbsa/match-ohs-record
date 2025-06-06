@@ -50,13 +50,13 @@
 
               <h1 class="app-page-heading">
                   <span class="nhsuk-caption-l">
-                    Create H002 reply - Response to notification/request for information
+                    Create H002 - Response to notification/request for information
                       <span class="nhsuk-u-visually-hidden"> - </span>
                   </span>
                   Person information
               </h1>
 
-              <h2 class="nhsuk-u-margin-top-9">Person details</h2>
+              <h2 class="nhsuk-u-margin-top-9">Person</h2>
 
               <div class="nhsuk-form-group">
                   <label class="nhsuk-label" for="example">
@@ -78,9 +78,6 @@
                       <label class="nhsuk-label" for="example">
                         Date of birth
                       </label>
-                      <div class="nhsuk-hint" id="example-hint">
-                        For example, 15 3 1984
-                      </div>
                       <div class="nhsuk-date-input" id="example">
                         <div class="nhsuk-date-input__item">
                           <div class="nhsuk-form-group">
@@ -161,7 +158,7 @@
     
                 <h3 class="nhsuk-u-margin-top-9">Personal identification number(s) (PIN) (optional)</h3>
     
-                <h4 class="nhsuk-u-margin-top-4">PIN details</h4>
+                <h4 class="nhsuk-u-margin-top-4">PIN</h4>
 
                 <div class="nhsuk-form-group">
                   <label class="nhsuk-label" for="example">
@@ -245,7 +242,7 @@
   
               <a href="#" style="font-size: 19px;display: block;">Add another PIN</a>
   
-              <h2 class="nhsuk-heading-m nhsuk-u-margin-top-9">If PIN not provided, complete place of birth details</h2>
+              <h2 class="nhsuk-heading-m nhsuk-u-margin-top-9">If PIN not provided, complete place of birth details (optional)</h2>
   
               <h3 class="nhsuk-u-margin-top-9">Place of birth (optional)</h3>
   
@@ -332,7 +329,7 @@
                   <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
               </div>
   
-              <h3 class="nhsuk-u-margin-top-9">Additional information (optional)</h3>
+              <h2 class="nhsuk-u-margin-top-9">Additional information (optional)</h2>
 
               <div class="nhsuk-form-group">
                 <label class="nhsuk-label" for="example">
@@ -375,47 +372,148 @@
                 </select> 
               </div> 
 
-              <button class="nhsuk-button nhsuk-button--secondary" style="display:block;margin-top: 22px;" data-module="nhsuk-button" type="submit">
-                Add nationality
-              </button> 
+            <button class="nhsuk-button nhsuk-button--secondary" style="display:block;margin-top: 22px;" data-module="nhsuk-button" type="submit">
+              Add nationality
+            </button> 
 
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                  Status of the person (optional)
-                </label>
-                <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
-                  <option value="0"></option>
-                  <option value="1">[01] Employed person</option>
-                  <option value="2">[02] Self-employed person</option>
-                  <option value="3">[03] Frontier worker</option>
-                  <option value="4" >[04] Former frontier worker</option>
-                  <option value="5" >[05] Pensioner</option>
-                  <option value="6" >[06] Pension claimant</option>
-                  <option value="7" >[07] Unemployed person</option>
-                  <option value="8" >[08] Family member/dependent</option>
-                  <option value="9" >[09] Family member of employed person</option>
-                  <option value="10" >[10] Family member of pensioner</option>
-                  <option value="11" >[11] Student</option>
-                  <option value="12" >[12] Non-active person</option>
-                  <option value="13" >[99] Other</option>
-                </select> 
-              </div>
+            <div class="nhsuk-form-group">
+              <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s" style="font-weight: 300;">
+                  <p class="nhsuk-fieldset__heading">
+                    Status of the person (optional)</p>
+                </legend>
+          
+                <div class="nhsuk-checkboxes">
+          
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="Employed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                      Employed person
+                    </label>
+                  </div>
+          
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="Self-employed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                      Self-employed person
+                    </label>
+                  </div>
+          
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="Frontier worker">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                      Frontier worker
+                    </label>
+                  </div>
 
-              <button class="nhsuk-button nhsuk-button--secondary" style="display:block;margin-bottom: 0;margin-top: 22px;" data-module="nhsuk-button" type="submit">
-                Add status of the person
-              </button>
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="Former frontier worker">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
+                      Former frontier worker
+                    </label>
+                  </div>
 
-              <a href="v2-sed-create-h002-address" title="Continue">
-                <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                    Continue
-                </button>
-              </a>
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="Pensioner">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
+                      Pensioner
+                    </label>
+                  </div>
 
-              <p><a href="sed-are-you-sure-x010">Cancel</a></p>
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="Pension claimant">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
+                      Pension claimant
+                    </label>
+                  </div>
 
-              <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-7" name="example" type="checkbox" value="Unemployed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-7">
+                      Unemployed person
+                    </label>
+                  </div>
 
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-8" name="example" type="checkbox" value="Family member/dependent">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-8">
+                      Family member/dependent
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-9" name="example" type="checkbox" value="Family member of employed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-9">
+                      Family member of employed person
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-10" name="example" type="checkbox" value="Family member of pensioner">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-10">
+                      Family member of pensioner
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-11" name="example" type="checkbox" value="Medical report">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-11">
+                      Medical report
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-12" name="example" type="checkbox" value="Medical certificate">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-12">
+                      Medical certificate
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-13" name="example" type="checkbox" value="Student">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-13">
+                      Student
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-14" name="example" type="checkbox" value="Non-active person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-14">
+                      Non-active person
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-15" name="example" type="checkbox" value="Other">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-15">
+                      Other
+                    </label>
+                  </div>
+
+                </div>
+              </fieldset>
             </div>
+
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="example">
+                Details of further information (optional)
+              </label>
+              <textarea class="nhsuk-textarea nhsuk-input--width-20" id="example" name="example" rows="3" aria-describedby="example-hint"></textarea>
+            </div>
+
+            <a href="#" style="font-size: 19px;display: block;">Add another status of the person</a>
+
+            <a href="v2-sed-create-h002-address" title="Continue">
+              <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                  Continue
+              </button>
+            </a>
+
+            <p><a href="sed-are-you-sure-x010">Cancel</a></p>
+
+            <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+
+          </div>
         </div>
 
         <!-- content - end -->
