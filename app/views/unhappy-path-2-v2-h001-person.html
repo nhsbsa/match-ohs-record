@@ -377,32 +377,122 @@
                 </button> 
               </div> 
               <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                  Status of the person (optional)
-                </label>
-                <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
-                  <option value="0"></option>
-                  <option value="1">[01] Employed person</option>
-                  <option value="2">[02] Self-employed person</option>
-                  <option value="3">[03] Frontier worker</option>
-                  <option value="4" >[04] Former frontier worker</option>
-                  <option value="5" >[05] Pensioner</option>
-                  <option value="6" >[06] Pension claimant</option>
-                  <option value="7" >[07] Unemployed person</option>
-                  <option value="8" >[08] Family member/dependent</option>
-                  <option value="9" >[09] Family member of employed person</option>
-                  <option value="10" >[10] Family member of pensioner</option>
-                  <option value="11" >[11] Student</option>
-                  <option value="12" >[12] Non-active person</option>
-                  <option value="13" >[99] Other</option>
-                </select> 
-              </div>
-              
-              <div class="nhsuk-form-group">
-                <button class="nhsuk-button nhsuk-button--secondary" style="display:block;margin-bottom: 0;margin-top: 22px;" data-module="nhsuk-button" type="submit">
-                  Add status of the person
-                </button>
-              </div>
+              <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s" style="font-weight: 300;">
+                  <p class="nhsuk-fieldset__heading">
+                    Status of the person (optional)</p>
+                </legend>
+          
+                <div class="nhsuk-checkboxes">
+          
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="Employed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                      Employed person
+                    </label>
+                  </div>
+          
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="Self-employed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                      Self-employed person
+                    </label>
+                  </div>
+          
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="Frontier worker">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                      Frontier worker
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="Former frontier worker">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
+                      Former frontier worker
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="Pensioner">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
+                      Pensioner
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="Pension claimant">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
+                      Pension claimant
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-7" name="example" type="checkbox" value="Unemployed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-7">
+                      Unemployed person
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-8" name="example" type="checkbox" value="Family member/dependent">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-8">
+                      Family member/dependent
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-9" name="example" type="checkbox" value="Family member of employed person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-9">
+                      Family member of employed person
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-10" name="example" type="checkbox" value="Family member of pensioner">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-10">
+                      Family member of pensioner
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-11" name="example" type="checkbox" value="Medical report">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-11">
+                      Medical report
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-12" name="example" type="checkbox" value="Medical certificate">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-12">
+                      Medical certificate
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-13" name="example" type="checkbox" value="Student">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-13">
+                      Student
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-14" name="example" type="checkbox" value="Non-active person">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-14">
+                      Non-active person
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="example-15" name="example" type="checkbox" value="Other">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-15">
+                      Other
+                    </label>
+                  </div>
+
+                </div>
+              </fieldset>
+            </div>
 
               <div class="nhsuk-form-group">
                 <label class="nhsuk-label" for="example">

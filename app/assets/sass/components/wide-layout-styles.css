@@ -251,7 +251,7 @@ header {
 
 .nhsuk-header__logo {
   float: left;
-  margin-left: 16px;
+  margin-left: 0;
 }
 
 .nhsuk-width-container, .nhsuk-header__container {
@@ -1025,4 +1025,8 @@ ul.sidebar-nav .active {
 .nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link:hover {
   background-color: #f0f4f5;
   color: white;
+}
+
+#added-form {
+  display: none;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
