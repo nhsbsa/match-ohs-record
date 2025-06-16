@@ -102,11 +102,11 @@
                       Search for a case
                     </span>
                   </summary>
-                  <div class="nhsuk-details__text">
+                  <div class="nhsuk-details__text nhsuk-u-width-two-thirds">
 
                     <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
                       <div class="nhsuk-form-group">
-                        <label class="nhsuk-label nhsuk-u-font-weight-bold" for="first-name">
+                        <label class="nhsuk-label" for="first-name">
                           First name
                         </label>
                         <input class="nhsuk-input " id="first-name" name="first-name" type="text" value="">
@@ -153,97 +153,14 @@
                     </div>
 
                     <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+
                       <div class="nhsuk-form-group">
-                        <label class="nhsuk-label nhsuk-u-font-weight-bold" for="last-name">
+                        <label class="nhsuk-label" for="last-name">
                         Last name
                         </label>
                         <input class="nhsuk-input " id="last-name" name="last-name" type="text" value="">
                       </div>
-                    </div>
 
-                    <div class="nhsuk-grid-column-full" style="padding-left:0;">
-                      <hr style="margin:16px 0;">
-                      <div class="nhsuk-hint" id="example-hint">
-                        Or local or international case ID, local PIN, cast status, or country.
-                      </div>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">	
-                      <div class="nhsuk-form-group">
-                        <label class="nhsuk-label" for="example">
-                          Local or international case ID
-                        </label> 
-                        <input class="nhsuk-input" id="example" name="example" type="text">
-                      </div>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half">	
-                      <div class="nhsuk-form-group">
-                        <label class="nhsuk-label" for="example">
-                          Local PIN
-                        </label> 
-                        <input class="nhsuk-input" id="example" name="example" type="text">
-                      </div>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
-                      <form>
-                        <div class="nhsuk-form-group">
-                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                            <label class="nhsuk-label">
-                            Case status
-                            </label>
-                            <div class="nhsuk-checkboxes">
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                  Open
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-                                  Pending
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-                                  Evidence requested
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
-                                  Review evidence
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
-                                  Closed
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
-                                  Archived
-                                </label>
-                              </div>
-
-                            </div>
-                          </fieldset>
-                        </div>
-                      </form>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half">
                       <div class="nhsuk-form-group">
                         <label class="nhsuk-label" for="example">
                             Country
@@ -283,7 +200,70 @@
                             <option value="31" >[CH] Switzerland</option>
                             <option value="32" >[UK] United Kingdom</option>
                         </select> 
-                      </div> 
+                      </div>
+                    </div>
+
+                    <hr class="nhsuk-grid-column-full" style="margin:0px 0px 24px 0px;">
+                    
+                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="example">
+                          Local or international case ID
+                        </label> 
+                        <input class="nhsuk-input" id="example" name="example" type="text">
+                      </div>
+                    </div>
+
+                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="example">
+                          Local PIN
+                        </label> 
+                        <input class="nhsuk-input" id="example" name="example" type="text">
+                      </div>
+                    </div>
+
+                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+                      <form>
+                        <div class="nhsuk-form-group">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                            <label class="nhsuk-label">
+                            Case status
+                            </label>
+                            <div class="nhsuk-checkboxes">
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                  New
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                                  Closed
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                                  Archived
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
+                                  Removed
+                                </label>
+                              </div>
+
+                            </div>
+                          </fieldset>
+                        </div>
+                      </form>
                     </div>
 
                     <div class="nhsuk-grid-column-full nhsuk-u-margin-top-4" style="padding-left:0px;">
@@ -329,40 +309,32 @@
                                       </h1>
                                     </legend>
                                     <div class="nhsuk-checkboxes">
+
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-open" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-open">
-                                          Open
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-new" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-new">
+                                          New
                                         </label>
                                       </div>
-                                      <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-pending" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending">
-                                          Pending
-                                        </label>
-                                      </div>
-                                      <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-evidence" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-evidence">
-                                          Evidence requested
-                                        </label>
-                                      </div>
-                                      <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-review" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-review">
-                                          Requires review
-                                        </label>
-                                      </div>
+                                      
                                       <div class="nhsuk-checkboxes__item">
                                         <input class="nhsuk-checkboxes__input" id="status-filter-closed" name="status-filter" type="checkbox" value="">
                                         <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-closed">
                                           Closed
                                         </label>
                                       </div>
+
                                       <div class="nhsuk-checkboxes__item">
                                         <input class="nhsuk-checkboxes__input" id="status-filter-archived" name="status-filter" type="checkbox" value="">
                                         <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-archived">
                                           Archived
+                                        </label>
+                                      </div>
+
+                                      <div class="nhsuk-checkboxes__item">
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-removed" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-removed">
+                                          Removed
                                         </label>
                                       </div>
                                     </div>
@@ -389,15 +361,15 @@
                                       </div>
 
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="main-filter" name="main-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="main-filter">
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-main" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-main">
                                           Main
                                         </label>
                                       </div>
 
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="dependant-filter" name="dependant-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="dependant-filter">
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-dependant" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-dependant">
                                           Dependant
                                         </label>
                                       </div>
