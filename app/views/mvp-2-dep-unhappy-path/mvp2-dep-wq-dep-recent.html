@@ -23,7 +23,19 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
-
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <ol class="nhsuk-breadcrumb__list" style="padding-left: 0;">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="#">
+        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        Home
+      </a>
+    </p>
+  </div>
+</nav>
 <div class="nhsBSA-sidebar-container">
 
     <!-- Start of central content -->
@@ -34,8 +46,8 @@
         </p>
         <ul class="nhsuk-header__navigation-list">
           <li class="nhsuk-header__navigation-item">
-              <a class="nhsuk-header__navigation-link " href="#">
-                  <span class="nhsuk__nav-list-name">SBUC 01</span><span class="nhsuk__nav-list-counter">23</span>
+              <a class="nhsuk-header__navigation-link active" href="#">
+                  <span class="nhsuk__nav-list-name">SBUC 01</span><span class="nhsuk__nav-list-counter">70</span>
               </a>
           </li>
           <li class="nhsuk-header__navigation-item">
@@ -49,8 +61,8 @@
               </a>
           </li>
           <li class="nhsuk-header__navigation-item">
-              <a class="nhsuk-header__navigation-link active" href="#">
-                  <span class="nhsuk__nav-list-name">SBUC 03</span><span class="nhsuk__nav-list-counter">233</span>
+              <a class="nhsuk-header__navigation-link " href="#">
+                  <span class="nhsuk__nav-list-name">SBUC 03</span><span class="nhsuk__nav-list-counter">234</span>
               </a>
           </li>
           <li class="nhsuk-header__navigation-item">
@@ -73,7 +85,7 @@
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-full">
 
-            <h4 class="nhsuk-heading-m nhsuk-u-margin-left-3 nhsuk-u-margin-top-6">Quick actions</h4>
+            <h4 class="nhsuk-heading-m nhsuk-u-margin-left-5 nhsuk-u-margin-top-6">Quick actions</h4>
 
             <ul class="nhsuk-header__navigation-list">
               <li class="nhsuk-header__navigation-item">
@@ -102,11 +114,11 @@
                       Search for a case
                     </span>
                   </summary>
-                  <div class="nhsuk-details__text">
+                  <div class="nhsuk-details__text nhsuk-u-width-two-thirds">
 
                     <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
                       <div class="nhsuk-form-group">
-                        <label class="nhsuk-label nhsuk-u-font-weight-bold" for="first-name">
+                        <label class="nhsuk-label" for="first-name">
                           First name
                         </label>
                         <input class="nhsuk-input " id="first-name" name="first-name" type="text" value="">
@@ -153,97 +165,14 @@
                     </div>
 
                     <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+
                       <div class="nhsuk-form-group">
-                        <label class="nhsuk-label nhsuk-u-font-weight-bold" for="last-name">
+                        <label class="nhsuk-label" for="last-name">
                         Last name
                         </label>
                         <input class="nhsuk-input " id="last-name" name="last-name" type="text" value="">
                       </div>
-                    </div>
 
-                    <div class="nhsuk-grid-column-full" style="padding-left:0;">
-                      <hr style="margin:16px 0;">
-                      <div class="nhsuk-hint" id="example-hint">
-                        Or local or international case ID, local PIN, cast status, or country.
-                      </div>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">	
-                      <div class="nhsuk-form-group">
-                        <label class="nhsuk-label" for="example">
-                          Local or international case ID
-                        </label> 
-                        <input class="nhsuk-input" id="example" name="example" type="text">
-                      </div>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half">	
-                      <div class="nhsuk-form-group">
-                        <label class="nhsuk-label" for="example">
-                          Local PIN
-                        </label> 
-                        <input class="nhsuk-input" id="example" name="example" type="text">
-                      </div>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
-                      <form>
-                        <div class="nhsuk-form-group">
-                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                            <label class="nhsuk-label">
-                            Case status
-                            </label>
-                            <div class="nhsuk-checkboxes">
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                  Open
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-                                  Pending
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-                                  Evidence requested
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
-                                  Review evidence
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
-                                  Closed
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
-                                  Archived
-                                </label>
-                              </div>
-
-                            </div>
-                          </fieldset>
-                        </div>
-                      </form>
-                    </div>
-
-                    <div class="nhsuk-grid-column-one-half">
                       <div class="nhsuk-form-group">
                         <label class="nhsuk-label" for="example">
                             Country
@@ -283,7 +212,84 @@
                             <option value="31" >[CH] Switzerland</option>
                             <option value="32" >[UK] United Kingdom</option>
                         </select> 
-                      </div> 
+                      </div>
+                    </div>
+
+                    <hr class="nhsuk-grid-column-full" style="margin:0px 0px 24px 0px;">
+                    
+                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="example">
+                          Local or international case ID
+                        </label> 
+                        <input class="nhsuk-input" id="example" name="example" type="text">
+                      </div>
+                    </div>
+
+                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="example">
+                          Local PIN
+                        </label> 
+                        <input class="nhsuk-input" id="example" name="example" type="text">
+                      </div>
+                    </div>
+
+                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+                      <form>
+                        <div class="nhsuk-form-group">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                            <label class="nhsuk-label">
+                            Case status
+                            </label>
+                            <div class="nhsuk-checkboxes">
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                  New
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                                  Closed
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
+                                  Pending UK Action
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
+                                  Pending MS Action
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                                  Archived
+                                </label>
+                              </div>
+
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="text message">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
+                                  Removed
+                                </label>
+                              </div>
+
+                            </div>
+                          </fieldset>
+                        </div>
+                      </form>
                     </div>
 
                     <div class="nhsuk-grid-column-full nhsuk-u-margin-top-4" style="padding-left:0px;">
@@ -304,7 +310,7 @@
                     <!-- Start header block-->
                     <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
                       <div class="nhsuk-grid-column-full">
-                        <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing results for SBUC 1</h3>
+                        <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 10 results of 70</h3>
                         <hr style="margin:24px 0px;">
                       </div>
 
@@ -329,40 +335,46 @@
                                       </h1>
                                     </legend>
                                     <div class="nhsuk-checkboxes">
+
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-open" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-open">
-                                          Open
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-new" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-new">
+                                          New
                                         </label>
                                       </div>
+
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-pending" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending">
-                                          Pending
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-pending-uk" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-uk">
+                                          Pending UK Action
                                         </label>
                                       </div>
+
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-evidence" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-evidence">
-                                          Evidence requested
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-pending-ms" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-ms">
+                                          Pending MS Action
                                         </label>
                                       </div>
-                                      <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-review" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-review">
-                                          Requires review
-                                        </label>
-                                      </div>
+                                      
                                       <div class="nhsuk-checkboxes__item">
                                         <input class="nhsuk-checkboxes__input" id="status-filter-closed" name="status-filter" type="checkbox" value="">
                                         <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-closed">
                                           Closed
                                         </label>
                                       </div>
+
                                       <div class="nhsuk-checkboxes__item">
                                         <input class="nhsuk-checkboxes__input" id="status-filter-archived" name="status-filter" type="checkbox" value="">
                                         <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-archived">
                                           Archived
+                                        </label>
+                                      </div>
+
+                                      <div class="nhsuk-checkboxes__item">
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-removed" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-removed">
+                                          Removed
                                         </label>
                                       </div>
                                     </div>
@@ -389,23 +401,16 @@
                                       </div>
 
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-recent" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-recent">
-                                          Recent cases
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-main" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-main">
+                                          Main
                                         </label>
                                       </div>
 
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="main-filter" name="main-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="main-filter">
-                                          Pensioner
-                                        </label>
-                                      </div>
-
-                                      <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="dependant-filter" name="dependant-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="dependant-filter">
-                                          Family member of a pensioner
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-dependant" name="status-filter" type="checkbox" value="">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-dependant">
+                                          Dependant
                                         </label>
                                       </div>
 
@@ -422,20 +427,20 @@
                                   <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
                                     <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
                                       <h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
-                                        Order cases
+                                        Order by
                                       </h1>
                                     </legend>
                                     <div class="nhsuk-radios">
                                       <div class="nhsuk-radios__item">
-                                        <input class="nhsuk-radios__input" id="order-by-asc" name="order-by" type="radio" value="ascending">
+                                        <input class="nhsuk-radios__input" id="order-by-asc" name="order-by" type="radio" value="ascending" checked>
                                         <label class="nhsuk-label nhsuk-radios__label" for="order-by-asc">
-                                          Ascending
+                                          Oldest first
                                         </label>
                                       </div>
                                       <div class="nhsuk-radios__item">
                                         <input class="nhsuk-radios__input" id="order-by-desc" name="order-by" type="radio" value="descending">
                                         <label class="nhsuk-label nhsuk-radios__label" for="order-by-desc">
-                                          Descending
+                                          Newest first
                                         </label>
                                       </div>
                                     </div>
@@ -444,9 +449,11 @@
                               </div>
                               <!-- End by order results-->
                               <div class="nhsuk-grid-column-full">
-                                <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
-                                  Apply filters
-                                </button>
+                                <a href="mvp2-dep-wq-dep-filter-dep">
+                                    <button class="nhsuk-button nhsuk-button--secondary nhs-u-margin-top-4" data-module="nhsuk-button" type="submit">
+                                    Apply filters
+                                  </button>
+                                </a>
                                 <p class="nhsuk-u-margin-bottom-0"><a href="">Reset all filters</a></p>
                               </div>
                             </div>
@@ -492,7 +499,7 @@
                               <th role="columnheader" class="" scope="col">
                                 Country
                               </th>
-                              <th role="columnheader" class="" scope="col">
+                               <th role="columnheader" class="" scope="col">
                                 Applicant
                               </th>
                               <th role="columnheader" class="" scope="col">
@@ -527,14 +534,14 @@
                                 <span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--yellow nhsuk-u-margin-bottom-2">Assigned</strong><br/>
+                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br/>
                                 <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 02/04/2025 at 12:34</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Assigned </span> Grhow
+                                <span class="nhsuk-table-responsive__heading">Assigned </span> ROCHA
                               </td>
                               <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                                <span class="nhsuk-table-responsive__heading">Action </span><a href="mvp2-dep-s071-received">Manage case</a>
+                                <span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
                               </td>
                             </tr>
                           </tbody>
@@ -556,14 +563,14 @@
                                 <span class="nhsuk-table-responsive__heading">Country </span>France
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>	Dependant
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Main
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--yellow nhsuk-u-margin-bottom-2">Assigned</strong><br/>
+                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br/>
                                 <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025 at 16:42</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Assigned </span> Nasmth
+                                <span class="nhsuk-table-responsive__heading">Assigned </span>LUKBU
                               </td>
                               <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
                                 <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
@@ -588,10 +595,10 @@
                                 <span class="nhsuk-table-responsive__heading">Country </span>Belgium
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>	Dependant
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
+                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br/>
                                 <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025 at 19:23</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
@@ -620,17 +627,17 @@
                                 <span class="nhsuk-table-responsive__heading">Country </span>Greece
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>	Dependant
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Main
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
+                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br/>
                                 <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025 at 21:11</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Assigned </span><strong class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+                                <span class="nhsuk-table-responsive__heading">Assigned </span>CAITB
                               </td>
                               <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                                <span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
+                                <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
                               </td>
                             </tr>
                           </tbody>
@@ -655,14 +662,14 @@
                                 <span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
+                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Pending UK Action</strong><br/>
                                 <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 06/04/2025 at 11:21</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Assigned </span><strong class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+                                <span class="nhsuk-table-responsive__heading">Assigned </span>RABKH
                               </td>
                               <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                                <span class="nhsuk-table-responsive__heading">Action </span><a href="#">Manage case</a>
+                                <span class="nhsuk-table-responsive__heading">Action </span><a href="#">View case</a>
                               </td>
                             </tr>
                           </tbody>
@@ -684,12 +691,12 @@
                                 <span class="nhsuk-table-responsive__heading">Country </span>Latvia
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant</span>Main
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Main
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--yellow nhsuk-u-margin-bottom-2">Awaiting review </strong><br/>
+                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--purple nhsuk-u-margin-bottom-2">Pending MS Action </strong><br/>
                                 <span class="nhsuk-table-responsive__heading">Last action</span>
-                                <span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">H002 received at 09:45, 06/04/2025</span>
+                                <span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Sent H001 at 16:45, 07/04/2025</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">PIN </span><strong class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
@@ -705,23 +712,23 @@
                           <tbody class="nhsuk-table__body">
                             <tr role="row" class="nhsuk-table__row">
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">ID </span>00000
+                                <span class="nhsuk-table-responsive__heading">ID </span>10215
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">First name </span>First name
+                                <span class="nhsuk-table-responsive__heading">First name </span>Tenzin
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Last name </span>Last name
+                                <span class="nhsuk-table-responsive__heading">Last name </span>Badal
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Country </span>Netherlands
+                                <span class="nhsuk-table-responsive__heading">Country </span>Belgium
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>	Dependant
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Main
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
-                                <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 09/04/2025 at 08:19</span>
+                                <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 08/04/2025 at 22:19</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">Assigned </span><strong class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
@@ -749,7 +756,7 @@
                                 <span class="nhsuk-table-responsive__heading">Country </span>Netherlands
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>	Dependant
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Main
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
@@ -781,7 +788,7 @@
                                 <span class="nhsuk-table-responsive__heading">Country </span>Poland
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>	Dependant
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
@@ -810,10 +817,10 @@
                                 <span class="nhsuk-table-responsive__heading">Last name </span>Last name
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Country </span>Portug
+                                <span class="nhsuk-table-responsive__heading">Country </span>Portugal
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>	Main
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Main
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>

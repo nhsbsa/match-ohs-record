@@ -831,6 +831,7 @@ ul.sidebar-nav .active {
 
 .nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link {
   color: #005eb8 !important;
+  padding: 12px 32px;
 }
 
 .nhsuk-pagination {
@@ -1023,7 +1024,6 @@ ul.sidebar-nav .active {
 }
 
 .nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link:hover {
-  background-color: #f0f4f5;
   color: white;
 }
 

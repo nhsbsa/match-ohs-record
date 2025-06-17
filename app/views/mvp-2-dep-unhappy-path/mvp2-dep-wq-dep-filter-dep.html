@@ -23,19 +23,7 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container-fluid">
-    <ol class="nhsuk-breadcrumb__list" style="padding-left: 0;">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back">
-      <a class="nhsuk-breadcrumb__backlink" href="#">
-        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
-        Home
-      </a>
-    </p>
-  </div>
-</nav>
+
 <div class="nhsBSA-sidebar-container">
 
     <!-- Start of central content -->
@@ -85,7 +73,7 @@
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-full">
 
-            <h4 class="nhsuk-heading-m nhsuk-u-margin-left-5 nhsuk-u-margin-top-6">Quick actions</h4>
+            <h4 class="nhsuk-heading-m nhsuk-u-margin-left-3 nhsuk-u-margin-top-6">Quick actions</h4>
 
             <ul class="nhsuk-header__navigation-list">
               <li class="nhsuk-header__navigation-item">
@@ -121,7 +109,7 @@
                         <label class="nhsuk-label" for="first-name">
                           First name
                         </label>
-                        <input class="nhsuk-input " id="first-name" name="first-name" type="text" value="Krishna">
+                        <input class="nhsuk-input " id="first-name" name="first-name" type="text" value="">
                       </div>
                       
                       <div class="nhsuk-form-group">
@@ -140,7 +128,7 @@
                             <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
                               Day
                             </label> 
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="23">
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="">
                             </div>
                           </div>
                           <div class="nhsuk-date-input__item">
@@ -148,7 +136,7 @@
                             <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
                               Month
                             </label> 
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="12">
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="">
                             </div>
                           </div>
                           <div class="nhsuk-date-input__item">
@@ -156,7 +144,7 @@
                             <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
                               Year
                             </label> 
-                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric" value="1952">
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric" value="">
                             </div>
                           </div>
                           </div>
@@ -170,7 +158,7 @@
                         <label class="nhsuk-label" for="last-name">
                         Last name
                         </label>
-                        <input class="nhsuk-input " id="last-name" name="last-name" type="text" value="Patel">
+                        <input class="nhsuk-input " id="last-name" name="last-name" type="text" value="">
                       </div>
 
                       <div class="nhsuk-form-group">
@@ -179,7 +167,7 @@
                         </label>
                         <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
                             <option value="0"></option>
-                            <option value="1" selected>[AT] Austria</option>
+                            <option value="1">[AT] Austria</option>
                             <option value="2">[BE] Belgium</option>
                             <option value="3" >[BG] Bulgaria</option>
                             <option value="4" >[HR] Croatia</option>
@@ -252,20 +240,6 @@
                               </div>
 
                               <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
-                                  Pending UK Action
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
-                                <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="text message">
-                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
-                                  Pending MS Action
-                                </label>
-                              </div>
-
-                              <div class="nhsuk-checkboxes__item">
                                 <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="text message">
                                 <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
                                   Closed
@@ -311,22 +285,7 @@
                     <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
                       <div class="nhsuk-grid-column-full">
                         <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 1 results of 1</h3>
-
-                        <div class="nhsuk-u-margin-bottom-6">
-                          <strong class="nhsuk-tag nhsuk-tag--aqua-green">
-                            Krishna
-                          </strong>
-                          <strong class="nhsuk-tag nhsuk-tag--aqua-green">
-                            Patel
-                          </strong>
-                          <strong class="nhsuk-tag nhsuk-tag--aqua-green">
-                            23 Aug 1952
-                          </strong>
-                          <strong class="nhsuk-tag nhsuk-tag--aqua-green">
-                            Austria
-                          </strong>
-                        </div>
-                        
+                        <hr style="margin:24px 0px;">
                       </div>
 
                       <!-- Start of filter and sort options -->
@@ -355,20 +314,6 @@
                                         <input class="nhsuk-checkboxes__input" id="status-filter-new" name="status-filter" type="checkbox" value="">
                                         <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-new">
                                           New
-                                        </label>
-                                      </div>
-
-                                      <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-pending-uk" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-uk">
-                                          Pending UK Action
-                                        </label>
-                                      </div>
-
-                                      <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-pending-ms" name="status-filter" type="checkbox" value="">
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-ms">
-                                          Pending MS Action
                                         </label>
                                       </div>
                                       
@@ -409,8 +354,8 @@
                                     <div class="nhsuk-checkboxes">
                                       
                                       <div class="nhsuk-checkboxes__item">
-                                        <input class="nhsuk-checkboxes__input" id="status-filter-assign" name="status-filter" type="checkbox" value="" checked>
-                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-assign" aria-checked="true">
+                                        <input class="nhsuk-checkboxes__input" id="status-filter-assign" name="status-filter" type="checkbox" value="" checked aria-checked="true">
+                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-assign">
                                           Assigned to me
                                         </label>
                                       </div>
@@ -447,13 +392,13 @@
                                     </legend>
                                     <div class="nhsuk-radios">
                                       <div class="nhsuk-radios__item">
-                                        <input class="nhsuk-radios__input" id="order-by-asc" name="order-by" type="radio" value="Oldest first" checked>
+                                        <input class="nhsuk-radios__input" id="order-by-asc" name="order-by" type="radio" value="ascending" checked>
                                         <label class="nhsuk-label nhsuk-radios__label" for="order-by-asc">
                                           Oldest first
                                         </label>
                                       </div>
                                       <div class="nhsuk-radios__item">
-                                        <input class="nhsuk-radios__input" id="order-by-desc" name="order-by" type="radio" value="Newest first">
+                                        <input class="nhsuk-radios__input" id="order-by-desc" name="order-by" type="radio" value="descending">
                                         <label class="nhsuk-label nhsuk-radios__label" for="order-by-desc">
                                           Newest first
                                         </label>
@@ -528,14 +473,14 @@
                           </thead>
 
                           <!-- first row -->
-                          
+
                           <tbody class="nhsuk-table__body">
                             <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">ID </span>10210
+                                <span class="nhsuk-table-responsive__heading">ID </span>10229
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">First name </span>Krishna
+                                <span class="nhsuk-table-responsive__heading">First name </span>Nevetha
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
                                 <span class="nhsuk-table-responsive__heading">Last name </span>Patel
@@ -544,22 +489,22 @@
                                 <span class="nhsuk-table-responsive__heading">Country </span>Austria
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Applicant </span>Main
+                                <span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br/>
-                                <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 08/04/2025 at 22:19</span>
+                                <span class="nhsuk-table-responsive__heading">Status </span></span><strong class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br/>
+                                <span class="nhsuk-table-responsive__heading">Last action </span><span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 02/04/2025 at 12:34</span>
                               </td>
                               <td role="cell" class="nhsuk-table__cell">
-                                <span class="nhsuk-table-responsive__heading">Assigned </span><strong class="nhsuk-tag nhsuk-tag--grey nhsuk-u-margin-bottom-2">Unassigned</strong>
+                                <span class="nhsuk-table-responsive__heading">Assigned </span> ROCHA
                               </td>
                               <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
-                                <span class="nhsuk-table-responsive__heading">Action </span><a href="mvp2-dep-main-s071-received">Manage case</a>
+                                <span class="nhsuk-table-responsive__heading">Action </span><a href="mvp2-dep-case-add-dep">Manage case</a>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-
+                      </div>
                     </div>
 
                     <!-- End of table data -->

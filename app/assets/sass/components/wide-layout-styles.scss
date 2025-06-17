@@ -764,6 +764,7 @@ ul.sidebar-nav .active {
 
 .nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link {
     color: #005eb8 !important;
+    padding: 12px 32px;
 }
 
 // Pagination //
@@ -942,7 +943,7 @@ ul.sidebar-nav .active {
     color: #212b32;
 }
 .nhsuk-header__navigation-list .nhsuk-header__navigation-item a.nhsuk-header__navigation-link:hover {
-    background-color: #f0f4f5;
+    //background-color: #f0f4f5;
     color: white;
 }
 #added-form {

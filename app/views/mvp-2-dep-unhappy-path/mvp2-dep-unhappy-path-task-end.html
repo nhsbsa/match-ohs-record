@@ -1,0 +1,67 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends '../layout-mvp2-dep-happy.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+  <!--<nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
+
+    <div class="nhsuk-grid-column-one-half">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="ohs-record-manage-case">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="ohs-record-manage-case">Case management ID 78793</a></li>
+      </ol>
+    </div>
+
+  </nav>-->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+          
+<!-- Content - Start -->
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-9" style="width: 960px; height:450px; margin: 0 auto; text-align: center;">
+    <div class="nhsuk-card">
+        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-4 nhsuk-u-margin-top-6 nhsuk-u-padding-top-3">
+            End of task
+        </h1>
+        <p><a href="../prototype-sbuc-1">Go back to prototype index</a></p>
+        <p class="nhsuk-u-margin-bottom-6"><a href="mvp2-dep-work-queue-start-2">Go back to Dep unhappy path prototype start</a></p>
+    </div>
+</div>
+<div class="nhsuk-width-container-fluid clearfix">
+    <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-grid-row nhsuk-u-margin-top-4" style="text-align: center; margin: 0 auto;">
+            <div class="nhsuk-grid-column-one-half" style="height: 650px; display: block;">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
