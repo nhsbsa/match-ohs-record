@@ -55,15 +55,18 @@
     </div>
 
     <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-three-quarters">
+        <div class="nhsuk-grid-column-full">
 
             <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid-column-one-half">
+                <div class="nhsuk-grid-column-three-quarters">
                     <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
                         Search for an OHS record
                     </h1>
+                    <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
+                        <p>Search for a matching OHS record. If no record is found, create a new record.</p>
+                    </div>
                 </div>
-                <div class="nhsuk-grid-column-one-half" style="text-align: right;">
+                <div class="nhsuk-grid-column-one-quarter">
                     <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
                         Create new OHS record
                     </button>
@@ -71,7 +74,6 @@
             </div>
             
         </div>
-        <div class="nhsuk-grid-column-one-quarters"></div>
     </div>
 
     <!-- Search UI - Start -->
@@ -88,80 +90,90 @@
                     </span>
                 </summary>
                 <div class="nhsuk-details__text">
+
+                    <div class="nhsuk-hint" id="contact-hint">
+                        Data must be entered into a minimum of 3 fields to search.
+                    </div>
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">
+                                    First name (optional)
+                                </label>
+                                <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Krishna">
+                            </div>
+                        </div>
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">Last name (optional)</label>
+                                <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Patel">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
+                            <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-3" aria-describedby="example-hint" role="group">
+                                <label class="nhsuk-u-margin-bottom-1" for="dob">
+                                    Date of birth (optional)
+                                </label>
+                                <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
+                                    For example, 28 9 2024
+                                </div>
+                                <div class="nhsuk-date-input" id="example">
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                                Day
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric" value="03">
+                                        </div>
+                                    </div>
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                                Month
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric" value="12">
+                                        </div>
+                                    </div>
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                                Year
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric" value="1952">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group nhsuk-u-margin-top-3">
+                                <label class="nhsuk-u-margin-bottom-1" for="contested">
+                                    PIN (OHS reference or National Insurance number) (optional)
+                                </label>
+                                <div class="nhsuk-hint">
+                                    For example, QQ 12 34 56 C
+                                </div>
+                                <input class="nhsuk-input nhsuk-input--width-20" id="contested" name="contested" type="text" value="">
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="nhsuk-grid-row">
                         <div class=" nhsuk-grid-column-full">
     
                             <form action="03-person-search-results#search-heading" method="post">
-                                <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
-                                    Search for a matching OHS record. If no record is found, create a new record.
-                                </div>
-
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">
-                                        First name
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Geralt">
-                                </div>
-    
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">Last name</label>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Rivia">
-                                </div>
-    
-                                
-    
-                                <div class="nhsuk-form-group">
-                                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                                        <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="dob">
-                                            Date of birth
-                                        </label>
-                                        <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
-                                            For example, 28 9 2024
-                                        </div>
-                                        <div class="nhsuk-date-input" id="example">
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                                        Day
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric" value="03">
-                                                </div>
-                                            </div>
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                                        Month
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric" value="12">
-                                                </div>
-                                            </div>
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                                        Year
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric" value="1956">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
-                                        PIN (OHS reference or National Insurance number) (optional)
-                                    </label>
-                                    <div class="nhsuk-hint">
-                                        For example, QQ 12 34 56 C
-                                    </div>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="contested" name="contested" type="text" value="JG 08 23 89 A">
-                                </div>
-
-                                <div class="govuk-form-group">
-                                    <label class="nhsuk-label--s" for="sort">
+       
+                                <div class="govuk-form-group nhsuk-u-margin-top-3">
+                                    <label class="nhsuk-label" for="sort">
                                         Country of residence (optional)
                                     </label>
                                     <div class="nhsuk-hint">
-                                        For example, 'France'
+                                        For example, France
                                     </div>
                                     <select class="nhsuk-select nhsuk-input--width-20" id="sort" name="sort">
                                         <option value=""></option>
@@ -199,9 +211,7 @@
                                         <option value="Switzerland">Switzerland</option>
                                     </select>
                                 </div>
-
-    
-                                <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3" data-module="nhsuk-button" type="submit" style="margin-top:20px;">
+                                <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3 nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                                     Search
                                 </button>
     
@@ -219,6 +229,17 @@
                     <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
                         <div class="nhsuk-grid-column-two-thirds">
                           <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 1 results of 1</h2>
+                          <div class="nhsuk-u-margin-bottom-6">
+                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">
+                                    Geralt
+                                </strong>
+                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">
+                                    Rivia
+                                </strong>
+                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">
+                                    3 Dec 1950
+                                </strong>
+                            </div>
                         </div>
                     </div>
 
@@ -281,7 +302,7 @@
                                         <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
                                             <span class="nhsuk-table-responsive__heading">View
                                             </span>
-                                            <a href="mvp2-matched-record">Match</a>
+                                            <a href="mvp2-matched-record">Match record</a>
                                         </td>
                                     </tr>
 
@@ -305,81 +326,75 @@
         <!-- Application details right sidebar - Start -->
 
         <div class="nhsuk-grid-column-one-quarter">
-            <h2 class="nhsuk-heading-l" style="margin:0px 0px 30px 0px;">
-                Applicant details
-            </h2>
             <div class="nhsuk-card__content nhsuk-card__content--secondary">
-                <h3 class="nhsuk-card__heading nhsuk-heading-s nhsuk-u-margin-bottom-1">
-                    Person details
-                </h3>
-                <hr style="margin:0px 0px 10px 0px;">
-                <dl class="nhsuk-summary-list nhsuk-u-margin-bottom-2">
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            First name
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            Geralt
-                        </dd>
-                    </div>
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Last name
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            Rivia
-                        </dd>
-                    </div>
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Date of birth
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            3 December 1950
-                        </dd>
-                    </div>
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Address
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            17 place du Trocadéro<br> 75016<br> Paris<br> France
-                        </dd>
-                    </div>
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            PIN
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            JG 08 23 89 A
-                        </dd>
-                    </div>
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Entitlement start date</dt>
-                        <dd class="nhsuk-summary-list__value">
-                            30 October 2024</dd>
-                    </div>
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Entitlement end date
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                        </dd>
-                    </div>
-                    <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
-                        <dt class="nhsuk-summary-list__key">
-                            Status
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            Pensioner
-                            <!--<strong class="nhsuk-tag nhsuk-tag--green">
-                                Pensioner
-                            </strong>-->
-                        </dd>
-                    </div>
-                </dl>
+                
+                <h3>Main S071 details</h3>
 
+                <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                    <dl class="nhsuk-summary-list nhsuk-u-margin-bottom-2">
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                First name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Geralt
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Last name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Rivia
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Date of birth
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                3 December 1950
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Address
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                17 place du Trocadéro<br> 75016<br> Paris<br> France
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                PIN
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                JG 08 23 89 A
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Entitlement start date</dt>
+                            <dd class="nhsuk-summary-list__value">
+                                30 October 2024</dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Entitlement end date
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                            </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
+                            <dt class="nhsuk-summary-list__key">
+                                Status
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Pensioner
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
             </div>
         </div>
 
