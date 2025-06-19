@@ -821,6 +821,10 @@ ul.sidebar-nav .active {
   width: 398px !important;
 }
 
+.nhsuk-select__search-case {
+  width: 100%;
+}
+
 #work-queue-nav .nhsuk-header__navigation li.nhsuk-header__navigation-item a.nhsuk-header__navigation-link, .work-queue-nav .nhsuk-header__navigation li a.nhsuk-header__navigation-link :hover {
   color: #005eb8;
 }

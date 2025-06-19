@@ -752,7 +752,9 @@ ul.sidebar-nav .active {
 .nhsuk-input--width-20 {
     width: 398px !important;
 }
-
+.nhsuk-select__search-case {
+    width: 100%;
+}
 //     Work queue styles //
 
 #work-queue-nav .nhsuk-header__navigation li.nhsuk-header__navigation-item a.nhsuk-header__navigation-link, .work-queue-nav .nhsuk-header__navigation li a.nhsuk-header__navigation-link :hover {
