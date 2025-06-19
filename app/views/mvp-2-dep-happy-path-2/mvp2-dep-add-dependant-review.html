@@ -30,79 +30,113 @@
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 <div class="nhsuk-width-container margin-left-right-lrg ul-padding-top-lrg">
-  <div class="nhs-main-wrapper">
+    <!-- notification start-->
 
     <div class="nhsuk-grid-row">
-
         <div class="nhsuk-grid-column-full">
-
-            <div class="nhsuk-back-link nhsuk-u-margin-bottom-9">
-                <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
-                <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
-                    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-                </svg>
-                Go back</a>
+        <div id="govuk-notification-banner"
+            class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert"
+            aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Success
+            </h2>
+            <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
             </div>
+            <div class="govuk-notification-banner__content">
+            <p class="govuk-body">Dependant has been added to main record. S072 entitlement has been created in OHS.
+            </p>
+            </div>
+        </div>
+        </div>
+        <div class="nhsuk-grid-column-one-quarters"></div>
+    </div>
+    
+    <!-- notification end-->
 
-            <h1 class="app-page-heading">Dependant details</h1>
+    <div class="nhs-main-wrapper">
 
-            <div class="nhsuk-grid-column-three-quarters" style="padding-left: 0;">
-                <dl class="nhsuk-summary-list">
-                    <div class="nhsuk-summary-list__row">
-                      <dt class="nhsuk-summary-list__key">
-                          First name
-                      </dt>
-                      <dd class="nhsuk-summary-list__value">
-                          Ciri
-                      </dd>
-                    </div>
+        <div class="nhsuk-grid-row">
 
-                    <div class="nhsuk-summary-list__row">
+            <div class="nhsuk-grid-column-full">
+
+                <div class="nhsuk-back-link nhsuk-u-margin-bottom-9">
+                    <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                    </svg>
+                    Go back</a>
+                </div>
+
+                <h1 class="app-page-heading">Dependant details</h1>
+
+                <div class="nhsuk-grid-column-three-quarters" style="padding-left: 0;">
+                    <dl class="nhsuk-summary-list">
+                        <div class="nhsuk-summary-list__row">
                         <dt class="nhsuk-summary-list__key">
-                            Last name
+                            First name
                         </dt>
                         <dd class="nhsuk-summary-list__value">
-                            Rivia
+                            Ciri
                         </dd>
-                    </div>
+                        </div>
 
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Entitlement start date
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            30 October 2024
-                        </dd>
-                    </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Last name
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                Rivia
+                            </dd>
+                        </div>
 
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Entitlement end date
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            15 November 2024
-                        </dd>
-                    </div>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Entitlement start date
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                30 October 2024
+                            </dd>
+                        </div>
 
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Country
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            France
-                        </dd>
-                    </div>
-                </dl>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Entitlement end date
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                15 November 2024
+                            </dd>
+                        </div>
 
-                <a href="mvp2-dep-add-dependant-status" title="Continue to next section">
-                    <button class="nhsuk-button nhsuk-u-margin-top-4  nhsuk-u-margin-bottom-9" data-module="nhsuk-button" type="submit">
-                        Create S072 entitlement
-                    </button>
-                </a>
+                        <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                                Country
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                                France
+                            </dd>
+                        </div>
+                    </dl>
 
+                    <a href="mvp2-dep-add-dependant-status" title="Continue to next section">
+                        <button class="nhsuk-button nhsuk-u-margin-top-4  nhsuk-u-margin-bottom-9" data-module="nhsuk-button" type="submit">
+                            Create S072 entitlement
+                        </button>
+                    </a>
+
+                </div>
             </div>
         </div>
     </div>
-  </div>
 </div>
+{% endblock %}
+
+{% block pageScripts %}
+<!-- Close button scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+    function closeBanner() {
+    document.getElementById("govuk-notification-banner").style.display = "none";
+    }
+</script>
 {% endblock %}

@@ -46,24 +46,22 @@
 
     <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-three-quarters">
-
-            <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid-column-two-thirds">
-                    <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
-                        Search OHS for dependant
-                    </h1>
-                </div>
-                <div class="nhsuk-grid-column-one-third" style="text-align: right;">
-                    <a href="unhappy-path-2-s4-search-created-record">
-                        <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
-                            Create new OHS record
-                        </button>
-                    </a>
+            <div class="nhsuk-grid-column-two-thirds">
+                <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+                    Search OHS for dependant
+                </h1>
+                <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
+                    Search for a matching OHS record. If no record is found, create a new record.
                 </div>
             </div>
-            
         </div>
-        <div class="nhsuk-grid-column-one-quarters"></div>
+        <div class="nhsuk-grid-column-one-quarters">
+            <a href="mvp2-dep-add-dependant-new-record">
+                <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                    Create new OHS record
+                </button>
+            </a>
+        </div>
     </div>
 
     <!-- Search UI - Start -->
@@ -147,13 +145,6 @@
                                     </div>
                                     <input class="nhsuk-input nhsuk-input--width-20" id="contested" name="contested" type="text" value="">
                                 </div>
-                                
-                                <!--<div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
-                                        Postal code (optional)
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="contested" name="contested" type="text" value="">
-                                </div>-->
 
                                 <div class="nhsuk-form-group">
                                     <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
@@ -236,7 +227,7 @@
                                         <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
                                             <span class="nhsuk-table-responsive__heading">View
                                             </span>
-                                            <a href="mvp2-dep-add-dependant-review">Select record</a>
+                                            <a href="mvp2-dep-add-dependant-review">Match record</a>
                                         </td>
                                     </tr>
                                 </tbody>

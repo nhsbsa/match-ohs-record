@@ -108,28 +108,6 @@ Overseas Healthcare Service RINA
 
       <div class="nhsuk-width-container-full ul-padding-top-lrg">
 
-        <!-- notification -->
-
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-full">
-            <div id="govuk-notification-banner"
-              class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert"
-              aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-              <div class="govuk-notification-banner__header">
-                <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                  Success
-                </h2>
-                <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
-              </div>
-              <div class="govuk-notification-banner__content">
-                <p class="govuk-body">Dependant has been added to main record. S072 entitlement has been created in OHS.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="nhsuk-grid-column-one-quarters"></div>
-        </div>
-
         <div class="nhsuk-grid-row">
 
           <div class="nhsuk-grid-column-two-thirds">
@@ -340,37 +318,36 @@ Overseas Healthcare Service RINA
           </div>
 
           <!-- Case details sensitive question -->
+          <div class="nhsuk-grid-column-full nhsuk-u-padding-left-0">
+            <div class="nhsuk-form-group">
 
-          <div class="nhsuk-form-group">
+              <fieldset class="nhsuk-fieldset">
+                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                  <p>
+                    Is this case sensitive?
+                  </p>
+                </legend>
 
-            <fieldset class="nhsuk-fieldset">
-              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                <p>
-                  Is this case sensitive?
-                </p>
-              </legend>
+                <div class="nhsuk-radios nhsuk-radios--inline">
 
-              <div class="nhsuk-radios nhsuk-radios--inline">
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio"
+                      value="yes">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
+                      Yes
+                    </label>
+                  </div>
 
-                <div class="nhsuk-radios__item">
-                  <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio"
-                    value="yes">
-                  <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
-                    Yes
-                  </label>
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-inline-2" name="example-inline" type="radio"
+                      value="no">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-inline-2">
+                      No
+                    </label>
+                  </div>
                 </div>
-
-                <div class="nhsuk-radios__item">
-                  <input class="nhsuk-radios__input" id="example-inline-2" name="example-inline" type="radio"
-                    value="no">
-                  <label class="nhsuk-label nhsuk-radios__label" for="example-inline-2">
-                    No
-                  </label>
-                </div>
-
-              </div>
-            </fieldset>
-
+              </fieldset>
+            </div>
           </div>
 
         </div>
@@ -458,7 +435,7 @@ Overseas Healthcare Service RINA
 
             <!--Right hand summary list-->
 
-          <div class="nhsuk-grid-column-one-half" style="padding-left:0;">
+          <div class="nhsuk-grid-column-one-half">
             <dl class="nhsuk-summary-list">
               <div class="nhsuk-summary-list__row">
                 <dt class="nhsuk-summary-list__key">
@@ -616,14 +593,4 @@ Overseas Healthcare Service RINA
 
 
     </div>
-    {% endblock %}
-
-    {% block pageScripts %}
-    <!-- Close button scripts -->
-    <script src="/js/autocomplete2.min.js"></script>
-    <script type="text/javascript">
-      function closeBanner() {
-        document.getElementById("govuk-notification-banner").style.display = "none";
-      }
-    </script>
     {% endblock %}
