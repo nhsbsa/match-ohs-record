@@ -1029,4 +1029,12 @@ ul.sidebar-nav .active {
 
 #added-form {
   display: none;
+}
+
+.nhsuk-table-cell__email {
+  display: block;
+  width: 151px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
