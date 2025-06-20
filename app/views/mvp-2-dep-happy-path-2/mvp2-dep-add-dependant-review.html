@@ -30,28 +30,6 @@
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 <div class="nhsuk-width-container margin-left-right-lrg ul-padding-top-lrg">
-    <!-- notification start-->
-
-    <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-        <div id="govuk-notification-banner"
-            class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert"
-            aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-            <div class="govuk-notification-banner__header">
-            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                Success
-            </h2>
-            <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
-            </div>
-            <div class="govuk-notification-banner__content">
-            <p class="govuk-body">S072 entitlement has been issued in OHS.</p>
-            </div>
-        </div>
-        </div>
-        <div class="nhsuk-grid-column-one-quarters"></div>
-    </div>
-    
-    <!-- notification end-->
 
     <div class="nhs-main-wrapper">
 
@@ -66,6 +44,24 @@
                     </svg>
                     Go back</a>
                 </div>
+
+                <!-- notification start-->
+
+                <div id="govuk-notification-banner"
+                class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert"
+                aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                    <div class="govuk-notification-banner__header">
+                        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                            Success
+                        </h2>
+                        <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
+                    </div>
+                    <div class="govuk-notification-banner__content">
+                        <p class="govuk-body">S072 entitlement has been issued in OHS.</p>
+                    </div>
+                </div>
+
+                <!-- notification end-->
 
                 <h1 class="app-page-heading">Dependant details</h1>
 
