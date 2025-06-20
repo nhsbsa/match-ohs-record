@@ -84,78 +84,92 @@
                     </span>
                 </summary>
                 <div class="nhsuk-details__text">
+
+                    <div class="nhsuk-hint nhsuk-u-margin-bottom-5 nhsuk-u-margin-top-3" id="contact-hint">
+                        Data must be entered into a minimum of 3 fields to search.
+                    </div>
+
                     <div class="nhsuk-grid-row">
-                        <div class=" nhsuk-grid-column-full">
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">
+                                    First name (optional)
+                                </label>
+                                <input class="nhsuk-input" id="accepted" name="accepted" type="text" value="Krishna">
+                            </div>
+                        </div>
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">Last name (optional)</label>
+                                <input class="nhsuk-input" id="accepted" name="accepted" type="text" value="Patel">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
+                            <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-3" aria-describedby="example-hint" role="group">
+                                <label class="nhsuk-u-margin-bottom-1" for="dob">
+                                    Date of birth (optional)
+                                </label>
+                                <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
+                                    For example, 28 9 2024
+                                </div>
+                                <div class="nhsuk-date-input" id="example">
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                                Day
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric" value="03">
+                                        </div>
+                                    </div>
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                                Month
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric" value="12">
+                                        </div>
+                                    </div>
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                                Year
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric" value="1952">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group nhsuk-u-margin-top-3">
+                                <label class="nhsuk-u-margin-bottom-1" for="contested">
+                                    PIN (OHS reference or National Insurance number) (optional)
+                                </label>
+                                <div class="nhsuk-hint">
+                                    For example, QQ 12 34 56 C
+                                </div>
+                                <input class="nhsuk-input" id="contested" name="contested" type="text" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nhsuk-grid-row">
+                        <div class=" nhsuk-grid-column-one-third">
     
                             <form action="03-person-search-results#search-heading" method="post">
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">
-                                        First name
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Geralt">
-                                </div>
-    
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="accepted">Last name</label>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="accepted" name="accepted" type="text" value="Rivia">
-                                </div>
-    
-                                
-    
-                                <div class="nhsuk-form-group">
-                                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                                        <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="dob">
-                                            Date of birth
-                                        </label>
-                                        <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
-                                            For example, 28 9 2024
-                                        </div>
-                                        <div class="nhsuk-date-input" id="example">
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                                        Day
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric" value="03">
-                                                </div>
-                                            </div>
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                                        Month
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric" value="12">
-                                                </div>
-                                            </div>
-                                            <div class="nhsuk-date-input__item">
-                                                <div class="nhsuk-form-group">
-                                                    <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                                        Year
-                                                    </label>
-                                                    <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric" value="1950">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label--s nhsuk-u-margin-bottom-1" for="contested">
-                                        PIN (OHS reference or National Insurance number) (optional)
-                                    </label>
-                                    <div class="nhsuk-hint">
-                                        For example, QQ 12 34 56 C
-                                    </div>
-                                    <input class="nhsuk-input nhsuk-input--width-20" id="contested" name="contested" type="text" value="JG 08 23 89 A">
-                                </div>
-
-                                <div class="govuk-form-group">
-                                    <label class="nhsuk-label--s" for="sort">
+       
+                                <div class="govuk-form-group nhsuk-u-margin-top-3">
+                                    <label class="nhsuk-label" for="sort">
                                         Country of residence (optional)
                                     </label>
                                     <div class="nhsuk-hint">
                                         For example, France
                                     </div>
-                                    <select class="nhsuk-select nhsuk-input--width-20" id="sort" name="sort">
+                                    <select class="nhsuk-select nhsuk-select__search-case" id="sort" name="sort">
                                         <option value=""></option>
                                         <option value="Austria">Austria</option>
                                         <option value="Belgium">Belgium</option>
@@ -193,7 +207,7 @@
                                 </div>
 
     
-                                <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3" data-module="nhsuk-button" type="submit" style="margin-top:20px;">
+                                <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3 nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                                     Search
                                 </button>
     
