@@ -457,6 +457,24 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
         width: 40%;
     }
 }
+.nhsuk-details__summary:before {
+    border-color: transparent;
+    border-left-color: inherit;
+    border-style: solid;
+    border-width: 7px 0 7px 12.124px;
+    bottom: 0;
+    -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    content: "";
+    display: block;
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
 
 /****************  MVP-2 user flow screens ***************/
 .nhsBSA-sidebar-container {
