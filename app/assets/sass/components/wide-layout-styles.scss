@@ -63,6 +63,15 @@
     padding: 0;
     display: inline-block;
 }
+.nhsuk-button:focus:not(:active), .nhsuk-button:focus:not(:active):hover {
+    background-color: #ffeb3b;
+    color: #212b32;
+    outline: 4px solid transparent;
+}
+.nhsuk-button--secondary-solid:active, .nhsuk-button--secondary:active {
+    background-color: #c7dcef;
+    border-color: #005eb8;
+}
 
 .dont-break-out {
 
