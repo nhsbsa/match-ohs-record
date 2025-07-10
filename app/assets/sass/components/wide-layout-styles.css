@@ -1096,6 +1096,8 @@ ul.sidebar-nav .active {
   font-size: 20px;
   line-height: 1.45455;
   font-weight: bold;
+  display: inline;
+  margin-right: 16px;
 }
 
 .status-box.status-box-blue {
