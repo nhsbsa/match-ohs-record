@@ -1082,4 +1082,22 @@ ul.sidebar-nav .active {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.beta-banner {
+  padding: 16px 0;
+  background-color: #ffffff;
+}
+
+.status-box {
+  padding: 3px 5px 3px 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.45455;
+  font-weight: bold;
+}
+
+.status-box.status-box-blue {
+  background-color: #005eb8;
 }/*# sourceMappingURL=wide-layout-styles.css.map */

@@ -1,0 +1,51 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - View S071 - Request for S072 entitlement 
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="beta-banner" role="complementary" aria-label="banner">
+    <div class="nhsuk-width-container nhsuk-width-container-fluid">
+        <strong class="status-box status-box-blue">BETA</strong>
+        <span>Your <a href="mailto:nhsbsa.nhsjobs@nhsbsa.nhs.uk?subject=How could we improve NHS Jobs service?">feedback</a> will help us to improve this service.</span>
+    </div>
+</div>
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-width-container-fluid">
+                <h1>Entitlements</h1>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
