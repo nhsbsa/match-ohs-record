@@ -577,3 +577,13 @@
 
 </div>
 {% endblock %}
+
+{% block pageScripts %}
+<!-- Close button scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+  function closeBanner() { 
+    document.getElementById("govuk-notification-banner").style.display="none"; 
+  }
+</script>
+{% endblock %}
