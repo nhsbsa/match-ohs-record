@@ -33,22 +33,22 @@
 }
 
 .nhsuk-button--secondary:active, .nhsuk-button--secondary-solid:active {
-  background-color: rgb(199, 220, 239);
+  background-color: rgb(198.9, 219.58, 239.38);
   border-color: #005eb8;
 }
 
 .nhsuk-button--secondary:hover, .nhsuk-button--secondary-solid:hover {
-  background-color: rgb(217, 231, 244);
+  background-color: rgb(216.75, 230.85, 244.35);
 }
 
 .nhsuk-button:active {
-  background-color: rgb(0, 64, 30);
+  background-color: rgb(0, 63.5, 29.5);
   border-radius: 4px;
   top: 4px;
 }
 
 .nhsuk-button--secondary:active, .nhsuk-button--secondary-:active {
-  background-color: rgb(199, 220, 239);
+  background-color: rgb(198.9, 219.58, 239.38);
   border-color: #005eb8;
 }
 
@@ -521,7 +521,6 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   border-style: solid;
   border-width: 7px 0 7px 12.124px;
   bottom: 0;
-  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
   clip-path: polygon(0 0, 100% 50%, 0 100%);
   content: "";
   display: block;
@@ -1010,7 +1009,6 @@ ul.sidebar-nav .active {
   padding: 0 !important;
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
