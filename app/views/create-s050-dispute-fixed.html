@@ -53,63 +53,41 @@
                         Create S050 - Dispute of date  
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Original data
+                    Dispute details
                 </h1>
 
                 <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset">
                       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
                         <label class="nhsuk-label" for="example">
-                          Concerning the SED
+                            Period
                         </label>
                       </legend>
                   
                       <div class="nhsuk-radios">
                   
                         <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="no">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                            S017
+                          <input class="nhsuk-radios__input" id="example-8" name="example-open" type="radio" value="no" checked>
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-8">
+                                Fixed period
                           </label>
                         </div>
                   
                         <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="yes">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                            S019
+                          <input class="nhsuk-radios__input" id="example-9" name="example-open" type="radio" value="yes" onclick="window.location.href = 'create-s050-dispute-open';">
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-9">
+                                Open period
                           </label>
                         </div>
 
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="no">
-                            <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                                S073
-                            </label>
-                        </div>
-
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="example-4" name="example" type="radio" value="no">
-                            <label class="nhsuk-label nhsuk-radios__label" for="example-4">
-                                S130
-                            </label>
-                        </div>
-
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="example-5" name="example" type="radio" value="no">
-                            <label class="nhsuk-label nhsuk-radios__label" for="example-5">
-                                S131
-                            </label>
-                        </div>
-                  
                       </div>
                     </fieldset>
                 </div>
 
                 <div class="nhsuk-form-group">
-
                     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                         <label class="nhsuk-label" for="example">
-                            Date SED was sent (optional)
+                            Start date
                         </label>
                         <div class="nhsuk-date-input" id="example">
                             <div class="nhsuk-date-input__item">
@@ -141,34 +119,41 @@
                 </div>
 
                 <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset">
-                      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                         <label class="nhsuk-label" for="example">
-                            Period provided by your institution
+                            End date
                         </label>
-                      </legend>
-                  
-                      <div class="nhsuk-radios">
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-6" name="example-period" type="radio" value="no" onclick="window.location.href = 'create-s050-original-fixed';">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-6">
-                                Fixed period
-                          </label>
+                        <div class="nhsuk-date-input" id="example">
+                            <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                Day
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" value="" type="text" inputmode="numeric">
+                            </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                Month
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" value="" id="example-month" name="example[month]" type="text" inputmode="numeric">
+                            </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                Year
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" value="" name="example[year]" type="text" inputmode="numeric">
+                            </div>
+                            </div>
                         </div>
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-7" name="example-period" type="radio" value="yes" onclick="window.location.href = 'create-s050-original-open';">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-7">
-                                Open period
-                          </label>
-                        </div>
-
-                      </div>
                     </fieldset>
                 </div>
 
-                <a href="create-s050-dispute">
+
+                <a href="create-s050-reason">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                         Continue
                     </button>

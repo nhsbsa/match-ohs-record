@@ -1,0 +1,101 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create S050 - Dispute of date 
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
+                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                    <div class="nhsuk-grid-column-full">
+                        <div class="nhsuk-back-link">
+                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                            </svg>
+                            Go back</a>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="app-page-heading">
+                    <span class="nhsuk-caption-l">
+                        Create S050 - Dispute of date  
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                    </span>
+                    Dispute details
+                </h1>
+
+                <div class="nhsuk-form-group">
+                    <fieldset class="nhsuk-fieldset">
+                      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                        <label class="nhsuk-label" for="example">
+                            Period
+                        </label>
+                      </legend>
+                  
+                      <div class="nhsuk-radios">
+                  
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input" id="example-8" name="example-open" type="radio" value="no" onclick="window.location.href = 'create-s050-dispute-fixed';">
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-8">
+                                Fixed period
+                          </label>
+                        </div>
+                  
+                        <div class="nhsuk-radios__item">
+                          <input class="nhsuk-radios__input" id="example-9" name="example-open" type="radio" value="yes" onclick="window.location.href = 'create-s050-dispute-open';">
+                          <label class="nhsuk-label nhsuk-radios__label" for="example-9">
+                                Open period
+                          </label>
+                        </div>
+
+                      </div>
+                    </fieldset>
+                </div>
+
+                <a href="#">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                    </button>
+                </a>
+
+
+                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
