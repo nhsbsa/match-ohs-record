@@ -1,0 +1,147 @@
+
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+  <!--<nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
+
+    <div class="nhsuk-grid-column-one-half">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="ohs-record-manage-case">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="ohs-record-manage-case">Case management ID 78793</a></li>
+      </ol>
+    </div>
+    
+
+  </nav>-->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+          
+<!-- Content - Start -->
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
+                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                    <div class="nhsuk-grid-column-full">
+                        <div class="nhsuk-back-link">
+                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                            </svg>
+                            Go back</a>
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-9">
+                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                        <h1 class="nhsuk-fieldset__heading">Are you sure you want to exit?</h1>
+                    </legend>
+                    <p>Anything unsaved will be lost.</p>
+                
+                    <div class="nhsuk-radios">
+                
+                        <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input" id="example-1" name="example-1" type="radio" value="yes">
+                            <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                                Yes, I want to exit
+                            </label>
+                        </div>
+                
+                        <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input" id="example-2" name="example-1" type="radio" value="no">
+                            <label class="nhsuk-label nhsuk-radios__label" for="example-2" >
+                                No, I want to continue
+                            </label>
+                        </div>
+
+                        <a href="sed-create-h001-are-you-sure-2">
+                            <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                                Submit
+                            </button>
+                        </a>
+                    </div>
+                </fieldset>
+       
+                <p><a href="sed-are-you-sure-2">Cancel</a></p>
+
+                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+
+            </div>
+        </div>
+
+       
+    </div>
+</div>
+
+
+
+<!-- old code -->
+<div class="nhsuk-width-container-fluid clearfix ul-padding-top-lrg">
+    
+
+    <div class="nhsuk-form-group">
+
+        <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-9">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h1 class="nhsuk-fieldset__heading">Are you sure you want to leave this form?</h1>
+          </legend>
+          <p>All your data will be lost if you leave without completing this form.</p>
+      
+          <div class="nhsuk-radios">
+      
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-1" name="example-1" type="radio" value="yes">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                Yes, leave without completing
+              </label>
+            </div>
+      
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-2" name="example-1" type="radio" value="no">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-2" >
+                No, go back to editing
+              </label>
+            </div>
+
+            <a href="sed-create-h001-are-you-sure">
+              <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                Submit
+              </button>
+            </a>
+          </div>
+        </fieldset>
+      </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

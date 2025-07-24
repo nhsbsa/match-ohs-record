@@ -317,24 +317,44 @@ Overseas Healthcare Service RINA
 
 						<div class="nhsuk-grid-column-full" id="results">
 							<div class="nhsuk-card">
-								<div class="nhsuk-card__content nhsuk-u-padding-bottom-1">
+								<div class="nhsuk-card__content nhsuk-u-padding-bottom-1 ">
 									<!-- Start header block-->
 									<div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
-										<div class="nhsuk-grid-column-full">
-											<h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 10 results of 70</h3>
-											<hr style="margin:24px 0px;">
+										
+										<div class="nhsuk-grid-column-two-thirds">
+											<h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2" style="padding-top: 3px;">Showing 10 results of 70</h3>
 										</div>
+
+										<div class="nhsuk-grid-column-one-third">
+											<div class="nhsuk-form-group" style="float: right;">
+												<label class="nhsuk-label" for="results"
+													style="line-height:35px;display: inline-block;padding-right:12px;">
+													Results per page
+												</label>
+												<select class="nhsuk-select" id="results" name="results" style="min-width: auto;">
+													<option value="10" selected="">10</option>
+													<option value="100">100</option>
+													<option value="200">200</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+
+									<hr style="margin: 0px;">
+
+									<div class="nhsuk-grid-row nhsuk-u-padding-bottom-2 nhsuk-u-margin-top-4">
 
 										<!-- Start of filter and sort options -->
 
-										<div class="nhsuk-grid-column-two-thirds">
+										<div class="nhsuk-grid-column-full">
 											<details class="nhsuk-details nhsuk-u-margin-bottom-4">
 												<summary class="nhsuk-details__summary">
 													<span>
 														Filter and sort options
 													</span>
 												</summary>
-												<div class="nhsuk-details__text">
+												<div class="nhsuk-details__text" style="background-color: red;">
 													<div class="nhsuk-grid-row">
 														<!-- Start filter by recent cases-->
 														<div class="nhsuk-grid-column-one-third">
@@ -480,22 +500,6 @@ Overseas Healthcare Service RINA
 													</div>
 												</div>
 											</details>
-										</div>
-
-										<!-- Start of results viewing options -->
-
-										<div class="nhsuk-grid-column-one-third">
-											<div class="nhsuk-form-group" style="float: right;">
-												<label class="nhsuk-label" for="results"
-													style="line-height:35px;display: inline-block;padding-right:12px;">
-													Results per page
-												</label>
-												<select class="nhsuk-select" id="results" name="results" style="min-width: auto;">
-													<option value="10" selected="">10</option>
-													<option value="100">100</option>
-													<option value="200">200</option>
-												</select>
-											</div>
 										</div>
 
 									</div>
