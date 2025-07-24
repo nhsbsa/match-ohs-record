@@ -4,7 +4,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-sign-out.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -60,9 +60,12 @@
                         </div>
                     </div>
                 </div>
+
                 <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-9">
                     <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                        <h1 class="nhsuk-fieldset__heading">Are you sure you want to exit?</h1>
+                      <h1 class="nhsuk-heading-xl" style="margin-bottom: 0;">
+                        Are you sure you want to exit?
+                      </h1>
                     </legend>
                     <p>Anything unsaved will be lost.</p>
                 
