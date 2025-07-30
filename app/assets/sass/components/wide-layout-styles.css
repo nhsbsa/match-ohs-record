@@ -294,8 +294,10 @@ header {
   border: 5px solid #1d70b8;
   margin-bottom: 30px;
 }
-.govuk-notification-banner .govuk-notification-banner__header {
+.govuk-notification-banner .govuk-notification-banner__important {
   background-color: #1d70b8;
+}
+.govuk-notification-banner .govuk-notification-banner__header {
   padding: 2px 20px 5px;
 }
 .govuk-notification-banner .govuk-notification-banner__content {
