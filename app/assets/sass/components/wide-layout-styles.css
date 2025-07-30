@@ -1041,6 +1041,8 @@ ul.sidebar-nav .active {
   right: 20px;
   top: 7px;
   display: block;
+  min-width: 34px;
+  text-align: center;
 }
 
 .nhsuk__nav-list-counter-home {
