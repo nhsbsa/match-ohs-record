@@ -26,7 +26,7 @@ Overseas Healthcare Service RINA
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container-fluid">
     <ol class="nhsuk-breadcrumb__list" style="padding-left: 0;">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="dep-unhappy-entitlements-homepage">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="dep-happy-entitlements-homepage">Home</a></li>
     </ol>
     <p class="nhsuk-breadcrumb__back">
       <a class="nhsuk-breadcrumb__backlink" href="#">
@@ -82,18 +82,23 @@ Overseas Healthcare Service RINA
 						<span class="nhsuk__nav-list-name">HBUC 01</span><span class="nhsuk__nav-list-counter">12</span>
 					</a>
 				</li>
-				<li class="nhsuk-header__navigation-item">
-					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">HBUC 05</span><span class="nhsuk__nav-list-counter">23</span>
-					</a>
-				</li>
-				<li class="nhsuk-header__navigation-item">
-					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">HBUC 07</span><span class="nhsuk__nav-list-counter">7</span>
-					</a>
-				</li>
 			</ul>
 
+			<!--<div class="nhsuk-grid-row">
+				<div class="nhsuk-grid-column-full">
+
+					<h4 class="nhsuk-heading-m nhsuk-u-margin-left-5 nhsuk-u-margin-top-6">Quick actions</h4>
+
+					<ul class="nhsuk-header__navigation-list">
+						<li class="nhsuk-header__navigation-item">
+							<a class="nhsuk-header__navigation-link " href="#">
+								<span class="nhsuk__nav-list-name">Create a new case</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<hr style="margin:24px 0px;">
+			</div>-->
 		</nav>
 
 		<div class="nhsBSA-sidebar-content" style="padding-top: 17px;">
@@ -177,7 +182,7 @@ Overseas Healthcare Service RINA
 											<label class="nhsuk-label" for="example">
 												Country
 											</label>
-											<select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
+											<select class="nhsuk-select" style="width: 637px;" id="select-1" name="select-1">
 												<option value="0"></option>
 												<option value="1">[AT] Austria</option>
 												<option value="2">[BE] Belgium</option>
@@ -312,24 +317,44 @@ Overseas Healthcare Service RINA
 
 						<div class="nhsuk-grid-column-full" id="results">
 							<div class="nhsuk-card">
-								<div class="nhsuk-card__content nhsuk-u-padding-bottom-1">
+								<div class="nhsuk-card__content nhsuk-u-padding-bottom-1 ">
 									<!-- Start header block-->
 									<div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
-										<div class="nhsuk-grid-column-full">
-											<h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 10 results of 70</h3>
-											<hr style="margin:24px 0px;">
+										
+										<div class="nhsuk-grid-column-two-thirds">
+											<h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2" style="padding-top: 3px;">Showing 10 results of 70</h3>
 										</div>
+
+										<div class="nhsuk-grid-column-one-third">
+											<div class="nhsuk-form-group" style="float: right;">
+												<label class="nhsuk-label" for="results"
+													style="line-height:35px;display: inline-block;padding-right:12px;">
+													Results per page
+												</label>
+												<select class="nhsuk-select" id="results" name="results" style="min-width: auto;">
+													<option value="10" selected="">10</option>
+													<option value="100">100</option>
+													<option value="200">200</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+
+									<hr style="margin: 0px;">
+
+									<div class="nhsuk-grid-row nhsuk-u-padding-bottom-2 nhsuk-u-margin-top-4">
 
 										<!-- Start of filter and sort options -->
 
-										<div class="nhsuk-grid-column-two-thirds">
+										<div class="nhsuk-grid-column-full">
 											<details class="nhsuk-details nhsuk-u-margin-bottom-4">
 												<summary class="nhsuk-details__summary">
 													<span>
 														Filter and sort options
 													</span>
 												</summary>
-												<div class="nhsuk-details__text">
+												<div class="nhsuk-details__text" style="background-color: red;">
 													<div class="nhsuk-grid-row">
 														<!-- Start filter by recent cases-->
 														<div class="nhsuk-grid-column-one-third">
@@ -477,22 +502,6 @@ Overseas Healthcare Service RINA
 											</details>
 										</div>
 
-										<!-- Start of results viewing options -->
-
-										<div class="nhsuk-grid-column-one-third">
-											<div class="nhsuk-form-group" style="float: right;">
-												<label class="nhsuk-label" for="results"
-													style="line-height:35px;display: inline-block;padding-right:12px;">
-													Results per page
-												</label>
-												<select class="nhsuk-select" id="results" name="results" style="min-width: auto;">
-													<option value="10" selected="">10</option>
-													<option value="100">100</option>
-													<option value="200">200</option>
-												</select>
-											</div>
-										</div>
-
 									</div>
 
 									<!-- End of header block -->
@@ -536,16 +545,16 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10229
+															<span class="nhsuk-table-responsive__heading">ID </span>9054
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Nevetha
+															<span class="nhsuk-table-responsive__heading">First name </span>Ciri
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Patel
+															<span class="nhsuk-table-responsive__heading">Last name </span>Rivia
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Austria
+															<span class="nhsuk-table-responsive__heading">Country </span>France
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
@@ -694,7 +703,7 @@ Overseas Healthcare Service RINA
 																class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Pending UK
 																Action</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
-																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">H002 received 06/04/2025
+																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 06/04/2025
 																at 11:21</span>
 														</td>
 														<td role="cell" class="nhsuk-table__cell">

@@ -1,0 +1,324 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends '../layout-mvp2-dep-happy.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Search OHS for dependant
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-width-container margin-left-right-lrg ul-padding-top-lrg">
+  <div class="nhs-main-wrapper">
+
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+            <div class="nhsuk-back-link">
+                <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                  <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                </svg>
+                Go back</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-three-quarters">
+            <div>
+                <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+                    Search for dependent OHS record
+                </h1>
+                <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
+                    Search for a matching OHS record. If no record is found, create a new record.
+                </div>
+            </div>
+        </div>
+        <div class="nhsuk-grid-column-one-quarters">
+            <a href="mvp2-dep-add-dependant-new-record">
+                <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                    Create new OHS record
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Search UI - Start -->
+
+    <div class="nhsuk-grid-row">
+
+        <!-- Search for a record expander - Start -->
+
+        <div class="nhsuk-grid-column-three-quarters">
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text" style="font-size: 1.1875rem;">
+                        Edit search
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+
+                    <div class="nhsuk-hint nhsuk-u-margin-bottom-5 nhsuk-u-margin-top-3" id="contact-hint">
+                        Data must be entered into a minimum of 3 fields to search.
+                    </div>
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">
+                                    First name (optional)
+                                </label>
+                                <input class="nhsuk-input" id="accepted" name="accepted" type="text" value="Ciri">
+                            </div>
+                        </div>
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">Last name (optional)</label>
+                                <input class="nhsuk-input" id="accepted" name="accepted" type="text" value="Rivia">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
+                            <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-3" aria-describedby="example-hint" role="group">
+                                <label class="nhsuk-u-margin-bottom-1" for="dob">
+                                    Date of birth (optional)
+                                </label>
+                                <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
+                                    For example, 28 9 2024
+                                </div>
+                                <div class="nhsuk-date-input" id="example">
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                                Day
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="text" pattern="[0-9]*" inputmode="numeric" value="24">
+                                        </div>
+                                    </div>
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                                Month
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="text" pattern="[0-9]*" inputmode="numeric" value="05">
+                                        </div>
+                                    </div>
+                                    <div class="nhsuk-date-input__item">
+                                        <div class="nhsuk-form-group">
+                                            <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                                Year
+                                            </label>
+                                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="text" pattern="[0-9]*" inputmode="numeric" value="2009">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group nhsuk-u-margin-top-3">
+                                <label class="nhsuk-u-margin-bottom-1" for="contested">
+                                    PIN (OHS reference or National Insurance number) (optional)
+                                </label>
+                                <div class="nhsuk-hint">
+                                    For example, QQ 12 34 56 C
+                                </div>
+                                <input class="nhsuk-input" id="contested" name="contested" type="text" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nhsuk-grid-row">
+                        <div class=" nhsuk-grid-column-one-third">
+    
+                            <form action="03-person-search-results#search-heading" method="post">
+       
+                                <div class="govuk-form-group nhsuk-u-margin-top-3">
+                                    <label class="nhsuk-label" for="sort">
+                                        Country of residence (optional)
+                                    </label>
+                                    <div class="nhsuk-hint">
+                                        For example, France
+                                    </div>
+                                    <select class="nhsuk-select nhsuk-select__search-case" id="sort" name="sort">
+                                        <option value=""></option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Cyprus">Cyprus</option>
+                                        <option value="Czech Republic">Czech Republic</option>
+                                        <option value="Denmark">Denmark</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Gibraltar">Gibraltar</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Hungary">Hungary</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lithuania">Lithuania</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Slovakia">Slovakia</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                    </select>
+                                </div>
+
+    
+                                <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3 nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                                    Search
+                                </button>
+    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Search results - Start -->
+            <div class="nhsuk-card">
+                <div class="nhsuk-card__content">
+    
+                    <!-- Start of header block -->
+                    <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
+                        <div class="nhsuk-grid-column-two-thirds">
+                            <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 0 results of 0</h3>
+                            <div class="nhsuk-u-margin-bottom-6">
+                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">
+                                    Ciri
+                                </strong>
+                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">
+                                    Rivia
+                                </strong>
+                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">
+                                    24 May 2009
+                                </strong>
+                            </div>
+                            <p class="nhsuk-u-margin-top-4">No OHS records found.</p>
+                        </div>
+                    </div>
+    
+                    <!-- End person search results -->
+    
+                </div>
+            </div>
+            <!-- Search results - End -->
+
+        </div>
+
+        <!-- Search for a record expander - End -->
+
+        <!-- Application details right sidebar - Start -->
+
+        <div class="nhsuk-grid-column-one-quarter">
+            <h3>Dependant S071 details</h3>
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                
+                <dl class="nhsuk-summary-list nhsuk-u-margin-bottom-2">
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            First name
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Ciri
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Last name
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Rivia
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Date of birth
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            24 May 2009
+                        </dd>
+                    </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Address
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Place Georges-Pompidou</br>75004 Paris</br>France
+                        </dd>
+                    </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            PIN
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            
+                        </dd>
+                    </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Entitlement start date</dt>
+                        <dd class="nhsuk-summary-list__value">
+                            30 Oct 2024</dd>
+                    </div>
+                    <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
+                        <dt class="nhsuk-summary-list__key">
+                            Entitlement end date
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            15 Nov 2024
+                        </dd>
+                    </div>
+                </dl>
+
+            </div>
+        </div>
+
+        <!-- Application details right sidebar - End -->
+
+    </div>
+
+    <!-- Search UI - End -->
+
+  </div>
+</div>
+{% endblock %}
