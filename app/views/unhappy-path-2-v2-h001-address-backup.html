@@ -54,36 +54,29 @@
                     Create H001 - Notification/request for information
                       <span class="nhsuk-u-visually-hidden"> - </span>
                   </span>
-                  Notification of address (optional)
+                  Address (optional)
               </h1>
 
-              <div class="nhsuk-form-group">
 
+              <div class="nhsuk-form-group nhsuk-u-margin-top-6">
                 <fieldset class="nhsuk-fieldset">
-                  <label class="nhsuk-label" for="example-2">
-                    Type of address (optional)
+                  <label class="nhsuk-label" for="example">
+                    Address of the person (optional)
                   </label>
               
                   <div class="nhsuk-radios">
               
                     <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-4" name="example-2" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-4">
-                        Country of stay
+                      <input class="nhsuk-radios__input" onclick="window.location='unhappy-path-2-v2-h001-address-notification';" id="example-1" name="example" type="radio" value="no" checked aria-checked="true">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        Notification of address 
                       </label>
                     </div>
-
+              
                     <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-5" name="example-2" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-5">
-                        Contact address 
-                      </label>
-                    </div>
-
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-6" name="example-2" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-6">
-                        Contact address of the person 
+                      <input class="nhsuk-radios__input" onclick="window.location='unhappy-path-2-v2-h001-address-request';"  id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Request of address
                       </label>
                     </div>
               
@@ -91,7 +84,43 @@
                 </fieldset>
               </div>
 
-              <h5 class="nhsuk-u-margin-top-9 nhsuk-u-font-size-22">Address</h5>
+              <h2 class="nhsuk-u-margin-top-9">Notification of address (optional)</h2>
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset">
+                  <label class="nhsuk-label" for="example-2">
+                    Type of address
+                  </label>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-4" name="example-2" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-4">
+                        Country of residence
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-5" name="example-2" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-5">
+                        Country of stay
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-6" name="example-2" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-6">
+                        Contact address
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+              </div>
+
+              <h5 class="nhsuk-u-margin-top-9 nhsuk-u-font-size-22">Address (optional)</h5>
 
               <div class="nhsuk-form-group">
                 <label class="nhsuk-label" for="example">
@@ -171,13 +200,10 @@
                 </datalist>                                                  
               </div>
 
-              <a href="#" class="nhsuk-u-margin-top-9" style="font-size: 19px;display: block;">Add another notification of address</a>
-              <a href="#" class="nhsuk-u-margin-top-4" style="font-size: 19px;display: block;">Add another address of the person</a>
-
               <a href="unhappy-path-2-v2-h001-request" title="Continue to next section">
-                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Continue
-                  </button>
+                <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                      Continue
+                </button>
               </a>
               <p><a href="sed-are-you-sure-x010">Cancel</a></p>
 
