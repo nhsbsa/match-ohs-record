@@ -1,0 +1,143 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create S072 reply
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
+                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                    <div class="nhsuk-grid-column-full">
+                        <div class="nhsuk-back-link">
+                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                            </svg>
+                            Go back</a>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="app-page-heading">
+                    <span class="nhsuk-caption-l">
+                        Create S072 reply
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                    </span>
+                    Decision on rejected entitlement 
+                </h1>
+
+                <div class="nhsuk-form-group">
+
+                    <fieldset class="nhsuk-fieldset">
+                        <label class="nhsuk-label" for="example">
+                            Reason for rejected entitlement
+                        </label>
+                    
+                        <div class="nhsuk-radios">
+                    
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes" checked>
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                                    Not insured in our Member State since
+                                </label>
+                            </div>
+                    
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                                    Not entitled to sickness benefits from our member state since
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-3">
+                                    Resides in our Member State since
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-4" name="example" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-4">
+                                    No longer resides in your Member State since
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-5" name="example" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-5">
+                                    Died on
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-6" name="example" type="radio" value="no" checked>
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-6">
+                                    Insured in another country on the basis of pension conform Regulation (EC) 883/2004 art 24(2)(b)
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-7" name="example" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-7">
+                                    Status of the person has changed
+                                </label>
+                            </div>
+
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="example-8" name="example" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-8">
+                                    Other reason
+                                </label>
+                            </div>
+                    
+                        </div>
+                    </fieldset>
+                </div>
+
+                <a href="create-s072-info-entitlement-reason">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                    </button>
+                </a>
+                
+                <p><a href="sed-s072-exit">Cancel</a></p>
+
+                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+
+            </div>
+        </div>
+
+       
+    </div>
+</div>
+{% endblock %}
