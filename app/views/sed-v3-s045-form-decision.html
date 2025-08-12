@@ -62,14 +62,14 @@
                     <div class="nhsuk-radios">
                 
                       <div class="nhsuk-radios__item">
-                        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes" onchange="window.location.replace('sed-v3-s045-form-decision-approved')">
+                        <input class="nhsuk-radios__input" id="example-1" name="entitlement" type="radio" value="Entitlement approved">
                         <label class="nhsuk-label nhsuk-radios__label" for="example-1">
                           Entitlement approved
                         </label>
                       </div>
                 
                       <div class="nhsuk-radios__item">
-                        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no" onchange="window.location.replace('sed-v3-s045-form-decision-rejected')">
+                        <input class="nhsuk-radios__input" id="example-2" name="entitlement" type="radio" value="Entitlement rejected">
                         <label class="nhsuk-label nhsuk-radios__label" for="example-2">
                           Entitlement rejected
                         </label>
@@ -77,13 +77,11 @@
                 
                     </div>
                   </div>
-                  </fieldset>
+                </fieldset>
 
-                <a href="sed-v3-s045-form-ehic">
-                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                      Continue
-                  </button>
-              </a>
+                <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="handleContinue()" data-module="nhsuk-button" type="submit">
+                    Continue
+                </button>
 
               <p><a href="sed-are-you-sure-s045">Cancel</a></p>
 
@@ -95,4 +93,26 @@
        
     </div>
 </div>
+{% endblock %}
+
+{% block pageScripts %}
+<!-- Radio button scripts -->
+<script>
+  function handleContinue() {
+    const selected = document.querySelector('input[name="entitlement"]:checked');
+    const result = document.getElementById('result');
+
+    if (selected) {
+      const value = selected.value;
+
+      if (value === 'Entitlement approved') {
+        window.location.href = './sed-v3-s045-form-decision-approved';
+      } else if (value === 'Entitlement rejected') {
+        window.location.href = './sed-v3-s045-form-decision-rejected';
+      }
+    } else {
+      result.textContent = "Please select an option before continuing.";
+    }
+  }
+</script>
 {% endblock %}
