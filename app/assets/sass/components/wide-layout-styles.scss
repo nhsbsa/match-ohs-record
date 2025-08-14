@@ -8,13 +8,30 @@
 /// 
 /// 
 /// 
-ul {
-    padding-left: 0;
+/// 
+/*==========================================================================
+   UTILITIES / #VISUALLY-HIDDEN
+   ========================================================================== */
+/**
+ * Hide elements visually but keep it in the DOM
+ *
+ * Usage: class="nhsuk-u-visually-hidden"
+ * See tools/mixins
+ */
+.nhsuk-u-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
-ul li {
-    list-style: none;
-    display: inline-block;
-}
+
 .postit-note {
     background-color: #ffdd00;
     padding: 24px;
@@ -1046,23 +1063,17 @@ ul.sidebar-nav .active {
 /*==============================================
  Expander details 
  ==============================================*/
-
-.nhsuk-u-visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-.nhsuk-table__row details[rowExpander] {
-    margin-bottom: 0;
-}
+/**
+ * Expander variation.
+ *
+ * 1. !important used because the icon is populated
+ *    by the JavaScript polyfill
+ * 2. Remove the default hover, focus and active
+ *    styles for this component.
+ * 3. -2px left margin to align the icon to the content.
+ * 4. When a group of details is used reduce the
+ *    margin between them so they sit together.
+ */
 .nhsuk-expander {
   background-color: #ffffff;
   border: 1px solid #d8dde0;
