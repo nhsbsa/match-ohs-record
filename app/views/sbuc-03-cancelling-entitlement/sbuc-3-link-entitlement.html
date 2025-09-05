@@ -52,19 +52,6 @@
                 Go back</a>
         </div>
 
-        <!-- Notification -->
-
-        <div id="govuk-notification-banner" class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-            <div class="govuk-notification-banner__header">
-                <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                    Success
-                </h2>
-                <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
-            </div>
-            <div class="govuk-notification-banner__content">
-                <p class="govuk-body">Case was matched to OHS record</p>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -76,11 +63,11 @@
                     Matched OHS record
                 </h1>
             </div>
-            <div class="nhsuk-grid-column-one-quarter" style="text-align: right;">
-                <a href='sbuc-3-link-entitlement'><button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+            <!--<div class="nhsuk-grid-column-one-quarter" style="text-align: right;">
+                <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
                     Refresh screen
-                </button></a>
-            </div>
+                </button>
+            </div>-->
         </div>
     </div>
     
@@ -93,13 +80,6 @@
 
         <div class="nhsuk-card">
             <div class="nhsuk-card__content nhsuk-u-margin-top-3">
-                <div class="nhsuk-warning-callout">
-                    <h3 class="nhsuk-warning-callout__label"> <span role="text">
-                        <span class="nhsuk-u-visually-hidden">Important: </span>
-                        Entitlement cancellation
-                        </span> </h3>
-                    <p>You must cancel the entitlement in OHS, before you can link the entitlement.</p>
-                </div>
                 <div class="nhsuk-grid-row">
                     <div class="nhsuk-grid-column-three-quarters">
                         <h3>Personal details</h3> 
@@ -139,7 +119,7 @@
 
                                 <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
                                     <td role="cell" class="nhsuk-table__cell">
-                                        <a href="ohs-case-1" target="_blank"><span class="nhsuk-table-responsive__heading">OHS reference </span>012345678</a>
+                                        <a href="#"><span class="nhsuk-table-responsive__heading">OHS reference </span>012345678</a>
                                     </td>
                                     <td role="cell" class="nhsuk-table__cell">
                                         <span class="nhsuk-table-responsive__heading">First name </span>Aneurin
@@ -221,11 +201,11 @@
                         </td>
                         <td role="cell" class="nhsuk-table__cell">
                         <span class="nhsuk-table-responsive__heading">Status </span> 
-                        <strong class="nhsuk-tag nhsuk-tag--green">Registered</strong>
+                        <strong class="nhsuk-tag nhsuk-tag--grey">Cancelled</strong>
                         </td>
                         <td role="cell" class="nhsuk-table__cell nhsuk-table__header--numeric">
                             <span class="nhsuk-table-responsive__heading">Actions </span> 
-                            <a href="#">Link entitlement</a>
+                            <a href="sbuc-3-add-participant">Link entitlement</a>
                         </td>
                         </tr>
                     </tbody>
