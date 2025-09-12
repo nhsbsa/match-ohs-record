@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create S072 reply – Reason for rejected entitlement
+  Overseas Healthcare Service RINA - Create S072 reply – Provide ISO code
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -52,30 +52,25 @@
                         Create S072 reply
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Reason for rejected entitlement (optional)
+                    Provide ISO code
                 </h1>
-                <div class="nhsuk-hint" id="example-hints-hint">
-                    <p class="nhsuk-u-margin-bottom-2">You must provide a reason if the entitlement is rejected.</p>
-                </div>
 
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
-                        Reason (optional)
+                        ISO code of country of insurance
                     </label>
                     <select class="nhsuk-select nhsuk-input--width-20" id="menu1" name="menu1">
                         <option value=""></option>
-                        <option value="create-s072-request-for-s072-provide-date">Not insured in Member state, not entitled to sickness benefits from our member state, or no longer resides in the member state </option>
-                        <option value="create-s072-request-for-s072-died">Died</option>
-                        <option value="create-s072-request-for-s072-iso">Insured in another country on the basis of pension conform Regulations (EC) 883/2004 art 2 (2) (b</option>
-                        <option value="create-s072-request-for-s072-other">Other</option>
+                        <option value="">Country</option>
+                        <option value="">Country</option>
+                        <option value="">Country</option>
+                        <option value="">Country</option>
                     </select> 
                 </div>
 
-                <a href="#">
-                    <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="gotosite()" data-module="nhsuk-button" type="submit">
-                        Continue
-                    </button>
-                </a>
+                <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="gotosite()" data-module="nhsuk-button" type="submit">
+                    Save draft
+                </button>
                 
                 <p><a href="sed-s072-exit">Cancel</a></p>
 
@@ -87,12 +82,4 @@
        
     </div>
 </div>
-{% endblock %}
-{% block pageScripts %}
-<!-- Radio button scripts -->
-<script>
-    function gotosite() {
-    window.location = document.getElementById("menu1").value; // JQuery:  $("#menu").val();
-    }
-</script>
 {% endblock %}

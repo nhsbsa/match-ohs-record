@@ -36,68 +36,89 @@
         <!-- content - start -->
 
         <div class="nhsBSA-sidebar-content">
-            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
-                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
-                    <div class="nhsuk-grid-column-full">
-                        <div class="nhsuk-back-link">
-                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
-                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
-                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-                            </svg>
-                            Go back</a>
-                        </div>
+          <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
+            <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                <div class="nhsuk-grid-column-full">
+                    <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                        </svg>
+                        Go back</a>
                     </div>
                 </div>
-                <h1 class="app-page-heading">
-                    <span class="nhsuk-caption-l">
-                        Create S050 - Dispute of date  
-                        <span class="nhsuk-u-visually-hidden"> - </span>
-                    </span>
-                    Dispute details
-                </h1>
-
-                <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset">
-                      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                        <label class="nhsuk-label" for="example">
-                            Period
-                        </label>
-                      </legend>
-                  
-                      <div class="nhsuk-radios">
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-8" name="example-open" type="radio" value="no" checked>
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-8">
-                                Fixed period
-                          </label>
-                        </div>
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-9" name="example-open" type="radio" value="yes">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-9">
-                                Open period
-                          </label>
-                        </div>
-
-                      </div>
-                    </fieldset>
-                </div>
-
-                <a href="create-s050-dispute-fixed">
-                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Continue
-                    </button>
-                </a>
-
-                <p><a href="#">Cancel</a></p>
-
-
-                <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
-
             </div>
-        </div>
+            <h1 class="app-page-heading">
+                <span class="nhsuk-caption-l">
+                    Create S050 - Dispute of date  
+                    <span class="nhsuk-u-visually-hidden"> - </span>
+                </span>
+                Dispute details
+            </h1>
 
+            <div class="nhsuk-form-group">
+                <fieldset class="nhsuk-fieldset">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <label class="nhsuk-label" for="example">
+                        Period
+                    </label>
+                  </legend>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-8" name="dispute-period" type="radio" value="dispute-fixed" checked>
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-8">
+                            Fixed period
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-9" name="dispute-period" type="radio" value="dispute-open">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-9">
+                            Open period
+                      </label>
+                    </div>
+
+                  </div>
+                </fieldset>
+            </div>
+
+            <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="handleContinue()" data-module="nhsuk-button" type="submit">
+                Continue
+            </button>
+
+            <p><a href="#">Cancel</a></p>
+
+
+            <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+
+          </div>
+      </div>
     </div>
 </div>
+{% endblock %}
+
+{% block pageScripts %}
+
+<!-- Radio button scripts -->
+
+<script>
+  function handleContinue() {
+    const selected = document.querySelector('input[name="dispute-period"]:checked');
+    const result = document.getElementById('result');
+
+    if (selected) {
+      const value = selected.value;
+
+      if (value === 'dispute-fixed') {
+        window.location.href = 'create-s050-dispute-fixed';
+      } else if (value === 'dispute-open') {
+        window.location.href = 'create-s050-dispute-open';
+      }
+    } else {
+      result.textContent = "Please select an option before continuing.";
+    }
+  }
+</script>
 {% endblock %}

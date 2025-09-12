@@ -47,7 +47,7 @@
 
                 <!-- notification start-->
 
-                <!--<div id="govuk-notification-banner"
+                <div id="govuk-notification-banner"
                 class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert"
                 aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
                     <div class="govuk-notification-banner__header">
@@ -57,40 +57,37 @@
                         <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
                     </div>
                     <div class="govuk-notification-banner__content">
-                        <p class="govuk-body">Dependant S072 entitlement has been issued in OHS and added to the main entitlement</p>
+                        <p class="govuk-body">Case has been linked to the OHS entitlement</p>
                     </div>
                 </div>
 
-                notification end-->
+               <!-- notification end -->
 
-                <h1 class="app-page-heading">What is the case type?</h1>
+                <h1 class="app-page-heading">Add a participant</h1>
+                <p class="nhsuk-hint" id="contact-hint">Search for participant using institution code or begin typing the name of institution (a minimum of two characters is required).</p>
 
                 <div class="nhsuk-grid-column-three-quarters" style="padding-left: 0;">
                     <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
-                        <div class="nhsuk-hint" id="contact-hint">
-                            Select what type of case you would like to create.
-                        </div>
-                        <div class="nhsuk-radios nhsuk-radios--conditional" data-module="nhsuk-radios">
-                            <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="sbuc1aradio" name="SBUC" type="radio" value="sbuc1aradio" aria-controls="conditional-contact" aria-expanded="false" required>
-                                <label class="nhsuk-label nhsuk-radios__label" for="SBUC">
-                                    SBUC 1a
-                                </label>
-                            </div>
-                            <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="sbuc3radio" name="SBUC" type="radio" value="sbuc3radio" aria-controls="conditional-contact" aria-expanded="false" required>
-                                <label class="nhsuk-label nhsuk-radios__label" for="SBUC">
-                                    SBUC 3
-                                </label>
-                            </div>
+                        <div class="nhsuk-form-group">
+                            <label class="nhsuk-label" for="select-1">
+                                Member state participant
+                            </label> <select class="nhsuk-select" id="select-1" name="select-1">
+                                <option value="1">NHS.UK frontend option 1</option>
+                                <option value="2" selected>NHS.UK frontend option 2</option>
+                                <option value="3" disabled>NHS.UK frontend option 3</option>
+                            </select>
                         </div>
                     </fieldset>
 
-                    <a href="#" title="Continue to next section">
-                        <button id="submitButton" onclick="submit(this,options=[sbuc1aradio,sbuc3radio])" class="nhsuk-button nhsuk-u-margin-top-4  nhsuk-u-margin-bottom-9" data-module="nhsuk-button" type="submit">
-                            Continue
+                    <a href="sbuc-1a-created-case" title="Continue to next section">
+                        <button class="nhsuk-button nhsuk-u-margin-top-4  nhsuk-u-margin-bottom-9" data-module="nhsuk-button" type="submit">
+                            Create case
                         </button>
                     </a>
+
+                    <!-- Auto-complete components https://design-guide.publishing.service.gov.uk/components/search-autocomplete/ 
+                     https://components.publishing.service.gov.uk/component-guide/search_with_autocomplete 
+                     https://github.com/alphagov/govuk-design-system/issues/4015 -->
 
                 </div>
             </div>
@@ -105,37 +102,6 @@
 <script type="text/javascript">
     function closeBanner() {
     document.getElementById("govuk-notification-banner").style.display = "none";
-    }
-</script>
-
-<script type="text/javascript">
-    // No need for declaring global variables here
-    function submit(source,options){
-    // First, this segment finds the checked element in the array:
-      for (var i = 0; i < options.length; i++){
-        if (options[i].checked){
-          break;
-        }
-      }
-    // Next, the source switch determines which button element called the function:
-    switch(source.id){  
-   case 'submitButton':
-    // The options switch then determines what happens when the checked option is submitted:
-      switch(options[i].id){
-        case 'sbuc1aradio':
-          window.location = "sbuc-1a-search";
-          break;
-        case 'sbuc3radio':
-          window.location = "sbuc-3-search";
-          break;
-          //  The default option for the options switch
-        default:
-          window.location = "";
-          }
-        break;
-        // The default option for the source switch
-        default:
-       }
     }
 </script>
 {% endblock %}
