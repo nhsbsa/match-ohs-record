@@ -60,7 +60,7 @@
                 <fieldset class="nhsuk-fieldset">
                   <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
                     <label class="nhsuk-label" for="example">
-                        Which period is correct?
+                        Which period do you dispute?
                     </label>
                   </legend>
               
@@ -112,9 +112,9 @@
       const value = selected.value;
 
       if (value === 'dispute-fixed') {
-        window.location.href = 'create-s050-dispute-fixed';
+        window.location.href = 'create-s050-open-dispute-fixed';
       } else if (value === 'dispute-open') {
-        window.location.href = 'create-s050-dispute-open';
+        window.location.href = 'create-s050-open-dispute-open';
       }
     } else {
       result.textContent = "Please select an option before continuing.";
