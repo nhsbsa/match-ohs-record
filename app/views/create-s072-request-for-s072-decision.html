@@ -57,18 +57,20 @@
 
                 <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset">
-                    
+                        <label class="nhsuk-label" for="example">
+                            What is the decision on the entitlement?
+                        </label> 
                         <div class="nhsuk-radios">
                     
                             <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="example-1" name="decision" type="radio" value="Decision issued" checked>
+                                <input class="nhsuk-radios__input" id="example-1" name="issued" type="radio" value="Decision issued">
                                 <label class="nhsuk-label nhsuk-radios__label" for="example-1" >
                                     Issued
                                 </label>
                             </div>
                     
                             <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="example-2" name="decision" type="radio" value="Decision rejected">
+                                <input class="nhsuk-radios__input" id="example-2" name="rejected" type="radio" value="Decision rejected">
                                 <label class="nhsuk-label nhsuk-radios__label" for="example-2">
                                     Rejected
                                 </label>
@@ -76,10 +78,10 @@
                         </div>
                     </fieldset>
                 </div>
-                
+                <a href="create-s072-request-for-s072-type">
                 <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="handleContinue()" data-module="nhsuk-button" type="submit">
                     Continue
-                </button>
+                </button></a>
                 
                 <p><a href="sed-s072-exit">Cancel</a></p>
 
@@ -91,26 +93,4 @@
        
     </div>
 </div>
-{% endblock %}
-
-{% block pageScripts %}
-<!-- Radio button scripts -->
-<script>
-  function handleContinue() {
-    const selected = document.querySelector('input[name="decision"]:checked');
-    const result = document.getElementById('result');
-
-    if (selected) {
-      const value = selected.value;
-
-      if (value === 'Decision issued') {
-        window.location.href = './create-s072-request-for-s072-approved-approved';
-      } else if (value === 'Decision rejected') {
-        window.location.href = './create-s072-request-for-s072-approved-rejected';
-      }
-    } else {
-      result.textContent = "Please select an option before continuing.";
-    }
-  }
-</script>
 {% endblock %}
