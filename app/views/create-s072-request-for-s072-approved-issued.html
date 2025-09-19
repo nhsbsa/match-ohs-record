@@ -52,35 +52,8 @@
                         Create S072 reply
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Details of open period
+                    Details of fixed period
                 </h1>
-
-				<div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset">
-                        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                        <label class="nhsuk-label" for="example">
-                            Type of open period
-                        </label>
-                        </legend>
-                    
-                        <div class="nhsuk-radios">
-                    
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="yes">
-                            <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                            Open-ended period
-                            </label>
-                        </div>
-                    
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="example-4" name="example" type="radio" value="no">
-                            <label class="nhsuk-label nhsuk-radios__label" for="example-4">
-                            End date of the period is unknown
-                            </label>
-                        </div>
-                        </div>
-                    </fieldset>
-                </div>
 
 				<div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
@@ -93,7 +66,7 @@
                                 <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
                                 Day
                                 </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" value="" type="text" inputmode="numeric">
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" value="15" type="text" inputmode="numeric">
                             </div>
                             </div>
                             <div class="nhsuk-date-input__item">
@@ -101,7 +74,7 @@
                                 <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
                                 Month
                                 </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" value="" id="example-month" name="example[month]" type="text" inputmode="numeric">
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" value="06" id="example-month" name="example[month]" type="text" inputmode="numeric">
                             </div>
                             </div>
                             <div class="nhsuk-date-input__item">
@@ -109,18 +82,50 @@
                                 <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
                                 Year
                                 </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" value="" name="example[year]" type="text" inputmode="numeric">
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" value="2025" name="example[year]" type="text" inputmode="numeric">
                             </div>
                             </div>
                         </div>
                     </fieldset>
                 </div>
 
-                <a href="create-s072-request-for-s072-rejected">
-                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Continue
-                    </button>
-                </a>
+				<div class="nhsuk-form-group">
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                        <label class="nhsuk-label" for="example">
+                            End date
+                        </label>
+                        <div class="nhsuk-date-input" id="example">
+                            <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                                Day
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" value="21" type="text" inputmode="numeric">
+                            </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                                Month
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" value="21" id="example-month" name="example[month]" type="text" inputmode="numeric">
+                            </div>
+                            </div>
+                            <div class="nhsuk-date-input__item">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                                Year
+                                </label>
+                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" value="2025" name="example[year]" type="text" inputmode="numeric">
+                            </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                    Save draft
+                </button>
                 
                 <p><a href="sed-s072-exit">Cancel</a></p>
 
