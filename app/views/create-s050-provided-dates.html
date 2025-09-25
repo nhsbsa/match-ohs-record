@@ -55,6 +55,9 @@
                     </span>
                     Original data &ndash; period type 
                 </h1>
+                <div class="nhsuk-hint" id="contact-hint">
+                    What is the type of entitlement period?
+                </div>
 
                 <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset">
@@ -112,7 +115,7 @@
       const value = selected.value;
 
       if (value === 'Fixed') {
-        window.location.href = 'create-s050-original-fixed';
+        window.location.href = 'create-s050-original-fixed-2';
       } else if (value === 'Open') {
         window.location.href = 'create-s050-original-open';
       }
