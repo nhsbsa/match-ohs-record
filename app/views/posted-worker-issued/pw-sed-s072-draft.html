@@ -22,7 +22,7 @@
 
     <div class="nhsuk-grid-column-one-half">
       <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="mvp2-main-happy-path-task-end">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
         <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">SBUC 01</a></li>
       </ol>
     </div>
@@ -34,15 +34,15 @@
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Create documents</a>
           <div class="dropdown-content">
-            <a href="#" role="menuitem">Create H001</a>
+            <a href="sed-read-h001" role="menuitem">Create H001</a>
           </div>
         </li>
         <li class="nhsuk-breadcrumb__item dropdown">
           <a href="#" class="dropdown__toggle-button">Case actions</a>
           <div class="dropdown-content reposition-right-menu">
-            <a href="#" role="menuitem">Close case</a>
+            <a href="ohs-record-manage-case-closed" role="menuitem">Close case</a>
             <a href="#" role="menuitem">Create reminder</a>
-            <a href="#" role="menuitem">Refresh case</a>
+            <a href="mvp2-s072-received" role="menuitem">Refresh case</a>
           </div>
         </li>
       </ol>
@@ -71,37 +71,85 @@
       <div class="nhsuk-timeline" id="timeline">
         <ol class="nhsuk-timeline__events">
 
-            <!-- SO72 -->
+          <!-- SO72 -->
 
-            <li class="nhsuk-timeline__events--entry">
+          <li class="nhsuk-timeline__events--entry">
 
-                <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
-                    <div class="flag flag-uk" role="presentation"></div>
-                    <h3 class="nhsuk-timeline__title"><a href="#">S072 v.1</a></h3>
-                </div>
-                <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                    <time><strong>Sent</strong>, 6 Nov 2024 at 09:23 from UK</time>
-                </p>
-                <ul class="nhsuk-list nhsuk-body-s">
-                  <li>
-                    <p style="font-size:16px;"><span class="ms-received"></span><strong>Received</strong> by member state</p>
-                  </li>
-                </ul>
-            </li>
+              <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+                  <div class="flag flag-uk" role="presentation"></div>
+                  <h3 class="nhsuk-timeline__title"><a href="#">S072 v.1</a></h3>
+              </div>
+              <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+                <time><strong>Draft saved</strong>, 26 Jan 2025 at 15:00 from UK</time>
+              </p>
+              <ul class="nhsuk-list nhsuk-body-s">
+                <li>
+                  <p style="font-size:16px;"><span class="icon-svg-envelope"></span>Draft</p>
+                </li>
+                <li class="nhsuk-u-margin-top-4"><details class="nhsuk-details">
+                  <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                      Actions
+                    </span>
+                  </summary>
+                  <div class="nhsuk-details__text">
+                    <ul class="nhsuk-list">
+                      <li><a href="pw-s072-sent">Send S072 reply</a></li>
+                      <li><a href="pw-sed-s072-reply">Edit draft</a></li>
+                    </ul>
+                  </div>
+                </details></li>
+              </ul>
+          </li>
 
-            <!-- SO71 -->
+          <!-- X007 -->
 
-            <li class="nhsuk-timeline__events--entry">
+          <li class="nhsuk-timeline__events--entry">
+            <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+              <div class="flag-blank" role="presentation">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 45.35 45.35" focusable="false" aria-hidden="true">
+                  <path class="cls-1" d="m28.5,16.6c.82-.34,1.22-1.29.88-2.12-.34-.83-1.3-1.24-2.12-.9-.84.34-1.23,1.31-.89,2.14.34.83,1.3,1.23,2.14.88Z"></path>
+                  <path class="cls-1" d="m22.06,19.36c-.84.34-1.23,1.31-.89,2.14.34.83,1.3,1.23,2.14.88.82-.34,1.22-1.29.88-2.12-.34-.83-1.3-1.24-2.12-.9Z"></path>
+                  <path class="cls-1" d="m32.86,19.2c.82-.34,1.22-1.29.88-2.12-.34-.83-1.3-1.24-2.12-.9-.84.34-1.23,1.31-.89,2.14.34.83,1.3,1.23,2.14.88Z"></path>
+                  <path class="cls-1" d="m33.62,22.63c.34.83,1.3,1.23,2.14.88.82-.34,1.22-1.29.88-2.12-.34-.83-1.3-1.24-2.12-.9-.84.34-1.23,1.31-.89,2.14Z"></path>
+                  <path class="cls-1" d="m21.81,11.4c.06.08.13.15.21.21l-1.19,3.58s0,0,0,.01h0s0,0,0,0c-.06.18-.09.37-.09.56,0,.97.71,1.77,1.64,1.9.01,0,.03,0,.04,0,.08.01.16.02.24.02h0c.08,0,.16,0,.24-.02.01,0,.03,0,.04,0,.93-.14,1.64-.94,1.64-1.9,0-.2-.03-.39-.08-.56h0s0,0,0,0c0,0,0,0,0-.01l-1.19-3.58c.08-.06.15-.13.21-.21h0s2.06,1.08,2.06,1.08v-3.04l-2.06.65h0c-.06-.08-.12-.15-.2-.21h0s.83-2.62.83-2.62h-1.49s-1.49,0-1.49,0l.83,2.61h0c-.08.06-.14.13-.2.21h0s-2.06-.65-2.06-.65v3.04l2.06-1.08h0Z"></path>
+                  <path class="cls-1" d="m16.83,16.6c.84.35,1.79-.05,2.14-.88.34-.83-.05-1.79-.89-2.14-.82-.34-1.78.07-2.12.9-.34.83.05,1.78.88,2.12Z"></path>
+                  <path class="cls-1" d="m12.46,19.2c.84.35,1.79-.05,2.14-.88.34-.83-.05-1.79-.89-2.14-.82-.34-1.78.07-2.12.9-.34.83.05,1.78.88,2.12Z"></path>
+                  <path class="cls-1" d="m9.57,23.51c.84.35,1.79-.05,2.14-.88.34-.83-.05-1.79-.89-2.14-.82-.34-1.78.07-2.12.9-.34.83.05,1.78.88,2.12Z"></path>
+                  <path class="cls-1" d="m34.61,25.35c.22,1.12.26,1.65,0,2.37-.37-.36-.71-1.01-.98-2.02l-1.07,3.57c.65-.45,1.16-.74,1.73-.75-1.02,2.2-2.3,2.77-3.12,2.61-1.01-.19-1.47-1.09-1.32-1.85.23-1.08,1.34-1.36,1.86-.11.99-2.02-.69-2.65-1.77-2.05,1.66-1.66,1.85-3.13.51-4.92-1.87,1.43-1.89,2.84-1.05,4.84-1.09-1.25-2.79-.58-2.18,1.44.79-1.22,1.83-.45,1.67.71-.14,1.01-1.47,1.82-3.13,1.68-2.38-.22-2.52-1.86-2.58-3.21.58-.11,1.64.43,2.53,1.69l.33-3.79c-.98,1.02-1.86,1.21-2.85,1.24.33-1.02,1.84-2.7,1.84-2.7h-4.73s1.51,1.68,1.84,2.7c-.99-.03-1.87-.22-2.85-1.24l.33,3.79c.9-1.26,1.95-1.8,2.53-1.69-.06,1.36-.2,3-2.58,3.21-1.66.14-2.99-.67-3.13-1.68-.16-1.16.88-1.92,1.67-.71.61-2.02-1.09-2.69-2.18-1.44.84-1.99.82-3.41-1.05-4.84-1.34,1.78-1.15,3.26.51,4.92-1.08-.6-2.76.03-1.77,2.05.52-1.26,1.63-.98,1.86.11.16.76-.31,1.66-1.32,1.85-.83.15-2.1-.41-3.12-2.61.58.01,1.08.3,1.73.75l-1.07-3.57c-.27,1-.62,1.66-.98,2.02-.25-.72-.21-1.25,0-2.37l-2.21.79c1.18,1.6,2.31,3.86,3.25,7.79,3.29-.47,6.99-.74,10.9-.74s7.61.26,10.9.74c.94-3.93,2.07-6.19,3.25-7.79l-2.21-.79Z"></path>
+                  <path class="cls-1" d="m22.68.57C10.47.57.57,10.47.57,22.68s9.9,22.11,22.11,22.11,22.11-9.9,22.11-22.11S34.89.57,22.68.57Zm0,41.69c-10.81,0-19.58-8.77-19.58-19.58S11.86,3.1,22.68,3.1s19.58,8.77,19.58,19.58-8.77,19.58-19.58,19.58Z"></path>
+                </svg>
+              </div>
+              <h3 class="nhsuk-timeline__title"><a href="#">X007 v.1</a></h3>
+            </div>
+            <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+              <time><strong>Received</strong>, 26 Jan 2025 at 14:12 from HMRC</time>
+            </p>
+          </li>
 
-                <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
-                    <div class="flag flag-fr" role="presentation"></div>
-                    <h3 class="nhsuk-timeline__title"><a href="#">S071 v.1</a></h3>
-                </div>
-                <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
-                    <time><strong>Received</strong>, 5 Nov 2024 at 14:32 from France</time>
-                </p>
-            
-            </li>
+          <!-- X007 -->
+
+          <li class="nhsuk-timeline__events--entry">
+            <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+              <div class="flag flag-uk" role="presentation"></div>
+              <h3 class="nhsuk-timeline__title"><a href="#">X007 v.1</a></h3>
+            </div>
+            <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+              <time><strong>Sent</strong>, 26 Jan 2025 at 14:12 from United Kingdom</time>
+            </p>
+          </li>
+
+          <!-- SO71 -->
+
+          <li class="nhsuk-timeline__events--entry">
+            <div class="nhsuk-timeline__header nhsuk-u-padding-top-2">
+              <div class="flag flag-it" role="presentation"></div>
+              <h3 class="nhsuk-timeline__title"><a href="#">S071 v.1</a></h3>
+            </div>
+            <p class="nhsuk-timeline__date nhsuk-u-margin-top-4">
+              <time><strong>Received</strong>, 26 Jan 2025 at 11:32 from Italy</time>
+            </p>
+          </li>
             
 
         </ol>
@@ -116,24 +164,6 @@
 
       <div class="nhsuk-width-container-full ul-padding-top-lrg">
 
-        <!-- notification -->
-
-        <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-                <div id="govuk-notification-banner" class="govuk-notification-banner govuk-notification-banner--success nhsuk-u-margin-bottom-9" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-                    <div class="govuk-notification-banner__header">
-                      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                        Success
-                      </h2>
-                      <a href="#" style="float: right;" onclick="closeBanner()">Close</a>
-                    </div>
-                    <div class="govuk-notification-banner__content">
-                      <p class="govuk-body">Case notes have been added in OHS.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="nhsuk-grid-column-one-quarters"></div>
-        </div>
 
         <!-- Content -->
 
@@ -142,17 +172,13 @@
           <div class="nhsuk-grid-column-two-thirds">
             <h1 class="nhsuk-heading-xl">Case management</h1>
           </div>
-  
-          <!--<div class="nhsuk-grid-column-one-third" style="text-align:right;">
-            <a href="mvp2-create-s072-reply" title="Create S045 reply">
-              <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit">
-                Create a S072 reply
-              </button>
-            </a>
-          </div>-->
+
         </div>
 
       <!-- in-page Case management personal details tabs - Start -->
+
+      <hr style="margin:0px 0px 24px 0px;">
+      <h2>S071 details</h2>
 
       <div class="nhsuk-tabs" data-module="nhsuk-tabs">
         <h2 class="nhsuk-tabs__title">
@@ -190,7 +216,7 @@
                   First name
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  Geralt
+                  Jane
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -199,7 +225,7 @@
                   Last name
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  Rivia
+                  Goodall
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -209,7 +235,7 @@
                   Date of birth
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  3 December 1950
+                  3 April 1934
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -218,7 +244,7 @@
                   Address
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                    17 place du Trocadéro<br> 75016<br> Paris<br> France
+                    Soriano nel Cimino<br>Lazio<br>03043<br>Italy
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -232,7 +258,7 @@
                   PIN
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                    JG 08 23 89 A
+                    SY 52 2 633 N
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -242,7 +268,7 @@
                   Entitlement start date
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  30 October 2024
+                  13 December 2024
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -251,6 +277,7 @@
                   Entitlement end date
                 </dt>
                 <dd class="nhsuk-summary-list__value">
+15 January 2025
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -258,10 +285,7 @@
                 <dt class="nhsuk-summary-list__key">
                   Status
                 </dt>
-                <dd class="nhsuk-summary-list__value">
-                  <strong class="nhsuk-tag nhsuk-tag--green">
-                    Pensioner
-                  </strong>
+                <dd class="nhsuk-summary-list__value">Insured person
                 </dd>
                 <dd class="nhsuk-summary-list__actions"></dd>
               </div>
@@ -313,7 +337,7 @@
                   Since 
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  13 October 2024
+                  1 December 2024
                 </dd>
               </div>
               
@@ -322,7 +346,7 @@
                   Update
                 </dt>
                 <dd class="nhsuk-summary-list__value">
-                  13 October 2024
+                  31 January 2025
                 </dd>
               </div>
               <div class="nhsuk-summary-list__row ohs-table-no-last-row-border">
@@ -401,7 +425,7 @@
                 <td class="nhsuk-table__cell "></td>
                 <td class="nhsuk-table__cell "></td>
                 <td class="nhsuk-table__cell "></td>
-                <td class="nhsuk-table__cell ">FR</td>
+                <td class="nhsuk-table__cell ">IT</td>
               </tr>
               <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
                 <td class="nhsuk-table__cell">Counter Party
@@ -433,9 +457,8 @@
               <div class="nhsuk-grid-column-three-quarters">
                 <h2 class="nhsuk-heading-l">Matched OHS Record</h2>
               </div>
-
               <div class="nhsuk-grid-column-one-quarter" style="text-align: right">
-                <a href="#" class="nhsuk-u-padding-right-4" style="font-size: 19px;">Add note</a>
+                <a href="#" style="font-size: 19px;" class="nhsuk-u-margin-right-4">Add note</a>
                 <a href="#" style="font-size: 19px;">View notes</a>
               </div>
             </div>
@@ -454,7 +477,7 @@
                     </div>
                     <div class="nhsuk-grid-row"> 
                         <div class="nhsuk-grid-column-full"> 
-                          <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
+                          <table role="table" class="nhsuk-table-responsive">
                               <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
                               <thead role="rowgroup" class="nhsuk-table__head">
                                   <tr role="row">
@@ -476,33 +499,30 @@
                                       <th role="columnheader" scope="col">
                                           Address
                                       </th>
-                                     
                                   </tr>
                               </thead>
                               <tbody class="nhsuk-table__body">
 
                                   <tr role="row" class="nhsuk-table__row ohs-table-no-last-row-border">
                                       <td role="cell" class="nhsuk-table__cell">
-                                          <a href="#" target="_blank"><span class="nhsuk-table-responsive__heading">OHS reference </span>1234567</a>
+                                          <a href="ohs-step-1-person" target="_blank"><span class="nhsuk-table-responsive__heading">OHS reference </span>1234567</a>
                                       </td>
                                       <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">First name </span>Geralt
+                                          <span class="nhsuk-table-responsive__heading">First name </span>Jane
                                       </td>
                                       <td role="cell" class="nhsuk-table__cell">
-                                        <span class="nhsuk-table-responsive__heading">Last name </span>Rivia
+                                        <span class="nhsuk-table-responsive__heading">Last name </span>Goodall
                                       </td>
                                       <td role="cell" class="nhsuk-table__cell">
                                           <span class="nhsuk-table-responsive__heading">Date of birth 
-                                          </span>3 Dec 1950
+                                          </span>3 Apr 1934
                                       </td>
                                       <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">PIN </span>JG 08 23 89 A
+                                          <span class="nhsuk-table-responsive__heading">PIN </span>SY 52 2 633 N
                                       </td>
                                       <td role="cell" class="nhsuk-table__cell">
-                                          <span class="nhsuk-table-responsive__heading">Address </span>17 place du Trocadéro<br> 75016<br> Paris<br> France
-                                          
+                                          <span class="nhsuk-table-responsive__heading">Address </span>Soriano nel Cimino<br>Lazio<br>03043<br>Italy
                                       </td>
-                                      
                                   </tr>
                               </tbody>
                           </table>
@@ -520,7 +540,7 @@
                     <h3 class="nhsuk-heading-m">Entitlements</h3>
                     <div class="nhsuk-grid-row">
                         <div class="nhsuk-grid-column-full">
-                            <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-bottom-6">
+                            <table role="table" class="nhsuk-table-responsive">
                                 <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
                                 <thead role="rowgroup" class="nhsuk-table__head">
                                     <tr role="row">
@@ -548,14 +568,14 @@
                                             <span class="nhsuk-table-responsive__heading">Type </span>S072
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
-                                            <span class="nhsuk-table-responsive__heading">Start date </span>30 Oct 2024
+                                            <span class="nhsuk-table-responsive__heading">Start date </span>7 May 2025
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
                                             <span class="nhsuk-table-responsive__heading">End date 
-                                            </span>
+                                            </span>31 May 2025
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle;">
-                                            <span class="nhsuk-table-responsive__heading">Country</span>France
+                                            <span class="nhsuk-table-responsive__heading">Country</span>Italy
                                             
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell" style="vertical-align: middle; text-align: right;">

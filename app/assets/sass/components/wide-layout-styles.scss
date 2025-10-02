@@ -380,6 +380,19 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     width: 32px;
     outline: 4px solid #005eb8;
 }
+.nhsuk-timeline__header > .flag-blank {
+    position: absolute;
+    top: 11px;
+    left: -35px;
+    border-radius: 50%;
+    background-size: calc(100% + 2px);
+    background-color: #ffffff;
+    background-position: center;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    padding-top: 3px;
+}
 .flag-uk {
     background-image: url('/images/flag-uk.svg');
     background-size: contain;
@@ -422,6 +435,16 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 }
 .flag-fr {
     background-image: url('/images/flag-fr.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.flag-it {
+    background-image: url('/images/flag-it.svg');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
