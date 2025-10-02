@@ -64,22 +64,24 @@
         <div class="nhsuk-radios">
     
           <div class="nhsuk-radios__item">
-            <input class="nhsuk-radios__input" id="uk_state_pensioner" name="issued-rejected" type="radio" value="Issued">
+            <input class="nhsuk-radios__input" id="uk_state_pensioner" name="example-1" type="radio" value="yes">
             <label class="nhsuk-label nhsuk-radios__label" for="uk_state_pensioner">
               Entitlement issued
             </label>
           </div>
           
           <div class="nhsuk-radios__item">
-            <input class="nhsuk-radios__input" id="pension_claimant" name="issued-rejected" type="radio" value="Rejected">
+            <input class="nhsuk-radios__input" id="pension_claimant" name="example-1" type="radio" value="yes">
             <label class="nhsuk-label nhsuk-radios__label" for="pension_claimant">
               Entitlement rejected
             </label>
           </div>
 
-          <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="continue">
-            Submit
-          </button>
+          <a href="pw-issued-case-decision-notification">
+            <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="continue">
+              Submit
+            </button>
+          </a>
         </div>
       </fieldset>
       </div>
@@ -88,26 +90,24 @@
 </div>
 
 {% endblock %}
+
 {% block pageScripts %}
-
-<!-- Radio button scripts -->
-
-<script>
-  function handleContinue() {
-    const selected = document.querySelector('input[name="issued-rejected"]:checked');
-    const result = document.getElementById('result');
-
-    if (selected) {
-      const value = selected.value;
-
-      if (value === 'Issued') {
-        window.location.href = 'pw-issued-case-decision-notification';
-      } else if (value === 'Rejected') {
-        window.location.href = '../posted-worker-rejected/pw-issued-case-decision-notification';
-      }
+<!-- Close button scripts -->
+<script src="/js/autocomplete2.min.js"></script>
+<script type="text/javascript">
+  const form = document.getElementById('entitlementForm');
+  const errorMsg = document.getElementById('radio-error');
+ 
+  form.addEventListener('submit', function (e) {
+    const radios = document.querySelectorAll('input[name="example-1"]');
+    const isChecked = Array.from(radios).some(radio => radio.checked);
+ 
+    if (!isChecked) {
+      e.preventDefault(); // stop form submission
+      errorMsg.style.display = 'block'; // show error
     } else {
-      result.textContent = "Please select an option before continuing.";
+      errorMsg.style.display = 'none'; // hide error
     }
-  }
+  });
 </script>
 {% endblock %}
