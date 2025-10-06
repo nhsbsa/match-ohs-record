@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create S072 reply – Reason for rejected entitlement
+  Overseas Healthcare Service RINA - View S071 - Request for S072 entitlement
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -49,37 +49,29 @@
                 </div>
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                        Create S072 reply
+                        View S071 - Request for S072 entitlement 
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Reason for rejected entitlement
+                    Status of person
                 </h1>
+                <dl class="nhsuk-summary-list">
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Reason
-                    </label>
-                    <select class="nhsuk-select nhsuk-input--width-20" id="menu1" name="menu1">
-                        <option value=""></option>
-                        <option value="create-s072-request-for-s072-provide-date">Not insured in our member state since the date</option>
-                        <option value="create-s072-request-for-s072-provide-date">Not entitled to sickness benefits from our member state since date</option>
-                        <option value="create-s072-request-for-s072-provide-date">Resides in our member state since</option>
-                        <option value="create-s072-request-for-s072-provide-date">No longer resides in your member state since</option>
-                        <option value="create-s072-request-for-s072-died">Died on</option>
-                        <option value="create-s072-request-for-s072-iso">Insured in another country on the basis of pension conform Regulation (EC) 883/2004 art 24(2)(b)</option>
-                        <option value="create-s072-request-for-s072-other">Status of the person has changed</option>
-                        <option value="create-s072-request-for-s072-other">Change of institution within our member state</option>
-                        <option value="create-s072-request-for-s072-other">Other reason</option>
-                    </select> 
-                </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Status
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Example
+                        </dd>
+                    </div>
 
-                <a href="#">
-                    <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="gotosite()" data-module="nhsuk-button" type="submit">
+                </dl>
+
+                <a href="view-s071-request-for-s072-insured">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                         Continue
                     </button>
                 </a>
-                
-                <p><a href="sed-s072-exit">Cancel</a></p>
 
                 <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 
@@ -89,12 +81,4 @@
        
     </div>
 </div>
-{% endblock %}
-{% block pageScripts %}
-<!-- Radio button scripts -->
-<script>
-    function gotosite() {
-    window.location = document.getElementById("menu1").value; // JQuery:  $("#menu").val();
-    }
-</script>
 {% endblock %}
