@@ -581,6 +581,10 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
   width: 0;
 }
 
+.details-rotate:before {
+  transform: rotate(90deg);
+}
+
 .nhsuk-details[open] > .nhsuk-details__summary:before {
   border-color: transparent;
   border-style: solid;
