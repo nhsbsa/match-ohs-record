@@ -1321,4 +1321,8 @@ ul.sidebar-nav .active {
   .nhsuk-details + .nhsuk-heading-l {
     padding-top: 24px;
   }
+}
+.case-last-activity, .person-date-of-birth {
+  display: block;
+  padding-top: 8px;
 }/*# sourceMappingURL=wide-layout-styles.css.map */
