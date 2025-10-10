@@ -29,12 +29,13 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
-<div class="beta-banner" role="complementary" aria-label="banner">
-    <div class="nhsuk-width-container nhsuk-width-container-fluid">
-        <strong class="status-box status-box-blue">BETA</strong>
-        <span>Your <a href="mailto:nhsbsa.nhsjobs@nhsbsa.nhs.uk?subject=How could we improve NHS Jobs service?">feedback</a> will help us to improve this service.</span>
+<nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
+    <div class="nhsuk-grid-column-one-half">
+        <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="entitlements-home">Home</a></li>
+        </ol>
     </div>
-</div>
+</nav>
 <div class="nhsBSA-sidebar-container">
     <div class="nhsBSA-sidebar-wrapper">
         
@@ -288,7 +289,7 @@
                                 <thead role="rowgroup" class="nhsuk-table__head">
                                     <tr role="row">
                                         <th role="columnheader" class="" scope="col">
-                                            Case type
+                                            BUC type
                                         </th>
                                         <th role="columnheader" class="" scope="col">
                                             Case ID
@@ -386,7 +387,7 @@
                                         <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
                                             <span class="nhsuk-table-responsive__heading">Actions
                                             </span>
-                                            <a href="#">View case</a>
+                                            <!--<a href="#">View case</a>-->
                                         </td>
                                     </tr>
 
@@ -427,7 +428,7 @@
                                         <td role="cell" class="nhsuk-table__cell" style="text-align: right;">
                                             <span class="nhsuk-table-responsive__heading">Actions
                                             </span>
-                                            <a href="#">View case</a>
+                                            <!--<a href="#">View case</a>-->
                                         </td>
                                     </tr>
 
