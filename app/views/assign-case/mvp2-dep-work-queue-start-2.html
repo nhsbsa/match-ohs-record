@@ -49,66 +49,51 @@ Overseas Healthcare Service RINA
 			<ul class="nhsuk-header__navigation-list">
 				<li class="nhsuk-header__navigation-item">
 					<a class="nhsuk-header__navigation-link active" href="#">
-						<span class="nhsuk__nav-list-name">SBUC 01</span><span class="nhsuk__nav-list-counter">70</span>
+						<span class="nhsuk__nav-list-name">SBUC 01</span>
 					</a>
 				</li>
 				<li class="nhsuk-header__navigation-item">
 					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">SBUC 01a</span><span class="nhsuk__nav-list-counter">53</span>
+						<span class="nhsuk__nav-list-name">SBUC 01a</span>
 					</a>
 				</li>
 				<li class="nhsuk-header__navigation-item">
 					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">SBUC 02</span><span class="nhsuk__nav-list-counter">123</span>
+						<span class="nhsuk__nav-list-name">SBUC 02</span>
 					</a>
 				</li>
 				<li class="nhsuk-header__navigation-item">
 					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">SBUC 03</span><span class="nhsuk__nav-list-counter">234</span>
+						<span class="nhsuk__nav-list-name">SBUC 03</span>
 					</a>
 				</li>
 				<li class="nhsuk-header__navigation-item">
 					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">SBUC 04</span><span class="nhsuk__nav-list-counter">23</span>
+						<span class="nhsuk__nav-list-name">SBUC 04</span>
 					</a>
 				</li>
 				<li class="nhsuk-header__navigation-item">
 					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">SBUC 05</span><span class="nhsuk__nav-list-counter">34</span>
+						<span class="nhsuk__nav-list-name">SBUC 05</span>
 					</a>
 				</li>
 				<li class="nhsuk-header__navigation-item">
 					<a class="nhsuk-header__navigation-link " href="#">
-						<span class="nhsuk__nav-list-name">HBUC 01</span><span class="nhsuk__nav-list-counter">12</span>
+						<span class="nhsuk__nav-list-name">HBUC 01</span>
 					</a>
 				</li>
 			</ul>
 
-			<!--<div class="nhsuk-grid-row">
-				<div class="nhsuk-grid-column-full">
-
-					<h4 class="nhsuk-heading-m nhsuk-u-margin-left-5 nhsuk-u-margin-top-6">Quick actions</h4>
-
-					<ul class="nhsuk-header__navigation-list">
-						<li class="nhsuk-header__navigation-item">
-							<a class="nhsuk-header__navigation-link " href="#">
-								<span class="nhsuk__nav-list-name">Create a new case</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<hr style="margin:24px 0px;">
-			</div>-->
 		</nav>
 
 		<div class="nhsBSA-sidebar-content" style="padding-top: 17px;">
 			<div class="nhsuk-width-container-fluid">
 				<main class="nhsuk-main-wrapper" id="maincontent" role="main">
-					<span class="nhsuk-caption-l nhsuk-u-margin-top-6">Work queue</span>
-					<h1 class="nhsuk-heading-xl">SBUC 01</h1>
-
+					<h1 class="nhsuk-heading-xl nhsuk-u-margin-top-6">Work queue for SBUC 01</h1>
+					<div class="nhsuk-hint nhsuk-u-margin-bottom-4" id="contact-hint" style="max-width: 75ch;">
+						Use the work queue to view open cases per BUC and assign and unassign to users. You can also filter the queue or search for specific open cases.
+					</div>
 					<div class="nhsuk-grid-row">
-
 						<div class="nhsuk-grid-column-full">
 							<details class="nhsuk-details nhsuk-expander clearfix">
 								<summary class="nhsuk-details__summary">
@@ -117,20 +102,37 @@ Overseas Healthcare Service RINA
 									</span>
 								</summary>
 								<div class="nhsuk-details__text nhsuk-u-width-two-thirds">
+									<div class="nhsuk-grid-column-full" style="padding-left: 0;">
+										<div class="nhsuk-hint nhsuk-u-margin-bottom-4" id="contact-hint">
+											Fill in at least 2 fields to search the work queue for a specific open case. 
+										</div>
+										<hr style="margin:24px 0px 24px 0px;">
+									</div>
 
 									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
 										<div class="nhsuk-form-group">
 											<label class="nhsuk-label" for="first-name">
-												First name
+												First name (optional)
 											</label>
 											<input class="nhsuk-input " id="first-name" name="first-name" type="text" value="">
 										</div>
+									</div>
 
+									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label" for="last-name">
+												Last name (optional)
+											</label>
+											<input class="nhsuk-input " id="last-name" name="last-name" type="text" value="">
+										</div>
+									</div>
+									
+									<div class="nhsuk-grid-column-full" style="padding-left: 0;">
 										<div class="nhsuk-form-group">
 											<fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
 												<legend class="nhsuk-fieldset__legend nhsuk-label--l">
 													<label class="nhsuk-label" for="example">
-														Date of birth
+														Date of birth (optional)
 													</label>
 												</legend>
 												<div class="nhsuk-hint" id="example-hint">
@@ -170,62 +172,9 @@ Overseas Healthcare Service RINA
 									</div>
 
 									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
-
-										<div class="nhsuk-form-group">
-											<label class="nhsuk-label" for="last-name">
-												Last name
-											</label>
-											<input class="nhsuk-input " id="last-name" name="last-name" type="text" value="">
-										</div>
-
 										<div class="nhsuk-form-group">
 											<label class="nhsuk-label" for="example">
-												Country
-											</label>
-											<select class="nhsuk-select" style="width: 637px;" id="select-1" name="select-1">
-												<option value="0"></option>
-												<option value="1">[AT] Austria</option>
-												<option value="2">[BE] Belgium</option>
-												<option value="3">[BG] Bulgaria</option>
-												<option value="4">[HR] Croatia</option>
-												<option value="5">[CY] Cyprus</option>
-												<option value="6">[CZ] Czechia</option>
-												<option value="7">[DK] Denmark</option>
-												<option value="8">[EE] Estonia</option>
-												<option value="9">[FI] Finland</option>
-												<option value="10">[FR] France</option>
-												<option value="11">[DE] Germany</option>
-												<option value="12">[EL] Greece</option>
-												<option value="13">[HU] Hungary</option>
-												<option value="14">[IS] Iceland</option>
-												<option value="15">[IE]Ireland</option>
-												<option value="16">[IT] Italy</option>
-												<option value="17">[LV] Latvia</option>
-												<option value="18">[LI] Liechtenstein</option>
-												<option value="19">[LU] Lithuania</option>
-												<option value="20">[LU] Luxembourg</option>
-												<option value="21">[MT] Malta</option>
-												<option value="22">[NL] Netherlands</option>
-												<option value="23">[NO] Norway</option>
-												<option value="24">[PL] Poland</option>
-												<option value="25">[PT] Portugal</option>
-												<option value="26">[RO] Romania</option>
-												<option value="27">[SK] Slovakia</option>
-												<option value="28">[SI] Slovenia</option>
-												<option value="29">[ES] Spain</option>
-												<option value="30">[SE] Sweden</option>
-												<option value="31">[CH] Switzerland</option>
-												<option value="32">[UK] United Kingdom</option>
-											</select>
-										</div>
-									</div>
-
-									<hr class="nhsuk-grid-column-full" style="margin:0px 0px 24px 0px;">
-
-									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
-										<div class="nhsuk-form-group">
-											<label class="nhsuk-label" for="example">
-												Local or international case ID
+												Local or international case ID (optional)
 											</label>
 											<input class="nhsuk-input" id="example" name="example" type="text">
 										</div>
@@ -234,13 +183,13 @@ Overseas Healthcare Service RINA
 									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
 										<div class="nhsuk-form-group">
 											<label class="nhsuk-label" for="example">
-												Local PIN
+												Local PIN (optional)
 											</label>
 											<input class="nhsuk-input" id="example" name="example" type="text">
 										</div>
 									</div>
 
-									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+									<!--<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
 										<form>
 											<div class="nhsuk-form-group">
 												<fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
@@ -253,7 +202,7 @@ Overseas Healthcare Service RINA
 															<input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
 																value="email">
 															<label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-																New
+																Open
 															</label>
 														</div>
 
@@ -301,7 +250,7 @@ Overseas Healthcare Service RINA
 												</fieldset>
 											</div>
 										</form>
-									</div>
+									</div>-->
 
 									<div class="nhsuk-grid-column-full nhsuk-u-margin-top-4" style="padding-left:0px;">
 										<button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
@@ -354,71 +303,11 @@ Overseas Healthcare Service RINA
 														Filter and sort options
 													</span>
 												</summary>
-												<div class="nhsuk-details__text" style="background-color: red;">
+												<div class="nhsuk-details__text">
+													<div class="nhsuk-hint nhsuk-u-margin-bottom-4" id="contact-hint">
+														Use the menus to filter which open cases you see in the work queue and in what order.
+													</div>
 													<div class="nhsuk-grid-row">
-														<!-- Start filter by recent cases-->
-														<div class="nhsuk-grid-column-one-third">
-															<div class="nhsuk-form-group">
-																<fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-																	<legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
-																		<h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
-																			Filter by status
-																		</h1>
-																	</legend>
-																	<div class="nhsuk-checkboxes">
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-new" name="status-filter"
-																				type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-new">
-																				New
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-pending-uk"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-uk">
-																				Pending UK Action
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-pending-ms"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-pending-ms">
-																				Pending MS Action
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-closed"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-closed">
-																				Closed
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-archived"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-archived">
-																				Archived
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-removed"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-removed">
-																				Removed
-																			</label>
-																		</div>
-																	</div>
-																</fieldset>
-															</div>
-														</div>
-														<!-- End filter by-->
 														<!-- Start by order results-->
 														<div class="nhsuk-grid-column-one-third">
 															<div class="nhsuk-form-group">
@@ -429,7 +318,6 @@ Overseas Healthcare Service RINA
 																		</h1>
 																	</legend>
 																	<div class="nhsuk-checkboxes">
-
 																		<div class="nhsuk-checkboxes__item">
 																			<input class="nhsuk-checkboxes__input" id="status-filter-assign"
 																				name="status-filter" type="checkbox" value="">
@@ -437,23 +325,6 @@ Overseas Healthcare Service RINA
 																				Assigned to me
 																			</label>
 																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-main"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-main">
-																				Main
-																			</label>
-																		</div>
-
-																		<div class="nhsuk-checkboxes__item">
-																			<input class="nhsuk-checkboxes__input" id="status-filter-dependant"
-																				name="status-filter" type="checkbox" value="">
-																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-dependant">
-																				Dependant
-																			</label>
-																		</div>
-
 																	</div>
 																</fieldset>
 															</div>
@@ -517,16 +388,10 @@ Overseas Healthcare Service RINA
 															Case ID
 														</th>
 														<th role="columnheader" class="" scope="col">
-															First name
+															Person details
 														</th>
 														<th role="columnheader" class="" scope="col">
-															Last name
-														</th>
-														<th role="columnheader" class="" scope="col">
-															Country
-														</th>
-														<th role="columnheader" class="" scope="col">
-															Applicant
+															PIN
 														</th>
 														<th role="columnheader" class="" scope="col">
 															Status
@@ -545,23 +410,17 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>9054
+															<span class="nhsuk-table-responsive__heading">Case ID </span>9054
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Ciri
+															<span class="nhsuk-table-responsive__heading">Person details </span>Ciri Rivia</br> 3 December 1950
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Rivia
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>France
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
+															<span class="nhsuk-table-responsive__heading">PIN </span>JG 08 23 89 A
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 02/04/2025
 																at 12:34</span>
@@ -582,23 +441,17 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10219
+															<span class="nhsuk-table-responsive__heading">Case ID </span>10219
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Elin
+															<span class="nhsuk-table-responsive__heading">Person details </span>Elin Beddoe</br>4 November 1987
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Beddoe
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>France
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
+															<span class="nhsuk-table-responsive__heading">PIN </span>DF 34 23 27 S
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Assigned</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025
 																at 16:42</span>
@@ -616,23 +469,17 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10207
+															<span class="nhsuk-table-responsive__heading">Case ID </span>10207
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Emma
+															<span class="nhsuk-table-responsive__heading">Person details </span>Emma Johnson</br>21 August 2000
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Larsen
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Belgium
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
+															<span class="nhsuk-table-responsive__heading">PIN</span>JH 34 25 H
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Assigned</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025
 																at 19:23</span>
@@ -650,23 +497,17 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>9054
+															<span class="nhsuk-table-responsive__heading">Case ID </span>9054
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Graeme
+															<span class="nhsuk-table-responsive__heading">Person details </span>Graeme Rutherford</br>7 December 2001
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Rutherford
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Greece
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
+															<span class="nhsuk-table-responsive__heading">PIN </span>YU 56 45 3 A
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Assigned</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 03/04/2025
 																at 21:11</span>
@@ -693,15 +534,8 @@ Overseas Healthcare Service RINA
 															<span class="nhsuk-table-responsive__heading">Last name </span>Branagh
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Lithuania
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Pending UK
-																Action</strong><br />
+																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 06/04/2025
 																at 11:21</span>
@@ -730,15 +564,8 @@ Overseas Healthcare Service RINA
 															<span class="nhsuk-table-responsive__heading">Last name </span>Abara
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Latvia
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--purple nhsuk-u-margin-bottom-2">Pending MS Action
-															</strong><br />
+																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action</span>
 															<span class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Sent H001 at
 																16:45, 07/04/2025</span>
@@ -758,23 +585,17 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>10210
+															<span class="nhsuk-table-responsive__heading">Case ID </span>10210
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>Krishna
+															<span class="nhsuk-table-responsive__heading">Person details </span>Krishna Patel</br>16 July 1968
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Patel
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Austria
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
+															<span class="nhsuk-table-responsive__heading">PIN </span>KJ 35 36 23 A
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 08/04/2025
 																at 22:19</span>
@@ -803,14 +624,8 @@ Overseas Healthcare Service RINA
 															<span class="nhsuk-table-responsive__heading">Last name </span>Last name
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Netherlands
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 09/04/2025
 																at 08:19</span>
@@ -830,23 +645,17 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>00000
+															<span class="nhsuk-table-responsive__heading">Case ID </span>00000
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>First name
+															<span class="nhsuk-table-responsive__heading">First name </span>Sarah Green</br>38 March 1998
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Last name
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Poland
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Dependant
+															<span class="nhsuk-table-responsive__heading">PIN </span>HJ 35 26 26 D
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--green nhsuk-u-margin-bottom-2">Assigned</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 10/04/2025
 																at 05:21</span>
@@ -864,23 +673,17 @@ Overseas Healthcare Service RINA
 												<tbody class="nhsuk-table__body">
 													<tr role="row" class="nhsuk-table__row">
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">ID </span>00000
+															<span class="nhsuk-table-responsive__heading">Case ID </span>00000
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">First name </span>First name
+															<span class="nhsuk-table-responsive__heading">Person details</span>First Last </br> 15 June 1978
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Last name </span>Last name
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Country </span>Portugal
-														</td>
-														<td role="cell" class="nhsuk-table__cell">
-															<span class="nhsuk-table-responsive__heading">Applicant </span>Main
+															<span class="nhsuk-table-responsive__heading">PIN</span>HG 656 34 F
 														</td>
 														<td role="cell" class="nhsuk-table__cell">
 															<span class="nhsuk-table-responsive__heading">Status </span></span><strong
-																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">New</strong><br />
+																class="nhsuk-tag nhsuk-tag--blue nhsuk-u-margin-bottom-2">Open</strong><br />
 															<span class="nhsuk-table-responsive__heading">Last action </span><span
 																class="nhsuk-u-font-size-14" style="font-size: 0.875rem !important;">Received 12/04/2025
 																at 06:12</span>
