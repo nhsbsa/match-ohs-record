@@ -52,7 +52,7 @@
                             <div class="nhsuk-card__content clearfix">
                                 <h2 class="nhsuk-card__heading nhsuk-heading-m">Search for a case</h2>
                                 <div class="nhsuk-hint" id="contact-hint" style="max-width: 75ch;">
-                                    Fill in at least 2 fields to search. Or search for all names that start with the same letters with a wildcard search. To do this, put an * after the last letter.
+                                    Enter the case ID to search. Or fill in at least 2 other fields to search by personal details.
                                 </div>
                                 <hr style="margin:24px 0px 24px 0px;">
                                 <!--<div class="nhsuk-hint" id="example-with-hint-text-hint">
@@ -74,7 +74,7 @@
                                         <input class="nhsuk-input " id="Last-name" name="Last-name" type="text" value="">
                                     </div>
                                 </div>
-                                <div class="nhsuk-grid-column-full" style="padding-left: 0;">
+                                <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
                                     <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                                         <legend class="nhsuk-fieldset__legend nhsuk-label--l">
                                             <label class="nhsuk-label" for="example">
@@ -114,23 +114,23 @@
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <hr style="margin:0px 0px 24px 0px;">
                                 </div>
-                                
                                 <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
                                     <div class="nhsuk-form-group">
-                                        <label class="nhsuk-label" for="Last-name">
+                                        <label class="nhsuk-label" for="PIN">
+                                            PIN (optional)
+                                        </label>
+                                        <input class="nhsuk-input" id="PIN" name="PIN" type="text" value="">
+                                    </div>
+
+                                </div>
+                                <hr class="nhsuk-grid-column-full" style="margin:0px 0px 24px 0px;">
+                                <div class="nhsuk-grid-column-full" style="padding-left: 0;">
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="case-id">
                                             Local or international case ID (optional)
                                         </label>
-                                        <input class="nhsuk-input " id="Last-name" name="Last-name" type="text" value="">
-                                    </div>
-                                </div>
-                                <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
-                                    <div class="nhsuk-form-group">
-                                        <label class="nhsuk-label" for="Last-name">
-                                            Local PIN (optional)
-                                        </label>
-                                        <input class="nhsuk-input " id="Last-name" name="Last-name" type="text" value="">
+                                        <input class="nhsuk-input nhsuk-input--width-20" id="case-id" name="case-id" type="text" value="">
                                     </div>
                                 </div>
 
@@ -139,7 +139,7 @@
                                 <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-4" style="padding-left: 0;">
                                     <hr style="margin:0px 0px 24px 0px;">
 
-                                    <!--<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+                                    <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
                                         <div class="nhsuk-form-group">
                                             <fieldset class="nhsuk-fieldset">
                                                 <label class="nhsuk-label nhsuk-u-padding-bottom-2">
@@ -147,45 +147,39 @@
                                                 </label>
                                                 <div class="nhsuk-radios" data-module="nhsuk-radios">
                                                     <div class="nhsuk-radios__item">
-                                                        <input class="nhsuk-radios__input" id="example" name="case-status" type="radio" value="yes">
-                                                        <label class="nhsuk-label nhsuk-radios__label" for="example">
+                                                        <input class="nhsuk-radios__input" id="example-1" name="case-status" type="radio" value="yes">
+                                                        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
                                                         New
                                                         </label>
                                                     </div>
                                                     <div class="nhsuk-radios__item">
-                                                        <input class="nhsuk-radios__input" id="example-2" name="case-status" type="radio" value="no">
+                                                        <input class="nhsuk-radios__input" id="example-2" name="case-status" type="radio" value="yes">
                                                         <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                                                        Pending UK action
+                                                        Open
                                                         </label>
                                                     </div>
                                                     <div class="nhsuk-radios__item">
                                                         <input class="nhsuk-radios__input" id="example-3" name="case-status" type="radio" value="no">
                                                         <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                                                        Pending MS action
+                                                        Closed
                                                         </label>
                                                     </div>
                                                     <div class="nhsuk-radios__item">
                                                         <input class="nhsuk-radios__input" id="example-4" name="case-status" type="radio" value="no">
                                                         <label class="nhsuk-label nhsuk-radios__label" for="example-4">
-                                                        Closed
+                                                        Archived
                                                         </label>
                                                     </div>
                                                     <div class="nhsuk-radios__item">
                                                         <input class="nhsuk-radios__input" id="example-5" name="case-status" type="radio" value="no">
                                                         <label class="nhsuk-label nhsuk-radios__label" for="example-5">
-                                                        Archived
-                                                        </label>
-                                                    </div>
-                                                    <div class="nhsuk-radios__item">
-                                                        <input class="nhsuk-radios__input" id="example-6" name="case-status" type="radio" value="no">
-                                                        <label class="nhsuk-label nhsuk-radios__label" for="example-6">
                                                         Removed
                                                         </label>
                                                     </div>
                                                 </div>
                                             </fieldset>
                                         </div>
-                                    </div>-->
+                                    </div>
                                     <div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
                                         <div class="nhsuk-form-group">
                                             <fieldset class="nhsuk-fieldset">
@@ -194,60 +188,40 @@
                                                 </label>
                                                 <div class="nhsuk-radios" data-module="nhsuk-radios">
                                                 <div class="nhsuk-radios__item">
-                                                    <input class="nhsuk-radios__input" id="example" name="case-type" type="radio" value="yes">
-                                                    <label class="nhsuk-label nhsuk-radios__label" for="example">
-                                                    SBUC 1
-                                                    </label>
-                                                </div>
-                                                <div class="nhsuk-radios__item">
-                                                    <input class="nhsuk-radios__input" id="example-2" name="case-type" type="radio" value="no">
-                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                                                    SBUC 1a
-                                                    </label>
-                                                </div>
-                                                <div class="nhsuk-radios__item">
-                                                    <input class="nhsuk-radios__input" id="example-3" name="case-type" type="radio" value="no">
-                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                                                    SBUC 2
-                                                    </label>
-                                                </div>
-                                                <div class="nhsuk-radios__item">
-                                                    <input class="nhsuk-radios__input" id="example-4" name="case-type" type="radio" value="no">
-                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-4">
-                                                    SBUC 3
-                                                    </label>
-                                                </div>
-                                                <div class="nhsuk-radios__item">
-                                                    <input class="nhsuk-radios__input" id="example-5" name="case-type" type="radio" value="no">
-                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-5">
-                                                    SBUC 4
-                                                    </label>
-                                                </div>
-                                                <div class="nhsuk-radios__item">
-                                                    <input class="nhsuk-radios__input" id="example-6" name="case-type" type="radio" value="no">
+                                                    <input class="nhsuk-radios__input" id="example-6" name="case-type" type="radio" value="yes">
                                                     <label class="nhsuk-label nhsuk-radios__label" for="example-6">
-                                                    SBUC 5
+                                                    SBUC 1
                                                     </label>
                                                 </div>
                                                 <div class="nhsuk-radios__item">
                                                     <input class="nhsuk-radios__input" id="example-7" name="case-type" type="radio" value="no">
                                                     <label class="nhsuk-label nhsuk-radios__label" for="example-7">
-                                                    HBUC 1
+                                                    SBUC 1a
                                                     </label>
                                                 </div>
                                                 <div class="nhsuk-radios__item">
                                                     <input class="nhsuk-radios__input" id="example-8" name="case-type" type="radio" value="no">
                                                     <label class="nhsuk-label nhsuk-radios__label" for="example-8">
-                                                    HBUC 5
+                                                    SBUC 2
                                                     </label>
                                                 </div>
                                                 <div class="nhsuk-radios__item">
                                                     <input class="nhsuk-radios__input" id="example-9" name="case-type" type="radio" value="no">
                                                     <label class="nhsuk-label nhsuk-radios__label" for="example-9">
-                                                    HBUC 7
+                                                    SBUC 3
                                                     </label>
                                                 </div>
-
+                                                <div class="nhsuk-radios__item">
+                                                    <input class="nhsuk-radios__input" id="example-10" name="case-type" type="radio" value="no">
+                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-10">
+                                                    SBUC 4
+                                                    </label>
+                                                </div>
+                                                <div class="nhsuk-radios__item">
+                                                    <input class="nhsuk-radios__input" id="example-11" name="case-type" type="radio" value="no">
+                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-11">
+                                                    SBUC 5
+                                                    </label>
                                                 </div>
                                             </fieldset>
                                         </div>
@@ -278,9 +252,6 @@
                                     <li><a href="#">SBUC 3</a></li>
                                     <li><a href="#">SBUC 4</a></li>
                                     <li><a href="#">SBUC 5</a></li>
-                                    <li><a href="#">HBUC 1</a></li>
-                                    <li><a href="#">HBUC 5</a></li>
-                                    <li><a href="#">HBUC 7</a></li>
                                 </ul>
                                 <hr style="margin:0px 0px 24px 0px;">
                                 <div class="nhsuk-action-link">
