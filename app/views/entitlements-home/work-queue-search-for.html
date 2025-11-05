@@ -1,0 +1,895 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends '../layout-mvp2.html' %}
+<!-- 
+	In /views/layout.html you can:
+		- change the header and footer 
+		- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Overseas Healthcare Service RINA
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <ol class="nhsuk-breadcrumb__list" style="padding-left: 0;">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="dep-happy-entitlements-homepage">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="#">
+        <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        Home
+      </a>
+    </p>
+  </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+
+	<!-- Start of central content -->
+	<div class="nhsBSA-sidebar-wrapper">
+		<nav class="nhsuk-header__navigation nhsuk__nav-list" id="header-navigation" role="navigation"
+			aria-label="Primary navigation" aria-labelledby="label-navigation" style="padding-top: 46px;">
+			<p class="nhsuk-header__navigation-title">
+				<span id="label-navigation">Menu</span>
+			</p>
+			<ul class="nhsuk-header__navigation-list">
+				<li class="nhsuk-header__navigation-item">
+					<a class="nhsuk-header__navigation-link active" href="#">
+						<span class="nhsuk__nav-list-name">SBUC 1</span>
+					</a>
+				</li>
+				<li class="nhsuk-header__navigation-item">
+					<a class="nhsuk-header__navigation-link " href="#">
+						<span class="nhsuk__nav-list-name">SBUC 1a</span>
+					</a>
+				</li>
+				<li class="nhsuk-header__navigation-item">
+					<a class="nhsuk-header__navigation-link " href="#">
+						<span class="nhsuk__nav-list-name">SBUC 2</span>
+					</a>
+				</li>
+				<li class="nhsuk-header__navigation-item">
+					<a class="nhsuk-header__navigation-link " href="#">
+						<span class="nhsuk__nav-list-name">SBUC 3</span>
+					</a>
+				</li>
+				<li class="nhsuk-header__navigation-item">
+					<a class="nhsuk-header__navigation-link " href="#">
+						<span class="nhsuk__nav-list-name">SBUC 4</span>
+					</a>
+				</li>
+				<li class="nhsuk-header__navigation-item">
+					<a class="nhsuk-header__navigation-link " href="#">
+						<span class="nhsuk__nav-list-name">SBUC 5</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="nhsBSA-sidebar-content" style="padding-top: 17px;">
+			<div class="nhsuk-width-container-fluid">
+				<main class="nhsuk-main-wrapper" id="maincontent" role="main">
+					<span class="nhsuk-caption-l nhsuk-u-margin-top-6">Work queue</span>
+					<h1 class="nhsuk-heading-xl">SBUC 1</h1>
+
+					<div class="nhsuk-grid-row">
+						<div class="nhsuk-grid-column-full">
+							<details class="nhsuk-details nhsuk-expander clearfix">
+								<summary class="nhsuk-details__summary">
+									<span class="nhsuk-details__summary-text">
+										Search for a case
+									</span>
+								</summary>
+								<div class="nhsuk-details__text nhsuk-u-width-two-thirds">
+
+									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label" for="first-name">
+												First name (optional)
+											</label>
+											<input class="nhsuk-input " id="first-name" name="first-name" type="text" value="">
+										</div>
+
+										<div class="nhsuk-form-group">
+											<fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+												<legend class="nhsuk-fieldset__legend nhsuk-label--l">
+													<label class="nhsuk-label" for="example">
+														Date of birth
+													</label>
+												</legend>
+												<div class="nhsuk-hint" id="example-hint">
+													For example, 15 3 1984
+												</div>
+												<div class="nhsuk-date-input" id="example">
+													<div class="nhsuk-date-input__item">
+														<div class="nhsuk-form-group">
+															<label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+																Day
+															</label>
+															<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day"
+																name="example[day]" type="text" inputmode="numeric" value="">
+														</div>
+													</div>
+													<div class="nhsuk-date-input__item">
+														<div class="nhsuk-form-group">
+															<label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+																Month
+															</label>
+															<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month"
+																name="example[month]" type="text" inputmode="numeric" value="">
+														</div>
+													</div>
+													<div class="nhsuk-date-input__item">
+														<div class="nhsuk-form-group">
+															<label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+																Year
+															</label>
+															<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year"
+																name="example[year]" type="text" inputmode="numeric" value="">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+
+									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label" for="Last-name">
+												Last name (optional)
+											</label>
+											<input class="nhsuk-input " id="Last-name" name="Last-name" type="text" value="">
+										</div>
+
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label" for="PIN">
+												PIN (optional)
+											</label>
+											<input class="nhsuk-input" id="PIN" name="PIN" type="text" value="">
+										</div>
+									</div>
+
+									<hr class="nhsuk-grid-column-full" style="margin:0px 0px 24px 0px;">
+
+									<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label" for="example">
+												Local or international case ID
+											</label>
+											<input class="nhsuk-input" id="example" name="example" type="text">
+										</div>
+									</div>
+
+									<div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-4" style="padding-left: 0;">
+										<hr style="margin:0px 0px 24px 0px;">
+
+										<div class="nhsuk-grid-column-one-half" style="padding-left: 0;">
+											<div class="nhsuk-form-group">
+												<fieldset class="nhsuk-fieldset">
+													<label class="nhsuk-label nhsuk-u-padding-bottom-2">
+														Case status (optional)
+													</label>
+													<div class="nhsuk-radios" data-module="nhsuk-radios">
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-1" name="case-status" type="radio" value="yes">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-1">
+															New
+															</label>
+														</div>
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-2" name="case-status" type="radio" value="yes">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-2">
+															Open
+															</label>
+														</div>
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-3" name="case-status" type="radio" value="no">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-3">
+															Closed
+															</label>
+														</div>
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-4" name="case-status" type="radio" value="no">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-4">
+															Archived
+															</label>
+														</div>
+														<div class="nhsuk-radios__item">
+															<input class="nhsuk-radios__input" id="example-5" name="case-status" type="radio" value="no">
+															<label class="nhsuk-label nhsuk-radios__label" for="example-5">
+															Removed
+															</label>
+														</div>
+													</div>
+												</fieldset>
+											</div>
+										</div>
+									</div>
+
+									<div class="nhsuk-grid-column-full nhsuk-u-margin-top-4" style="padding-left:0px;">
+										<button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+											Search
+										</button>
+									</div>
+
+								</div>
+							</details>
+						</div>
+
+						<!-- Start work queue case list -->
+
+						<div class="nhsuk-grid-column-full" id="results">
+							<div class="nhsuk-card">
+								<div class="nhsuk-card__content nhsuk-u-padding-bottom-1 ">
+									<!-- Start header block-->
+									<div class="nhsuk-grid-row nhsuk-u-padding-bottom-2">
+										
+										<div class="nhsuk-grid-column-two-thirds">
+											<h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-2" style="padding-top: 3px;">Showing 10 results of 70</h3>
+                                            <p class="nhsuk-u-margin-bottom-2 nhsuk-body-s nhsuk-u-margin-top-4">
+                                                Searched by: 
+                                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">John</strong>
+                                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">Smith</strong>
+                                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">3 Dec 1950</strong>
+                                            </p>
+                                            <p class="nhsuk-u-margin-bottom-2 nhsuk-body-s nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4">
+                                                Filtered by: 
+                                                <strong class="nhsuk-tag nhsuk-tag--aqua-green">Open</strong>
+                                            </p>
+										</div>
+
+										<div class="nhsuk-grid-column-one-third">
+											<div class="nhsuk-form-group" style="float: right;">
+												<label class="nhsuk-label" for="results"
+													style="line-height:35px;display: inline-block;padding-right:12px;">
+													Results per page
+												</label>
+												<select class="nhsuk-select" id="results" name="results" style="min-width: auto;">
+													<option value="10" selected="">10</option>
+													<option value="100">100</option>
+													<option value="200">200</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+
+									<hr style="margin: 0px;">
+
+									<div class="nhsuk-grid-row nhsuk-u-padding-bottom-2 nhsuk-u-margin-top-4">
+
+										<!-- Start of filter and sort options -->
+
+										<div class="nhsuk-grid-column-full">
+											<details class="nhsuk-details nhsuk-u-margin-bottom-4">
+												<summary class="nhsuk-details__summary">
+													<span>
+														Filter and sort options
+													</span>
+												</summary>
+												<div class="nhsuk-details__text">
+													<div class="nhsuk-grid-row">
+														<!-- Start filter by recent cases-->
+														<div class="nhsuk-grid-column-one-third">
+															<div class="nhsuk-form-group">
+																<fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+																	<legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
+																		<h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
+																			Filter by status
+																		</h1>
+																	</legend>
+																	<div class="nhsuk-radios" data-module="nhsuk-radios">
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-6" name="case-status" type="radio" value="yes">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-6">
+																			New
+																			</label>
+																		</div>
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-7" name="case-status" type="radio" value="yes">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-7">
+																			Open
+																			</label>
+																		</div>
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-8" name="case-status" type="radio" value="no">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-8">
+																			Closed
+																			</label>
+																		</div>
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-9" name="case-status" type="radio" value="no">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-9">
+																			Archived
+																			</label>
+																		</div>
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="example-10" name="case-status" type="radio" value="no">
+																			<label class="nhsuk-label nhsuk-radios__label" for="example-10">
+																			Removed
+																			</label>
+																		</div>
+																	</div>
+																</fieldset>
+															</div>
+														</div>
+														<!-- End filter by-->
+														<!-- Start by order results-->
+														<div class="nhsuk-grid-column-one-third">
+															<div class="nhsuk-form-group">
+																<fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+																	<legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
+																		<h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
+																			Filter by
+																		</h1>
+																	</legend>
+																	<div class="nhsuk-checkboxes">
+
+																		<div class="nhsuk-checkboxes__item">
+																			<input class="nhsuk-checkboxes__input" id="status-filter-assign"
+																				name="status-filter" type="checkbox" value="">
+																			<label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-assign">
+																				Assigned to me
+																			</label>
+																		</div>
+
+																	</div>
+																</fieldset>
+															</div>
+														</div>
+
+														<!-- End by order results-->
+
+														<!-- Start by order results-->
+														<div class="nhsuk-grid-column-one-third">
+															<div class="nhsuk-form-group">
+																<fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+																	<legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
+																		<h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
+																			Order by
+																		</h1>
+																	</legend>
+																	<div class="nhsuk-radios">
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="order-by-asc" name="order-by" type="radio"
+																				value="ascending" checked>
+																			<label class="nhsuk-label nhsuk-radios__label" for="order-by-asc">
+																				Oldest first
+																			</label>
+																		</div>
+																		<div class="nhsuk-radios__item">
+																			<input class="nhsuk-radios__input" id="order-by-desc" name="order-by" type="radio"
+																				value="descending">
+																			<label class="nhsuk-label nhsuk-radios__label" for="order-by-desc">
+																				Newest first
+																			</label>
+																		</div>
+																	</div>
+																</fieldset>
+															</div>
+														</div>
+														<!-- End by order results-->
+														<div class="nhsuk-grid-column-full">
+															<button class="nhsuk-button nhsuk-button--secondary nhs-u-margin-top-4"
+																data-module="nhsuk-button" type="submit">
+																Apply filters
+															</button>
+															<p class="nhsuk-u-margin-bottom-0"><a href="">Reset all filters</a></p>
+														</div>
+													</div>
+												</div>
+											</details>
+										</div>
+
+									</div>
+
+									<!-- End of header block -->
+
+									<!-- Start of table data -->
+
+									<div class="nhsuk-grid-row">
+										<div class="nhsuk-grid-column-full">
+											<table role="table" class="nhsuk-table-responsive">
+												<!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
+												<thead role="rowgroup" class="nhsuk-table__head">
+													<tr role="row">
+														<th role="columnheader" class="" scope="col">
+															Case ID
+														</th>
+														<th role="columnheader" class="" scope="col">
+															Person details
+														</th>
+														<th role="columnheader" class="" scope="col">
+															PIN
+														</th>
+														<th role="columnheader" class="" scope="col">
+															Status
+														</th>
+														<th role="columnheader" class="" scope="col">
+															Assigned
+														</th>
+														<th role="columnheader" class="" style="text-align: right;" scope="col">
+															Actions
+														</th>
+													</tr>
+												</thead>
+												<tbody class="nhsuk-table__body">
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>01234
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Rivia</span> 
+																<span class="person-date-of-birth">3 December 1950</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>JG 08 23 89 A
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 2 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>02341
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Smith</span> 
+																<span class="person-date-of-birth">12 July 2001</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>DF 45 23 23 N
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--green">
+																Open
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<span class="nhsuk-table-cell__email">luke.b@nhsbsa.nhs.uk</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<!--<a href="#">View case</a>-->
+														</td>
+													</tr>
+
+													<!-- Row 2 end -->
+
+													<!-- Row 3 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>20134
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+															name </span>
+															<span>Geralt Brown</span> 
+															<span class="person-date-of-birth">21 August 1987</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>SD 33 45 32 K
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--green">
+																Open
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<span class="nhsuk-table-cell__email">luke.b@nhsbsa.nhs.uk</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<!--<a href="#">View case</a>-->
+														</td>
+													</tr>
+
+													<!-- Row 3 end -->
+
+													<!-- Row 4 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>01234
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Rivers</span> 
+																<span class="person-date-of-birth">26 January 1978</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>FG 23 45 25 A
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 4 end -->
+
+													<!-- Row 5 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21348
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Silver</span> 
+																<span class="person-date-of-birth">23 April 1972</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>GH 23 45 25 L
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 5 end -->
+
+													<!-- Row 6 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Crimbo</span> 
+																<span class="person-date-of-birth">11 May 1982</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>JK 23 45 25 L
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 6 end -->
+
+													<!-- Row 7 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Patel</span> 
+																<span class="person-date-of-birth">6 June 1981</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>KL 23 45 25 L
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 7 end -->
+
+													<!-- Row 8 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Eight</span> 
+																<span class="person-date-of-birth">21 September 1981</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>FG 23 45 25 L
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 8 end -->
+
+													<!-- Row 9 start -->
+
+													<tr role="row" class="nhsuk-table__row">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Green</span> 
+																<span class="person-date-of-birth">6 June 1967</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>JH 23 45 25 L
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 9 end -->
+
+													<!-- Row 10 start -->
+
+													<tr role="row" class="nhsuk-table__row  ohs-table-no-last-row-border">
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Case ID </span>21023
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Person details
+																name </span>
+																<span>Geralt Patel</span> 
+																<span class="person-date-of-birth">6 June 1981</span>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">PIN
+															</span>SD 23 45 25 L
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Status
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--blue">
+																New
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell">
+															<span class="nhsuk-table-responsive__heading">Assigned
+															</span>
+															<strong class="nhsuk-tag nhsuk-tag--grey">
+																Unassigned
+															</strong>
+														</td>
+														<td role="cell" class="nhsuk-table__cell" style="text-align: right;">
+															<span class="nhsuk-table-responsive__heading">Actions
+															</span>
+															<a href="#">Manage case</a>
+														</td>
+													</tr>
+
+													<!-- Row 10 end -->
+
+												</tbody>
+											</table>
+
+											<!-- pagination start -->
+
+											<div class="nhsuk-grid-row">
+												<div class="nhsuk-grid-column-full">
+													<nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+
+														<div class="nhsuk-pagination__prev">
+															<!-- <a class="nhsuk-link nhsuk-pagination__link" href="#" rel="prev">
+																<svg class="nhsuk-pagination__icon nhsuk-pagination__icon--prev"
+																	xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false"
+																	viewBox="0 0 15 13">
+																	<path
+																		d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
+																	</path>
+																</svg>
+																<span class="nhsuk-pagination__link-title">Previous<span class="nhsuk-visually-hidden">page</span></span></a> -->
+														</div>
+
+														<ul class="nhsuk-pagination__list">
+															<li class="nhsuk-pagination__item nhsuk-pagination__item--current">
+																<a class="nhsuk-link nhsuk-pagination__link" href="#" aria-label="Page 1">
+																	1
+																</a>
+															</li>
+															<li class="nhsuk-pagination__item">
+																<a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-2"
+																	aria-label="Page 2">
+																	2
+																</a>
+															</li>
+															<li class="nhsuk-pagination__item ">
+																<a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-3"
+																	aria-label="Page 3" aria-current="page">
+																	3
+																</a>
+															</li>
+															<li class="nhsuk-pagination__item nhsuk-pagination__item--ellipses">⋯</li>
+															<li class="nhsuk-pagination__item">
+																<a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-7"
+																	aria-label="Page 7">
+																	7
+																</a>
+															</li>
+														</ul>
+
+														<div class="nhsuk-pagination__next">
+															<a class="nhsuk-link nhsuk-pagination__link" href="pagination-v1-page-2" rel="next"> <span
+																	class="nhsuk-pagination__link-title">Next<span class="nhsuk-visually-hidden">
+																		page</span></span>
+																<svg class="nhsuk-pagination__icon nhsuk-pagination__icon--next"
+																	xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true"
+																	focusable="false" viewBox="0 0 15 13">
+																	<path
+																		d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z">
+																	</path>
+																</svg></a>
+														</div>
+
+													</nav>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<!-- End of table data -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
