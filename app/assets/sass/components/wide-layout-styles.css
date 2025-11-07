@@ -25,6 +25,11 @@
   padding: 24px;
 }
 
+.postit-note p {
+  font-weight: bold;
+  text-align: center;
+}
+
 .nhsuk-button--secondary {
   background-color: rgba(0, 0, 0, 0) !important;
   left: 0 !important;

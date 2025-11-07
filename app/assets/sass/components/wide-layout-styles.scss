@@ -31,10 +31,13 @@
   white-space: nowrap;
   width: 1px;
 }
-
 .postit-note {
     background-color: #ffdd00;
     padding: 24px;
+}
+.postit-note p {
+    font-weight: bold;
+    text-align: center;
 }
 .nhsuk-button--secondary {
     background-color: rgba(0, 0, 0, 0) !important;
