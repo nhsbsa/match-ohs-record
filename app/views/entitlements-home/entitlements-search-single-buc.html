@@ -63,7 +63,7 @@
                         <div class="nhsuk-details__text">
                             <div class="nhsuk-grid-column-full" style="padding-left: 0;">
                                 <div class="nhsuk-hint nhsuk-u-margin-bottom-4" id="contact-hint" style="max-width: 75ch;">
-                                    Fill in at least 2 fields to search by personal and/or case details. Or enter the case ID to search.
+                                    Fill in at least 2 fields to search by personal and/or case details.
                                 </div>
                                 <hr style="margin:24px 0px 24px 0px;">
                             </div>
@@ -260,12 +260,132 @@
                     <div class="nhsuk-card">
                         <div class="nhsuk-card__content">
                             <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Showing 1 results of 1</h2>
-                            <p class="nhsuk-u-margin-bottom-2 nhsuk-body-s nhsuk-u-margin-top-4">
+                            <p class="nhsuk-u-margin-bottom-2 nhsuk-body-s nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4">
                                 Searched by: 
                                 <strong class="nhsuk-tag nhsuk-tag--aqua-green">Geralt</strong>
                                 <strong class="nhsuk-tag nhsuk-tag--aqua-green">Rivia</strong>
                                 <strong class="nhsuk-tag nhsuk-tag--aqua-green">3 Dec 1950</strong>
                             </p>
+                            <hr style="margin: 0px;">
+                            <div class="nhsuk-grid-row nhsuk-u-padding-bottom-2 nhsuk-u-margin-top-4">
+
+                                <!-- Start of filter and sort options -->
+
+                                <div class="nhsuk-grid-column-full">
+                                    <details class="nhsuk-details nhsuk-u-margin-bottom-4">
+                                        <summary class="nhsuk-details__summary">
+                                            <span>
+                                                Filter and sort options
+                                            </span>
+                                        </summary>
+                                        <div class="nhsuk-details__text">
+                                            <div class="nhsuk-grid-row">
+                                                <!-- Start filter by recent cases-->
+                                                <div class="nhsuk-grid-column-one-third">
+                                                    <div class="nhsuk-form-group">
+                                                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                                                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
+                                                                <h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
+                                                                    Filter by status
+                                                                </h1>
+                                                            </legend>
+                                                            <div class="nhsuk-radios" data-module="nhsuk-radios">
+                                                                <div class="nhsuk-radios__item">
+                                                                    <input class="nhsuk-radios__input" id="example-7" name="case-status" type="radio" value="yes">
+                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-7">
+                                                                    Open
+                                                                    </label>
+                                                                </div>
+                                                                <div class="nhsuk-radios__item">
+                                                                    <input class="nhsuk-radios__input" id="example-8" name="case-status" type="radio" value="no">
+                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-8">
+                                                                    Closed
+                                                                    </label>
+                                                                </div>
+                                                                <div class="nhsuk-radios__item">
+                                                                    <input class="nhsuk-radios__input" id="example-9" name="case-status" type="radio" value="no">
+                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-9">
+                                                                    Archived
+                                                                    </label>
+                                                                </div>
+                                                                <div class="nhsuk-radios__item">
+                                                                    <input class="nhsuk-radios__input" id="example-10" name="case-status" type="radio" value="no">
+                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-10">
+                                                                    Removed
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <!-- End filter by-->
+                                                <!-- Start by order results-->
+                                                <div class="nhsuk-grid-column-one-third">
+                                                    <div class="nhsuk-form-group">
+                                                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                                                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
+                                                                <h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
+                                                                    Filter by
+                                                                </h1>
+                                                            </legend>
+                                                            <div class="nhsuk-checkboxes">
+
+                                                                <div class="nhsuk-checkboxes__item">
+                                                                    <input class="nhsuk-checkboxes__input" id="status-filter-assign"
+                                                                        name="status-filter" type="checkbox" value="">
+                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="status-filter-assign">
+                                                                        Assigned to me
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+
+                                                <!-- End by order results-->
+
+                                                <!-- Start by order results-->
+                                                <div class="nhsuk-grid-column-one-third">
+                                                    <div class="nhsuk-form-group">
+                                                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                                                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
+                                                                <h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
+                                                                    Order by
+                                                                </h1>
+                                                            </legend>
+                                                            <div class="nhsuk-radios">
+                                                                <div class="nhsuk-radios__item">
+                                                                    <input class="nhsuk-radios__input" id="order-by-asc" name="order-by" type="radio"
+                                                                        value="ascending" checked>
+                                                                    <label class="nhsuk-label nhsuk-radios__label" for="order-by-asc">
+                                                                        Oldest first
+                                                                    </label>
+                                                                </div>
+                                                                <div class="nhsuk-radios__item">
+                                                                    <input class="nhsuk-radios__input" id="order-by-desc" name="order-by" type="radio"
+                                                                        value="descending">
+                                                                    <label class="nhsuk-label nhsuk-radios__label" for="order-by-desc">
+                                                                        Newest first
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <!-- End by order results-->
+                                                <div class="nhsuk-grid-column-full">
+                                                    <button class="nhsuk-button nhsuk-button--secondary nhs-u-margin-top-4"
+                                                        data-module="nhsuk-button" type="submit">
+                                                        Apply filters
+                                                    </button>
+                                                    <p class="nhsuk-u-margin-bottom-0"><a href="">Reset all filters</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
 
                             <table role="table" class="nhsuk-table-responsive nhsuk-u-margin-top-4">
                                 <!-- <caption class="nhsuk-table__caption">Showing results for: All treatments</caption>  -->
@@ -319,6 +439,7 @@
                                             <strong class="nhsuk-tag nhsuk-tag--blue">
                                                 Open
                                             </strong>
+                                            <p class="nhsuk-body-s nhsuk-u-margin-top-2">Received 23 Apr 2025 at 14:23</p>
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Assigned
