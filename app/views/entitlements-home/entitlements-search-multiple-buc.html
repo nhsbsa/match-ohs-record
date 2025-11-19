@@ -311,43 +311,32 @@
                                                 </div>
                                                         
                                                 <!-- Start filter by recent cases-->
-                                                <!--<div class="nhsuk-grid-column-one-third">
+                                                <div class="nhsuk-grid-column-one-third">
                                                     <div class="nhsuk-form-group">
                                                         <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
                                                             <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
                                                                 <h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
-                                                                    Filter by status
+                                                                    Filter by role type
                                                                 </h1>
                                                             </legend>
                                                             <div class="nhsuk-radios" data-module="nhsuk-radios">
                                                                 <div class="nhsuk-radios__item">
                                                                     <input class="nhsuk-radios__input" id="example-7" name="case-status" type="radio" value="yes">
                                                                     <label class="nhsuk-label nhsuk-radios__label" for="example-7">
-                                                                    Open
+                                                                    Counter party (CP)
                                                                     </label>
                                                                 </div>
                                                                 <div class="nhsuk-radios__item">
                                                                     <input class="nhsuk-radios__input" id="example-8" name="case-status" type="radio" value="no">
                                                                     <label class="nhsuk-label nhsuk-radios__label" for="example-8">
-                                                                    Closed
+                                                                    Process owner (PO)
                                                                     </label>
                                                                 </div>
-                                                                <div class="nhsuk-radios__item">
-                                                                    <input class="nhsuk-radios__input" id="example-9" name="case-status" type="radio" value="no">
-                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-9">
-                                                                    Archived
-                                                                    </label>
-                                                                </div>
-                                                                <div class="nhsuk-radios__item">
-                                                                    <input class="nhsuk-radios__input" id="example-10" name="case-status" type="radio" value="no">
-                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-10">
-                                                                    Removed
-                                                                    </label>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </fieldset>
                                                     </div>
-                                                </div>-->
+                                                </div>
                                                 <!-- End filter by-->
                                                 <!-- Start by order results-->
                                                 <div class="nhsuk-grid-column-one-third">
@@ -355,7 +344,7 @@
                                                         <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
                                                             <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
                                                                 <h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
-                                                                    Filter by
+                                                                    Filter by assigned to me
                                                                 </h1>
                                                             </legend>
                                                             <div class="nhsuk-checkboxes">
@@ -427,6 +416,9 @@
                                             BUC type
                                         </th>
                                         <th role="columnheader" class="" scope="col">
+                                            Role type
+                                        </th>
+                                        <th role="columnheader" class="" scope="col">
                                             Case ID
                                         </th>
                                         <th role="columnheader" class="" scope="col">
@@ -451,6 +443,9 @@
                                     <tr role="row" class="nhsuk-table__row">
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>CP
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>01234
@@ -494,6 +489,9 @@
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 5
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>CP
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>02341
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
@@ -532,6 +530,9 @@
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>PO
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>20134
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
@@ -568,6 +569,9 @@
                                     <tr role="row" class="nhsuk-table__row">
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>CP
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>01234
@@ -613,6 +617,9 @@
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>PO
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>21348
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
@@ -654,6 +661,9 @@
                                     <tr role="row" class="nhsuk-table__row">
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>CP
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>21023
@@ -699,6 +709,9 @@
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>CP
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>21023
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
@@ -740,6 +753,9 @@
                                     <tr role="row" class="nhsuk-table__row">
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>PO
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>21023
@@ -785,6 +801,9 @@
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>CP
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>21023
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
@@ -826,6 +845,9 @@
                                     <tr role="row" class="nhsuk-table__row  ohs-table-no-last-row-border">
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case type </span>SBUC 1
+                                        </td>
+                                        <td role="cell" class="nhsuk-table__cell">
+                                            <span class="nhsuk-table-responsive__heading">Role type </span>PO
                                         </td>
                                         <td role="cell" class="nhsuk-table__cell">
                                             <span class="nhsuk-table-responsive__heading">Case ID </span>21023
