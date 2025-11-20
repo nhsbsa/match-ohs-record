@@ -264,10 +264,10 @@
                                     Searched by: 
                                     <strong class="nhsuk-tag nhsuk-tag--aqua-green">Geralt</strong>
                                 </p>
-                                <p class="nhsuk-body-s nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4">
+                                <!--<p class="nhsuk-body-s nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-4">
                                     Sorted by: 
                                     <strong class="nhsuk-tag nhsuk-tag--aqua-green">Oldest first</strong>
-                            </p>
+                            </p>-->
                             </div>
 
                             <div class="nhsuk-grid-column-one-third" style="padding-right: 0;">
@@ -319,20 +319,21 @@
                                                                     Filter by role type
                                                                 </h1>
                                                             </legend>
-                                                            <div class="nhsuk-radios" data-module="nhsuk-radios">
-                                                                <div class="nhsuk-radios__item">
-                                                                    <input class="nhsuk-radios__input" id="example-7" name="case-status" type="radio" value="yes">
-                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-7">
-                                                                    Counter party (CP)
+                                                            <div class="nhsuk-checkboxes">
+                                                                <div class="nhsuk-checkboxes__item">
+                                                                    <input class="nhsuk-checkboxes__input" id="filter-cp"
+                                                                        name="filter-cp" type="checkbox" value="">
+                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="filter-cp">
+                                                                        Counter party (CP)
                                                                     </label>
                                                                 </div>
-                                                                <div class="nhsuk-radios__item">
-                                                                    <input class="nhsuk-radios__input" id="example-8" name="case-status" type="radio" value="no">
-                                                                    <label class="nhsuk-label nhsuk-radios__label" for="example-8">
-                                                                    Process owner (PO)
+                                                                <div class="nhsuk-checkboxes__item">
+                                                                    <input class="nhsuk-checkboxes__input" id="filter-po"
+                                                                        name="filter-po" type="checkbox" value="">
+                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="filter-po">
+                                                                        Process owner (PO)
                                                                     </label>
                                                                 </div>
-                                                                
                                                             </div>
                                                         </fieldset>
                                                     </div>
@@ -344,7 +345,7 @@
                                                         <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
                                                             <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs">
                                                                 <h1 class="nhsuk-fieldset__heading nhsuk-u-font-weight-bold">
-                                                                    Filter by assigned to me
+                                                                    Filter by assigned
                                                                 </h1>
                                                             </legend>
                                                             <div class="nhsuk-checkboxes">
@@ -376,7 +377,7 @@
                                                             <div class="nhsuk-radios">
                                                                 <div class="nhsuk-radios__item">
                                                                     <input class="nhsuk-radios__input" id="order-by-asc" name="order-by" type="radio"
-                                                                        value="ascending">
+                                                                        value="ascending" checked>
                                                                     <label class="nhsuk-label nhsuk-radios__label" for="order-by-asc">
                                                                         Oldest first
                                                                     </label>
