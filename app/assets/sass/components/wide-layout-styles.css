@@ -237,9 +237,8 @@
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #005eb8;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   text-align: left;
   border-bottom: 1px solid #d8dde0;
@@ -847,10 +846,6 @@ ul.sidebar-nav .nhsuk-header__navigation-link {
 
 .js-enabled li.nhsuk-header__navigation-list {
   display: inline-block;
-}
-
-.nhsuk-header__navigation-list li a {
-  text-decoration: none;
 }
 
 ul.sidebar-nav li.nhsuk-header__navigation-link:hover, ul.sidebar-nav li.nhsuk-header__navigation-link:visited {
