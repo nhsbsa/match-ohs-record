@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-mvp2.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - View S073 - Entitlement registration
+  Overseas Healthcare Service RINA - View S016
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -49,37 +49,28 @@
                 </div>
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                        View S073 - Entitlement registration
+                        View S016
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    The document you sent us
+                    Date of ineligibility (optional)
                 </h1>
 
                 <dl class="nhsuk-summary-list">
 
                     <div class="nhsuk-summary-list__row">
                         <dt class="nhsuk-summary-list__key">
-                            Type of document
+                            Date person became ineligible (optional)
                         </dt>
                         <dd class="nhsuk-summary-list__value">
-                            S1
-                        </dd>
-                    </div>
-
-                    <div class="nhsuk-summary-list__row">
-                        <dt class="nhsuk-summary-list__key">
-                            Issued on (optional)
-                        </dt>
-                        <dd class="nhsuk-summary-list__value">
-                            Not provided
+                            DD/MM/YYYY
                         </dd>
                     </div>
                     
                 </dl>
 
-                <a href="view-s073-entitlement">
+                <a href="#">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Continue
+                        Go to case management
                     </button>
                 </a>
                 
