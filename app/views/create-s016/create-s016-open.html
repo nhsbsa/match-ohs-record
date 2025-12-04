@@ -52,35 +52,41 @@
                         Create S016
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Type of entitlement period
+                    Details of open period
                 </h1>
 
                 <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset">
-                    
+                        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                            <label class="nhsuk-label" for="example">
+                            Type of open period
+                            </label>
+                        </legend>
+                  
                         <div class="nhsuk-radios">
-                    
+                  
                             <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="example-1" name="decision" type="radio" value="Fixed period">
-                                <label class="nhsuk-label nhsuk-radios__label" for="example-1" >
-                                    Fixed period
+                                <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="no">
+                                <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                                    Open-ended period
                                 </label>
                             </div>
                     
                             <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="example-2" name="decision" type="radio" value="open period">
+                                <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="yes">
                                 <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                                    Open period
+                                    End date of the period is unknown
                                 </label>
                             </div>
                         </div>
                     </fieldset>
                 </div>
 
-
-                <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="handleContinue()" data-module="nhsuk-button" type="submit">
-                    Continue
-                </button>
+                <a href="create-s016-cancel-date">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                    </button>
+                </a>
                 
                 <p><a href="#">Cancel</a></p>
 
@@ -92,26 +98,4 @@
        
     </div>
 </div>
-{% endblock %}
-
-{% block pageScripts %}
-<!-- Radio button scripts -->
-<script>
-  function handleContinue() {
-    const selected = document.querySelector('input[name="decision"]:checked');
-    const result = document.getElementById('result');
-
-    if (selected) {
-      const value = selected.value;
-
-      if (value === 'Fixed period') {
-        window.location.href = './create-s016-fixed';
-      } else if (value === 'open period') {
-        window.location.href = './create-s016-open';
-      }
-    } else {
-      result.textContent = "Please select an option before continuing.";
-    }
-  }
-</script>
 {% endblock %}
