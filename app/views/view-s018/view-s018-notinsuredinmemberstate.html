@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create S016 - Cancel an entitlement
+  Overseas Healthcare Service RINA - View S016 - Cancel an entitlement
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -49,53 +49,31 @@
                 </div>
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                        Create S016 - Cancel an entitlement
+                        View S016 - Cancel an entitlement
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    What is the cancellation date?
+                    Date of ineligibility (optional)
                 </h1>
 
-                <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                        <label class="nhsuk-label" for="example">
-                            End date of entitlement
-                        </label>
-                        <div class="nhsuk-date-input" id="example">
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                Day
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" value="" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                Month
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" value="" id="example-month" name="example[month]" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                Year
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" value="" name="example[year]" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
+                <dl class="nhsuk-summary-list">
 
-                <a href="create-s016-cancel-reason">
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Date person became ineligible (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            DD/MM/YYYY
+                        </dd>
+                    </div>
+                    
+                </dl>
+
+                <a href="#">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Continue
+                        Go to case management
                     </button>
                 </a>
                 
-                <p><a href="#">Cancel</a></p>
 
                 <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 

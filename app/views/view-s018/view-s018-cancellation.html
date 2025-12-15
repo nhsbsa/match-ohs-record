@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create S016 - Cancel an entitlement
+  Overseas Healthcare Service RINA - View S018 – Cancellation of entitlement by the Member State
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -49,36 +49,57 @@
                 </div>
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                        Create S016 - Cancel an entitlement
+                        View S018 – Cancellation of entitlement by the Member State
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    Reason for cancelled entitlement
+                    Cancellation details
                 </h1>
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Reason
-                    </label>
-                    <select class="nhsuk-select nhsuk-input--width-20" id="menu1" name="menu1">
-                        <option value="0"></option>
-                        <option value="create-s016-reason-1">Not insured in our member state since (the date)</option>
-                        <option value="create-s016-reason-1">Resides in our member state since (the date)</option>
-                        <option value="create-s016-reason-1">No longer resides in your member state since (the date)</option>
-                        <option value="create-s016-reason-2">Died on</option>
-                        <option value="create-s016-reason-3">Insured in another country on the basis of pension conform Regulation (EC) 883/2004 art 24(2)(b)</option>
-                        <option value="create-s016-reason-4">Not entitled to sickness benefits from our member state since (the date)</option>
-                        <option value="create-s016-reason-4">Status of the person has changed</option>
-                        <option value="create-s016-reason-4">Change of institution within our member state</option>
-                        <option value="create-s016-reason-4">Other reason</option>
-                    </select> 
-                </div>
+                <dl class="nhsuk-summary-list">
 
-                <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="gotosite()" data-module="nhsuk-button" type="submit">
-                    Continue
-                </button>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            End date of entitlement
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            DD/MM/YYYY
+                        </dd>
+                    </div>
+
+                </dl>
+
+                <dl class="nhsuk-summary-list">
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Reason for cancelled entitlement
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Not insured in our member state since (the date)
+                        </dd>
+                    </div>
+
+                </dl>
+
+                <dl class="nhsuk-summary-list">
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Date person became ineligible (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            DD/MM/YYYY
+                        </dd>
+                    </div>
+                    
+                </dl>
+
+                <a href="#">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Go to case management
+                    </button>
+                </a>
                 
-                <p><a href="#">Cancel</a></p>
-
                 <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 
             </div>
@@ -87,12 +108,4 @@
        
     </div>
 </div>
-{% endblock %}
-{% block pageScripts %}
-<!-- Radio button scripts -->
-<script>
-    function gotosite() {
-    window.location = document.getElementById("menu1").value; // JQuery:  $("#menu").val();
-    }
-</script>
 {% endblock %}

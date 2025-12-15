@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create S016 - Cancel an entitlement
+  Overseas Healthcare Service RINA - View S018 – Cancellation of entitlement by the Member State
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -47,70 +47,72 @@
                         </div>
                     </div>
                 </div>
+
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                        Create S016 - Cancel an entitlement
+                        View S018 – Cancellation of entitlement by the Member State
                         <span class="nhsuk-u-visually-hidden"> - </span>
                     </span>
-                    What type of entitlement document are you cancelling?
+                    Details of cancelled entitlement
                 </h1>
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Entitlement document
-                    </label>
-                    <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
-                        <option value="0"></option>
-                        <option value="1">Portable document S1</option>
-                        <option value="2">SED S072</option>
-                        <option value="3">E106</option>
-                        <option value="4">E109</option>
-                        <option value="5">E120</option>
-                        <option value="6">E121</option>
-                    </select> 
-                </div>
+                <dl class="nhsuk-summary-list">
 
-                <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                        <label class="nhsuk-label" for="example">
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Entitlement document
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Portable document S1
+                        </dd>
+                    </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
                             Issued on (optional)
-                        </label>
-                        <div class="nhsuk-date-input" id="example">
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                Day
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" value="" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                Month
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" value="" id="example-month" name="example[month]" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                Year
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" value="" name="example[year]" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Not provided
+                        </dd>
+                    </div>
+                </dl>
+                <dl class="nhsuk-summary-list">
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Type of entitlement period
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Fixed period
+                        </dd>
+                    </div>
+                </dl>
 
-                <a href="create-s016-type-entitlement">
+                <h2 class="nhsuk-u-margin-top-6">Details of fixed period</h2>
+
+                <dl class="nhsuk-summary-list">
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Start date
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            DD/MM/YYYY
+                        </dd>
+                    </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            End date
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            DD/MM/YYYY
+                        </dd>
+                    </div>
+                </dl>
+
+                <a href="view-s018-cancellation">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                         Continue
                     </button>
                 </a>
                 
-                <p><a href="#">Cancel</a></p>
 
                 <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 

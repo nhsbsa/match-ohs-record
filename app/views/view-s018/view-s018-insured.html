@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-mvp2.html' %}
+{% extends 'layout.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create S016 - Cancel an entitlement 
+  Overseas Healthcare Service RINA - View S018 – Cancellation of entitlement by the Member State
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -31,12 +31,11 @@
 {% block content %}
 <div class="nhsBSA-sidebar-container">
     <div class="nhsBSA-sidebar-wrapper">
-        
 
         <!-- content - start -->
 
         <div class="nhsBSA-sidebar-content">
-            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
                 <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
                     <div class="nhsuk-grid-column-full">
                         <div class="nhsuk-back-link">
@@ -50,251 +49,211 @@
                 </div>
                 <h1 class="app-page-heading">
                     <span class="nhsuk-caption-l">
-                        Create S016 - Cancel an entitlement
-                        <span class="nhsuk-u-visually-hidden"> - </span>
+                        View S018 – Cancellation of entitlement by the Member State
                     </span>
                     Insured person (optional)
                 </h1>
 
                 <h2 class="nhsuk-u-margin-top-6">Complete this section if status was ‘family member’ (optional)</h2>
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Last name(s)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        First name(s)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
+                <dl class="nhsuk-summary-list">
 
-                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                        <label class="nhsuk-label" for="example">
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Last name(s)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Last name
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            First name(s)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            First name
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
                             Date of birth
-                        </label>
-                        <div class="nhsuk-date-input" id="example">
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
-                                Day
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" value="" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
-                                Month
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" value="" id="example-month" name="example[month]" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                            <div class="nhsuk-date-input__item">
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
-                                Year
-                                </label>
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" value="" name="example[year]" type="text" inputmode="numeric">
-                            </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-                <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset">
-                      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                        <label class="nhsuk-label" for="example">
-                          Sex
-                        </label>
-                    </legend>
-                  
-                    <div class="nhsuk-radios">
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="no">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            3 December 1956
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Sex
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
                             Female
-                          </label>
-                        </div>
-                  
-                        <div class="nhsuk-radios__item">
-                          <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="yes">
-                          <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                            Male
-                          </label>
-                        </div>
+                        </dd>
+                    </div>
 
-                        <div class="nhsuk-radios__item">
-                            <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                            <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                              Unknown
-                            </label>
-                        </div>
-                  
-                        </div>
-                    </fieldset>
-                </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Last name(s) at birth (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Not provided
+                        </dd>
+                    </div>
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Last name(s) at birth (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        First name(s) at birth (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            First name(s) at birth (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Not provided
+                        </dd>
+                    </div>
+
+                </dl>
 
                 <h3 class="nhsuk-u-margin-top-6">Personal identification number(s) (PIN) (optional)</h3>
 
-                <!-- Repeating form group -->
+                <!-- Repeating form group start -->
 
                 <h4 class="nhsuk-u-margin-top-4">PIN details</h4>
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="select-1">
-                      Country of PIN
-                    </label>
-                    <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
-                        <option value="0"></option>
-                        <option value="1">[AT] Austria</option>
-                        <option value="2">[BE] Belgium</option>
-                        <option value="3" >[BG] Bulgaria</option>
-                        <option value="4" >[HR] Croatia</option>
-                        <option value="5" >[CY] Cyprus</option>
-                        <option value="6" >[CZ] Czechia</option>
-                        <option value="7" >[DK] Denmark</option>
-                        <option value="8" >[EE] Estonia</option>
-                        <option value="9" >[FI] Finland</option>
-                        <option value="10" >[FR] France</option>
-                        <option value="11" >[DE] Germany</option>
-                        <option value="12" >[EL] Greece</option>
-                        <option value="13" >[HU] Hungary</option>
-                        <option value="14" >[IS] Iceland</option>
-                        <option value="15" >[IE]Ireland</option>
-                        <option value="16" >[IT] Italy</option>
-                        <option value="17" >[LV] Latvia</option>
-                        <option value="18" >[LI] Liechtenstein</option>
-                        <option value="19" >[LU] Lithuania</option>
-                        <option value="20" >[LU] Luxembourg</option>
-                        <option value="21" >[MT] Malta</option>
-                        <option value="22" >[NL] Netherlands</option>
-                        <option value="23" >[NO] Norway</option>
-                        <option value="24" >[PL] Poland</option>
-                        <option value="25" >[PT] Portugal</option>
-                        <option value="26" >[RO] Romania</option>
-                        <option value="27" >[SK] Slovakia</option>
-                        <option value="28" >[SI] Slovenia</option>
-                        <option value="29" >[ES] Spain</option>
-                        <option value="30" >[SE] Sweden</option>
-                        <option value="31" >[CH] Switzerland</option>
-                        <option value="32">[UK] United Kingdom</option>
-                      </select>
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        PIN
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="select-1">
-                        Sector (optional)
-                    </label>
-                    <select class="nhsuk-select nhsuk-input--width-20" id="" name="">
-                      <option value="1" ></option>
-                      <option value="2" >AWOD</option>
-                      <option value="3" >family benefits</option>
-                      <option value="4" >pensions</option>
-                      <option value="5" >recovery</option>
-                      <option value="6" >sickness</option>
-                      <option value="7" >unemployment benefits</option>
-                    </select>
-                </div>
+                <dl class="nhsuk-summary-list">
 
-                <h3 class="nhsuk-u-margin-top-6 nhsuk-u-font-size-22">Institution (optional)</h3>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Country of PIN
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            France
+                        </dd>
+                    </div>
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Institution identification number
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Name of institution
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            PIN
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            FG 23 45 56 HJ
+                        </dd>
+                    </div>
 
-                <!-- Repeating form group ends -->
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Sector (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Not provided
+                        </dd>
+                    </div>
 
-                <h3 class="nhsuk-heading-m nhsuk-u-margin-top-6">If PIN not provided, complete place of birth details (optional)</h3>
+                </dl>
+
+                <h3 class="nhsuk-u-margin-top-6">Institution (optional)</h3>
+
+                <dl class="nhsuk-summary-list">         
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Institution identification number 
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Fr:234
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Name of institution 
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                           French Institution name
+                        </dd>
+                    </div>
+                </dl>
 
                 <h4 class="nhsuk-u-margin-top-4">Place of birth (optional)</h4>
 
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Town
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Region (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Country of birth
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Father’s last name(s) at birth (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        First name(s) of father (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Mother’s last name(s) at birth (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        First name(s) of mother (optional)
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="">
-                </div>
+                <dl class="nhsuk-summary-list">
 
-                <a href="create-s016-entitlement">
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                        Town
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                        Carnac
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Region (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Not provided
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                            Country of birth
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            France
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                        Father’s last name(s) at birth (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                        Not provided
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                        First name(s) of father (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                        Not provided
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                        Mother’s last name(s) at birth (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                        Not provided
+                        </dd>
+                    </div>
+
+                    <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                        First name(s) of mother (optional)
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                            Not provided
+                        </dd>
+                    </div>
+                </dl>
+
+                <a href="view-s018-entitlement">
                     <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
                         Continue
                     </button>
                 </a>
-
-                <p><a href="#">Cancel</a></p>
-
+                
                 <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 
             </div>
         </div>
+
+       
     </div>
 </div>
 {% endblock %}
