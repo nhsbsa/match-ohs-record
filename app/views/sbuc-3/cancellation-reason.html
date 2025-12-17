@@ -52,42 +52,87 @@
                 <div class="nhsuk-form-group">
                     <fieldset class="nhsuk-fieldset">
                         <legend class="nhsuk-fieldset__legend">
-                        <h1 class="nhsuk-heading-xl">
-                            <span class="nhsuk-caption-l">Cancel the citizens entitlement</span>
-                            What is the cancellation reason?
-                        </h1>
+                          <h1 class="nhsuk-heading-xl">
+                              <span class="nhsuk-caption-l">Cancel the citizens entitlement</span>
+                              What is the cancellation reason?
+                          </h1>
+                          <div class="nhsuk-hint">
+                              This S1 or S072 entitlement is being cancelled because:
+                          </div>
                         </legend>
                         <div class="nhsuk-radios" data-module="nhsuk-radios">
                           <div class="nhsuk-radios__item">
-                              <input class="nhsuk-radios__input" id="example" name="decision" type="radio" value="Decision issued">
-                              <label class="nhsuk-label nhsuk-radios__label" for="example">
-                                Option 1
+                              <input class="nhsuk-radios__input" id="Reason" name="Reason" type="radio" value="died">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason">
+                                the customer has died
                               </label>
                           </div>
                           <div class="nhsuk-radios__item">
-                              <input class="nhsuk-radios__input" id="example-2" name="decision" type="radio" value="Decision rejected">
-                              <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                                Option 2
+                              <input class="nhsuk-radios__input" id="Reason-2" name="decision" type="radio" value="Decision rejected">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason-2">
+                                the customer has moved back to the UK 
                               </label>
                           </div>
                           <div class="nhsuk-radios__item">
-                              <input class="nhsuk-radios__input" id="example-3" name="decision" type="radio" value="Decision rejected">
-                              <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                                Option 3
+                              <input class="nhsuk-radios__input" id="Reason-3" name="decision" type="radio" value="Decision rejected">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason-3">
+                                the customer has moved to another country 
                               </label>
                           </div>
                           <div class="nhsuk-radios__item">
-                              <input class="nhsuk-radios__input" id="example-4" name="decision" type="radio" value="Decision rejected">
-                              <label class="nhsuk-label nhsuk-radios__label" for="example-4">
-                                Option 4
+                              <input class="nhsuk-radios__input" id="Reason-4" name="decision" type="radio" value="Decision rejected">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason-4">
+                                the customer has moved back to the UK 
                               </label>
                           </div>
                           <div class="nhsuk-radios__item">
-                              <input class="nhsuk-radios__input" id="example-5" name="decision" type="radio" value="Decision rejected">
-                              <label class="nhsuk-label nhsuk-radios__label" for="example-5">
-                                Option 5
+                              <input class="nhsuk-radios__input" id="Reason-5" name="decision" type="radio" value="Decision rejected">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason-5">
+                                the dependant is applying for their own S1 or S072
                               </label>
                           </div>
+                          <div class="nhsuk-radios__item">
+                              <input class="nhsuk-radios__input" id="Reason-6" name="decision" type="radio" value="Decision rejected">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason-6">
+                                the main applicant died, and we need to cancel the dependant's S1 or S072
+                              </label>
+                          </div>
+                          <div class="nhsuk-radios__item">
+                              <input class="nhsuk-radios__input" id="Reason-7" name="decision" type="radio" value="Decision rejected">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason-7">
+                                of a suspended UK pension
+                              </label>
+                          </div>
+                          <div class="nhsuk-radios__item">
+                              <input class="nhsuk-radios__input" id="Reason-8" name="Reason" type="radio" value="Other" aria-controls="conditional-contact">
+                              <label class="nhsuk-label nhsuk-radios__label" for="Reason-8">
+                                Other
+                              </label>
+                          </div>
+                          <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact">
+                            <div class="nhsuk-form-group">
+                              <label class="nhsuk-label" for="Other">
+                                Other reason
+                              </label>
+                              <input class="nhsuk-input nhsuk-u-width-two-thirds" id="Other" name="Other" type="text">
+                            </div>
+                          </div>
+                          <!-- conditional test start
+                          <div class="nhsuk-radios__item">
+                            <input class="nhsuk-radios__input" id="contact" name="contact" type="radio" value="email" aria-controls="conditional-contact" aria-expanded="false">
+                            <label class="nhsuk-label nhsuk-radios__label" for="contact">
+                              Email
+                            </label>
+                          </div>
+                          <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact">
+                            <div class="nhsuk-form-group">
+                              <label class="nhsuk-label" for="email">
+                                Email address
+                              </label>
+                              <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email" type="text">
+                            </div>
+                          </div>
+                          conditional test end-->
                         </div>
                     </fieldset>
                 </div>
@@ -98,7 +143,7 @@
                     </button>
                 </a>
 
-                <p><a href="#">Cancel</a></p>
+                <p><a href="case-cancel-entitlement">Cancel</a></p>
 
             </div>
         </div>
@@ -106,3 +151,19 @@
     </div>
 </div>
 {% endblock %}
+
+{% block pageScripts %}
+<script src="/javascripts/nhsuk-frontend.d4eb03c.min.js" type="module"></script>
+<script src="/javascripts/preview.b2f9366.min.js" type="module"></script>
+<script type="module">
+    import { initAll } from '/javascripts/nhsuk-frontend.d4eb03c.min.js'
+    initAll({
+      errorSummary: {
+        disableAutoFocus: true
+      },
+      notificationBanner: {
+        disableAutoFocus: true
+      }
+    })
+  </script>
+  {% endblock %}

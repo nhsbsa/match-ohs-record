@@ -840,6 +840,20 @@ ul.sidebar-nav .active {
     padding: 0px;
 }
 
+// conditional radio //
+
+.nhsuk-radios__conditional {
+    border-left: 4px solid #4c6272;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    margin-top: 6px;
+    padding-left: 32px;
+}
+.nhsuk-frontend-supported .nhsuk-radios__conditional--hidden {
+    display: none;
+}
+
+
 // conditional checkboxes //
 
 .nhsuk-fieldset__legend--s {
