@@ -12,13 +12,22 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Overseas Healthcare Service RINA - Create S072 reply 
+  Overseas Healthcare Service RINA
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
+  <!--<nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
 
+    <div class="nhsuk-grid-column-one-half">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="ohs-record-manage-case">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="ohs-record-manage-case">Case management ID 78793</a></li>
+      </ol>
+    </div>
+
+  </nav>-->
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -29,51 +38,75 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
-<div class="nhsBSA-sidebar-container">
-    <div class="nhsBSA-sidebar-wrapper">
-        
+<div class="nhsuk-width-container margin-left-right-lrg ul-padding-top-lrg">
+  <div class="nhs-main-wrapper">
 
-        <!-- content - start -->
+    <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+        <div class="nhsuk-grid-column-full">
+            <div class="nhsuk-back-link">
+                <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                        </path>
+                    </svg>
+                    Go back</a>
+            </div>
+        </div>
+    </div>
 
-        <div class="nhsBSA-sidebar-content">
-            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
-                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
-                    <div class="nhsuk-grid-column-full">
-                        <div class="nhsuk-back-link">
-                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
-                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
-                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-                            </svg>
-                            Go back</a>
-                        </div>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-three-quarters">
+                    <h1 class="nhsuk-heading-xl">
+                        <span class="nhsuk-caption-l">Create a new case</span>
+                        Search for an OHS record
+                    </h1>
+                    <div class="nhsuk-hint nhsuk-u-margin-bottom-6" id="search-hint-text">
+                        <p>Search for a matching OHS record.</p>
                     </div>
                 </div>
+            </div>
+            
+        </div>
+    </div>
 
-                <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset">
-                        <legend class="nhsuk-fieldset__legend">
-                        <h1 class="nhsuk-heading-xl">
-                            Search OHS record
-                        </h1>
-                        </legend>
-                        <div id="location-hint" class="nhsuk-hint nhsuk-u-margin-bottom-4" style="max-width: 75ch;">
-                            Hint text
+    <!-- Search UI - Start -->
+
+    <div class="nhsuk-grid-row">
+
+        <!-- Search for a record expander - Start -->
+
+        <div class="nhsuk-grid-column-three-quarters">
+            <div class="nhsuk-card clearfix">
+                <div class="nhsuk-card__content">
+                    <div class="nhsuk-hint nhsuk-u-margin-bottom-5" id="contact-hint">
+                        Data must be entered into a minimum of 3 fields to search.
+                    </div>
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">
+                                    First name (optional)
+                                </label>
+                                <input class="nhsuk-input" id="accepted" name="accepted" type="text" value="Geralt">
+                            </div>
                         </div>
-                        <div class="nhsuk-form-group">
-                            <label class="nhsuk-label" for="example">
-                                First name (optional)
-                            </label>
-                            <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="Geralt">
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-u-margin-bottom-1" for="accepted">Last name (optional)</label>
+                                <input class="nhsuk-input" id="accepted" name="accepted" type="text" value="Rivia">
+                            </div>
                         </div>
-                        <div class="nhsuk-form-group">
-                            <label class="nhsuk-label" for="example">
-                                Last name (optional)
-                            </label>
-                            <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text" value="Rivia">
-                        </div>
-                        <div class="nhsuk-form-group">
+                    </div>
+
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
                             <fieldset class="nhsuk-fieldset nhsuk-u-margin-top-3" aria-describedby="example-hint" role="group">
-                                <label class="nhsuk-label nhsuk-u-margin-bottom-1" for="dob">
+                                <label class="nhsuk-u-margin-bottom-1 nhsuk-label" for="dob">
                                     Date of birth (optional)
                                 </label>
                                 <div class="nhsuk-hint nhsuk-u-margin-bottom-1" id="target-date-hint">
@@ -107,17 +140,24 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <div class="nhsuk-form-group nhsuk-u-margin-top-3">
-                            <label class="nhsuk-label nhsuk-u-margin-bottom-1" for="contested">
-                                PIN (OHS reference or National Insurance number) (optional)
-                            </label>
-                            <div class="nhsuk-hint">
-                                For example, QQ 12 34 56 C
+                        <div class="nhsuk-grid-column-one-third">
+                            <div class="nhsuk-form-group nhsuk-u-margin-top-3">
+                                <label class="nhsuk-label nhsuk-u-margin-bottom-1" for="contested">
+                                    PIN (OHS reference or National Insurance number) (optional)
+                                </label>
+                                <div class="nhsuk-hint">
+                                    For example, QQ 12 34 56 C
+                                </div>
+                                <input class="nhsuk-input" id="contested" name="contested" type="text" value="">
                             </div>
-                            <input class="nhsuk-input nhsuk-input--width-20" id="contested" name="contested" type="text" value="">
                         </div>
-                        <div class="">
-                            <form action="#" method="post">
+                    </div>
+
+                    <div class="nhsuk-grid-row">
+                        <div class=" nhsuk-grid-column-one-third">
+    
+                            <form action="record-results" method="post">
+    
                                 <div class="govuk-form-group nhsuk-u-margin-top-3">
                                     <label class="nhsuk-label" for="sort">
                                         Country of residence (optional)
@@ -125,7 +165,7 @@
                                     <div class="nhsuk-hint">
                                         For example, France
                                     </div>
-                                    <select class="nhsuk-select nhsuk-input--width-20" id="sort" name="sort">
+                                    <select class="nhsuk-select nhsuk-select__search-case" id="sort" name="sort">
                                         <option value=""></option>
                                         <option value="Austria">Austria</option>
                                         <option value="Belgium">Belgium</option>
@@ -161,21 +201,23 @@
                                         <option value="Switzerland">Switzerland</option>
                                     </select>
                                 </div>
+
+                                <button class="nhsuk-button nhsuk-button nhsuk-u-margin-bottom-3 nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                                    Search
+                                </button>
+    
                             </form>
-                        </div> 
-                    </fieldset>
+                        </div>
+                    </div>
                 </div>
-                <a href="record-results-retry">
-                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                        Search
-                    </button>
-                </a>
-
-                <p><a href="#">Cancel</a></p>
-
             </div>
         </div>
-
+        <div class="nhsuk-grid-column-one-quarter">
+            
+        </div>
+        
     </div>
+
+</div>
 </div>
 {% endblock %}
