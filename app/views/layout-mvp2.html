@@ -3,6 +3,8 @@
     - change the header and footer 
     - add custom CSS and JavaScript
 -->
+<script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' nhsuk-frontend-supported' : '');</script>
+
 
 <!-- Extends the layout from /docs/views/template.html -->
 {% extends "template.html" %}
@@ -10,6 +12,7 @@
 <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 {% block headCSS %}
   <link href="/css/main.css" rel="stylesheet">
+  
 {% endblock %}
 
 <!-- Set the page title -->
@@ -85,6 +88,7 @@
 {% block bodyEnd %}
   {% block scripts %}
     <!-- Custom JavaScript files can be added to this file -->
+    <script src="/javascripts/nhsuk-frontend.d4eb03c.min.js" type="module"></script>
     
     {% include "includes/scripts.html" %}
     <!-- For adding page specific JavsScript -->

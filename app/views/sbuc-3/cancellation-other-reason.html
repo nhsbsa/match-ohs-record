@@ -4,7 +4,6 @@
 
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout-mvp2.html' %}
-
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -99,29 +98,28 @@
                               </label>
                           </div>
                           <div class="nhsuk-radios__item">
-                              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" aria-controls="conditional-contact" aria-expanded="true">
+                              <input class="nhsuk-radios__input" id="Reason-8" name="reason" type="radio" value="reason-other" aria-controls="conditional-contact" checked>
                               <label class="nhsuk-label nhsuk-radios__label" for="Reason-8">
                                 Other
                               </label>
                           </div>
-
-                          <div class="govuk-radios__conditional" id="conditional-contact">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label" for="contact-by-email">
-                                Email address
+                          <div class="nhsuk-radios__conditional" id="conditional-contact">
+                            <div class="nhsuk-form-group">
+                              <label class="nhsuk-label" for="reason">
+                                Other reason
                               </label>
-                              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contactByEmail" type="email" spellcheck="false" autocomplete="email">
+                              <input class="nhsuk-input nhsuk-u-width-two-thirds" id="reason" name="reason" type="text">
                             </div>
                           </div>
-
-                          
                         </div>
                     </fieldset>
                 </div>
                 
-                <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
-                  Continue
-                </button>
+                <a href="cancellation-date">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                    </button>
+                </a>
 
             </div>
         </div>
@@ -131,9 +129,20 @@
 {% endblock %}
 
 {% block pageScripts %}
-<script type="module" src="https://design-system.service.gov.uk/javascripts/application-example-df1b1846e6ebb2eca45a9e21924dfbd8.js"></script>
+<!-- Radio button scripts -->
+<script>
+  function handleContinue() {
+    const selected = document.querySelector('input[name="other-reason"]:checked');
+    const result = document.getElementById('result');
+
+    if (selected) {
+      const value = selected.value;
+
+      if (value === 'reason-other') {
+        window.location.href = './cancellation-other-reason';
+      } 
+    }
+  }
+</script>
 {% endblock %}
-
-
-
 
