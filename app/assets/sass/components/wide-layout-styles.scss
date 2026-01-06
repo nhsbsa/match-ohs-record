@@ -507,11 +507,13 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
 .nhsuk-details__text-attach {
     padding-left: 0;
 }
+
 //.nhsuk-list li a, .nhsuk-list li p {
     //font-size: 1rem;
 //}
-.nhsuk-list li p {
+.nhsuk-list li p, .nhsuk-list {
     margin-bottom: 0;
+    font-size: 16px;
 }
 .work-queue-home_sbucs .nhsuk-summary-list__key {
     color: #005EB8;
@@ -636,6 +638,15 @@ table.ohs-match-record-table-font-size .nhsuk-table__cell .nhsuk-button--seconda
     vertical-align: middle;
     margin-right: 6px;
 }
+.moj-alert__icon {
+    float: left;
+    display: block;
+    margin-top: -3px;
+}
+
+
+
+
 .ms-received {
     background-image: url('../images/icon-received-envelope.svg');
     background-size: contain; 
@@ -1135,6 +1146,9 @@ ul.sidebar-nav .active {
   .nhsuk-expander .nhsuk-details__summary {
     padding: 12px 16px 16px;
   }
+}
+.nhsuk-details__summary-text {
+    font-size: 16px;
 }
 .nhsuk-expander .nhsuk-details__summary:before {
   display: none !important; /* stylelint-disable-line declaration-no-important */ /* [1] */
