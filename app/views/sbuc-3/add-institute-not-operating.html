@@ -49,33 +49,53 @@
                     </div>
                 </div>
 
-                <div class="nhsuk-warning-callout">
-                    <h3 class="nhsuk-warning-callout__label">
-                        <span role="text">
-                        <span class="nhsuk-u-visually-hidden">Important: </span>
-                        The institution is no longer operating
-                        </span>
-                    </h3>
-                    <p>Use Clerk Access Interface (CAI) to find a replacement.</p>
+                <div class="nhsuk-error-summary" data-module="nhsuk-error-summary">
+                    <div role="alert">
+                        <h2 class="nhsuk-error-summary__title">
+                            There is a problem
+                        </h2>
+                        <div class="nhsuk-error-summary__body">
+                        <p>
+                            Institution is no longer operating. Use Clerk Access Interface (CAI) to find replacement.
+                        </p>
+                        <ul class="nhsuk-list nhsuk-error-summary__list">
+                            <li>
+                            <a href="#example-error-1">Enter a operational institution</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <h1 class="nhsuk-heading-xl">
-                    <span class="nhsuk-caption-l">Create a new case </span>
-                    Add institution to case
-                </h1>
-                <div id="location-hint" class="nhsuk-hint nhsuk-u-margin-bottom-4" style="max-width: 75ch;">
-                    Enter its institution code, also known as institution ID, on this screen. Or type at least 2 characters for suggestions.
-                </div>
-                
-                <div class="nhsuk-form-group">
-                    <fieldset class="nhsuk-fieldset">
-                        <label class="nhsuk-label" for="add-institution">
-                            Institution code
-                        </label>
-                        <div class="nhsuk-grid-column-two-thirds" style="padding-left: 0;">
-                            <input class="nhsuk-input" id="example" name="example" type="text" value="">
+                <div class="nhsuk-width-container">
+
+                    <main class="nhsuk-main-wrapper" id="maincontent">
+                        <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-two-thirds">
+                            <form action="/form-handler" method="post" novalidate>
+
+                                <h1 class="nhsuk-heading-xl">
+                                    <span class="nhsuk-caption-l">Create a new case </span>
+                                    Add institution to case
+                                </h1>
+                                <div id="location-hint" class="nhsuk-hint nhsuk-u-margin-bottom-4" style="max-width: 75ch;">
+                                    Enter its institution code, also known as institution ID, on this screen. Or type at least 2 characters for suggestions.
+                                </div>
+
+                                <div class="nhsuk-form-group nhsuk-form-group--error">
+                                    <label class="nhsuk-label" for="name">
+                                        Institution code
+                                    </label>
+                                    <span id="name-error" class="nhsuk-error-message">
+                                    <span class="nhsuk-u-visually-hidden">Error:</span> Enter a operational institution
+                                    </span>
+                                    <input class="nhsuk-input" id="example" name="example" type="text" value="">
+                                </div>
+
+                            </form>
                         </div>
-                    </fieldset>
+                        </div>
+                    </main>
                 </div>
                 
                 <a href="case-cancel-entitlement">
