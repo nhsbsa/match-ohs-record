@@ -47,18 +47,38 @@
     border-color: #005eb8 !important;
     color: #005eb8 !important;
 }
+
+.nhsuk-button--third {
+    background-color: rgba(0, 0, 0, 0) !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-shadow: 0 4px 0 #212b32 !important;
+    border-color: #212b32 !important;
+    color: #212b32 !important;
+}
+
 .nhsuk-button:focus:not(:active), .nhsuk-button:focus:not(:active):hover {
     background-color: #ffeb3b;
     color: #212b32;
     outline: 4px solid rgba(0, 0, 0, 0);
 }
+
 .nhsuk-button--secondary:not(:focus):not(:active)::before, .nhsuk-button--secondary-solid:not(:focus):not(:active)::before {
     border-color: #005eb8 !important;
 }
+.nhsuk-button--third:not(:focus):not(:active)::before, .nhsuk-button--third-solid:not(:focus):not(:active)::before {
+    border-color: #005eb8 !important;
+}
+
 .nhsuk-button--secondary, .nhsuk-button--secondary:link, .nhsuk-button--secondary:visited, .nhsuk-button--secondary:active, .nhsuk-button--secondary:hover, .nhsuk-button--secondary-solid, .nhsuk-button--secondary-solid:link, .nhsuk-button--secondary-solid:visited, .nhsuk-button--secondary-solid:active, .nhsuk-button--secondary-solid:hover
  {
     color: #005eb8 !important;
-    border-radius: 4px !important;
+    border-radius: 4px !important; 
+}
+.nhsuk-button--third, .nhsuk-button--third:link, .nhsuk-button--third:visited, .nhsuk-button--third:active, .nhsuk-button--third:hover, .nhsuk-button--third-solid, .nhsuk-button--third-solid:link, .nhsuk-button--third-solid:visited, .nhsuk-button--third-solid:active, .nhsuk-button--third-solid:hover
+ {
+    color: #005eb8 !important;
+    border-radius: 4px !important; 
 }
 .nhsuk-button:focus {
     box-shadow: none;
@@ -68,7 +88,15 @@
     background-color: rgb(198.9, 219.58, 239.38);
     border-color: #005eb8;
 }
+.nhsuk-button--third:active, .nhsuk-button--third-solid:active {
+    background-color: rgb(198.9, 219.58, 239.38);
+    border-color: #005eb8;
+}
 .nhsuk-button--secondary:hover, .nhsuk-button--secondary-solid:hover {
+    background-color: rgb(216.75, 230.85, 244.35);
+}
+
+.nhsuk-button--third:hover, .nhsuk-button--third-solid:hover {
     background-color: rgb(216.75, 230.85, 244.35);
 }
 .nhsuk-button:active {
@@ -77,6 +105,10 @@
     top: 4px;
 }
 .nhsuk-button--secondary:active, .nhsuk-button--secondary-:active {
+    background-color: rgb(198.9, 219.58, 239.38);
+    border-color: #005eb8;
+}
+.nhsuk-button--third:active, .nhsuk-button--third-:active {
     background-color: rgb(198.9, 219.58, 239.38);
     border-color: #005eb8;
 }
@@ -97,6 +129,10 @@
     outline: 4px solid transparent;
 }
 .nhsuk-button--secondary-solid:active, .nhsuk-button--secondary:active {
+    background-color: #c7dcef;
+    border-color: #005eb8;
+}
+.nhsuk-button--third-solid:active, .nhsuk-button--third:active {
     background-color: #c7dcef;
     border-color: #005eb8;
 }
