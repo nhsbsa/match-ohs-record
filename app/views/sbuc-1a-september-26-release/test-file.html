@@ -1,0 +1,218 @@
+<!-- Use this page as the index for your project -->
+
+<!-- Use this page as the index for your project -->
+{% extends '../layout-mvp2-dep-happy.html' %}
+
+{% block pageTitle %}
+    Overseas Healthcare Service RINA - Update State Pension contribution details
+{% endblock %}
+
+{% block content %}
+<style>
+    .contribution-page {
+        max-width: 960px;
+    }
+
+    .contribution-content {
+        max-width: 760px;
+    }
+
+    .contribution-alert {
+        border: 1px solid #218739;
+        margin: 0 0 26px;
+    }
+
+    .contribution-alert__message {
+        font-size: 14px;
+        padding: 7px 8px;
+    }
+
+    .contribution-table {
+        border-collapse: collapse;
+        margin: 60px 0 78px;
+        width: 100%;
+    }
+
+    .contribution-table th,
+    .contribution-table td {
+        border-bottom: 1px solid #d8dde0;
+        padding: 9px 0;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .contribution-table th {
+        font-size: 16px;
+    }
+
+    .contribution-table th:nth-child(1),
+    .contribution-table td:nth-child(1) {
+        width: 42%;
+    }
+
+    .contribution-table th:nth-child(2),
+    .contribution-table td:nth-child(2) {
+        width: 32%;
+    }
+
+    .contribution-table input {
+        height: 40px;
+        margin: 0;
+    }
+
+    .contribution-table input[type="text"] {
+        width: 100%;
+    }
+
+    .contribution-table input[type="number"] {
+        max-width: 126px;
+        text-align: center;
+    }
+
+    .contribution-table .saved-value {
+        color: #4c6272;
+        font-weight: 700;
+    }
+
+    .contribution-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px 28px;
+        margin-bottom: 22px;
+    }
+
+    .contribution-actions .nhsuk-button {
+        margin: 0;
+    }
+
+    .contribution-status {
+        color: #218739;
+        font-weight: 700;
+        margin: 0 0 18px;
+    }
+
+    @media (max-width: 640px) {
+        .contribution-table {
+            margin-top: 36px;
+        }
+
+        .contribution-table th,
+        .contribution-table td {
+            padding-right: 8px;
+        }
+
+        .contribution-table th:nth-child(1),
+        .contribution-table td:nth-child(1) {
+            width: 38%;
+        }
+
+        .contribution-table th:nth-child(2),
+        .contribution-table td:nth-child(2) {
+            width: 37%;
+        }
+    }
+</style>
+
+<main class="nhsuk-width-container contribution-page margin-left-right-lrg ul-padding-top-lrg">
+    <div class="nhs-main-wrapper">
+        <div class="nhsuk-back-link nhsuk-u-margin-bottom-9">
+            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-.4 1-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                </svg>
+                Go back
+            </a>
+        </div>
+
+        <div class="contribution-content">
+            <div class="contribution-alert" role="status">
+                <div class="contribution-alert__title">Success</div>
+                <div class="contribution-alert__message">Contribution details updated</div>
+            </div>
+
+            <h1 class="nhsuk-heading-xl">Update State Pension contribution details</h1>
+
+            <form id="contribution-form">
+                <table class="contribution-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Member state country</th>
+                            <th scope="col">Total weeks contributed</th>
+                            <th scope="col"><span class="nhsuk-u-visually-hidden">Actions</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="contribution-rows">
+                        <tr>
+                            <td><span class="saved-value">United Kingdom</span></td>
+                            <td><input aria-label="United Kingdom total weeks contributed" type="number" value="250" min="0"></td>
+                            <td><a class="remove-country" href="#">Remove country</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="saved-value">Germany</span></td>
+                            <td><input aria-label="Germany total weeks contributed" type="number" value="750" min="0"></td>
+                            <td><a class="remove-country" href="#">Remove country</a></td>
+                        </tr>
+                        <tr class="new-country-row">
+                            <td><input aria-label="New member state country" type="text"></td>
+                            <td><input aria-label="New country total weeks contributed" type="number" min="0"></td>
+                            <td><a id="add-country" href="#">Add country</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="contribution-status" id="contribution-status" hidden>Contribution details saved</p>
+
+                <div class="contribution-actions">
+                    <button class="nhsuk-button nhsuk-button--secondary" id="save-button" type="button">Save</button>
+                    <button class="nhsuk-button" type="button">Check competency</button>
+                    <button class="nhsuk-button" type="button">Submit for re-assessment</button>
+                </div>
+                <div class="contribution-actions">
+                    <button class="nhsuk-button" type="button">Continue</button>
+                    <button class="nhsuk-button nhsuk-button--secondary" type="button">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<script>
+    (function () {
+        var rows = document.getElementById('contribution-rows');
+        var addCountry = document.getElementById('add-country');
+        var status = document.getElementById('contribution-status');
+        var saveButton = document.getElementById('save-button');
+
+        addCountry.addEventListener('click', function (event) {
+            event.preventDefault();
+            var newRow = rows.querySelector('.new-country-row');
+            var country = newRow.querySelector('input[type="text"]');
+            var weeks = newRow.querySelector('input[type="number"]');
+
+            if (!country.value.trim() || !weeks.value) {
+                country.focus();
+                return;
+            }
+
+            var row = document.createElement('tr');
+            row.innerHTML = '<td><span class="saved-value"></span></td><td><input type="number" min="0"></td><td><a class="remove-country" href="#">Remove country</a></td>';
+            row.querySelector('.saved-value').textContent = country.value.trim();
+            row.querySelector('input').value = weeks.value;
+            rows.insertBefore(row, newRow);
+            country.value = '';
+            weeks.value = '';
+        });
+
+        rows.addEventListener('click', function (event) {
+            if (event.target.classList.contains('remove-country')) {
+                event.preventDefault();
+                event.target.closest('tr').remove();
+            }
+        });
+
+        saveButton.addEventListener('click', function () {
+            status.hidden = false;
+        });
+    }());
+</script>
+{% endblock %}
