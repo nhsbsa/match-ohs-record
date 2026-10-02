@@ -1,0 +1,534 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create H001 - Notification/request for information - Person information
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
+
+              <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                <div class="nhsuk-grid-column-full">
+                    <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                        </svg>
+                        Go back</a>
+                    </div>
+                </div>
+              </div>
+                   
+                <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-full">
+
+                        <span class="nhsuk-caption-l">
+                          Create H001 - Notification/request for information
+                          <span class="nhsuk-u-visually-hidden"> - </span>
+                        </span>
+                        <div class="nhsuk-grid-row">
+                            <div class="nhsuk-grid-column-three-quarters">
+                              
+                                <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+                                    Person information
+                                </h1>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+              <h2 class="nhsuk-u-margin-top-9">Person</h2>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Last name(s)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="Rutherford">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  First name(s)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="Graeme">
+              </div>
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                  <label class="nhsuk-label" for="example">
+                    Date of birth
+                  </label>
+                  <div class="nhsuk-date-input" id="example">
+                    <div class="nhsuk-date-input__item">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                          Day
+                        </label>
+                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example[day]" type="text" inputmode="numeric" value="03">
+                      </div>
+                    </div>
+                    <div class="nhsuk-date-input__item">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                          Month
+                        </label>
+                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example[month]" type="text" inputmode="numeric" value="12">
+                      </div>
+                    </div>
+                    <div class="nhsuk-date-input__item">
+                      <div class="nhsuk-form-group">
+                        <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                          Year
+                        </label>
+                        <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example[year]" type="text" inputmode="numeric" value="1956">
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              
+              </div>
+
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset">
+                  <label class="nhsuk-label" for="example">
+                    Sex
+                  </label>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes" checked>
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        Male
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Female
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Unknown
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                        Last name(s) at birth (optional)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                        First name(s) at birth (optional)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <h3 class="nhsuk-u-margin-top-9">Personal identification number(s) (PIN) (optional)</h3>
+
+              <h4 class="nhsuk-u-margin-top-4">PIN</h4>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Country of PIN
+                </label>
+                <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
+                  <option value="0"></option>
+                  <option value="1">Austria (AT)</option>
+                  <option value="2">Belgium (BE)</option>
+                  <option value="3" >Bulgaria (BG)</option>
+                  <option value="4" >Croatia (HR)</option>
+                  <option value="5" >Cyprus (CY)</option>
+                  <option value="6" >Czechia (CZ)</option>
+                  <option value="7" >Denmark (DK)</option>
+                  <option value="8" >Estonia (EE)</option>
+                  <option value="9" >Finland (FI)</option>
+                  <option value="10" >France (FR)</option>
+                  <option value="11" >Germany (DE)</option>
+                  <option value="12" >Greece (EL)</option>
+                  <option value="13" >Hungary (HU)</option>
+                  <option value="14" >Iceland (IS)</option>
+                  <option value="15" >Ireland (IE)</option>
+                  <option value="16" >Italy (IT)</option>
+                  <option value="17" >Latvia (LV)</option>
+                  <option value="18" >Liechtenstein (LI)</option>
+                  <option value="19" >Lithuania (LT)</option>
+                  <option value="20" >Luxembourg (LU)</option>
+                  <option value="21" >Malta (MT)</option>
+                  <option value="22" >Netherlands (NL)</option>
+                  <option value="23" >Norway (NO)</option>
+                  <option value="24" >Poland (PL)</option>
+                  <option value="25" >Portugal (PT)</option>
+                  <option value="26" >Romania (RO)</option>
+                  <option value="27" >Slovakia (SK)</option>
+                  <option value="28" >Slovenia (SI)</option>
+                  <option value="29" >Spain (ES)</option>
+                  <option value="30" >Sweden (SE)</option>
+                  <option value="31" >Switzerland (CH)</option>
+                  <option value="32" >United Kingdom (UK)</option>
+                </select> 
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                        PIN
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="012345678">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="select-1">
+                  Sector (optional)
+                </label>
+                <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
+                  <option value="0" ></option>
+                  <option value="1" >[01] AWOD</option>
+                  <option value="2" >[02] Family benefits</option>
+                  <option value="3" >[03] All</option>
+                  <option value="4" >[04] Pensions</option>
+                  <option value="5" >[05] Recovery</option>
+                  <option value="6" >[06] Sickness</option>
+                  <option value="7" >[07] Unemployment benefits</option>
+                </select>
+              </div>
+
+              <h5 class="nhsuk-u-margin-top-9 nhsuk-u-font-size-22">Institution (optional)</h5>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Institution identification number
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="NO:HELFOA003">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Name of institution
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="ACC Health Economics Administration">
+              </div>
+
+              <h3 class="nhsuk-heading-m nhsuk-u-margin-top-9">If PIN not provided, complete place of birth details (optional)</h3>
+
+              <h4 class="nhsuk-u-margin-top-4">Place of birth (optional)</h4>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Town
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Region (optional)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Country of birth
+                </label>
+                <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
+                  <option value="0"></option>
+                  <option value="1">Austria (AT)</option>
+                  <option value="2">Belgium (BE)</option>
+                  <option value="3" >Bulgaria (BG)</option>
+                  <option value="4" >Croatia (HR)</option>
+                  <option value="5" >Cyprus (CY)</option>
+                  <option value="6" >Czechia (CZ)</option>
+                  <option value="7" >Denmark (DK)</option>
+                  <option value="8" >Estonia (EE)</option>
+                  <option value="9" >Finland (FI)</option>
+                  <option value="10" >France (FR)</option>
+                  <option value="11" >Germany (DE)</option>
+                  <option value="12" >Greece (EL)</option>
+                  <option value="13" >Hungary (HU)</option>
+                  <option value="14" >Iceland (IS)</option>
+                  <option value="15" >Ireland (IE)</option>
+                  <option value="16" >Italy (IT)</option>
+                  <option value="17" >Latvia (LV)</option>
+                  <option value="18" >Liechtenstein (LI)</option>
+                  <option value="19" >Lithuania (LT)</option>
+                  <option value="20" >Luxembourg (LU)</option>
+                  <option value="21" >Malta (MT)</option>
+                  <option value="22" >Netherlands (NL)</option>
+                  <option value="23" >Norway (NO)</option>
+                  <option value="24" >Poland (PL)</option>
+                  <option value="25" >Portugal (PT)</option>
+                  <option value="26" >Romania (RO)</option>
+                  <option value="27" >Slovakia (SK)</option>
+                  <option value="28" >Slovenia (SI)</option>
+                  <option value="29" >Spain (ES)</option>
+                  <option value="30" >Sweden (SE)</option>
+                  <option value="31" >Switzerland (CH)</option>
+                  <option value="32" >United Kingdom (UK)</option>
+                </select> 
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Father’s last name(s) at birth (optional)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  First name(s) of father (optional)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Mother’s last name(s) at birth (optional)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  First name(s) of mother (optional)
+                </label>
+                <input class="nhsuk-input  nhsuk-input--width-20" id="example" name="example" type="text" value="">
+              </div>
+
+              <h4 class="nhsuk-u-margin-top-9">Additional information (optional)</h4>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="select-1">
+                  Nationality (optional)
+                </label>
+                <select class="nhsuk-select nhsuk-input--width-20" id="select-1" name="select-1">
+                  <option value="0"></option>
+                  <option value="1">Austria (AT)</option>
+                  <option value="2">Belgium (BE)</option>
+                  <option value="3" >Bulgaria (BG)</option>
+                  <option value="4" >Croatia (HR)</option>
+                  <option value="5" >Cyprus (CY)</option>
+                  <option value="6" >Czechia (CZ)</option>
+                  <option value="7" >Denmark (DK)</option>
+                  <option value="8" >Estonia (EE)</option>
+                  <option value="9" >Finland (FI)</option>
+                  <option value="10" >France (FR)</option>
+                  <option value="11" >Germany (DE)</option>
+                  <option value="12" >Greece (EL)</option>
+                  <option value="13" >Hungary (HU)</option>
+                  <option value="14" >Iceland (IS)</option>
+                  <option value="15" >Ireland (IE)</option>
+                  <option value="16" >Italy (IT)</option>
+                  <option value="17" >Latvia (LV)</option>
+                  <option value="18" >Liechtenstein (LI)</option>
+                  <option value="19" >Lithuania (LT)</option>
+                  <option value="20" >Luxembourg (LU)</option>
+                  <option value="21" >Malta (MT)</option>
+                  <option value="22" >Netherlands (NL)</option>
+                  <option value="23" >Norway (NO)</option>
+                  <option value="24" >Poland (PL)</option>
+                  <option value="25" >Portugal (PT)</option>
+                  <option value="26" >Romania (RO)</option>
+                  <option value="27" >Slovakia (SK)</option>
+                  <option value="28" >Slovenia (SI)</option>
+                  <option value="29" >Spain (ES)</option>
+                  <option value="30" >Sweden (SE)</option>
+                  <option value="31" >Switzerland (CH)</option>
+                  <option value="32" >United Kingdom (UK)</option>
+                </select>
+              </div>
+              <div class="nhsuk-form-group">
+                <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s" style="font-weight: 300;">
+                    <p class="nhsuk-fieldset__heading">
+                      Status of the person (optional)</p>
+                  </legend>
+            
+                  <div class="nhsuk-checkboxes">
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="Employed person">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                        Employed person
+                      </label>
+                    </div>
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="Self-employed person">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                        Self-employed person
+                      </label>
+                    </div>
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="Frontier worker">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                        Frontier worker
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-4" name="example" type="checkbox" value="Former frontier worker">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-4">
+                        Former frontier worker
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-5" name="example" type="checkbox" value="Pensioner">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-5">
+                        Pensioner
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-6" name="example" type="checkbox" value="Pension claimant">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-6">
+                        Pension claimant
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-7" name="example" type="checkbox" value="Unemployed person">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-7">
+                        Unemployed person
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-8" name="example" type="checkbox" value="Family member/dependent">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-8">
+                        Family member/dependent
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-9" name="example" type="checkbox" value="Family member of employed person">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-9">
+                        Family member of employed person
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-10" name="example" type="checkbox" value="Family member of pensioner">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-10">
+                        Family member of pensioner
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-11" name="example" type="checkbox" value="Medical report">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-11">
+                        Medical report
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-12" name="example" type="checkbox" value="Medical certificate">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-12">
+                        Medical certificate
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-13" name="example" type="checkbox" value="Student">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-13">
+                        Student
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-14" name="example" type="checkbox" value="Non-active person">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-14">
+                        Non-active person
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-15" name="example" type="checkbox" value="Other">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-15">
+                        Other
+                      </label>
+                    </div>
+
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                  Description of other (optional)
+                </label>
+                <textarea class="nhsuk-textarea nhsuk-input--width-20" id="example" name="example" rows="3" aria-describedby="example-hint"></textarea>
+              </div>
+
+           <br>
+           <br>
+                <div class="nhsuk-button-group">               
+                                  
+                      <button class="nhsuk-button nhsuk-button" data-module="nhsuk-button" style="margin-right:30px; margin-left:0px" type="submit">
+                          Continue
+                      </button>            
+          
+                </div>
+                          <a href="short-cut-request-for-infomation" style="font-size: 19px;">Skip to Request for information</a>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- content - end -->
+    </div>
+    <br>
+    <br>
+</div>
+{% endblock %}
