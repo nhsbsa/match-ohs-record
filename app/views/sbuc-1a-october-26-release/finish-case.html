@@ -1,0 +1,104 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-mvp2.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - We did not save your answers
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb clearfix" aria-label="Breadcrumb">
+
+    <div class="nhsuk-grid-column-one-half">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="entitlements-home">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">SBUC 1a</a></li>
+      </ol>
+    </div>
+    
+    <!-- Case management actions menus -->
+
+    <div class="nhsuk-grid-column-one-half" style="text-align: right; padding-top: 3px;">
+      <ol class="nhsuk-breadcrumb__list manage-case-list">
+        <li class="nhsuk-breadcrumb__item dropdown">
+          <!--<a href="#" class="dropdown__toggle-button">Create documents</a>-->
+          <div class="dropdown-content">
+            <a href="sed-read-h001" role="menuitem">Create H001</a>
+          </div>
+        </li>
+        <li class="nhsuk-breadcrumb__item dropdown">
+          <a href="#" class="dropdown__toggle-button">Case actions</a>
+          <div class="dropdown-content reposition-right-menu">
+            <a href="#" role="menuitem">Delete case</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  </nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsuk-header__navigation ul-padding-top-lrg">
+
+      <h1 class="nhsuk-heading-l">27341</h1>
+      
+      <p><strong>SBUC 1a – PO</strong></p>
+      <p><strong class="nhsuk-tag nhsuk-tag--blue">Open</strong></p>
+
+    
+
+
+      <!-- Timeline - End -->
+
+    </div>
+    
+    <div class="nhsBSA-sidebar-content" style="padding: 0 32px;">
+
+        <div class="nhsuk-width-container-full ul-padding-top-lrg">
+        <!-- Content -->
+            <div class="nhsuk-grid-row"> 
+                <div class="nhsuk-grid-column-two-thirds">
+                    <h1 class="nhsuk-heading-xl">We did not save your answers</h1>
+                </div>
+            </div>
+
+            <!-- in-page Case management personal details tabs - Start -->
+
+            <hr style="margin:0px 0px 24px 0px;">
+
+            <div class="nhsuk-hint nhsuk-u-margin-bottom-4" id="contact-hint" style="max-width: 75ch;">
+                You signed out before submitting the entitlement. We did not save your answers. Return to the ‘what is the status of the person’ screen to continue. 
+            </div>
+
+            <a href="person-status" title="Create S045 reply">
+                <button class="nhsuk-button nhsuk-button--primary nhsuk-u-margin-bottom-0" data-module="nhsuk-button" type="submit">
+                    Continue case
+                </button>
+            </a>
+        </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
