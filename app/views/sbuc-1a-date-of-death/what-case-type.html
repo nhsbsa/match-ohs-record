@@ -1,0 +1,94 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-mvp2.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create S072 reply 
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-one-half ul-padding-left-lrg">
+                <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                    <div class="nhsuk-grid-column-full">
+                        <div class="nhsuk-back-link">
+                            <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                            </svg>
+                            Go back</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nhsuk-form-group">
+                    <fieldset class="nhsuk-fieldset">
+                        <legend class="nhsuk-fieldset__legend">
+                        <h1 class="nhsuk-heading-xl">
+                            <span class="nhsuk-caption-l">Create a new case </span>
+                            What is the case type?
+                        </h1>
+                        <div class="nhsuk-hint">
+                            Which sickness business use case (BUC) type does the case relate to?
+                        </div>
+                        </legend>
+                        
+                        <div class="nhsuk-radios" data-module="nhsuk-radios">
+                          <div class="nhsuk-radios__item">
+                              <input class="nhsuk-radios__input" id="example" name="decision" type="radio" value="Decision issued">
+                              <label class="nhsuk-label nhsuk-radios__label" for="example">
+                                SBUC 1a
+                              </label>
+                          </div>
+                          <div class="nhsuk-radios__item">
+                              <input class="nhsuk-radios__input" id="example-2" name="decision" type="radio" value="Decision rejected">
+                              <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                                SBUC 3
+                              </label>
+                          </div>
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <a href="person-status">
+                    <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Create new case
+                    </button>
+                </a>
+
+                <!--<p><a href="#">Cancel</a></p>-->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
