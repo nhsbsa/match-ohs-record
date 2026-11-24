@@ -1,0 +1,155 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Overseas Healthcare Service RINA - Create H001 - Notification/request for information - Address
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+        
+
+        <!-- content - start -->
+
+        <div class="nhsBSA-sidebar-content">
+            <div class="nhsuk-grid-column-three-quarters ul-padding-left-lrg">
+
+              <div class="nhsuk-grid-row nhsuk-u-margin-bottom-9">
+                <div class="nhsuk-grid-column-full">
+                    <div class="nhsuk-back-link">
+                        <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                        </svg>
+                        Go back</a>
+                    </div>
+                </div>
+              </div>
+
+                <div class="nhsuk-grid-row">
+                      <div class="nhsuk-grid-column-full">
+
+                        <span class="nhsuk-caption-l">
+                          Create H001 - Notification/request for information
+                          <span class="nhsuk-u-visually-hidden"> - </span>
+                        </span>
+                        
+                        <div class="nhsuk-grid-row">
+                            <div class="nhsuk-grid-column-three-quarters">
+                              
+                                <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+                                    Address
+                                </h1>                    
+                            </div>  
+                        </div>
+                      </div>
+
+                       <ol class="nhsuk-breadcrumb__list manage-case-list">
+                        <li class="nhsuk-breadcrumb__item dropdown">
+                          <a href="#" class="dropdown__toggle-button" style= "background-color: #f0f4f5;">Skip links to other pages</a>
+                          <div class="dropdown-content reposition-left-menu" style= "background-color: #f0f4f5;">
+                            <a href="short-cut-link-link-multiple" role="menuitem">Personal information</a>
+                            <a href="short-cut-link-notification-of-address" role="menuitem">Notification of address</a>
+                            <a href="short-cut-link-request-address" role="menuitem">Request of address</a>
+                            <a href="short-cut-request-personal-info" role="menuitem">Request for personal information</a>
+                            <a href="short-cut-link-pin" role="menuitem">Request for sector PIN</a>
+                            <a href="short-cut-link-request-for-infomation" role="menuitem">Request for information</a>
+                            <a href="short-cut-link-change-of-personal-info" role="menuitem">Change of personal information</a>
+                            <a href="short-cut-link-request-info" role="menuitem">Change/request of information</a>
+                            <a href="short-cut-link-documents" role="menuitem">Documents</a>
+                          </div>
+                        </li>
+                      </ol>
+                </div>
+
+              <div class="nhsuk-form-group nhsuk-u-margin-top-6">
+                <fieldset class="nhsuk-fieldset">
+                  <label class="nhsuk-label" for="example">
+                    Address of the person
+                  </label>
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-1" name="address" type="radio" value="yes">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        Notification of address 
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input"  id="example-2" name="address" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        Request of address
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+              </div>
+
+              <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="handleContinue()" data-module="nhsuk-button" type="submit">
+                    Continue
+              </button>
+
+              <p><a href="sed-are-you-sure-x011">Cancel</a></p>
+
+              <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
+
+            </div>
+        </div>
+
+        <!-- content - end -->
+
+        
+    </div>
+</div>
+{% endblock %}
+
+{% block pageScripts %}
+
+<!-- Radio button scripts -->
+
+<script>
+  function handleContinue() {
+    const selected = document.querySelector('input[name="address"]:checked');
+    const result = document.getElementById('result');
+
+    if (selected) {
+      const value = selected.value;
+
+      if (value === 'yes') {
+        window.location.href = './short-cut-notification-of-address';
+      } else if (value === 'no') {
+        window.location.href = './short-cut-link-request-address';
+      }
+    } else {
+      result.textContent = "Please select an option before continuing.";
+    }
+  }
+</script>
+{% endblock %}

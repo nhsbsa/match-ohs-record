@@ -49,46 +49,57 @@
                     </div>
                 </div>
               </div>
+
               <h1 class="app-page-heading">
                   <span class="nhsuk-caption-l">
                     Create H001 - Notification/request for information
                       <span class="nhsuk-u-visually-hidden"> - </span>
                   </span>
-                  Address
+                  Request of address (optional)
               </h1>
+              
+              <div class="nhsuk-form-group">
 
-
-              <div class="nhsuk-form-group nhsuk-u-margin-top-6">
-                <fieldset class="nhsuk-fieldset">
+                <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
                   <label class="nhsuk-label" for="example">
-                    Address of the person
+                      Type of address (optional)
                   </label>
-              
-                  <div class="nhsuk-radios">
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-1" name="address" type="radio" value="Notification of address">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                        Notification of address 
+            
+                  <div class="nhsuk-checkboxes">
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                        Country of residence
                       </label>
                     </div>
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input"  id="example-2" name="address" type="radio" value="Request of address">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        Request of address
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                        Country of stay
                       </label>
                     </div>
-              
+            
+                    <div class="nhsuk-checkboxes__item">
+                      <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+                      <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                        Contact address
+                      </label>
+                    </div>
+            
                   </div>
                 </fieldset>
+
               </div>
 
-              <button class="nhsuk-button nhsuk-u-margin-top-6" onclick="handleContinue()" data-module="nhsuk-button" type="submit">
-                    Continue
-              </button>
+              <a href="unhappy-path-2-v2-h001-request" title="Continue to next section">
+                  <button class="nhsuk-button nhsuk-u-margin-top-6" data-module="nhsuk-button" type="submit">
+                        Continue
+                  </button>
+              </a>
 
-              <p><a href="short-cut-link-link-multiple">Cancel</a></p>
+              <p><a href="sed-are-you-sure-x010">Cancel</a></p>
 
               <p class="nhsuk-u-margin-top-9">SED API version: 0.16.3 build preview 1, Model version: 4.3.0</p>
 
@@ -97,31 +108,6 @@
 
         <!-- content - end -->
 
-        
     </div>
 </div>
-{% endblock %}
-
-{% block pageScripts %}
-
-<!-- Radio button scripts -->
-
-<script>
-  function handleContinue() {
-    const selected = document.querySelector('input[name="address"]:checked');
-    const result = document.getElementById('result');
-
-    if (selected) {
-      const value = selected.value;
-
-      if (value === 'Notification of address') {
-        window.location.href = './unhappy-path-2-v2-h001-address-notification';
-      } else if (value === 'Request of address') {
-        window.location.href = './unhappy-path-2-v2-h001-address-request';
-      }
-    } else {
-      result.textContent = "Please select an option before continuing.";
-    }
-  }
-</script>
 {% endblock %}
